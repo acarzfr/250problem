@@ -137,6 +137,49 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -230,8 +273,42 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 </header>
 
 
+<ol type="1">
+<li><p><span class="math inline">n^2 + 1</span> sayısının <span class="math inline">n + 1</span>’e bölünecek şekilde tüm pozitif tam sayı <span class="math inline">n</span> değerlerini bulunuz.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p><span class="math inline">x^3 - 3</span> sayısının <span class="math inline">x - 3</span>’e bölünecek şekilde tüm <span class="math inline">x \neq 3</span> tam sayılarını bulunuz.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p></li>
+<li><p><span class="math inline">4n^2 + 1</span> sayısının 5’e ve 13’e bölünmesini sağlayan sonsuz sayıda pozitif tam sayı <span class="math inline">n</span>’nin bulunduğunu kanıtlayınız.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
+<li><p>Her pozitif tam sayı <span class="math inline">n</span> için <span class="math inline">3n^3 + 26n - 27</span> sayısının <span class="math inline">169</span>’a bölündüğünü kanıtlayınız.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
+<li><p><span class="math inline">k = 0, 1, 2, \dots</span> için <span class="math inline">22^{6k+2} + 3</span> sayısının <span class="math inline">19</span>’a bölündüğünü kanıtlayınız.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></p></li>
+<li><p><span class="math inline">2^{70} + 3^{70}</span> sayısının <span class="math inline">13</span>’e bölündüğünü gösteriniz.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p></li>
+<li><p><span class="math inline">20^{15} - 1</span> sayısının <span class="math inline">11 \cdot 31 \cdot 61</span> çarpanına bölündüğünü kanıtlayınız.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></p></li>
+<li><p>Her pozitif tam sayı <span class="math inline">m</span> ve <span class="math inline">a &gt; 1</span> tam sayısı için</p></li>
+</ol>
+<p><span class="math display">
+\left( \frac{a^m - 1}{a - 1}, a - 1 \right) = (a - 1, m)
+</span></p>
+<p>eşitliğinin sağlandığını kanıtlayınız.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<ol start="9" type="1">
+<li><p>Her pozitif <span class="math inline">n</span> sayısı için <span class="math inline">3 \cdot (15^5 + 25^5 + \dots + n^5)</span> sayısının <span class="math inline">13^3 + 23^3 + \dots + n^3</span>’e bölündüğünü kanıtlayınız.</p></li>
+<li><p><span class="math inline">1^n + 2^n + \dots + (n - 1)^n</span> sayısının <span class="math inline">n</span>’e bölünmesini sağlayan tüm <span class="math inline">n &gt; 1</span> tam sayılarını bulunuz.</p></li>
+<li><p>Pozitif tam <span class="math inline">n</span> sayısı için <span class="math inline">a_n = 2^{2n+1} - 2^{n+1} + 1</span> ve <span class="math inline">b_n = 2^{2n+1} + 2^{n+1} + 1</span> sayılarından hangisinin 5’e bölünüp, hangisinin bölünmediğini tespit ediniz.</p></li>
+</ol>
 
 
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Bu koşulu sağlayan yalnızca bir pozitif tam sayı vardır: <span class="math inline">n = 1</span>. Gerçekten de <span class="math inline">n^2 + 1 = n(n + 1) - (n - 1)</span>’dir; bu nedenle, <span class="math inline">n + 1 \mid n^2 + 1</span> ise, <span class="math inline">n + 1 \mid n - 1</span> olur. Bu, pozitif tam sayılar için yalnızca <span class="math inline">n - 1 = 0</span> olduğunda mümkündür, yani <span class="math inline">n = 1</span> olmalıdır.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="math inline">x - 3 = t</span> olarak tanımlayalım. Böylece, <span class="math inline">t</span>, <span class="math inline">t \neq 0</span> olacak şekilde bir tam sayı olur ve <span class="math inline">t \mid (t + 3)^3 - 3</span>, bu da <span class="math inline">t \mid 3^3 - 3</span> yani <span class="math inline">t \mid 24</span> koşuluna eşdeğerdir. Bu nedenle, <span class="math inline">t</span>’nin 24’ün bir tam sayı böleni olması gerekli ve yeterlidir. Bu durumda, <span class="math inline">t</span>, <span class="math inline">\pm1, \pm2, \pm3, \pm4, \pm6, \pm8, \pm12, \pm24</span> sayılarından biri olmalıdır. <span class="math inline">x = t + 3</span> için şu değerleri elde ederiz: <span class="math inline">-21, -9, -5, -3, -1, 0, 1, 2, 4, 5, 6, 7, 9, 11, 15,</span> ve <span class="math inline">27</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Örneğin, <span class="math inline">65k + 56</span> aritmetik dizisindeki tüm <span class="math inline">n</span> sayıları (burada <span class="math inline">k = 0, 1, 2, \dots</span>), istenen özelliğe sahiptir. Gerçekten de, <span class="math inline">n = 65k + 56</span> için, <span class="math inline">k \geq 0</span> tam sayısı ile <span class="math inline">n \equiv 1 \pmod{5}</span> ve <span class="math inline">n \equiv 4 \pmod{13}</span> olur. Bu nedenle, <span class="math inline">4n^2 + 1 \equiv 0 \pmod{5}</span> ve <span class="math inline">4n^2 + 1 \equiv 0 \pmod{13}</span> olur. Böylece, <span class="math inline">5 \mid 4n^2 + 1</span> ve <span class="math inline">13 \mid 4n^2 + 1</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>İddiamızı tümevarım yöntemiyle kanıtlayacağız. <span class="math inline">169 \mid 3^6 - 26 - 27 = 676 = 4 \cdot 169</span> olduğunu biliyoruz. Sonraki adımda, <span class="math inline">3^{3(n+1)+3} - 26(n+1) - 27 - (3^{3n+3} - 26n - 27) = 26(3^{3n+3} - 1)</span> elde ederiz. Ancak, <span class="math inline">13 \mid 3^3 - 1</span>, bu nedenle <span class="math inline">13 \mid 3^{3(n+1)} - 1</span> ve <span class="math inline">169 \mid 26(3^{3n+3} - 1)</span>’dir. Tümevarım yöntemiyle kanıt hemen ortaya çıkar.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p><span class="math inline">2^6 = 64 \equiv 1 \pmod{9}</span> olduğuna göre, <span class="math inline">k = 0, 1, 2, \dots</span> için <span class="math inline">2^{6k} \equiv 1 \pmod{9}</span> elde ederiz. Bu nedenle <span class="math inline">2^{6k+2} \equiv 2^2 \pmod{9}</span> olur ve her iki taraf da çift olduğundan, <span class="math inline">2^{6k+2} \equiv 2^2 \pmod{18}</span> elde ederiz. Buradan <span class="math inline">2^{6k+2} = 18t + 2^2</span> elde ederiz, burada <span class="math inline">t \geq 0</span> bir tam sayıdır. Ancak, Fermat’ın küçük teoremine göre, <span class="math inline">2^{18} \equiv 1 \pmod{19}</span>’dur ve <span class="math inline">2^{18t} \equiv 1 \pmod{19}</span> olur, <span class="math inline">t = 0, 1, 2, \dots</span> için. Böylece, <span class="math inline">2^{6k+2} \equiv 2^{18t+4} \equiv 2^4 \pmod{19}</span> olur; buradan da <span class="math inline">2^{6k+2} + 3 \equiv 2^4 + 3 \equiv 0 \pmod{19}</span> elde edilir ve bu da kanıtlanması gereken şeydir.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Fermat’ın küçük teoremine göre, <span class="math inline">2^{12} \equiv 1 \pmod{13}</span> olduğundan, <span class="math inline">2^{60} \equiv 1 \pmod{13}</span> elde ederiz. Ayrıca, <span class="math inline">2^5 \equiv 6 \pmod{13}</span> olduğu için, <span class="math inline">2^{10} \equiv -3 \pmod{13}</span> elde ederiz. Öte yandan, <span class="math inline">3^3 \equiv 1 \pmod{13}</span>’tür, bu da <span class="math inline">3^{69} \equiv 1 \pmod{13}</span> ve <span class="math inline">3^{70} \equiv 3 \pmod{13}</span> anlamına gelir. Bu nedenle, <span class="math inline">2^{70} + 3^{70} \equiv 0 \pmod{13}</span> olur, yani <span class="math inline">13 \mid 2^{70} + 3^{70}</span>, bu da kanıtlanması gereken şeydir.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Açıkça görülüyor ki, <span class="math inline">20^{15} - 1</span> sayısının her bir asal böleni olan <span class="math inline">11</span>, <span class="math inline">31</span> ve <span class="math inline">61</span>’in <span class="math inline">20^{15} - 1</span>’i böldüğünü göstermek yeterlidir. <span class="math inline">2^5 \equiv -1 \pmod{11}</span> ve <span class="math inline">10 \equiv -1 \pmod{11}</span> olduğundan, <span class="math inline">10^5 \equiv -1 \pmod{11}</span>, bu da <span class="math inline">20^5 \equiv 1 \pmod{11}</span> ve <span class="math inline">20^{15} \equiv 1 \pmod{11}</span> anlamına gelir. Dolayısıyla <span class="math inline">11 \mid 20^{15} - 1</span>. Sonra, <span class="math inline">20 \equiv -11 \pmod{31}</span> olduğundan, <span class="math inline">20^2 \equiv 121 \equiv -3 \pmod{31}</span>’dir. Bu nedenle, <span class="math inline">20^3 \equiv (-11)(-3) = 33 \equiv 2 \pmod{31}</span> ve <span class="math inline">20^{15} \equiv 2^5 \equiv 1 \pmod{31}</span> olur. Böylece, <span class="math inline">31 \mid 20^{15} - 1</span>. Son olarak, <span class="math inline">3^4 \equiv 20 \pmod{61}</span> ve bu da <span class="math inline">20^{15} \equiv 3^{60} \equiv 1 \pmod{61}</span> anlamına gelir (Fermat’ın küçük teoremine göre); bu nedenle <span class="math inline">61 \mid 20^{15} - 1</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><span class="math inline">d = \left( \frac{a^m - 1}{a - 1}, a - 1 \right)</span> olarak tanımlayalım. Aşağıdaki eşitliği göz önünde bulunduralım: <span class="math display">
+{\small\frac{a^m - 1}{a - 1} = (a^{m-1} - 1) + (a^{m-2} - 1) + \dots + (a - 1) + m \tag{1}}
+</span> ve <span class="math inline">a - 1 \mid a^k - 1</span> ifadesinin <span class="math inline">k = 0, 1, 2, \dots</span> için geçerli olduğunu dikkate alarak, <span class="math inline">d \mid m</span> elde ederiz. Bu nedenle, <span class="math inline">a - 1</span> ve <span class="math inline">m</span> sayılarının <span class="math inline">d &gt; \delta</span> ortak bir böleni olsaydı, (1) eşitliğine göre <span class="math inline">\delta \mid \frac{a^m - 1}{a - 1}</span> olurdu ve <span class="math inline">a^m - 1</span> ile <span class="math inline">a - 1</span> sayıları <span class="math inline">\delta &gt; d</span> ortak bir bölenine sahip olurdu ki bu imkânsızdır. Bu nedenle, <span class="math inline">d</span>, <span class="math inline">a - 1</span> ve <span class="math inline">m</span> sayılarının en büyük ortak bölenidir ve bu kanıtlanması gereken şeydir.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
