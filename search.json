@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "aralarindaasalsayilar.html",
+    "href": "aralarindaasalsayilar.html",
+    "title": "2  Aralarında Asal Sayılar",
+    "section": "",
+    "text": "Her k tam sayısı için 2k + 1 ve 9k + 4 sayılarının aralarında asal olduğunu kanıtlayınız. 2k - 1 ve 9k + 4 sayılarının OBEB’ini k’ya bağlı bir fonksiyon olarak bulunuz.\n\\frac{n(n+1)}{2} şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.\n\\frac{n(n+1)(n+2)}{6} şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.\na ve b birinden farklı tam sayılar ise, a + n ve b + n sayıları aralarında asal olacak şekilde sonsuz sayıda n tam sayısı bulunduğunu kanıtlayınız.\na, b, c birbirinden farklı tam sayılarsa, a + n, b + n, c + n sayıları ikişer ikişer aralarında asal olacak şekilde sonsuz sayıda n pozitif tam sayısının bulunduğunu kanıtlayınız.\na + n, b + n, c + n, ve d + n sayılarının ikişer ikişer aralarında asal olmamasını sağlayan hiçbir n pozitif tam sayısı olmayacak şekilde birbirinden farklı a, b, c, d pozitif tam sayıları bulunuz.\n6’dan büyük olan her tam sayının 1’den büyük ve aralarında asal olan iki tam sayının toplamı şeklinde gösterilebileceğini kanıtlayınız.\n17’den büyük olan her tam sayının ikişer ikişer aralarında asal olan 1’den büyük 3 tam sayının toplamı şeklinde yazılabileceğini ve 17’nin de bu şekilde gösterilemeyeceğini kanıtlayınız.\nHer m pozitif tam sayısı için hem tek 2k çift sayısının m ile aralarında asal olan iki pozitif tam sayının farkı şeklinde yazılabileceğini kanıtlayınız.\nFibonacci dizisinin, tüm terimleri ikişer ikişer aralarında asal olan bir alt dizisinin bulunduğunu kanıtlayınız.\nHer n = 1, 2, \\dots için \\text{OBEB}(n, 2^n + 1) = 1 olduğunu gösteriniz.\n51a. \\text{OBEB}(n, 2^n - 1) &gt; 1 olmasını sağlayan sonsuz tane n pozitif tam sayısının bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Aralarında Asal Sayılar</span>"
+    ]
+  },
+  {
     "objectID": "99-kaynakca.html",
     "href": "99-kaynakca.html",
     "title": "Kaynakça",

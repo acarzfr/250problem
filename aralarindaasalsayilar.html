@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>250 Temel Sayılar Teorisi Problemi</title>
+<title>2&nbsp; Aralarında Asal Sayılar – 250 Temel Sayılar Teorisi Problemi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,7 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./tamsayilarinbolunmesi.html" rel="next">
+<link href="./99-kaynakca.html" rel="next">
+<link href="./tamsayilarinbolunmesi.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -156,6 +137,49 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 
 
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -168,7 +192,7 @@ Burada ggb-element .ggb uzantılı dosyanın adı
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Hoşgeldiniz</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aralarindaasalsayilar.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Aramak" onclick="window.quartoOpenSearch();">
@@ -203,7 +227,7 @@ Burada ggb-element .ggb uzantılı dosyanın adı
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hoşgeldiniz</span></a>
   </div>
 </li>
@@ -215,7 +239,7 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aralarindaasalsayilar.html" class="sidebar-item-text sidebar-link">
+  <a href="./aralarindaasalsayilar.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></span></a>
   </div>
 </li>
@@ -230,21 +254,15 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
-    <h2 id="toc-title">İçindekiler</h2>
-   
-  <ul>
-  <li><a href="#hoşgeldiniz" id="toc-hoşgeldiniz" class="nav-link active" data-scroll-target="#hoşgeldiniz">Hoşgeldiniz</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">250 Temel Sayılar Teorisi Problemi</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></h1>
 </div>
 
 
@@ -252,12 +270,6 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Son Güncelleme</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">24 Ekim 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -267,27 +279,22 @@ Burada ggb-element .ggb uzantılı dosyanın adı
 </header>
 
 
-<section id="hoşgeldiniz" class="level1 unnumbered">
-<h1 class="unnumbered">Hoşgeldiniz</h1>
-<p>Bu kitap, Waclaw Sierpinski’nin <em>250 Problems in Elementary Number Theory</em> (<span class="citation" data-cites="sierpinski1970250">Sierpinski (<a href="99-kaynakca.html#ref-sierpinski1970250" role="doc-biblioref">1970</a>)</span>) kitabının Türkçeye uyarlanmasıyla oluşturulmuştur.</p>
-<!-- Pdf dışındaki tüm formatlarda etkin
-::: {.content-hidden when-format="pdf"}
-html
-:::
+<ol start="41" type="1">
+<li><p>Her <span class="math inline">k</span> tam sayısı için <span class="math inline">2k + 1</span> ve <span class="math inline">9k + 4</span> sayılarının aralarında asal olduğunu kanıtlayınız. <span class="math inline">2k - 1</span> ve <span class="math inline">9k + 4</span> sayılarının OBEB’ini <span class="math inline">k</span>’ya bağlı bir fonksiyon olarak bulunuz.</p></li>
+<li><p><span class="math inline">\frac{n(n+1)}{2}</span> şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.</p></li>
+<li><p><span class="math inline">\frac{n(n+1)(n+2)}{6}</span> şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> birinden farklı tam sayılar ise, <span class="math inline">a + n</span> ve <span class="math inline">b + n</span> sayıları aralarında asal olacak şekilde sonsuz sayıda <span class="math inline">n</span> tam sayısı bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">a, b, c</span> birbirinden farklı tam sayılarsa, <span class="math inline">a + n, b + n, c + n</span> sayıları ikişer ikişer aralarında asal olacak şekilde sonsuz sayıda <span class="math inline">n</span> pozitif tam sayısının bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">a + n, b + n, c + n, ve d + n</span> sayılarının ikişer ikişer aralarında asal olmamasını sağlayan hiçbir <span class="math inline">n</span> pozitif tam sayısı olmayacak şekilde birbirinden farklı <span class="math inline">a, b, c, d</span> pozitif tam sayıları bulunuz.</p></li>
+<li><p>6’dan büyük olan her tam sayının 1’den büyük ve aralarında asal olan iki tam sayının toplamı şeklinde gösterilebileceğini kanıtlayınız.</p></li>
+<li><p>17’den büyük olan her tam sayının ikişer ikişer aralarında asal olan 1’den büyük 3 tam sayının toplamı şeklinde yazılabileceğini ve 17’nin de bu şekilde gösterilemeyeceğini kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">m</span> pozitif tam sayısı için hem tek <span class="math inline">2k</span> çift sayısının <span class="math inline">m</span> ile aralarında asal olan iki pozitif tam sayının farkı şeklinde yazılabileceğini kanıtlayınız.</p></li>
+<li><p>Fibonacci dizisinin, tüm terimleri ikişer ikişer aralarında asal olan bir alt dizisinin bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">\text{OBEB}(n, 2^n + 1) = 1</span> olduğunu gösteriniz.</p>
+<p>51a. <span class="math inline">\text{OBEB}(n, 2^n - 1) &gt; 1</span> olmasını sağlayan sonsuz tane <span class="math inline">n</span> pozitif tam sayısının bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.</p></li>
+</ol>
 
-<!-- Yalnızca pdf formatında etkin -->
-<!-- ::: {.content-hidden unless-format="pdf"}
-\includegraphics{images/aa.pdf}
-::: 
--->
 
-
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-sierpinski1970250" class="csl-entry" role="listitem">
-Sierpinski, Waclaw. 1970. <em>250 problems in elementary number theory</em>. American Elsevier Publishing Company.
-</div>
-</div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -712,10 +719,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./tamsayilarinbolunmesi.html" class="pagination-link" aria-label="Tam Sayıların Bölünmesi">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tam Sayıların Bölünmesi</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./tamsayilarinbolunmesi.html" class="pagination-link" aria-label="Tam Sayıların Bölünmesi">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tam Sayıların Bölünmesi</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./99-kaynakca.html" class="pagination-link" aria-label="Kaynakça">
+        <span class="nav-page-text">Kaynakça</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
