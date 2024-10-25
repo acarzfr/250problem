@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>2&nbsp; Aralarında Asal Sayılar – 250 Temel Sayılar Teorisi Problemi</title>
+<title>3&nbsp; Aritmetik Diziler – 250 Temel Sayılar Teorisi Problemi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./aritmetikdiziler.html" rel="next">
-<link href="./tamsayilarinbolunmesi.html" rel="prev">
+<link href="./asalvebilesiksayilar.html" rel="next">
+<link href="./aralarindaasalsayilar.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -192,7 +192,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aralarindaasalsayilar.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./aritmetikdiziler.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aritmetik Diziler</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Aramak" onclick="window.quartoOpenSearch();">
@@ -239,13 +239,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aralarindaasalsayilar.html" class="sidebar-item-text sidebar-link active">
+  <a href="./aralarindaasalsayilar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./aritmetikdiziler.html" class="sidebar-item-text sidebar-link">
+  <a href="./aritmetikdiziler.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aritmetik Diziler</span></span></a>
   </div>
 </li>
@@ -286,7 +286,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aritmetik Diziler</span></h1>
 </div>
 
 
@@ -303,19 +303,29 @@ window.Quarto = {
 </header>
 
 
-<ol start="41" type="1">
-<li><p>Her <span class="math inline">k</span> tam sayısı için <span class="math inline">2k + 1</span> ve <span class="math inline">9k + 4</span> sayılarının aralarında asal olduğunu kanıtlayınız. <span class="math inline">2k - 1</span> ve <span class="math inline">9k + 4</span> sayılarının OBEB’ini <span class="math inline">k</span>’ya bağlı bir fonksiyon olarak bulunuz.</p></li>
-<li><p><span class="math inline">\frac{n(n+1)}{2}</span> şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.</p></li>
-<li><p><span class="math inline">\frac{n(n+1)(n+2)}{6}</span> şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.</p></li>
-<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> birinden farklı tam sayılar ise, <span class="math inline">a + n</span> ve <span class="math inline">b + n</span> sayıları aralarında asal olacak şekilde sonsuz sayıda <span class="math inline">n</span> tam sayısı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">a, b, c</span> birbirinden farklı tam sayılarsa, <span class="math inline">a + n, b + n, c + n</span> sayıları ikişer ikişer aralarında asal olacak şekilde sonsuz sayıda <span class="math inline">n</span> pozitif tam sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">a + n, b + n, c + n</span> ve <span class="math inline">d + n</span> sayılarının ikişer ikişer aralarında asal olmamasını sağlayan hiçbir <span class="math inline">n</span> pozitif tam sayısı olmayacak şekilde birbirinden farklı <span class="math inline">a, b, c, d</span> pozitif tam sayıları bulunuz.</p></li>
-<li><p>6’dan büyük olan her tam sayının 1’den büyük ve aralarında asal olan iki tam sayının toplamı şeklinde gösterilebileceğini kanıtlayınız.</p></li>
-<li><p>17’den büyük olan her tam sayının ikişer ikişer aralarında asal olan 1’den büyük 3 tam sayının toplamı şeklinde yazılabileceğini ve 17’nin de bu şekilde gösterilemeyeceğini kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">m</span> pozitif tam sayısı için hem tek <span class="math inline">2k</span> çift sayısının <span class="math inline">m</span> ile aralarında asal olan iki pozitif tam sayının farkı şeklinde yazılabileceğini kanıtlayınız.</p></li>
-<li><p>Fibonacci dizisinin, tüm terimleri ikişer ikişer aralarında asal olan bir alt dizisinin bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">\text{OBEB}(n, 2^n + 1) = 1</span> olduğunu gösteriniz.</p>
-<p>51a. <span class="math inline">\text{OBEB}(n, 2^n - 1) &gt; 1</span> olmasını sağlayan sonsuz tane <span class="math inline">n</span> pozitif tam sayısının bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.</p></li>
+<ol start="52" type="1">
+<li><p>Pozitif tam sayılardan oluşan ve tüm terimleri ikişer ikişer aralarında asal olan ve terim sayısı yeterince önceden verilen herhangi bir <span class="math inline">n</span> sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">k</span> pozitif tam sayısı için, pozitif tam bölenlerinin sayısı <span class="math inline">k</span>’yı bölen tüm <span class="math inline">n</span> sayıları kümesinin bir sonsuz aritmetik dizi içerdiğini kanıtlayınız.</p></li>
+<li><p><span class="math inline">x(x + 1), y(y + 1), z(z + 1)</span> sayıları artan aritmetik dizi oluşturacak şekilde sonsuz sayıda <span class="math inline">x, y, z</span> pozitif tam sayı üçlüsünün bulunduğunu kanıtlayınız.</p></li>
+<li><p>Kenarları bir aritmetik dizi oluşturma tam sayılar olan tüm dik üçgenleri bulunuz.</p></li>
+<li><p>Pozitif tam sayılardan oluşan, hiçbir üçgen <span class="math inline">\left(\frac{n(n+1)}{2}\right)</span> sayısını içermeyen ve farkı en küçük olan artan bir aritmetik dizi bulunuz.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> pozitif tam sayılar olmak üzere <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> aritmetik dizisinin sonsuz tane tam kare içermesi için gerek ve yeterli koşulu bulunuz.</p></li>
+<li><p>Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının <span class="math inline">1</span>’den büyük dereceden kuvvetine eşit olan ve terim sayısı önceden verilen <span class="math inline">n</span> sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.</p></li>
+<li><p>Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının <span class="math inline">1</span>’den büyük dereceden kuvvetine eşit olan sonsuz bir aritmetik dizi bulunmadığını kanıtlayınız.</p></li>
+<li><p>Her biri bir pozitif tam sayının 1’den büyük dereceden kuvvetine eşit olan dört ardışık sayı bulunmadığını kanıtlayınız.</p></li>
+<li><p>Pozitif tam sayılardan oluşan her artan aritmetik dizinin bileşik sayılardan oluşan, önceden verilen <span class="math inline">n</span>’den fazla sayıda ardışık teriminin bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> aralarında asal pozitif tam sayılarsa her <span class="math inline">m</span> pozitif tam sayısı için <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> aritmetik dizisinin <span class="math inline">m</span> ile aralarında asal olan sonsuz sayıda terimi bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">s</span> pozitif tam sayısı için pozitif tam sayılardan oluşan her artan aritmetik dizide önceden verilen herhangi <span class="math inline">s</span> tane rakamla başlayan terimlerinin bulunduğunu kanıtlayınız.</p></li>
+<li><p>Fibonacci dizisinin üç teriminden oluşan tüm artan aritmetik dizileri bulunuz ve bu dizinin dört teriminden oluşan hiçbir artan aritmetik dizi bulunmadığını kanıtlayınız.</p></li>
+<li><p>Tam sayılardan oluşan, Fibonacci dizisinin hiçbir terimini içermeyen ve farkı en az olan bir artan aritmetik dizi bulunuz.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> aralarında asal pozitif tam sayılar olmak üzere <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> şeklinde olan ve Fibonacci dizisinin hiçbir terimini içermeyen bir aritmetik dizi bulunuz.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> aralarında asal pozitif tam sayılar olmak üzere <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> şeklinde olan her aritmetik dizinin ikişer ikişer aralarında asal olan sonsuz sayıda teriminin bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> pozitif tam sayılar olmak üzere her <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> aritmetik dizisinde asal çarpanları aynı olan sonsuz tane terim bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> pozitif tam sayılar olmak üzere her <span class="math inline">ak + b</span> <span class="math inline">(k = 0, 1, 2, \dots)</span> aritmetik dizisi ve her <span class="math inline">s</span> pozitif tam sayısı için, <span class="math inline">s</span> tane birbirinden farklı asal sayının çarpanına eşit olan sonsuz tane terim bulunduğunu kanıtlayınız.</p></li>
+<li><p>Farkı 10 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.</p></li>
+<li><p>Farkı 100 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.</p></li>
+<li><p>Sadece asal sayılardan oluşan, 10 terimli ve son terimi en küçük olan artan bir aritmetik dizi bulunuz.</p></li>
+<li><p>Pozitif tam sayılardan oluşan ve hiçbir terimi iki asal sayının ne toplamı, ne de farkı şeklinde gösterilemeyen artan bir sonsuz aritmetik dizi bulunuz.</p></li>
 </ol>
 
 
@@ -743,13 +753,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./tamsayilarinbolunmesi.html" class="pagination-link" aria-label="Tam Sayıların Bölünmesi">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Tam Sayıların Bölünmesi</span></span>
+      <a href="./aralarindaasalsayilar.html" class="pagination-link" aria-label="Aralarında Asal Sayılar">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Aralarında Asal Sayılar</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./aritmetikdiziler.html" class="pagination-link" aria-label="Aritmetik Diziler">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aritmetik Diziler</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./asalvebilesiksayilar.html" class="pagination-link" aria-label="Asal ve Bileşik Sayılar">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Asal ve Bileşik Sayılar</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
