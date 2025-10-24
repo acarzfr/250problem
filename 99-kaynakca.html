@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -102,6 +103,49 @@ div.csl-indent {
 
 
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="style/custom.css">
 </head>
@@ -417,9 +461,167 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-sierpinski1970250" class="csl-entry" role="listitem">
-Sierpinski, Waclaw. 1970. <em>250 Problems in Elementary Number
-Theory</em>. American Elsevier Publishing Company.
+<div id="ref-anning1956" class="csl-entry" role="listitem">
+Anning, P. 1956. <em>Scripta Mathematica</em> 22: 227.
+</div>
+<div id="ref-baker1959first" class="csl-entry" role="listitem">
+Baker, C. L., and F. J. Gruenberger. 1959. <em>The First Six Millions
+Prime Numbers</em>. The RAND Corp., Santa Monica, publ. by the Microcard
+Foundation, Madison, Wisc.
+</div>
+<div id="ref-cassels1960diophantine" class="csl-entry" role="listitem">
+Cassels, J. W. S. 1960/61. <span>“On a Diophantine Equation.”</span>
+<em>Acta Arithmetica</em> 6 (1960/61): 47–52.
+</div>
+<div id="ref-cassels1960probleme" class="csl-entry" role="listitem">
+Cassels, J. W. S., and G. Sansone. 1960/61. <span>“Sur Le Problème de m.
+Werner Mnich.”</span> <em>Acta Arithmetica</em> 7 (1960/61): 187–90.
+</div>
+<div id="ref-cipolla1904sui" class="csl-entry" role="listitem">
+Cipolla, M. 1904. <span>“Sui Numeri Compositi p Che Verificiano La
+Congruenza Di Fermat <span class="math inline"><em>a</em><sup><em>P</em> − 1</sup> ≡ 1&nbsp;(mod &nbsp;<em>P</em>)</span>.”</span>
+<em>Annali Di Matematica Pura Ed Applicata</em> 9: 139–60.
+</div>
+<div id="ref-demjanenko1966sums" class="csl-entry" role="listitem">
+Demjanenko, V. A. 1966. <span>“On Sums of Four Cubes, (Russian).”</span>
+<em>Izv. Vyssich Ucebnykh Zavedenii, Matematika</em>, 63–69.
+</div>
+<div id="ref-dickson1920history" class="csl-entry" role="listitem">
+Dickson, L. E. 1920. <em>History of the Theory of Numbers, Vol. II</em>.
+Carnegie Institution.
+</div>
+<div id="ref-erdos1962problem" class="csl-entry" role="listitem">
+Erdős, P. 1962. <span>“On a Problem of Sierpiński.”</span> <em>Atti
+Accad. Nazionale Dei Lincei</em> 33: 122–24.
+</div>
+<div id="ref-erdos1963quelques" class="csl-entry" role="listitem">
+———. 1963. <em>Quelques Problèmes de La Théorie Des Nombres</em>.
+Monographies de l’enseignement Math. 6. Genève.
+</div>
+<div id="ref-hyyro1964uber" class="csl-entry" role="listitem">
+Hyyro, S. 1964. <span>“Uber Das Catalansche Problem.”</span> <em>Annales
+Universitatis Turkuensis, Series AI</em>, no. 79.
+</div>
+<div id="ref-kaprekar1955multidigital" class="csl-entry" role="listitem">
+Kaprekar, D. R. 1955. <span>“Multidigital Numbers.”</span> <em>Scripta
+Mathematica</em> 21: 27.
+</div>
+<div id="ref-khatri1954interesting" class="csl-entry" role="listitem">
+Khatri, M. N. 1954. <span>“An Interesting Geometrical
+Progression.”</span> <em>Scripta Mathematica</em> 20: 57.
+</div>
+<div id="ref-khatri1962three" class="csl-entry" role="listitem">
+———. 1962. <span>“Three Consecutive Integers Cannot Be Powers.”</span>
+<em>Colloquium Mathematicum</em> 9: 297.
+</div>
+<div id="ref-polya1918functions" class="csl-entry" role="listitem">
+Pólya, G. 1918. <span>“Functions Not Formulas for Primes.”</span>
+<em>Mathematische Zeitschrift</em> 1: 144.
+</div>
+<div id="ref-polya1925aufgaben" class="csl-entry" role="listitem">
+Pólya, G., and G. Szegő. 1925. <em>Aufgaben Und Lehrsatze Aus Der
+Analysis, II</em>. Berlin.
+</div>
+<div id="ref-reiner1943zur" class="csl-entry" role="listitem">
+Reiner, J. 1943. <span>“Zur Arithmetischen Untersuchung Der
+Polynome.”</span> <em>American Mathematical Monthly</em> 50: 619.
+</div>
+<div id="ref-reutter1963" class="csl-entry" role="listitem">
+Reutter, O. 1963. <em>Elemente Der Mathematik</em> 18: 89.
+</div>
+<div id="ref-schinzel1958sur" class="csl-entry" role="listitem">
+Schinzel, A. 1958. <span>“Sur l’existence d’un Cercle Passant Par Un
+Nombre Donne de Points Aux Coordonnees Entieres.”</span>
+<em>L’Enseignement Mathématique</em> 4: 71–72.
+</div>
+<div id="ref-schinzel1959demonstration" class="csl-entry" role="listitem">
+———. 1959. <span>“Démonstration d’une Conséquence de l’hypothèse de
+Goldbach.”</span> <em>Compositio Mathematica</em> 14: 74–76.
+</div>
+<div id="ref-schinzel1963remarque" class="csl-entry" role="listitem">
+———. 1963. <span>“Remarque Au Travail de w. Sierpiński Sur Les Nombres
+<span class="math inline"><em>a</em><sup><em>x</em></sup> + 1</span>.”</span>
+<em>Colloquium Mathematicum</em> 10: 137–38.
+</div>
+<div id="ref-schinzel1958certaines" class="csl-entry" role="listitem">
+Schinzel, A., and W. Sierpiński. 1958a. <span>“Sur Certaines Hypothèses
+Concernant Les Nombres Premiers.”</span> <em>Acta Arithmetica</em> 4:
+185–208.
+</div>
+<div id="ref-schinzel1958sommes" class="csl-entry" role="listitem">
+———. 1958b. <span>“Sur Les Sommes de Quatre Cubes.”</span> <em>Acta
+Arithmetica</em> 4: 20–30.
+</div>
+<div id="ref-selmer1951diophantine" class="csl-entry" role="listitem">
+Selmer, F. S. 1951. <span>“The Diophantine Equation <span class="math inline"><em>a</em><em>x</em><sup>3</sup> + <em>b</em><em>y</em><sup>3</sup> + <em>c</em><em>z</em><sup>3</sup> = 0</span>.”</span>
+<em>Acta Mathematica</em> 85: 203–362.
+</div>
+<div id="ref-sierpinski1950sur" class="csl-entry" role="listitem">
+Sierpiński, W. 1950. <span>“Sur Les Puissances Du Nombre 2.”</span>
+<em>Annales de La Société Polonaise de Mathématique</em> 33: 246–51.
+</div>
+<div id="ref-sierpinski1957representations" class="csl-entry" role="listitem">
+———. 1957. <em>On Representations of Rational Numbers as Sums of Unit
+Fractions, (in Polish)</em>. Warszawa.
+</div>
+<div id="ref-sierpinski1958question" class="csl-entry" role="listitem">
+———. 1958a. <span>“Sur Une Question Concernant Le Nombre de Diviseurs
+Premiers d’un Nombre Naturel.”</span> <em>Colloquium Mathematicum</em>
+6: 209–10.
+</div>
+<div id="ref-sierpinski1958teoria" class="csl-entry" role="listitem">
+———. 1958b. <em>Teoria Liczb, (Number Theory; in Polish) Cz. II</em>.
+Monografie Matematyczne 38. Warszawa.
+</div>
+<div id="ref-sierpinski1961demonstration" class="csl-entry" role="listitem">
+———. 1961a. <span>“Démonstration Élémentaire d’un Théorème Sur Les
+Sommes de Trois Nombres Premiers Distincts.”</span> <em>Glasnik
+Mat.-Fiz. Astronom. Drustvo Mat. Fiz. Hrvatske, Ser. II</em> 16: 87–88.
+</div>
+<div id="ref-sierpinski1961remarques" class="csl-entry" role="listitem">
+———. 1961b. <span>“Remarques Sur Le Travail de m. J. W. S. Cassels "on a
+Diophantine Equation".”</span> <em>Acta Arithmetica</em> 6: 469–71.
+</div>
+<div id="ref-sierpinski1961sommes" class="csl-entry" role="listitem">
+———. 1961c. <span>“Sur Les Sommes Des Chiffres de Nombres
+Premiers.”</span> <em>Rendiconti Del Circolo Matematico Di Palermo, Ser.
+II</em> 10: 229–32.
+</div>
+<div id="ref-sierpinski1961probleme" class="csl-entry" role="listitem">
+———. 1961d. <span>“Sur Un Problème Concernant Les Nombres <span class="math inline"><em>k</em> ⋅ 2<sup><em>n</em></sup> + 1</span>.”</span>
+<em>Elemente Der Mathematik</em> 15: 73–74.
+</div>
+<div id="ref-sierpinski1962liczbach" class="csl-entry" role="listitem">
+———. 1962a. <span>“O Liczbach Naturalnych d, Dla Których Okres
+Rozwinieçia <span class="math inline">$\sqrt{D}$</span> Na Ułamek
+Łańcuchowy Arytmetyczny Ma Trzy Wyrazy, (on Positive Integers d for
+Which the Period of Expansion of <span class="math inline">$\sqrt{D}$</span> into an Arithmetic Continued
+Fraction Has Three Terms; in Polish).”</span> <em>Roczniki Polskiego
+Towarzystwa Matematycznego, Seria II: Wiadomości Matematyczne</em> 5:
+53–55.
+</div>
+<div id="ref-sierpinski1962consequences" class="csl-entry" role="listitem">
+———. 1962b. <span>“Sur Quelques Conséquences d’une Hypothèse de m. A.
+Schinzel.”</span> <em>Bulletin de La Société Royale Des Sciences de
+Liège</em> 31: 317–20.
+</div>
+<div id="ref-sierpinski1963nombres" class="csl-entry" role="listitem">
+———. 1963. <span>“Sur Les Nombres Qui Sont Sommes Et Différences de Deux
+Nombres Premiers.”</span> <em>Publ. Electr. Facultet, Sér. Math. Phys.,
+Beograd</em>, no. 84: 1–2.
+</div>
+<div id="ref-sierpinski1964elementary" class="csl-entry" role="listitem">
+———. 1964a. <em>Elementary Theory of Numbers</em>. Monografie
+Matematyczne 42. Warszawa.
+</div>
+<div id="ref-sierpinski1964remarques" class="csl-entry" role="listitem">
+———. 1964b. <span>“Remarques Sur Un Problème de m. P. Erdős.”</span>
+<em>Publications de l’Institut Mathématique de Beograd</em> 4 (18):
+125–34.
+</div>
+<div id="ref-sierpinski1964nombres" class="csl-entry" role="listitem">
+———. 1964c. <span>“Sur Les Nombres <span class="math inline"><em>a</em><sup><em>x</em></sup> + 1</span>.”</span>
+<em>Elemente Der Mathematik</em> 19: 106.
 </div>
 </div>
 
