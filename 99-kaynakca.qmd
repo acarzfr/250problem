@@ -1,7 +1,0 @@
-# Kaynakça {.unnumbered}
-
-
-
-::: {#refs}
-
-:::
