@@ -1,0 +1,26 @@
+# Aralarında Asal Sayılar
+
+41. Her $k$ tam sayısı için $2k + 1$ ve $9k + 4$ sayılarının aralarında asal olduğunu kanıtlayınız. $2k - 1$ ve $9k + 4$ sayılarının OBEB’ini $k$’ya bağlı bir fonksiyon olarak bulunuz.
+
+42. $\frac{n(n+1)}{2}$ şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.
+
+43. $\frac{n(n+1)(n+2)}{6}$ şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.
+
+44. $a$ ve $b$ birinden farklı tam sayılar ise, $a + n$ ve $b + n$ sayıları aralarında asal olacak şekilde sonsuz sayıda $n$ tam sayısı bulunduğunu kanıtlayınız.
+
+45. $a, b, c$ birbirinden farklı tam sayılarsa, $a + n, b + n, c + n$ sayıları ikişer ikişer aralarında asal olacak şekilde sonsuz sayıda $n$ pozitif tam sayısının bulunduğunu kanıtlayınız.
+
+46. $a + n, b + n, c + n$ ve $d + n$ sayılarının ikişer ikişer aralarında asal olmamasını sağlayan hiçbir $n$ pozitif tam sayısı olmayacak şekilde birbirinden farklı $a, b, c, d$ pozitif tam sayıları bulunuz.
+
+47. 6’dan büyük olan her tam sayının 1’den büyük ve aralarında asal olan iki tam sayının toplamı şeklinde gösterilebileceğini kanıtlayınız.
+
+48. 17’den büyük olan her tam sayının ikişer ikişer aralarında asal olan 1’den büyük 3 tam sayının toplamı şeklinde yazılabileceğini ve 17’nin de bu şekilde gösterilemeyeceğini kanıtlayınız.
+
+49. Her $m$ pozitif tam sayısı için hem tek $2k$ çift sayısının $m$ ile aralarında asal olan iki pozitif tam sayının farkı şeklinde yazılabileceğini kanıtlayınız.
+
+50. Fibonacci dizisinin, tüm terimleri ikişer ikişer aralarında asal olan bir alt dizisinin bulunduğunu kanıtlayınız.
+
+
+51. Her $n = 1, 2, \dots$ için $\text{OBEB}(n, 2^n + 1) = 1$ olduğunu gösteriniz.
+
+    51a. $\text{OBEB}(n, 2^n - 1) > 1$ olmasını sağlayan sonsuz tane $n$ pozitif tam sayısının bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.

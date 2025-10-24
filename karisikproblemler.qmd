@@ -1,0 +1,114 @@
+# Karışık Problemler
+
+200. Tam sayı katsayılı bir $f(x)$ polinomu için $f(x) = 0$ denkleminin bir tam sayı çözümü varsa, her $p$ asal sayısı için $x \equiv 0 \pmod{p}$ denkleminin de çözümü vardır. Birinci dereceden $ax + b = 0$ denklemini kullanarak bunun tersinin doğru olmadığını kanıtlayınız.
+
+201. $a$ ve $b$ tam sayıları olmak üzere $ax + b \equiv 0 \pmod{m}$ denkleminin her $m$ pozitif tam sayısı için çözümü varsa, $ax + b = 0$ denkleminin de tam sayı çözümünün bulunduğunu kanıtlayınız.
+
+202. $6x^2 + 5x + 1 \equiv 0 \pmod{m}$ denkleminin her $m$ pozitif tam sayısı için çözümü bulunduğunu, fakat $6x^2 + 5x + 1 = 0$ denkleminin tam sayı çözümünün bulunmadığını kanıtlayınız.
+
+203. Her $k$ tek ve $n$ pozitif tam sayısı için $2n^2 + 2 \mid k^{2n} - 1$ olduğunu kanıtlayınız.
+
+204. $k$ tam sayısı, $x$ ve $y$ tam sayılar olmak üzere $k = x^2 - 2y^2$ şeklinde gösterilebiliyorsa, bu sayının sonsuz sayıda değişik yolla bu şekilde gösterilebileceğini kanıtlayınız.
+
+205. $k$ tam sayı olmak üzere $8k + 3$ ve $8k + 5$ şeklinde olan hiçbir sayının, $x$ ve $y$ tam sayı olmak üzere $x^2 - 2y^2$ şeklinde gösterilemeyeceğini kanıtlayınız.
+
+206. $k$ tam sayı olmak üzere $8k + 1$ şeklinde olan sayılardan sonsuz sayıda, $x$ ve $y$ tam sayı olmak üzere $x^2 - 2y^2$ şeklinde gösterilebilenlerin ve sonsuz bu şekilde gösterilemeyenlerin bulunduğunu kanıtlayınız. Gösterilemeyenlerin en küçüğünü bulunuz.
+
+207. Her mükemmel sayının son rakamının 6 veya 8 olduğunu kanıtlayınız.
+
+208. N. Anning'in şu teoremini kanıtlayınız: rakamları herhangi bir $g > 1$ tabanında yazılmış olan 
+$$\frac{101010101}{1100110011}$$ 
+sayısının payında ve paydasında tam ortadaki 1 rakamının yerine herhangi tek sayıda 1 yazılırsa, kesrin değerinin değişmeyeceğini kanıtlayınız (örneğin, 
+$$\frac{1010110101}{1100110011} = \frac{1010111011}{110011110011} = \frac{1010111110101}{1100111110011} = \dots$$).
+
+209. $2^n$ sayısının ondalık yayılımındaki rakamları toplamının $n$'nin artması ile sonsuz arttığını kanıtlayınız.
+
+210. $k > 1$ bir tam sayı ve $c$ de bir rakam ise $2^n$'nin sağdan $k$. rakamı $c$ olacak şekilde bir $n$ pozitif tam sayısının bulunduğunu kanıtlayınız.
+
+211. $5^n \ (n = 1, 2, 3, \dots)$ sayılarının son 4 rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.
+
+212. Her $s$ için pozitif tam sayının ondalık yazılımının ilk $s$ rakamının herhangi bir şekilde (?) olabileceğini kanıtlayınız.
+
+213. $n^n \ (n = 1, 2, 3, \dots)$ sayılarının son rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.
+
+214. Her sonsuz ondalık kesirde, her $n$ sayısı için uzunluğu $n$ olan ve dizide sonsuz sayıda rastlanan bir rakamlar dizisi bulunduğunu kanıtlayınız.
+
+215. Her $k$ pozitif tam sayısı için $32^k$ sayısını ardışık sayılardan oluşan $3^k$ tane sayının toplamı şeklinde gösteriniz.
+
+216. Bir $s > 1$ tam sayısı verilmişse, her $n \geq m_s$ için $n$ ile $2n$ arasında bir pozitif tam sayının $s$. dereceden kuvveti bulunacak şekilde bir $m_s$ pozitif tam sayısının bulunduğunu kanıtlayınız. $s = 2$ ve $s = 3$ için en küçük $m_s$ sayılarını bulunuz.
+
+217. Her $n$ için, hiçbir bir pozitif tam sayının 1’den büyük dereceden kuvveti olmayan $n$ ardışık pozitif tam sayının bulunduğunu kanıtlayınız.
+
+218. $u_1 = 1, u_2 = 3$ ve $n = 1, 2, \dots$ için $u_{n+2} = 4u_{n+1} - 3u_n$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.
+
+219. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = 2u_{n+1} - u_n$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.
+
+220. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = -(u_n + 2u_{n+1})$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz. $a = 1, b = -1$ ve $a = 1, b = -2$ özel durumlarını inceleyiniz.
+
+221. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = 2u_n + u_{n+1}$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.
+
+222. $n = 1, 2, \dots$ için $a^{a^n} = a$ eşitliğini sağlayan tüm $a \neq 0$ tam sayılarını bulunuz.
+
+223. Hem toplamı hem de çarpımı tam kare olan tüm pozitif tam sayı ikililerini bulmak için bir yöntem veriniz.
+
+224. İki ardışık pozitif tam sayının kareleri toplamına eşit olan tüm üçgen sayıları bulunuz.
+
+225. V.E.Hogatt’ın, her pozitif tam sayının Fibonacci dizisinin birbirinden farklı terimlerinin toplamı şeklinde gösterilebileceğini söyleyen teoremini kanıtlayınız.
+
+226. Fibonacci dizisinin $u_n$ terimlerinin $n = 1, 2, 3, \dots$ için
+$$ u_n^2 = u_{n-1} u_{n+1} + (-1)^{n-1} $$
+eşitliğini sağladığını kanıtlayınız.
+
+227. Her tam sayının sonsuz değişik sayıda beş tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.
+
+228. 3 sayısının sonsuz değişik sayıda 0 ve 1’den farklı dört tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.
+
+229. Elementer yöntemlerle, birbirinden farklı dört pozitif tam sayının kareleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu ve birbirinden farklı dört pozitif tam sayının küpleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+230. Her $m$ pozitif tam sayısı için $4m^4 \cdot 7$ sayısının negatif olmayan dört tam sayının kareleri toplamı şeklinde herhangi gösteriminde, bu sayılardan hiçbirinin $2^{m-1}$'den küçük olmadığını kanıtlayınız.
+
+231. İki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen 2'den büyük en küçük tam sayıyı bulunuz ve aralarında asal iki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+232. $s$ pozitif tam sayısı için verilmişse, her $k = 1, 2, \dots, n$ için $n$ sayısı iki tane pozitif tam sayının $k$. dereceden kuvvetleri toplamı olacak şekilde bir $n > 2$ tam sayısının bulunduğunu kanıtlayınız.
+
+233. İki tam sayının küpleri toplamı şeklinde gösterilemeyen, fakat iki rasyonel sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+234. İki pozitif tam sayının küpleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının küpleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+235. Her $k > 1$, $k \neq 3$ tam sayısı için iki pozitif tam sayının $k$. dereceden kuvvetleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının $k$. dereceden kuvvetleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+236. Her $n > 1$ tam sayısı için iki pozitif tam sayının $n$. dereceden kuvvetleri toplamı şeklinde gösterilebilen, fakat iki pozitif tam sayının $k$. dereceden kuvvetleri farkı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.
+
+237. $1$'den $n$'ye kadar olan pozitif tam sayıların kareleri toplamı tam kare olmasını sağlayan en küçük $n > 1$ tam sayısını bulunuz.
+
+238. $a$ ve $b$ $1$'den büyük tam sayılarsa $a^b$ şeklinde olan sayıya **öz kuvvet** diyelim. Sonlu sayıda öz kuvvetin toplamı şeklinde yazılabilen tüm pozitif tam sayıları bulunuz.
+
+b.  $6$'dan farklı her $n \leq 10$ pozitif tam sayısının iki öz kuvvetin farkı şeklinde gösterilebileceğini kanıtlayınız.
+
+239. Kenar uzunlukları tam sayı olan her dik üçgen ve her $n$ pozitif tam sayısı için bu üçgene benzer ve her kenar uzunluğu bir pozitif tam sayının $n$'den büyük dereceden kuvveti olan bir üçgen bulunduğunu kanıtlayınız.
+
+240. $(n - 1)! + 1 = n^2$ eşitliğini sağlayan tüm $n > 1$ tam sayılarını bulunuz.
+
+241. İki ardışık üçgen sayısının çarpımının hiçbir zaman tam kare olmayacağını, fakat her $t_n = \frac{n(n+1)}{2}$ sayısı için $t_n t_m$ çarpımının tam kare olacak şekilde $t_n$'den büyük olan sonsuz sayıda $t_m$ üçgen sayısının bulunduğunu kanıtlayınız.
+
+242. Logaritma tablosu kullanmadan $F_{1945} = 2^{2^{1945}} + 1$ sayısının basamak sayısının $10^{582}$'den büyük olduğunu kanıtlayınız ve ($F_{1945}$ sayısının en küçük asal böleni olan) $5 \cdot 2^{1947} + 1$ sayısının basamak sayısını bulunuz.
+
+243. $2^{11213} - 1$ (bilinen en büyük asal sayı) sayısının basamak sayısını bulunuz.
+
+244. $2^{12112}(2^{12112} - 1)$ (bilinen en büyük mükemmel sayı) sayısının basamak sayısını bulunuz.
+
+245. $3!!!$ sayısının basamak sayısının 1000'den fazla olduğunu kanıtlayınız ve bu sayının sonundaki 0 sayısını bulunuz.
+
+246. Aşağıdaki özelliğe sahip olan $m > 1$ tam sayısı bulunuz: bir $x$ tam sayı sayısı için $f(x)$ değeri $m$'ye bölünecek, başka bir $x$ değeri için $f(x)$ değeri $m$'ye bölündüğünde 1 kalanı verecek ve tüm $x$ tam sayı değerleri için $f(x)$ değerleri $m$'ye bölündüğünde 0 veya 1 kalanı verecek şekilde tam sayı katsayılı bir $f(x)$ polinomu bulunur.
+
+247. $m$ ve $n$ pozitif tam sayılar ve $D = [(4m^2 + 1)n + m]^2 + 4mn + 1$ olmak üzere $\sqrt{D}$ sayısının sürekli kesir şeklinde gösteriniz.
+
+248. $\varphi(n)$ Euler fonksiyonu, $d(n)$ de $n$ sayısının pozitif tam bölenlerinin sayısını göstermek üzere $\varphi(n) = d(n)$ eşitliğini sağlayan tüm $n \leq 30$ pozitif tam sayısını bulunuz.
+
+249. Her $g$ pozitif tam sayısı için, her $w > 1$ rasyonel sayısının, $k > g$ ve $s \geq 0$ tam sayılar olmak üzere
+$$ w = (1 + \frac{1}{k})(1 + \frac{1}{k+1}) \dots (1 + \frac{1}{k+s}) $$
+şeklinde gösterilebileceğini kanıtlayınız.
+
+250. P. Erdős ve M. Surányi’nin şu teoremini kanıtlayınız: her $k$ tam sayısı sonsuz değişik yolla, $m$ pozitif tam sayı olmak üzere ve $+$ veya $-$ işaretleri belirli bir şekilde seçilerek 
+$$ k = \pm 1^2 \pm 2^2 \pm \dots \pm m^2 $$ 
+şeklinde gösterilebileceğini kanıtlayınız.

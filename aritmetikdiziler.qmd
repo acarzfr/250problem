@@ -1,0 +1,47 @@
+# Aritmetik Diziler
+
+52. Pozitif tam sayılardan oluşan ve tüm terimleri ikişer ikişer aralarında asal olan ve terim sayısı yeterince önceden verilen herhangi bir $n$ sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.
+
+53. Her $k$ pozitif tam sayısı için, pozitif tam bölenlerinin sayısı $k$'yı bölen tüm $n$ sayıları kümesinin bir sonsuz aritmetik dizi içerdiğini kanıtlayınız.
+
+54. $x(x + 1), y(y + 1), z(z + 1)$ sayıları artan aritmetik dizi oluşturacak şekilde sonsuz sayıda $x, y, z$ pozitif tam sayı üçlüsünün bulunduğunu kanıtlayınız.
+
+55. Kenarları bir aritmetik dizi oluşturma tam sayılar olan tüm dik üçgenleri bulunuz.
+
+56. Pozitif tam sayılardan oluşan, hiçbir üçgen $\left(\frac{n(n+1)}{2}\right)$ sayısını içermeyen ve farkı en küçük olan artan bir aritmetik dizi bulunuz.
+
+57. $a$ ve $b$ pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinin sonsuz tane tam kare içermesi için gerek ve yeterli koşulu bulunuz.
+
+58. Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının $1$'den büyük dereceden kuvvetine eşit olan ve terim sayısı önceden verilen $n$ sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.
+
+59. Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının $1$'den büyük dereceden kuvvetine eşit olan sonsuz bir aritmetik dizi bulunmadığını kanıtlayınız.
+
+60. Her biri bir pozitif tam sayının 1’den büyük dereceden kuvvetine eşit olan dört ardışık sayı bulunmadığını kanıtlayınız.
+
+61. Pozitif tam sayılardan oluşan her artan aritmetik dizinin bileşik sayılardan oluşan, önceden verilen $n$’den fazla sayıda ardışık teriminin bulunduğunu kanıtlayınız.
+
+62. $a$ ve $b$ aralarında asal pozitif tam sayılarsa her $m$ pozitif tam sayısı için $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinin $m$ ile aralarında asal olan sonsuz sayıda terimi bulunduğunu kanıtlayınız.
+
+63. Her $s$ pozitif tam sayısı için pozitif tam sayılardan oluşan her artan aritmetik dizide önceden verilen herhangi $s$ tane rakamla başlayan terimlerinin bulunduğunu kanıtlayınız.
+
+64. Fibonacci dizisinin üç teriminden oluşan tüm artan aritmetik dizileri bulunuz ve bu dizinin dört teriminden oluşan hiçbir artan aritmetik dizi bulunmadığını kanıtlayınız.
+
+65. Tam sayılardan oluşan, Fibonacci dizisinin hiçbir terimini içermeyen ve farkı en az olan bir artan aritmetik dizi bulunuz.
+
+66. $a$ ve $b$ aralarında asal pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ şeklinde olan ve Fibonacci dizisinin hiçbir terimini içermeyen bir aritmetik dizi bulunuz.
+
+67. $a$ ve $b$ aralarında asal pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ şeklinde olan her aritmetik dizinin ikişer ikişer aralarında asal olan sonsuz sayıda teriminin bulunduğunu kanıtlayınız.
+
+68. $a$ ve $b$ pozitif tam sayılar olmak üzere her $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinde asal çarpanları aynı olan sonsuz tane terim bulunduğunu kanıtlayınız.
+
+69. $a$ ve $b$ pozitif tam sayılar olmak üzere her $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisi ve her $s$ pozitif tam sayısı için, $s$ tane birbirinden farklı asal sayının çarpanına eşit olan sonsuz tane terim bulunduğunu kanıtlayınız.
+
+70. Farkı 10 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.
+
+71. Farkı 100 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.
+
+72. Sadece asal sayılardan oluşan, 10 terimli ve son terimi en küçük olan artan bir aritmetik dizi bulunuz.
+
+73. Pozitif tam sayılardan oluşan ve hiçbir terimi iki asal sayının ne toplamı, ne de farkı şeklinde gösterilemeyen artan bir sonsuz aritmetik dizi bulunuz.
+
+
