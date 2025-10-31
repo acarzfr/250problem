@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Asal ve Bileşik Sayılar – 250 Temel Sayılar Teorisi Problemi</title>
+<title>6&nbsp; Karışık Problemler – 250 Temel Sayılar Teorisi Problemi</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./diofantdenklemleri.html" rel="next">
-<link href="./03-aritmetikdiziler.html" rel="prev">
+<link href="./99-kaynakca.html" rel="next">
+<link href="./05-diofantdenklemleri.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -322,7 +322,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./asalvebilesiksayilar.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Asal ve Bileşik Sayılar</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-karisikproblemler.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Karışık Problemler</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Kenar çubuğunu değiştir" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Ara" onclick="window.quartoOpenSearch();">
@@ -408,19 +408,19 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./asalvebilesiksayilar.html" class="sidebar-item-text sidebar-link active">
+  <a href="./04-asalvebilesiksayilar.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Asal ve Bileşik Sayılar</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./diofantdenklemleri.html" class="sidebar-item-text sidebar-link">
+  <a href="./05-diofantdenklemleri.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diofant Denklemleri</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./karisikproblemler.html" class="sidebar-item-text sidebar-link">
+  <a href="./06-karisikproblemler.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Karışık Problemler</span></span></a>
   </div>
 </li>
@@ -444,7 +444,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Asal ve Bileşik Sayılar</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Karışık Problemler</span></h1>
 </div>
 
 
@@ -461,94 +461,63 @@ window.Quarto = {
 </header>
 
 
-<ol start="74" type="1">
-<li>Her çift <span class="math inline">n &gt; 6</span> tam sayısı için <span class="math inline">(n - p, n - q) = 1</span> olacak şekilde <span class="math inline">p</span> ve <span class="math inline">q</span> asal sayılarının bulunduğunu kanıtlayınız.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<ol start="200" type="1">
+<li><p>Tam sayı katsayılı bir <span class="math inline">f(x)</span> polinomu için <span class="math inline">f(x) = 0</span> denkleminin bir tam sayı çözümü varsa, her <span class="math inline">p</span> asal sayısı için <span class="math inline">x \equiv 0 \pmod{p}</span> denkleminin de çözümü vardır. Birinci dereceden <span class="math inline">ax + b = 0</span> denklemini kullanarak bunun tersinin doğru olmadığını kanıtlayınız.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> tam sayıları olmak üzere <span class="math inline">ax + b \equiv 0 \pmod{m}</span> denkleminin her <span class="math inline">m</span> pozitif tam sayısı için çözümü varsa, <span class="math inline">ax + b = 0</span> denkleminin de tam sayı çözümünün bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">6x^2 + 5x + 1 \equiv 0 \pmod{m}</span> denkleminin her <span class="math inline">m</span> pozitif tam sayısı için çözümü bulunduğunu, fakat <span class="math inline">6x^2 + 5x + 1 = 0</span> denkleminin tam sayı çözümünün bulunmadığını kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">k</span> tek ve <span class="math inline">n</span> pozitif tam sayısı için <span class="math inline">2n^2 + 2 \mid k^{2n} - 1</span> olduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">k</span> tam sayısı, <span class="math inline">x</span> ve <span class="math inline">y</span> tam sayılar olmak üzere <span class="math inline">k = x^2 - 2y^2</span> şeklinde gösterilebiliyorsa, bu sayının sonsuz sayıda değişik yolla bu şekilde gösterilebileceğini kanıtlayınız.</p></li>
+<li><p><span class="math inline">k</span> tam sayı olmak üzere <span class="math inline">8k + 3</span> ve <span class="math inline">8k + 5</span> şeklinde olan hiçbir sayının, <span class="math inline">x</span> ve <span class="math inline">y</span> tam sayı olmak üzere <span class="math inline">x^2 - 2y^2</span> şeklinde gösterilemeyeceğini kanıtlayınız.</p></li>
+<li><p><span class="math inline">k</span> tam sayı olmak üzere <span class="math inline">8k + 1</span> şeklinde olan sayılardan sonsuz sayıda, <span class="math inline">x</span> ve <span class="math inline">y</span> tam sayı olmak üzere <span class="math inline">x^2 - 2y^2</span> şeklinde gösterilebilenlerin ve sonsuz bu şekilde gösterilemeyenlerin bulunduğunu kanıtlayınız. Gösterilemeyenlerin en küçüğünü bulunuz.</p></li>
+<li><p>Her mükemmel sayının son rakamının 6 veya 8 olduğunu kanıtlayınız.</p></li>
+<li><p>N. Anning’in şu teoremini kanıtlayınız: rakamları herhangi bir <span class="math inline">g &gt; 1</span> tabanında yazılmış olan <span class="math display">\frac{101010101}{1100110011}</span> sayısının payında ve paydasında tam ortadaki 1 rakamının yerine herhangi tek sayıda 1 yazılırsa, kesrin değerinin değişmeyeceğini kanıtlayınız (örneğin, <span class="math display">\frac{1010110101}{1100110011} = \frac{1010111011}{110011110011} = \frac{1010111110101}{1100111110011} = \dots</span>).</p></li>
+<li><p><span class="math inline">2^n</span> sayısının ondalık yayılımındaki rakamları toplamının <span class="math inline">n</span>’nin artması ile sonsuz arttığını kanıtlayınız.</p></li>
+<li><p><span class="math inline">k &gt; 1</span> bir tam sayı ve <span class="math inline">c</span> de bir rakam ise <span class="math inline">2^n</span>’nin sağdan <span class="math inline">k</span>. rakamı <span class="math inline">c</span> olacak şekilde bir <span class="math inline">n</span> pozitif tam sayısının bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">5^n \ (n = 1, 2, 3, \dots)</span> sayılarının son 4 rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.</p></li>
+<li><p>Her <span class="math inline">s</span> için pozitif tam sayının ondalık yazılımının ilk <span class="math inline">s</span> rakamının herhangi bir şekilde (?) olabileceğini kanıtlayınız.</p></li>
+<li><p><span class="math inline">n^n \ (n = 1, 2, 3, \dots)</span> sayılarının son rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.</p></li>
+<li><p>Her sonsuz ondalık kesirde, her <span class="math inline">n</span> sayısı için uzunluğu <span class="math inline">n</span> olan ve dizide sonsuz sayıda rastlanan bir rakamlar dizisi bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">k</span> pozitif tam sayısı için <span class="math inline">32^k</span> sayısını ardışık sayılardan oluşan <span class="math inline">3^k</span> tane sayının toplamı şeklinde gösteriniz.</p></li>
+<li><p>Bir <span class="math inline">s &gt; 1</span> tam sayısı verilmişse, her <span class="math inline">n \geq m_s</span> için <span class="math inline">n</span> ile <span class="math inline">2n</span> arasında bir pozitif tam sayının <span class="math inline">s</span>. dereceden kuvveti bulunacak şekilde bir <span class="math inline">m_s</span> pozitif tam sayısının bulunduğunu kanıtlayınız. <span class="math inline">s = 2</span> ve <span class="math inline">s = 3</span> için en küçük <span class="math inline">m_s</span> sayılarını bulunuz.</p></li>
+<li><p>Her <span class="math inline">n</span> için, hiçbir bir pozitif tam sayının 1’den büyük dereceden kuvveti olmayan <span class="math inline">n</span> ardışık pozitif tam sayının bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">u_1 = 1, u_2 = 3</span> ve <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">u_{n+2} = 4u_{n+1} - 3u_n</span> olarak tanımlanan <span class="math inline">(u_n)</span> dizisinin <span class="math inline">n</span>. terimi için <span class="math inline">n</span>’ye bağlı formül bulunuz.</p></li>
+<li><p><span class="math inline">u_1 = a, u_2 = b</span> ve <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">u_{n+2} = 2u_{n+1} - u_n</span> olarak tanımlanan <span class="math inline">(u_n)</span> dizisinin <span class="math inline">n</span>. terimi için <span class="math inline">n</span>’ye bağlı formül bulunuz.</p></li>
+<li><p><span class="math inline">u_1 = a, u_2 = b</span> ve <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">u_{n+2} = -(u_n + 2u_{n+1})</span> olarak tanımlanan <span class="math inline">(u_n)</span> dizisinin <span class="math inline">n</span>. terimi için <span class="math inline">n</span>’ye bağlı formül bulunuz. <span class="math inline">a = 1, b = -1</span> ve <span class="math inline">a = 1, b = -2</span> özel durumlarını inceleyiniz.</p></li>
+<li><p><span class="math inline">u_1 = a, u_2 = b</span> ve <span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">u_{n+2} = 2u_n + u_{n+1}</span> olarak tanımlanan <span class="math inline">(u_n)</span> dizisinin <span class="math inline">n</span>. terimi için <span class="math inline">n</span>’ye bağlı formül bulunuz.</p></li>
+<li><p><span class="math inline">n = 1, 2, \dots</span> için <span class="math inline">a^{a^n} = a</span> eşitliğini sağlayan tüm <span class="math inline">a \neq 0</span> tam sayılarını bulunuz.</p></li>
+<li><p>Hem toplamı hem de çarpımı tam kare olan tüm pozitif tam sayı ikililerini bulmak için bir yöntem veriniz.</p></li>
+<li><p>İki ardışık pozitif tam sayının kareleri toplamına eşit olan tüm üçgen sayıları bulunuz.</p></li>
+<li><p>V.E.Hogatt’ın, her pozitif tam sayının Fibonacci dizisinin birbirinden farklı terimlerinin toplamı şeklinde gösterilebileceğini söyleyen teoremini kanıtlayınız.</p></li>
+<li><p>Fibonacci dizisinin <span class="math inline">u_n</span> terimlerinin <span class="math inline">n = 1, 2, 3, \dots</span> için <span class="math display"> u_n^2 = u_{n-1} u_{n+1} + (-1)^{n-1} </span> eşitliğini sağladığını kanıtlayınız.</p></li>
+<li><p>Her tam sayının sonsuz değişik sayıda beş tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.</p></li>
+<li><p>3 sayısının sonsuz değişik sayıda 0 ve 1’den farklı dört tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.</p></li>
+<li><p>Elementer yöntemlerle, birbirinden farklı dört pozitif tam sayının kareleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu ve birbirinden farklı dört pozitif tam sayının küpleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">m</span> pozitif tam sayısı için <span class="math inline">4m^4 \cdot 7</span> sayısının negatif olmayan dört tam sayının kareleri toplamı şeklinde herhangi gösteriminde, bu sayılardan hiçbirinin <span class="math inline">2^{m-1}</span>’den küçük olmadığını kanıtlayınız.</p></li>
+<li><p>İki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen 2’den büyük en küçük tam sayıyı bulunuz ve aralarında asal iki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">s</span> pozitif tam sayısı için verilmişse, her <span class="math inline">k = 1, 2, \dots, n</span> için <span class="math inline">n</span> sayısı iki tane pozitif tam sayının <span class="math inline">k</span>. dereceden kuvvetleri toplamı olacak şekilde bir <span class="math inline">n &gt; 2</span> tam sayısının bulunduğunu kanıtlayınız.</p></li>
+<li><p>İki tam sayının küpleri toplamı şeklinde gösterilemeyen, fakat iki rasyonel sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p>İki pozitif tam sayının küpleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının küpleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">k &gt; 1</span>, <span class="math inline">k \neq 3</span> tam sayısı için iki pozitif tam sayının <span class="math inline">k</span>. dereceden kuvvetleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının <span class="math inline">k</span>. dereceden kuvvetleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p>Her <span class="math inline">n &gt; 1</span> tam sayısı için iki pozitif tam sayının <span class="math inline">n</span>. dereceden kuvvetleri toplamı şeklinde gösterilebilen, fakat iki pozitif tam sayının <span class="math inline">k</span>. dereceden kuvvetleri farkı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">1</span>’den <span class="math inline">n</span>’ye kadar olan pozitif tam sayıların kareleri toplamı tam kare olmasını sağlayan en küçük <span class="math inline">n &gt; 1</span> tam sayısını bulunuz.</p></li>
+<li><p><span class="math inline">a</span> ve <span class="math inline">b</span> <span class="math inline">1</span>’den büyük tam sayılarsa <span class="math inline">a^b</span> şeklinde olan sayıya <strong>öz kuvvet</strong> diyelim. Sonlu sayıda öz kuvvetin toplamı şeklinde yazılabilen tüm pozitif tam sayıları bulunuz.</p></li>
 </ol>
-<ol start="75" type="1">
-<li>Hem iki asal sayının toplamı hem de farkı şeklinde yazılabilen tüm asal sayıları bulunuz.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<ol start="2" type="a">
+<li><span class="math inline">6</span>’dan farklı her <span class="math inline">n \leq 10</span> pozitif tam sayısının iki öz kuvvetin farkı şeklinde gösterilebileceğini kanıtlayınız.</li>
 </ol>
-<ol start="76" type="1">
-<li><p><span class="math inline">n</span> ile <span class="math inline">n + 10</span> arasında hiçbir asal sayı olmayacak şekilde üç en küçük <span class="math inline">n</span> pozitif tam sayısını bulunuz. <span class="math inline">10m</span> ile <span class="math inline">10(m + 1)</span> arasında hiçbir asal sayı olmayacak şekilde üç en küçük <span class="math inline">m</span> pozitif tam sayısını bulunuz.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></p></li>
-<li><p><span class="math inline">4k + 1</span> şeklinde olan her asal sayının, kenar uzunlukları tam sayılar olan bir dik üçgenin hipotenüzünün uzunluğuna eşit olduğunu kanıtlayınız.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p></li>
-</ol>
-<ol start="78" type="1">
-<li><span class="math inline">p, q, r</span> asal sayılar olmak üzere, <span class="math inline">p^2 + 1 = q^2 + r^2</span> denkleminin tüm çözümünü bulunuz.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
-</ol>
-<ol start="79" type="1">
-<li><p><span class="math inline">p, q, r, s, t</span> asal sayılar olmak üzere <span class="math inline">p^2 + q^2 = r^2 + s^2 + t^2</span> denkleminin çözümünün bulunmadığını kanıtlayınız.</p></li>
-<li><p><span class="math inline">(p + 1) + q(q + 1) = r(r + 1)</span> denkleminin tüm <span class="math inline">p, q, r</span> asal çözümlerini bulunuz.</p></li>
-<li><p><span class="math inline">p(p + 1), q(q + 1), r(r + 1)</span> sayılarının bir artan aritmetik dizi oluşturmasını sağlayan tüm <span class="math inline">p, q, r</span> asal sayılarını bulunuz.</p></li>
-<li><p><span class="math inline">n + 1, n + 3, n + 7, n + 9, n + 13</span> ve <span class="math inline">n + 15</span> sayılarının her birinin asal olmasını sağlayan tüm <span class="math inline">n</span> pozitif tam sayılarını bulunuz.</p></li>
-<li><p>İki tam sayının dördüncü dereceden kuvvetinin toplamına eşit olan beş asal sayıyı bulunuz.</p></li>
-<li><p>İkiz asal sayılar olmayan sonsuz sayıda ardışık asal sayılar çiftinin bulunduğunu kanıtlayınız.</p></li>
-<li><p>Hiçbir ikiz asal sayıda bulunmayan sonsuz tane asal sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">n^2 - 1</span> sayısının birbirinden farklı üç asal sayının çarpımına eşit olmasını sağlayan en küçük beş <span class="math inline">n</span> pozitif sayısını bulunuz.</p></li>
-<li><p><span class="math inline">n^2 + 1</span> sayısının birbirinden farklı üç asal sayının çarpımına eşit olmasını sağlayan en küçük beş <span class="math inline">n</span> pozitif sayısını bulunuz. <span class="math inline">n^2 + 1</span> sayısının birbirinden farklı üç tek sayının çarpımına eşit olmasını sağlayan bir <span class="math inline">n</span> pozitif sayısı bulunuz.</p></li>
-<li><p>7’den büyük olan her ardışık üç sayının en az birinin en az iki birbirinden farklı asal böleninin bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">n, n + 1, n + 2</span> sayılarından her biri birbirinden farklı iki asal sayının çarpımına eşit olacak şekilde beş en küçük pozitif tam sayıyı bulunuz. Bu özellikle sahip olan dört ardışık sayı dizisini bulunmadığını kanıtlayınız. Her birinin tam iki asal böleni bulunan dört ardışık pozitif tam sayıyı bulunuz.</p></li>
-<li><p>Aşağıdaki teoremlerin birbirine denk olduğunu gösteriniz:</p></li>
-</ol>
-<ol type="a">
-<li><p><span class="math inline">n</span> ve <span class="math inline">n + 1</span> sayılarının her birinin sadece bir asal böleni olmasını sağlayan <span class="math inline">n</span> pozitif tam sayıları sonlu sayıdadır.</p></li>
-<li><p>Sadece sonlu sayıda Mersenne asal sayıları ve sonlu sayıda Fermat asal sayıları vardır.</p></li>
-</ol>
-<ol start="91" type="1">
-<li><p><span class="math inline">n</span> pozitif tam sayı olmak üzere milyonlarca büyük olmayan ve iki asal sayının çarpımına eşit olan tüm <span class="math inline">2^n - 1</span> şeklinde olan sayıları bulunuz. Eğer <span class="math inline">n</span> çift ise ya da <span class="math inline">n &gt; 4</span>’ten büyükse, <span class="math inline">2^n - 1</span> sayısının 1’den büyük en az üç asal sayının çarpımı şeklinde gösterilebileceğini kanıtlayınız.</p></li>
-<li><p>Problem 47’yi kullanarak, <span class="math inline">p_n</span>, <span class="math inline">n</span>. asal sayıyı göstermek üzere,her <span class="math inline">n \geq 3</span> için <span class="math inline">p_{n+1} + p_{n+2} \leq p_1 \cdot p_2 \cdot \cdots \cdot p_n</span> eşitsizliğinin doğru olduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">n</span> pozitif tam sayısı için <span class="math inline">q_n</span> ile, <span class="math inline">n</span>’nin böleni olmayan en küçük asal sayıyı gösterelim. 92. problemi kullanarak <span class="math inline">\lim_{n \to \infty} \frac{q_n}{n} = 0</span> olduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n &gt; 4</span> tam sayısı için <span class="math inline">n</span> ile <span class="math inline">2n</span> arasında birbirinden farklı iki asal sayının çarpımına eşit olan en az bir tam sayının bulunduğunu ve her <span class="math inline">n &gt; 15</span> tam sayısı için <span class="math inline">n</span> ile <span class="math inline">2n</span> arasında, birbirinden farklı üç asal sayının çarpımına eşit olan en az bir sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">s</span> pozitif tam sayısı için, yeterince büyük <span class="math inline">n</span>’ler için <span class="math inline">n</span> ile <span class="math inline">2n</span> arasında <span class="math inline">s</span> tane birbirinden farklı asal sayının çarpımına eşit olan en az bir sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">1, 31, 331, 3331, \dots</span> sonsuz dizisinde sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.</p></li>
-<li><p><span class="math inline">n^4 + (n + 1)^4</span> sayısının bileşik olmasını sağlayan en küçük <span class="math inline">n</span> pozitif tam sayısını bulunuz.</p></li>
-<li><p><span class="math inline">10^n + 3</span> <span class="math inline">(n = 1, 2, 3, \dots)</span> şeklinde olan sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">n &gt; 1</span> tam sayıları için <span class="math inline">\dfrac{2^{4n+2} + 1}{5}</span> sayısının bileşik olduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">m</span> pozitif tam sayısı için <span class="math inline">2^n - 1</span> <span class="math inline">(n = 1, 2, 3, \dots)</span> sonsuz dizisinin, bileşik sayılardan oluşan <span class="math inline">m</span> ardışık teriminin bulunduğunu kanıtlayınız.</p></li>
-<li><p>Bir basamağı değiştirilerek bir asal sayı elde edilemeyen bir pozitif tam sayı bulunduğunu gösteriniz.</p></li>
-<li><p>Aşağıdaki teoremlerin birbirine denk olduğunu kanıtlayınız:</p></li>
-</ol>
-<ol type="a">
-<li><p><strong>T.</strong> Her <span class="math inline">n &gt; 1</span> tam sayısı için <span class="math inline">n</span> ile <span class="math inline">2n</span> arasında en az bir asal sayı bulunur.</p></li>
-<li><p><strong>T1.</strong> Her <span class="math inline">n &gt; 1</span> tam sayısı için <span class="math inline">n!</span> sayısının asal çarpanlarına ayrılışında üstü bir olan en az bir asal sayı bulunur.</p></li>
-</ol>
-<ol start="103" type="1">
-<li><p>Her <span class="math inline">n</span> pozitif tam sayısı için <span class="math inline">n!</span> sayısının asal çarpanlarına ayrımında kuvveti 1 olan en az iki asal sayı bulunur.</p></li>
-<li><p>Her <span class="math inline">n</span> pozitif tam sayısı için, <span class="math inline">p - 1</span> ve <span class="math inline">p + 1</span> sayılarının her birinin en az <span class="math inline">n</span> tane pozitif tam böleni olacak şekilde bir <span class="math inline">p</span> asal sayısı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">p - 1</span> ve <span class="math inline">p + 1</span> sayılarından her birinin en az 3 farklı asal böleni bulunacak şekilde en küçük <span class="math inline">p</span> asal sayısını bulunuz.</p></li>
-<li><p>Her <span class="math inline">n</span> pozitif tam sayısı için, <span class="math inline">p - 1</span>, <span class="math inline">p + 1</span> ve <span class="math inline">p + 1</span> sayılarının her birinin en az <span class="math inline">n</span> tane farklı asal böleni olacak şekilde sonsuz sayıda <span class="math inline">p</span> asal sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n</span> ve <span class="math inline">s</span> pozitif tam sayıları için, her biri terimlerinin en az <span class="math inline">n</span> farklı asal böleni olacak ve bu asal sayılardan her birinin kuvveti en az <span class="math inline">s</span> olacak şekilde istenilen uzunlukta ardışık sayılar dizisinin bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">n &gt; 1</span> tek sayısı için <span class="math inline">n</span> ve <span class="math inline">n + 2</span> sayılarının sayılarının asal olması için, <span class="math inline">(n - 1)!</span> sayısının <span class="math inline">n</span> ve <span class="math inline">n + 2</span> sayılarıyla bölünmemesinin gerek ve yeterli olduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">m</span> pozitif tam sayısı için basamakları toplamı 10’dan büyük olan bir asal sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n</span> pozitif tam sayısı için en az <span class="math inline">m</span> basamağı 0 olan asal sayılar bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">p^4</span> sayısının tüm pozitif tam bölenlerinin toplamı tam kare olacak şekilde olan tüm asal sayıları bulunuz.</p></li>
-<li><p><span class="math inline">2 \leq s \leq 10</span> olmak üzere her <span class="math inline">s</span> için pozitif tam bölenlerinin toplamı bir tam sayının <span class="math inline">s</span>. dereceden kuvvetine eşit olan asal sayıları bulunuz.</p></li>
-<li><p><span class="math inline">(p - 1)! + 1 = p^m</span> denkleminin, <span class="math inline">p &gt; 5</span> bir asal sayı ve <span class="math inline">m</span> bir pozitif tam sayı olacak şekilde hiçbir çözümünün bulunmadığını kanıtlayınız.</p></li>
-<li><p>Bir <span class="math inline">n &lt; q</span> pozitif tam sayısı için <span class="math inline">q_n</span>, <span class="math inline">(n - 1)!</span> sayısını bölecek şekilde sonsuz sayıda <span class="math inline">q</span> asal sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">k \neq 1</span> için, <span class="math inline">2^n + k</span> sayısı bileşik olacak şekilde sonsuz sayıda <span class="math inline">n</span> pozitif tam sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p>Tüm <span class="math inline">2^n + k</span> <span class="math inline">(n = 1, 2, 3, \dots)</span> sayıları bileşik olacak şekilde sonsuz sayıda <span class="math inline">k &gt; 0</span> tam sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n = 1, 2, \dots</span> sayısı için <span class="math inline">2^{2n+1} + 3, 2^{2n+1} + 7, 2^{2n+2} + 13, 2^{2n+1} + 19</span> ve <span class="math inline">2^{2n+2} + 21</span> sayılarının her birinin bileşik olduğunu kanıtlayınız.</p></li>
-<li><p>Tüm <span class="math inline">k \cdot 2^n + 1</span> <span class="math inline">(n = 1, 2, \dots)</span> sayıları bileşik olacak şekilde sonsuz sayıda <span class="math inline">k</span> pozitif tam sayısı bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">2^n + k</span> <span class="math inline">(n = 1, 2, \dots)</span> sayısı bileşik olacak şekilde sonsuz sayıda <span class="math inline">k</span> tek sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">k</span> sayısı <span class="math inline">2</span>’nin bir kuvveti ise, yeterince büyük <span class="math inline">n</span> sayıları için tüm <span class="math inline">k \cdot 2^n + 1</span> sayılarının bileşik olduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">k \leq 10</span> pozitif tam sayısı için <span class="math inline">2^n + k</span> sayısının bileşik olmasını sağlayan en küçük <span class="math inline">n</span> pozitif tam sayısını bulunuz.</p></li>
-<li><p>Her <span class="math inline">k \cdot 2^n + 1</span> <span class="math inline">(n = 1, 2, \dots)</span> sayısının bileşik olmasını sağlayan tüm <span class="math inline">k \leq 10</span> pozitif tam sayılarını bulunuz.</p></li>
-<li><p>Her <span class="math inline">n &gt; 1</span> tam sayısı için <span class="math inline">\dfrac{2^{2n+1} + 2^n + 1}{3}</span> sayısının bileşik olduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">(2^n + 1)^2 + 2^n</span> şeklinde olan sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">1 &lt; a \leq 100</span> olmak üzere her <span class="math inline">a</span> tam sayısı için <span class="math inline">a^{2^n} + 1</span> sayısının bileşik olacak şekilde en az bir <span class="math inline">n \leq 6</span> pozitif tam sayısının bulunduğunu kanıtlayınız.</p></li>
-<li><p>Üç tane asal sayının toplamı şeklinde gösterilebilen fakat üçten az sayıda asal sayının toplamı şeklinde gösterilemeyen sonsuz sayıda tek sayı bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">f(1) = 2, f(2) = 3, f(3) = 5</span> eşitliklerini sağlayan ve katsayıları tam sayılar olan hiçbir <span class="math inline">f(x)</span> polinomunun bulunmadığını ve her <span class="math inline">m &gt; 1</span> tam sayısı için, <span class="math inline">p_n = n</span> asal sayılar dizisi türese <span class="math inline">(f(k) = p_n (n = 1, 2, \dots))</span> olacak şekilde katsayıları rasyonel sayılar olan bir <span class="math inline">f(x)</span> polinomunun bulunduğunu kanıtlayınız.</p></li>
-<li><p>Her <span class="math inline">n</span> pozitif tam sayısı için <span class="math inline">f(1) &lt; f(2) &lt; \dots &lt; f(n)</span> sayıları asal olacak şekilde katsayıları tam sayılar olan bir <span class="math inline">f(x)</span> polinomu bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">x</span> değişkeninin <span class="math inline">m</span> farklı değerinde <span class="math inline">m</span> farklı asal sayı veren ve katsayıları tam sayılar olan bir indirgenmez <span class="math inline">f(x)</span> polinomu bulunuz.</p></li>
-<li><p><span class="math inline">f(x)</span>, derecesi 0’dan büyük olan tam sayı katsayılı bir polinomsal, sonsuz sayıda <span class="math inline">p</span> asal sayısı için <span class="math inline">f(x) = 0 \pmod{p}</span> denkleminin çözümünün bulunduğunu kanıtlayınız.</p></li>
-<li><p><span class="math inline">k + 1, k + 2, \dots, k + 10</span> dizisi maksimum sayıda asal sayı içerecek şekilde tüm <span class="math inline">k \geq 0</span> tam sayılarını bulunuz.</p></li>
-<li><p><span class="math inline">k + 1, k + 2, \dots, k + 100</span> dizisi maksimum sayıda asal sayı içerecek şekilde tüm <span class="math inline">k \geq 0</span> tam sayılarını bulunuz.</p></li>
-<li><p>25 tane asal sayı içeren tüm 100 ardışık sayıdan oluşan dizileri bulunuz.</p></li>
-<li><p>8 tane asal sayı içeren tüm 21 ardışık sayıdan oluşan dizileri bulunuz.</p></li>
-<li><p><span class="math inline">p, p + 2, p + 6, p + 8, p + 12, p + 14</span> sayılarının her biri asal olacak şekilde tüm <span class="math inline">p</span> asal sayılarını bulunuz.</p></li>
-<li><p>Aşağıdaki koşulları sağlayan sonsuz sayıda bir birinden farklı <span class="math inline">m</span> ve <span class="math inline">n</span> pozitif tam sayı ikilisinin bulunduğunu kanıtlayınız:</p></li>
-</ol>
-<ol type="a">
-<li><p><span class="math inline">m</span> ve <span class="math inline">n</span> sayılarının asal bölenleri aynıdır;</p></li>
-<li><p><span class="math inline">m + 1</span> ve <span class="math inline">n + 1</span> sayılarının asal bölenleri aynıdır.</p></li>
+<ol start="239" type="1">
+<li><p>Kenar uzunlukları tam sayı olan her dik üçgen ve her <span class="math inline">n</span> pozitif tam sayısı için bu üçgene benzer ve her kenar uzunluğu bir pozitif tam sayının <span class="math inline">n</span>’den büyük dereceden kuvveti olan bir üçgen bulunduğunu kanıtlayınız.</p></li>
+<li><p><span class="math inline">(n - 1)! + 1 = n^2</span> eşitliğini sağlayan tüm <span class="math inline">n &gt; 1</span> tam sayılarını bulunuz.</p></li>
+<li><p>İki ardışık üçgen sayısının çarpımının hiçbir zaman tam kare olmayacağını, fakat her <span class="math inline">t_n = \frac{n(n+1)}{2}</span> sayısı için <span class="math inline">t_n t_m</span> çarpımının tam kare olacak şekilde <span class="math inline">t_n</span>’den büyük olan sonsuz sayıda <span class="math inline">t_m</span> üçgen sayısının bulunduğunu kanıtlayınız.</p></li>
+<li><p>Logaritma tablosu kullanmadan <span class="math inline">F_{1945} = 2^{2^{1945}} + 1</span> sayısının basamak sayısının <span class="math inline">10^{582}</span>’den büyük olduğunu kanıtlayınız ve (<span class="math inline">F_{1945}</span> sayısının en küçük asal böleni olan) <span class="math inline">5 \cdot 2^{1947} + 1</span> sayısının basamak sayısını bulunuz.</p></li>
+<li><p><span class="math inline">2^{11213} - 1</span> (bilinen en büyük asal sayı) sayısının basamak sayısını bulunuz.</p></li>
+<li><p><span class="math inline">2^{12112}(2^{12112} - 1)</span> (bilinen en büyük mükemmel sayı) sayısının basamak sayısını bulunuz.</p></li>
+<li><p><span class="math inline">3!!!</span> sayısının basamak sayısının 1000’den fazla olduğunu kanıtlayınız ve bu sayının sonundaki 0 sayısını bulunuz.</p></li>
+<li><p>Aşağıdaki özelliğe sahip olan <span class="math inline">m &gt; 1</span> tam sayısı bulunuz: bir <span class="math inline">x</span> tam sayı sayısı için <span class="math inline">f(x)</span> değeri <span class="math inline">m</span>’ye bölünecek, başka bir <span class="math inline">x</span> değeri için <span class="math inline">f(x)</span> değeri <span class="math inline">m</span>’ye bölündüğünde 1 kalanı verecek ve tüm <span class="math inline">x</span> tam sayı değerleri için <span class="math inline">f(x)</span> değerleri <span class="math inline">m</span>’ye bölündüğünde 0 veya 1 kalanı verecek şekilde tam sayı katsayılı bir <span class="math inline">f(x)</span> polinomu bulunur.</p></li>
+<li><p><span class="math inline">m</span> ve <span class="math inline">n</span> pozitif tam sayılar ve <span class="math inline">D = [(4m^2 + 1)n + m]^2 + 4mn + 1</span> olmak üzere <span class="math inline">\sqrt{D}</span> sayısının sürekli kesir şeklinde gösteriniz.</p></li>
+<li><p><span class="math inline">\varphi(n)</span> Euler fonksiyonu, <span class="math inline">d(n)</span> de <span class="math inline">n</span> sayısının pozitif tam bölenlerinin sayısını göstermek üzere <span class="math inline">\varphi(n) = d(n)</span> eşitliğini sağlayan tüm <span class="math inline">n \leq 30</span> pozitif tam sayısını bulunuz.</p></li>
+<li><p>Her <span class="math inline">g</span> pozitif tam sayısı için, her <span class="math inline">w &gt; 1</span> rasyonel sayısının, <span class="math inline">k &gt; g</span> ve <span class="math inline">s \geq 0</span> tam sayılar olmak üzere <span class="math display"> w = (1 + \frac{1}{k})(1 + \frac{1}{k+1}) \dots (1 + \frac{1}{k+s}) </span> şeklinde gösterilebileceğini kanıtlayınız.</p></li>
+<li><p>P. Erdős ve M. Surányi’nin şu teoremini kanıtlayınız: her <span class="math inline">k</span> tam sayısı sonsuz değişik yolla, <span class="math inline">m</span> pozitif tam sayı olmak üzere ve <span class="math inline">+</span> veya <span class="math inline">-</span> işaretleri belirli bir şekilde seçilerek <span class="math display"> k = \pm 1^2 \pm 2^2 \pm \dots \pm m^2 </span> şeklinde gösterilebileceğini kanıtlayınız.</p></li>
 </ol>
 
 
@@ -665,17 +634,6 @@ Sierpiński, W. 1950. <span>“Sur les puissances du nombre 2”</span>. <em>Ann
 ———. 1964c. <span>“Sur les nombres <span class="math inline">a^x+1</span>”</span>. <em>Elemente der Mathematik</em> 19: 106.
 </div>
 </div>
-<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p><span class="math inline">p=3, q=5</span> almak yeterlidir. Eğer <span class="math inline">n</span> çift ve <span class="math inline">&gt;6</span> ise, o zaman <span class="math inline">n-1 \ge 6</span> ve <span class="math inline">p &lt; q &lt; n-1</span> olur. Ardışık tek sayılar olan <span class="math inline">n-p = n-3</span> ve <span class="math inline">n-q = n-5</span> sayıları aralarında asaldır.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Bu tür yalnızca bir asal vardır, yani 5. Gerçekten de, <span class="math inline">r</span> asalının hem iki asalın toplamı hem de farkı olarak temsil edilebildiğini varsayalım. Açıkçası <span class="math inline">r &gt; 2</span> olmalıdır, dolayısıyla <span class="math inline">r</span> tek bir asaldır. Hem iki asalın toplamı hem de farkı olduğundan, bu asallardan biri çift olmalı, yani 2’ye eşit olmalıdır. Dolayısıyla, <span class="math inline">p</span> ve <span class="math inline">q</span> asal olmak üzere <span class="math inline">r = p+2 = q-2</span> olmalıdır. Ancak bu durumda <span class="math inline">p, r = p+2</span> ve <span class="math inline">q = r+2</span> ardışık üç tek asal olurdu ve bu tür yalnızca bir üçlü vardır: 3, 5 ve 7 (çünkü her üç ardışık tek sayıdan biri 3’e bölünmelidir). Bu nedenle <span class="math inline">r = 5 = 3+2 = 7-2</span> elde ederiz.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p><span class="math inline">n = 113, 139, 181; m = 20, 51, 62.</span><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>İyi bilinen Fermat teoremine göre, <span class="math inline">4k+1</span> formundaki her asal, iki pozitif tamsayının karelerinin toplamıdır (bkz, örneğin, [37, s. 205, Teorem 9]). Dolayısıyla, eğer <span class="math inline">p</span> <span class="math inline">4k+1</span> formunda bir asalsa, <span class="math inline">p = a^2+b^2</span> olur; burada <span class="math inline">a</span> ve <span class="math inline">b</span> pozitif tamsayılardır (<span class="math inline">p</span> tek olduğundan dolayı elbette farklıdırlar). Örneğin, <span class="math inline">a &gt; b</span> olduğunu varsayalım. O zaman <span class="math inline">p^2 = (a^2-b^2)^2+(2ab)^2</span>’dir, dolayısıyla <span class="math inline">p</span> diğer iki kenarı <span class="math inline">a^2-b^2</span> ve <span class="math inline">2ab</span> olan bir dik üçgenin hipotenüsüdür. Örneğin, <span class="math inline">5^2 = 3^2+4^2</span>, <span class="math inline">13^2 = 5^2+12^2</span>, <span class="math inline">17^2 = 15^2+8^2</span>, <span class="math inline">29^2 = 21^2+20^2</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5"><p><span class="math inline">13^2+1 = 7^2+11^2</span>, <span class="math inline">17^2+1 = 11^2+13^2</span>, <span class="math inline">23^2+1 = 13^2+19^2</span>, <span class="math inline">31^2+1 = 11^2+29^2</span>.<br>
-<strong>NOT.</strong> <span class="math inline">(5x+13)^2+1 = (3x+7)^2+(4x+11)^2</span> özdeşliği, eğer <span class="math inline">p=5x+13</span>, <span class="math inline">q=3x+7</span> ve <span class="math inline">r=4x+11</span> asalsa, <span class="math inline">p^2+1 = q^2+r^2</span> olduğunu gösterir. A. Schinzel’in asallara ilişkin belirli bir sanısından <span class="citation" data-cites="schinzel1958certaines">(<a href="99-kaynakca.html#ref-schinzel1958certaines" role="doc-biblioref">Schinzel ve Sierpiński 1958a</a>)</span> bu tür sistemlerin sonsuz sayıda olduğu sonucu çıkar.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1093,13 +1051,13 @@ Sierpiński, W. 1950. <span>“Sur les puissances du nombre 2”</span>. <em>Ann
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./03-aritmetikdiziler.html" class="pagination-link" aria-label="Aritmetik Diziler">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Aritmetik Diziler</span></span>
+      <a href="./05-diofantdenklemleri.html" class="pagination-link" aria-label="Diofant Denklemleri">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diofant Denklemleri</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./diofantdenklemleri.html" class="pagination-link" aria-label="Diofant Denklemleri">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Diofant Denklemleri</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./99-kaynakca.html" class="pagination-link" aria-label="Kaynakça">
+        <span class="nav-page-text">Kaynakça</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
