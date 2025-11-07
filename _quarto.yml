@@ -12,7 +12,12 @@ book:
 
   chapters:
     - index.qmd
-    - 00-problemler.qmd
+    - 01-tamsayilarinbolunmesi.qmd
+    - 02-aralarindaasalsayilar.qmd
+    - 03-aritmetikdiziler.qmd
+    - 04-asalvebilesiksayilar.qmd
+    - 05-diofantdenklemleri.qmd
+    - 06-karisikproblemler.qmd
     - 99-kaynakca.qmd
   search: true
   repo-url: https://github.com/acarzfr/250problem/

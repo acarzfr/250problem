@@ -1,9 +1,0 @@
-# Problemler ve Çözümler {.unnumbered}
-
-
-{{< include 01-tamsayilarinbolunmesi.qmd >}}
-{{< include 02-aralarindaasalsayilar.qmd >}}
-{{< include 03-aritmetikdiziler.qmd >}}
-{{< include 04-asalvebilesiksayilar.qmd >}}
-{{< include 05-diofantdenklemleri.qmd >}}
-{{< include 06-karisikproblemler.qmd >}}
