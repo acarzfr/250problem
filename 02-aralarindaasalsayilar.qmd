@@ -1,0 +1,139 @@
+
+
+## Aralarında Asal Sayılar
+
+41. Her $k$ tam sayısı için $2k + 1$ ve $9k + 4$ sayılarının aralarında asal olduğunu kanıtlayınız. $2k - 1$ ve $9k + 4$ sayılarının OBEB’ini $k$’ya bağlı bir fonksiyon olarak bulunuz.[^41]
+
+
+
+[^41]: $9(2k+1) - 2(9k+4) = 1$ olduğundan $2k+1$ ve $9k+4$ sayıları aralarında asaldır. $9k+4 = 4(2k-1) + (k+8)$ ve $2k-1 = 2(k+8) - 17$ olduğundan, $(9k+4, 2k-1) = (2k-1, k+8) = (k+8, 17)$'ye sahibiz. Eğer $k \equiv 9 \pmod{17}$ ise, $(k+8, 17) = 17$ olur; aksi durumda, $17 \nmid k+8$'dir, dolayısıyla $(k+8, 17) = 1$ olur. Böylece, eğer $k \equiv 9 \pmod{17}$ ise $(9k+4, 2k-1) = 17$ ve eğer $k \not\equiv 9 \pmod{17}$ ise $(9k+4, 2k-1) = 1$'dir.
+
+
+ 
+
+
+42. $\frac{n(n+1)}{2}$ şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.[^42]
+
+[^42]: İlk olarak, eğer $m$ pozitif bir tam sayı olmak üzere, $a_1 < a_2 < \dots < a_m$ şeklinde ikişerli aralarında asal $m$ tane üçgensel sayıya sahipsek, $t > a_m$ ve $(t, a_1, a_2, \dots, a_m) = 1$ olacak şekilde bir $t$ üçgensel sayısının var olduğunu gösteriyoruz.
+\
+Aslında, $a = a_1 a_2 \dots a_m$ olsun; $a+1$ ve $2a+1$ sayıları $a$ ile aralarında asaldır.
+$$a_{m+1} = t_{2a+1} = \frac{(2a+1)(2a+2)}{2} = (a+1)(2a+1)$$
+sayısı $a_m$'den büyük bir üçgensel sayıdır; $a$ ile aralarında asal olduğundan, $a_1, a_2, \dots, a_m$ sayılarının her biriyle aralarında asaldır.
+\
+Buradan şu sonuç çıkar: Eğer ikişerli aralarında asal üçgensel sayılardan oluşan sonlu artan bir dizimiz varsa, o zaman her zaman hepsini aşan ve onlarla aralarında asal olan bir üçgensel sayı bulabiliriz. Her zaman bu tür sayıların en küçüğünü alarak,
+$$t_1 = 1, t_2 = 3, t_4 = 10, t_{13} = 91, t_{22} = 253, \dots$$
+ikişerli aralarında asal üçgensel sayılardan oluşan sonsuz diziyi oluştururuz.
+
+ 
+
+
+43. $\frac{n(n+1)(n+2)}{6}$ şeklinde olan her ikilisi aralarında asal olan sonsuz tane tam sayı bulunduğunu gösteriniz.[^43]
+
+[^43]: İlk olarak, eğer $m$ pozitif bir tam sayı olmak üzere, $a_1 < a_2 < \dots < a_m$ dörtyüzlü (tetrahedral) sayıları ikişerli aralarında asalsa, o zaman $T > a_m$ ve $(T, a_1, a_2, \dots, a_m) = 1$ olacak şekilde bir $T$ dörtyüzlü sayısının var olduğunu kanıtlayacağız. Aslında, $a = a_1 a_2 \dots a_n$ olsun. $T = T_{6a+1} = (6a+1)(3a+1)(2a+1)$ alalım; $T$'nin $a$ ile aralarında asal olduğu, dolayısıyla $a_1, \dots, a_m$ sayılarının her biri ile aralarında asal olduğu ve $T > a \ge a_m$ olduğu açıktır.
+\
+Böylece, ikişerli aralarında asal dörtyüzlü sayılardan oluşan istenen artan diziyi tümevarımla tanımlayabiliriz: dizinin ilk terimi olarak $T_1 = 1$'i alın ve bu dizinin ilk $m$ tane ikişerli aralarında asal dörtyüzlü sayısını tanımladıktan sonra, $m+1$'inciyi ilk $m$ terimin tümünü aşan ve her biriyle aralarında asal olan en küçük dörtyüzlü sayı olarak tanımlayın. Bu şekilde, ikişerli aralarında asal dörtyüzlü sayılardan oluşan sonsuz artan diziyi elde ederiz
+$$T_1 = 1, T_2 = 4, T_5 = 35, T_{17} = 969, \dots .$$
+
+
+
+44. $a$ ve $b$ birinden farklı tam sayılar ise, $a + n$ ve $b + n$ sayıları aralarında asal olacak şekilde sonsuz sayıda $n$ tam sayısı bulunduğunu kanıtlayınız.[^44]
+
+[^44]: $a$ ve $b$ iki farklı tam sayı olsun. Örneğin, $a < b$ olduğunu varsayalım ve $n = (b-a)k+1-a$ olsun. Yeterince büyük $k$ için, $n$ pozitif bir tam sayı olacaktır. $a+n = (b-a)k+1$ ve $b+n = (b-a)(k+1)+1$ olur, dolayısıyla $a+n$ ve $b+n$ pozitif tam sayılar olacaktır. Eğer $d\mid a+n$ ve $d\mid b+n$ olsaydı, $d\mid a-b$ olurdu ve $d\mid a+n$ olduğundan, $d\mid 1$ de olur, bu da $d=1$ anlamına gelir. Böylece, $(a+n, b+n) = 1$.
+
+
+
+
+45. $a, b, c$ birbirinden farklı tam sayılarsa, $a + n, b + n, c + n$ sayıları ikişer ikişer aralarında asal olacak şekilde sonsuz sayıda $n$ pozitif tam sayısının bulunduğunu kanıtlayınız.[^45]
+
+[^45]: Eğer $a, b, c$ tam sayıları farklıysa, o zaman
+$$h = (a-b)(a-c)(b-c)$$
+sayısı sıfırdan farklıdır. $h \ne \pm 1$ durumunda, $q_1, \dots, q_s$, $h$'nin $3$'ten büyük tüm asal bölenlerini göstersin.
+\
+$a, b, c$ sayılarından iki veya daha fazlası çift ise, $r = 1$ alın, aksi takdirde $r = 0$ alın. Açıkça, $a+r, b+r, c+r$ sayılarından en az ikisi tek olacaktır. Eğer
+$a, b, c$ sayıları 3'e bölündüğünde üç farklı kalan veriyorsa, $r_0 = 0$ alın. Eğer $a, b, c$ arasından iki veya daha fazlası 3'e bölündüğünde aynı $q$ kalanını veriyorsa, $r_0 = 1-q$ alın. Açıkça, $a+r_0, b+r_0, c+r_0$ sayılarından en az ikisi 3 ile bölünemeyecektir.
+\
+Şimdi, $i$, $1, 2, \dots, s$ sayılarından birini göstersin. Problem 39'un ışığında (ve $q_i > 3$ gerçeğiyle), $a+r_i, b+r_i, c+r_i$ sayılarından hiçbirinin $q_i$ ile bölünmemesini sağlayan bir $r_i$ tam sayısı vardır. Çin kalan teoremine göre,
+$$n \equiv r \pmod 2, \quad n \equiv r_0 \pmod 3,$$
+ve
+$$n \equiv r_i \pmod {q_i} \quad i = 1, 2, \dots, s \text{ için}$$
+olacak şekilde sonsuz sayıda pozitif $n$ tam sayısı vardır.
+\
+$a+n, b+n$ ve $c+n$ sayılarının ikişerli aralarında asal olduklarını göstereceğiz. Örneğin, $(a+n, b+n) > 1$ olduğunu varsayalım. O zaman, $q\mid a+n$ ve $q\mid b+n$ olacak şekilde bir $q$ asalı var olurdu, dolayısıyla $q\mid a-b$, bu da $q\mid h$ ve $h \ne \pm 1$ anlamına gelir. $n \equiv r \pmod 2$ olduğundan ve $a+r, b+r, c+r$ sayılarından en az ikisi tek olduğundan, $a+n, b+n, c+n$ sayılarından en az ikisi tektir ve $q = 2$ olamaz. Ardından, $n \equiv r_0 \pmod 3$ olduğundan ve $a+r_0, b+r_0, c+r_0$ sayılarından en az ikisi 3 ile bölünemediğinden, $a+n, b+n, c+n$ sayılarından en az ikisi 3 ile bölünemez ve $q=3$ olamaz. $q\mid h$ olduğundan, $h$'nin tanımı gereği, $1, 2, \dots, s$ dizisinden belirli bir $i$ için $q = q_i$ olur. Ancak, $n \equiv r_i \pmod {q_i}$ olması ve $a+r_i, b+r_i, c+r_i$ sayılarından hiçbirinin $q_i$ ile bölünmemesi gerçeği göz önüne alındığında, $a+n, b+n, c+n$ sayılarından hiçbiri $q_i = q$ ile bölünemez; bu da $q\mid a+n$ ve $q\mid b+n$ varsayımıyla çelişir. Böylece, $(a+n, b+n) = 1$ olduğunu kanıtladık. Benzer şekilde $(a+n, c+n) = 1$ ve $(b+n, c+n) = 1$ olduğunu gösteririz. Bu nedenle $a+n, b+n,$ ve $c+n$ sayıları ikişerli aralarında asaldır. Bu tür $n$ sayılarından sonsuz sayıda olduğundan, kanıt tamamlanmıştır.
+
+
+
+
+46. $a + n, b + n, c + n$ ve $d + n$ sayılarının ikişer ikişer aralarında asal olmamasını sağlayan hiçbir $n$ pozitif tam sayısı olmayacak şekilde birbirinden farklı $a, b, c, d$ pozitif tam sayıları bulunuz.[^46]
+
+[^46]: Bu tür sayılar örneğin $a = 1, b = 2, c = 3, d = 4$'tür. Aslında, tek $n$ için, $a+n$ ve $c+n$ sayıları çifttir, dolayısıyla aralarında asal değildirler, ve çift $n$ için, $b+n$ ve $d+n$ sayıları çifttir, dolayısıyla aralarında asal değildirler.
+
+
+
+
+
+47. 6’dan büyük olan her tam sayının 1’den büyük ve aralarında asal olan iki tam sayının toplamı şeklinde gösterilebileceğini kanıtlayınız.[^47]
+
+[^47]: Eğer $n$ tek ve $n > 6$ ise, $n = 2 + (n-2)$ olur, burada $n-2$ tek ve $> 1$'dir, ve $(2, n-2) = 1$'e sahibiz.
+\
+$n > 6$ çift sayı durumu için aşağıdaki ispat A. Mąkowski'ye aittir.
+\
+Eğer $n = 4k$ ise, burada $k$ tam sayısı $> 1$'dir ($n > 6$ olduğundan), o zaman $n = (2k-1) + (2k+1)$ olur, ve $2k+1 > 2k-1 > 1$'dir ($k > 1$ olduğundan). $2k-1$ ve $2k+1$ sayıları, ardışık tek sayılar olarak, aralarında asaldır.
+\
+Eğer $n = 4k+2$ ise, burada $k$ tam sayısı $> 1$'dir ($n > 6$ olduğundan), $n = (2k+3) + (2k-1)$'e sahibiz, burada $2k+3 > 2k-1 > 1$'dir ($k > 1$ olduğundan). $2k+3$ ve $2k-1$ sayıları aralarında asaldır çünkü eğer $0 < d\mid 2k+3$ ve $d\mid 2k-1$ ise, o zaman $d\mid (2k+3)-(2k-1)$ veya $d\mid 4$'tür. Şimdi, $d$ tek bir sayının böleni olarak tek olmalıdır, dolayısıyla $d=1$'dir, ve $(2k+3, 2k-1) = 1$'dir.
+
+
+
+48. 17’den büyük olan her tam sayının ikişer ikişer aralarında asal olan 1’den büyük 3 tam sayının toplamı şeklinde yazılabileceğini ve 17’nin de bu şekilde gösterilemeyeceğini kanıtlayınız.[^48]
+
+
+[^48]: Eğer $n$ çift ve $> 8$ ise, o zaman $n = 6k$, $n = 6k+2$ veya $n = 6k+4$'tür, ve ilk iki durumda $k$ tam sayısı $> 1$'dir, ve üçüncü durumda $k$ pozitif bir tam sayıdır. Formüller
+$$6k = 2+3+(6(k-1)+1), \quad 6k+2 = 3+4+(6(k-1)+1),$$
+$$6k+4 = 2+3+(6k-1)$$
+$n$'nin, ikişerli olarak aralarında asal olan üç pozitif tam sayının toplamı olduğunu kolayca gösterir.
+\
+Şimdi $n$'nin tek ve $> 17$ olduğunu varsayalım. Altı durumu ele alıyoruz: $n = 12k+1$, $n = 12k+3$, $n = 12k+5$, $n = 12k+7$, $n = 12k+9$, ve $n = 12k+11$, burada ilk üç durumda $k$ tam sayısı $> 1$'dir, ve son üç durumda $k$ pozitif bir tam sayıdır. Elimizde
+$$12k-1 = (6(k-1)-1)+(6(k-1)+5)+9,$$
+var, burada $6(k-1)-1$, $6(k-1)+5$, ve $9$ sayıları $> 1$'dir ve aralarında asaldır; aslında, ilk ikisi 3'e bölünemez, ve $d\mid 6(k-1)-1$ ve $d\mid 6(k-1)+5$ olması $d\mid 4$'ü gerektireceğinden aralarında asaldırlar, oysa ele alınan sayılar tektir.
+\
+Eğer $n = 12k+3$ ise, o zaman $n = (6k-1)+(6k+1)+3$'e sahibiz;
+\
+eğer $n = 12k+5$ ise, o zaman $n = (6k-5)+(6k+1)+9$'a sahibiz;
+\
+eğer $n = 12k+7$ ise, o zaman $n = (6k+5)+(6k-1)+3$'e sahibiz;
+\
+eğer $n = 12k+9$ ise, o zaman $n = (6k-1)+(6k+1)+9$'a sahibiz;
+\
+eğer $n = 12k+11$ ise, o zaman $n = (6(k+1)-5)+(6(k+1)+1)+3$'e sahibiz, ve her durumda üç terimin $> 1$ olduğunu ve ikişerli olarak aralarında asal olduğunu kolayca kontrol ederiz.
+\
+17 sayısı istenen özelliğe sahip değildir çünkü $17 = a+b+c$ durumunda, üç sayının da ($> 1$ ve ikişerli aralarında asal olarak) $a, b, c$'nin tek ve farklı olması gerekirdi. Ancak, $3+5+7 = 15 < 17$, $3+5+11 > 17$'ye sahibiz, ve $3 < a < b < c$ durumunda, $a \ge 5$, $b \ge 7$, $c \ge 9$'a sahibiz, dolayısıyla $a+b+c \ge 5+7+9 = 21 > 17$, bu da 17'nin istenen özelliğe sahip olmadığını gösterir.
+
+
+
+
+49. Her $m$ pozitif tam sayısı için hem tek $2k$ çift sayısının $m$ ile aralarında asal olan iki pozitif tam sayının farkı şeklinde yazılabileceğini kanıtlayınız.[^49]
+
+[^49]: A. Schinzel'in bir fikrine dayanan (bkz. [@schinzel1959demonstration]) ispatı sunacağız. $k$ verilmiş bir pozitif tam sayıyı göstersin ve $m$, asal kuvvetlere açılımı $m = q_1^{a_1} q_2^{a_2} \dots q_s^{a_s}$ olan pozitif tam sayı olsun. $f(x) = x(x+2k)$ olsun ve $i$, $1, 2, \dots, s$ sayılarından birini göstersin. Tüm $x$ tam sayıları için $q_i | x(x+2k)$ olamaz, çünkü o zaman $x=1$ için $q_i | 2k+1$ olurdu, ve $x = -1$ için $q_i | 2k-1$ olurdu, ve $q_i | (2k+1) - (2k-1) = 2$ olurdu, ki bu $q_i | 2k+1$ (ve sonuç olarak $q_i \nmid 1$) olması göz önüne alındığında imkansızdır. Bu nedenle, $q_i \nmid x_i(x_i+2k) = f(x_i)$ olacak şekilde bir $x_i$ tam sayısı mevcuttur. Çin kalan teoremine göre, $i=1, 2, \dots, s$ için $x_0 \equiv x_i \pmod{q_i}$ olacak şekilde pozitif bir $x_0$ tam sayısı vardır, bu da $i = 1, 2, \dots, s$ için $f(x_0) \equiv f(x_i) \not\equiv 0 \pmod{q_i}$ sonucunu verir. Dolayısıyla, $i=1, 2, \dots, s$ için $(f(x_0), q_i) = 1$'e sahibiz, ki bu ($m$'nin asal çarpanlara açılımı göz önüne alındığında) $(f(x_0), m) = 1$ veya $(x_0(x_0+2k), m) = 1$ verir. Böylece, eğer $a = x_0+2k$, $b = x_0$ alırsak, $2k = a-b$'ye sahip oluruz, burada $(a, m) = 1$, $(b, m) = 1$'dir, ki bu da teoremi ispatlar.
+\
+**NOT.** $a$ ve $b$'ye $m$'nin keyfi katlarını eklemek $2k = a-b$ ve $(ab, m) = 1$ gerçeğini değiştirmediğinden, her $m$ için, her çift sayının $m$ ile aralarında asal olan pozitif tam sayıların farkı olarak sonsuz sayıda farklı şekilde temsil edilebileceğini ispatladık.
+\
+Her çift sayının iki asalın farkı olup olmadığını bilmiyoruz. A. Schinzel'in asal sayılar üzerine belirli bir sanısından [@schinzel1958certaines], her çift sayının iki asalın farkı olarak sonsuz sayıda farklı şekilde temsil edilebileceği sonucu çıkar.
+
+
+
+50. Fibonacci dizisinin, tüm terimleri ikişer ikişer aralarında asal olan bir alt dizisinin bulunduğunu kanıtlayınız.[^50]
+
+[^50]: A. Rotkiewicz tarafından verilen ispatı sunacağız. Eğer $u_n$ Fibonacci dizisinin $n$'inci terimi ise, ve $m$ ile $n$ pozitif tam sayılar ise, o zaman $(u_m, u_n) = u_{(m, n)}$'dir (bkz. [@sierpinski1958teoria], s. 280, problem 5]). $u_1 = 1$ olduğundan, eğer $p_k$, $k$'ıncı ardışık asalı gösteriyorsa,
+$$u_{p_1}, u_{p_2}, u_{p_3}, \dots$$
+artan sonsuz dizisinin herhangi iki teriminin aralarında asal olduğunu görürüz. $p_k$ yerine $2^{2^k}+1$ alabiliriz, zira $m$ ve $n \ne m$ pozitif tam sayıları için $(2^{2^m}+1, 2^{2^n}+1) = 1$ olduğu iyi bilinmektedir.
+
+
+
+51. Her $n = 1, 2, \dots$ için $\text{OBEB}(n, 2^n + 1) = 1$ olduğunu gösteriniz.[^51]
+
+    51a. $\text{OBEB}(n, 2^n - 1) > 1$ olmasını sağlayan sonsuz tane $n$ pozitif tam sayısının bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.
+
+[^51]: $F_n = 2^{2^n}+1$ ($n = 1, 2, \dots$) sayısının $> 1$ olan her böleninin, $2^{n+2}k+1$ formunda olduğunu biliyoruz, burada $k$ pozitif bir tam sayıdır (örneğin, bkz. [@sierpinski1964elementary], s. 343, Teorem 5). Pozitif $n$ ve $k$ tam sayıları için
+$2^{n+2}k+1 \ge 2^{n+2}+1 > n$ olduğundan, $F_n$'nin tüm $> 1$ bölenleri $> n$ olmalıdır, dolayısıyla $(n, F_n) = 1$'dir, ki bu da ispatlanması gerekendi.
+\
+51a. $n = 1, 2, 3, 4, 5$ için $(n, 2^n-1) = 1$ olduğunu kolayca kontrol ederiz, $(6, 2^6-1) = 3$'tür. $k = 1, 2, \dots$ için $3|2^6-1|2^{6k}-1$'e sahibiz, dolayısıyla $k = 1, 2, \dots$ için $(6k, 2^{6k}-1) \ge 3$'tür. Bu tür en küçük $n$ sayısı 6'ya eşittir.
+

@@ -1,0 +1,89 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "250 Temel Sayılar Teorisi Problemi"
+  author: "Wacław Sierpiński"
+  date: today
+  date-format: long
+  language: tr
+  reader-mode: true
+  back-to-top-navigation: true
+
+  chapters:
+    - index.qmd
+    - 00-problemler.qmd
+    - 99-kaynakca.qmd
+  search: true
+  repo-url: https://github.com/acarzfr/250problem/
+  repo-actions: [edit]
+  downloads: [pdf]
+  sharing: [linkedin, twitter, facebook]
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/light.scss]
+      dark:  [cyborg, style/dark.scss]
+    css: style/custom.css
+    html-math-method: katex
+    lang: tr
+    nocite: |
+      @*
+
+    author-meta: "Wacław Sierpiński"
+    callout-appearance: simple
+    include-in-header: "style/preamble.html"
+    lightbox: true
+    mainfont: "Roboto"
+    monofont: "Source Code Pro"
+    toc-expand: true
+    number-sections: true
+    number-depth: 2
+    comments:
+      hypothesis: true
+
+    fig-dpi: 300
+    fig-show: hold
+    fig-align: center
+
+  pdf:
+    documentclass: scrreprt
+    geometry: 
+          - paperwidth=175mm,
+          - paperheight=255mm,
+          - top=20mm,
+          - bottom=20mm,
+          - inner=20mm,        
+          -  outer=20mm,        
+          -  bindingoffset=0mm, 
+          -  headheight=14pt,  
+          -  headsep=10pt,
+          -  footskip=20pt,
+          -  columnsep=12pt,
+
+    include-in-header: preamble.tex
+    include-before-body:
+      text: |
+    #mainfont: "Helvetica"
+    #mainfontoptions: "scale=0.8"
+    lang: tr
+    classoption: 
+        - "main=turkish"
+    babel-lang: tr
+    nocite: |
+      @*
+    fig-align: center
+    latex-auto-install: true
+    toc-expand: true
+    number-sections: true
+    number-depth: 2
+
+
+filters:
+  - latex-environment
+environments: [center]
+
+editor: source

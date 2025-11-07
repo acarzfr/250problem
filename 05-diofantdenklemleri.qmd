@@ -1,0 +1,404 @@
+## Diofant Denklemleri
+
+137. $3x^2 - 7y^2 + 1 = 0$ denkleminin pozitif tam sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^137]
+
+[^137]: $3(55a+84b)^{2}-7(36a+55b)^{2}=3a^{2}-7b^{2}$ özdeşliği, eğer $x=a$ ve $y=b$ tam sayıları $3x^{2}-7y^{2}+1=0$ denklemini sağlıyorsa, o zaman daha büyük $x=55a+84b$ ve $y=36a+55b$ tam sayılarının da aynı denklemi sağladığını ima eder. $x=3$ ve $y=2$ sayıları bu denklemi sağladığından, pozitif x, y tam sayılarında sonsuz sayıda çözümü vardır.
+
+138. $2x^3 + xy - 7 = 0$ denkleminin tüm tam sayı çözümlerini bulunuz ve pozitif rasyonel sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^138]
+
+[^138]:  $x(2x^{2}+y)=7$ olduğundan, $x$ sayısı 7'nin bir tam sayı böleni olmalıdır, yani $1, 7, -1, -7$ sayılarından birine eşit olmalıdır. Bu değerleri denkleme yerine koyduğumuzda, $y$ için $5, -97, -9, -99$ değerlerini elde ederiz. Böylece, denklemimizin tam sayılarda dört çözümü vardır, yani $(1, 5), (7, -97), (-1, -9), (-7, -99)$.
+Şimdi $n$, 5'ten büyük keyfi bir tam sayıyı göstersin ve $x=7/n$, $y=n-98/n^{2}$ olsun. $n>5$ olduğundan, $n\ge6$ olur ve $x, y$ rasyonel ve pozitif olacaktır; $2x^{3}+xy-7=0$ denklemini sağladıklarını kolayca kontrol ederiz.
+
+139. $(x - 1)^2 + (x + 1)^2 = y^2 + 1$ denkleminin pozitif tam sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^139]
+
+[^139]: Eğer $x$ ve $y$ $(x-1)^{2}+(x+1)^{2}=y^{2}+1$ (1) denklemini sağlıyorsa, o zaman $(2y+3x-1)^{2}+(2y+3x+1)^{2}=(3y+4x)^{2}+1$ olduğunu kolayca görürüz . Böylece, (1) denkleminin her pozitif tam sayı $x, y$ çözümü için, daha büyük tam sayılarda başka bir $2y+3x$, $3y+4x$ çözümü elde ederiz; bu denklemin $x=2$, $y=3$ çözümü olduğundan, pozitif tam sayılarda sonsuz sayıda çözümü vardır.
+
+140. $x(x + 1) = 4y(y + 1)$ denkleminin pozitif tam sayı çözümünün bulunmadığını, fakat pozitif rasyonel sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^140]
+
+[^140]: Eğer pozitif tam sayılar x ve y için $x(x+1)=4y(y+1)$ olsaydı, o zaman $3=[2(2y+1)]^{2}-(2x+1)^{2}=(4y-2x+1)(4y+2x+3)$ olurdu, dolayısıyla 3 sayısı, 3'ü aşan bir $4y+2x+3$ pozitif tam sayısı tarafından bölünürdü ki bu imkansızdır.
+Öte yandan, $n>1$ tam sayısı için $x=\frac{3^{n}-3^{1-n}-2}{4}$ ve $y=\frac{3^{n}+3^{1-n}-4}{8}$ olduğunda $x(x+1)=4y(y+1)$ olduğunu kolayca görürüz. Örneğin, $n=2$ için $x=5/3$, $y=2/3$ elde ederiz. Denklemimizin sonsuz sayıda rasyonel x, y çözümü vardır.
+
+141. $p$ bir asal sayı ve $n$ de bir pozitif tam sayı ise, $x(x + 1) = p^n y(y + 1)$ denkleminin pozitif tam sayılarla hiçbir çözümünün bulunmadığını kanıtlayınız.[^141]
+
+[^141]: A. Schinzel'in kanıtı. p bir asal sayı olsun ve n bir pozitif tam sayı olsun; pozitif x ve y tam sayılarının $x(x+1)=p^{2n}y(y+1)$ denklemini sağladığını varsayalım. x ve $x+1$ aralarında asal olduğundan, ya $p^{2n}\mid x$ ya da $p^{2n}\mid x+1$ olur ve dolayısıyla her durumda $x+1\ge p^{2n}$ olur. Ancak, denklemimiz $p^{2n}-1=[p^{n}(2y+1)+(2x+1)][p^{n}(2y+1)-(2x+1)]$ denklemine denktir. Sol taraf ve sağdaki ilk çarpan pozitif tam sayılar olduğundan, sağdaki ikinci çarpan da pozitif bir tam sayı olmalıdır. Buradan $p^{2n}-1>2x+1$ sonucu çıkar, dolayısıyla $p^{2n}>2(x+1)$, ki bu da daha önce bulunan $x+1\ge p^{2n}$ ilişkisi göz önüne alındığında $p^{2n}>2p^{2n}$ verir, bu imkansızdır.
+
+142. Verilen $k$ tam sayısı için $x^2 - 2y^2 = k$ denkleminin bir $(x_0, y_0)$ tam sayı çözümü varsa, $x^2 - 2y^2 = -k$ denkleminin bir tam sayı çözümünü bulunuz.[^142]
+
+
+[^142]: $(x-2y)^{2}-2(x-y)^{2}=-(x^{2}-2y^{2})$ özdeşliği göz önüne alındığında, $t=x-2y$, $u=x-y$ koymak yeterlidir.
+
+143. Her $D$ tam sayısı için $x^2 - Dy^2 = z^2$ denkleminin pozitif tam sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^143]
+
+
+[^143]: Kanıt, $(m^{2}+Dn^{2})^{2}-D(2mn)^{2}=(m^{2}-Dn^{2})^{2}$ özdeşliğinden hemen çıkar. Keyfi bir n pozitif tam sayısı için, $m^{2}>Dn^{2}$ olacak şekilde m sayısı seçmek ve $x=m^{2}+Dn^{2}$, $y=2mn$, $z=m^{2}-Dn^{2}$ koymak yeterlidir.
+
+
+144. $D$, sıfırdan farklı herhangi tam sayı ise, $x^2 - Dy^2 = z^2$ denkleminin, $\text{OBEB}(x, y) = 1$ olacak şekilde çözümleri olan tam sayılarla sonsuz tane $(x, y, z)$ çözümünün bulunduğunu kanıtlayınız.[^144]
+
+[^144]: Eğer D tek ise, o zaman $k>1$ tam sayısı için $D+2^{2k-2}$ sayısı tektir ve $(D+2^{2k-2},2^{k})=1$ olur; $(D+2^{2k-2})^{2}-D(2^{k})^{2}=(D-2^{2k-2})^{2}$ olduğunu kolayca buluruz. $x=\mid D+2^{2k-2}\mid $, $y=2^{k},$ $z=\mid D-2^{2k-2}$ koyabiliriz. Eğer D çift ise, o zaman her $y>1$ tam sayısı için $(\frac{1}{2}Dy^{2}+1,y)=1$ olur ve $(\frac{1}{2}Dy^{2}+1)^{2}-Dy^{2}=(\frac{1}{2}Dy^{2}-1)^{2}$ olur ve $x=\mid \frac{1}{2}Dy^{2}+1$, $z=\mid \frac{1}{2}Dy^{2}-1$ koyabiliriz.
+
+145. $xy + x + y = 3z^2$ denkleminin pozitif tam sayılarla çözümlerinin bulunduğunu ve $x \leq y$ koşulunu sağlayan sayılarla çözümlerinin sonlu olduğunu kanıtlayınız.[^145]
+
+
+[^145]: Denklemimiz $2^{2^{5}}+1=(x+1)(y+1)$ denklemine denktir. Fermat sayısı $F_{5}=2^{2^{5}}+1$ iki asalın çarpımına eşit olduğundan, küçüğü 641 olmak üzere, denklemimizin pozitif x tam sayılarında ve $y\ge x$ olmak üzere sadece bir çözümü vardır, burada $x=640$.
+**NOT.** İki bilinmeyenli ikinci dereceden bazı denklemlerin sadece bir x ve $y\ge x$ çözümü olduğunu bilmemiz ilginçtir, ancak (tamamen teknik nedenlerden dolayı) bu çözümü bulamıyoruz. Örneğin, $xy+x+y+2=2^{137}$ denklemi bu durumdadır. Öte yandan, $xy+x+y=2^{2^{17}}$ denkleminin pozitif tam sayılarda x, y çözümü olup olmadığını bilmiyoruz.
+
+146. $x^2 - 2y^2 + 8z = 3$ denkleminin pozitif tam sayılarla çözümünün bulunmadığını kanıtlayınız.[^146]
+
+
+[^146]: Eğer y çift ise, o zaman $x^{2}=3-8z+2y^{2}$ 8'e bölündüğünde 3 kalanını verir, bu imkansızdır. Eğer y tek ise, o zaman $y=2k+1$ (k bir tam sayı) olur, o zaman $x^{2}=3-8z+8k^{2}+2$ (dizgi hatası: $x^{2}=3-8z+8k^{2}+8k+2$ olmalı), bu da 8'e bölündüğünde 5 kalanını verir, ki bu yine imkansızdır çünkü her tek sayının karesi 8'e bölündüğünde 1 kalanını verir.
+
+147. $y^2 - x(x + 1)(x + 2)(x + 3) = 1$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^147]
+
+[^147]: x keyfi bir pozitif tam sayı olsun. $x(x+1)(x+2)(x+3)+1=(x^{2}+3x+1)^{2}$ özdeşliğini kolayca kontrol ederiz, bu da denklemimiz göz önüne alındığında $y=x^{2}+3x+1$ anlamına gelir. Böylece, denklemimizin pozitif tam sayılardaki tüm x, y çözümleri: x - keyfi bir pozitif tam sayı ve $y=x^{2}+3x+1$.
+
+148. $x^2 + y^2 + z^2 + x + y + z = 1$ denkleminin tüm rasyonel sayı çözümlerini bulunuz.[^148]
+
+[^148]: $x^{2}+y^{2}+z^{2}+x+y+z=1$ denkleminin rasyonel çözümü yoktur çünkü $(2x+1)^{2}+(2y+1)^{2}+(2z+1)^{2}=7$ denklemine denk olduğunu kolayca görürüz ve 7 sayısı rasyonel sayıların üç karesinin toplamı olmak zorunda kalırdı. Bunun imkansız olduğunu göstereceğiz. Aslında, eğer 7 üç rasyonel sayının karelerinin toplamı olsaydı, o zaman ortak payda ile çarptıktan sonra $a^{2}+b^{2}+c^{2}=7m^{2}$ (1) olurdu, burada a, b, ve c tam sayılar ve m pozitif bir tam sayıdır. O zaman, (1)'in a, b, c tam sayılarında bir çözüme sahip olduğu en küçük pozitif tam sayı m var olurdu. Eğer m çift olsaydı, $m=2n$ (n pozitif tam sayı), o zaman a, b, c sayılarının üçü de çift olurdu, dolayısıyla $a=2a_{1}$, $b=2b_{1}$, $c=2c_{1}$ (burada $a_{1}$, $b_{1}$, $c_{1}$ tam sayılardır). Bunu (1)'e koyarak, $m^{2}=4n^{2}$ göz önüne alındığında $a_{1}^{2}+b_{1}^{2}+c_{1}^{2}=7n^{2}$ elde ederiz, burada n, m'den küçük pozitif bir tam sayıdır, bu da m'nin $7m^{2}$'nin üç tam sayının karelerinin toplamı olduğu en küçük pozitif tam sayı olduğu varsayımına aykırıdır. Böylece, m tektir ve $m^{2}$ 8'e bölündüğünde 1 kalanını verir. Dolayısıyla, (1)'in sağ tarafı 8'e bölündüğünde 7 kalanını verir; ancak, böyle bir sayının üç tam sayının karelerinin toplamı olamayacağını biliyoruz.
+
+149. $4xy - x - y = z^2$ denkleminin pozitif tam sayı çözümlerinin bulunmadığını ve negatif tam sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^149]
+
+[^149]: Eğer pozitif x, y, z tam sayıları $4xy-x-y=z^{2}$ denklemini sağlasaydı, $(4x-1)(4y-1)=(2z)^{2}+1$ olurdu ve $4x-1\ge3$ pozitif tam sayısının $4k+3$ formunda bir p asal böleni olurdu. Bu nedenle, $(2z)^{2}\equiv-1(mod~p)$ olurdu ve $p=4k+3$ göz önüne alındığında, $(2z)^{p-1}=(2z)^{2(2k+1)}\equiv-1(mod~p)$ olurdu, bu da Fermat teoremine aykırıdır.
+Öte yandan, n keyfi bir pozitif tam sayı olsun ve $x=-1$, $y=-5n^{2}-2n$, $z=-5n-1$ olsun. x, y ve z sayılarının $4xy-x-y=z^{2}$ denklemini sağladığını kolayca kontrol ederiz.
+
+150. $m$ pozitif tam sayı olmak üzere $D = m^2 + 1$ ise, $x^2 + Dy^2 = 1$ denkleminin pozitif tam sayılarla sonsuz tane çözümünün bulunduğunu kanıtlayınız.[^150]
+
+
+[^150]: Pozitif tam sayılar m ve $D=m^{2}+1$ için $(2m^{2}+1)^{2}-D(2m)^{2}=1$ olduğunu kolayca kontrol edebiliriz. Eğer pozitif x ve y tam sayıları için $x^{2}-Dy^{2}=1$ ise, o zaman $(x^{2}+Dy^{2})^{2}-D(2xy)^{2}=(x^{2}-Dy^{2})^{2}$ özdeşliği göz önüne alındığında, $x_{1}=x^{2}+Dy^{2}$ ve $y_{1}=2xy$ (x ve y'den büyük pozitif tam sayılar) için $x_{1}^{2}-Dy_{1}^{2}=1$ olur. Buradan, örneğin, $x^{2}-Dy^{2}=1$ denkleminin $D=2,5,10,17,26,37,50,65,82$ için pozitif x, y tam sayılarında sonsuz sayıda çözümü olduğu sonucu çıkar.
+
+151. $y^2 = x^3 + (x + 4)^2$ denkleminin tüm tam sayı çözümlerini bulunuz.[^151]
+
+[^151]: $y^{2}=x^{3}+(x+4)^{2}$ denkleminin iki açık çözümü vardır: $x=0,$ $y=4$ ve $x=0$, $y=-4$. Şimdi, A. Schinzel'e ait olan, bu denklemin $x\ne0$ olmak üzere pozitif tam sayılarda x, y çözümü olmadığını gösteren kanıtı vereceğiz (bkz [29]).
+$x\ne0$ pozitif tam sayılarının ve y'nin denklemi sağladığını varsayalım. Bu nedenle, $x^{3}=(y-x-4)(y+x+4)$ (1) olur.
+(1) ve $x\ne0$ göz önüne alındığında, $y-x-4$ ve $y+x+4$ tam sayıları $\ne0$ olur. $d=(y-x-4,y+x+4)$ (2) olsun.
+Eğer d'nin tek bir p asal böleni olsaydı, o zaman (1) göz önüne alındığında $p\mid x$ olurdu ve $p\mid d$ ve (2) ile $p\mid y-x-4$ ve $p\mid y+x+4$ olurdu, dolayısıyla $p\mid 2y$. p tek olduğundan, $p\mid y$ ve $p\mid 4$ sonucu çıkardı ki bu imkansızdır. Böylece, d'nin tek asal böleni yoktur ve $\ge0$ bir tam sayı üssü ile 2'nin bir kuvvetine eşit olmalıdır.
+Eğer $16\mid d$ olsaydı, o zaman (1) ve (2) ile $2^{8}\mid x^{3}$ olurdu, bu da $2^{3}\mid x$ anlamına gelir ve $d\mid (y+x+4)-(y-x-4)=2x+8$ olduğundan, $16\mid 8$ olurdu ki bu imkansızdır. Böylece, 16, d'yi bölmez.
+Eğer $d=2$ olsaydı, o zaman $y-x-4=2m$, $y+x+4=2n$ olurdu, burada $(m,n)=1$. (1) ve (2) göz önüne alındığında $2\mid x$ olurdu, dolayısıyla $2\mid y$. Ama $2y=2(m+n)$, dolayısıyla $y=m+n$ ve $2\mid m+n$; $(m,n)=1$ göz önüne alındığında, m ve n sayılarının ikisi de tek olmalıdır. $x^{3}=4mn$ olduğundan, $8\mid x^{3}$ olur (dizgi hatası: $8 \nmid x^{3}$ olmalı), bu $2\mid x$ olduğundan imkansızdır (dizgi hatası: $8\mid x^3$ ise $2\mid x$ olur, ama $x^3=4mn$ ve m,n tek ise $x^3/4$ tektir, bu da $x$'in çift olmasını gerektirir ancak $x^3$'ün 8'e bölünmesini engeller. $x=2x'$ ise $8x'^3 = 4mn$, $2x'^3=mn$. m,n tek ise bu imkansızdır). Böylece $d\ne2$.
+Eğer $d=4$ olsaydı, o zaman $y-x-4=4m$, $y+x+4=4n$ olurdu, burada $(m,n)=1$. (1) ile $x^{3}=16mn$ olurdu, dolayısıyla $4\mid x$, bu da $4\mid mn$ anlamına gelir; böylece, $(m,n)=1$ olduğundan, m, n sayılarından biri 4 ile bölünebilir ve diğeri tek olmalıdır. Ancak, $4\mid x$ ve $4=d\mid y-x-4$ (dizgi hatası: $d\mid y-x-4$ olmalı) olduğundan, $4\mid y=2(m+n)$ olur (dizgi hatası: $y=2(m+n)$ değil, $y-x-4=4m$ ve $4\mid x$ ise $4\mid y-4$ yani $4\mid y$ olmalı. $y+x+4=4n$ ve $4\mid x$ ise $4\mid y+4$ yani $4\mid y$ olmalı. $y=2(m+n)$ ise $4\mid 2(m+n)$ yani $2\mid m+n$ olur, bu da m,n'den biri 4'e bölünür diğeri tekse mümkündür), bu imkansızdır. Bu nedenle $d\ne4$.
+16, d'yi bölmediğinden, $d\ne2$ ve $d\ne4$ olduğundan ve d, 2'nin bir kuvveti olduğundan, geriye iki durum kalır: $d=1$ ve $d=8$.
+Eğer $d=1$ ise, o zaman (1) ve (2)'den $y-x-4$ ve $y+x+4$ sayılarının tam sayıların küpleri olduğu sonucu çıkar; $y-x-4=a^{3}$, $y+x+4=b^{3}$, bu da (1) göz önüne alındığında $x=ab$ ve $2x+8=b^{3}-a^{3}$ anlamına gelir. $a=b$ olamaz çünkü o zaman $x=-4$ olurdu (dizgi hatası: $2x+8=0$ ise $x=-4$. $y-x-4=a^3$ ve $y+x+4=b^3$ ve $a=b$ ise $y-x-4=y+x+4$ yani $2x+8=0$, $x=-4$. $x=ab=a^2$, $a^2=-4$ imkansız) ve $y^{2}=x^{3}+(x+4)^{2}$ denklemi $y^{2}=-4^{3}$ anlamına gelirdi ki bu imkansızdır. $x=ab$ göz önüne alındığında $2ab+8=b^{3}-a^{3}=(b-a)((b-a)^{2}+3ab)$ olur. Bu, eğer $b-a=1$ ise, o zaman $2ab+8=1+3ab$, dolayısıyla $ab=7$ ve sonuç olarak $x=7$, $y^{2}=7^{3}+11^{2}=464$ anlamına gelir ki 464 bir kare olmadığından bu imkansızdır. Böylece, eğer $ab>0$ ise, o zaman $b-a>0$ olur ve $b-a\ne1$ göz önüne alındığında $b-a\ge2$ ve $2ab+8>6ab$ (dizgi hatası: $(b-a) \ge 2$ ise $(b-a)((b-a)^2+3ab) \ge 2(4+3ab) = 8+6ab$) elde ederiz. Bu $ab<2$ anlamına gelir (dizgi hatası: $2ab+8 \ge 8+6ab$ ise $4ab \le 0$ olur, $ab>0$ ile çelişir), dolayısıyla $ab=1$ ve $a=b=1$, ki bu imkansızdır (çünkü $a=b$ olamaz). Eğer $ab<0$ ise, o zaman ya $a>0$, $b<0$, bu da $a^{3}-b^{3}=a^{3}+(-b)^{3}\ge a^{2}+(-b)^{2}\ge-2ab$ sonucunu verir (dizgi hatası: $a^3-b^3$ değil $b^3-a^3$ olmalı. $b^3-a^3 = -2ab-8$. $a>0, b<0$ ise $a=1, b=-1$ olsa $x=-1$, $2(-1)+8=6$, $b^3-a^3 = -1-1=-2$, değil. $a=1, b=-2$ olsa $x=-2$, $2(-2)+8=4$, $b^3-a^3 = -8-1=-9$. $a=2, b=-1$ olsa $x=-2$, $2(-2)+8=4$, $b^3-a^3=-1-8=-9$.), $a^{3}-b^{3}=-2ab-8<-2ab$ gerçeğine aykırıdır, ya da $a<0$, $b>0$, bu da $b^{3}=a^{3}+2ab+8$ göz önüne alındığında $b^{3}<8$ sonucunu verir. Böylece $b=1$, bu da $a^{3}+2a+7=0$ verir, ki bu denklemin tam sayı çözümü olmadığından imkansızdır. Böylece, $ab=0$ olmalıdır ve sonuç olarak $x=0$, $x\ne0$ varsayımına aykırıdır. Bu nedenle $d=1$ olamaz ve $d=8$ olmalıdır.
+(2) ile $y-x-4=8m$, $y+x+4=8n$ olur, burada $(m,n)=1$ ve (1) göz önüne alındığında $x^{3}=64mn$ buluruz. Böylece $(x/4)^{3}=mn$ olur, bu da $(m,n)=1$ ile m ve n sayılarının tam sayıların küpleri olması gerektiği anlamına gelir, diyelim ki $m=a^{3}$, $n=b^{3}$. Böylece $x/4=ab$ ve $2x+8=8(n-m)=8(b^{3}-a^{3})$, bu da $ab+1=b^{3}-a^{3}$ sonucunu verir. Açıkça, $a=b$ olamaz ve $\mid a-b\mid \ge1$ olmalıdır. Eğer $ab>0$ ise o zaman $b>a$ ve $b-a\ge1$ olur, ve $ab+1=b^{3}-a^{3}=(b-a)[(b-a)^{2}+3ab]\ge 3ab$ (dizgi hatası: $b-a \ge 1$ ise $\ge 1(1+3ab)$) olduğundan, $2ab<1$ (dizgi hatası: $ab+1 \ge 1+3ab$ ise $2ab \le 0$) elde ederiz, bu da $ab>0$ varsayımına aykırıdır. $4ab=x\ne0$ olduğundan, $ab<0$ olur. $\mid b-a\mid \ge1$ ve $\mid b^{3}-a^{3}\mid =\mid b-a\mid \mid (b+a)^{2}-ab\mid \ge-ab$ göz önüne alındığında ve ayrıca ($ab<0$ göz önüne alındığında) $ab+1 < -ab$ (dizgi hatası: $ab+1 < \mid ab\mid  = -ab$ olmalı) ilişkisi olduğundan, $ab+1=b^{3}-a^{3}$ denklemi imkansızdır.
+Bu, $y^{2}=x^{3}+(x+4)^{2}$ denkleminin $x\ne0$ tam sayılarında ve y'de çözümü olmadığı gerçeğinin kanıtını tamamlar.
+
+152. Her $m$ pozitif tam sayısı için $\frac{x}{y} + \frac{y}{z} + \frac{z}{x} = m$ denkleminin, $x, y, z$ aralarında asal olmak üzere tüm pozitif tam sayı çözümlerini bulunuz.[^152]
+
+[^152]: Denklemimiz, 0'dan farklı ve aralarında asal x, y, z tam sayıları için $x^{2}z+y^{2}x+z^{2}y=mxyz$ denklemine denktir. Buradan $y\mid x^{2}z$, $z\mid y^{2}x$ ve $x\mid z^{2}y$ sonucu çıkar ve $(x,y)=1$, $(z,y)=1$ olduğundan, bu da $(x^{2}z,y)=1$ demektir, $y\mid x^{2}z$'den $y=\pm1$ elde ederiz. Benzer şekilde z $=\pm1$ ve $x=\pm1$ buluruz.
+Eğer x, y, z sayılarının üçü de aynı işaretliyse, denklemimiz $1+1+1=m$ anlamına gelir, dolayısıyla $m=3$ olur. Eğer ikisi pozitif biri negatif, ya da ikisi negatif biri pozitif olsaydı, o zaman denklemimiz ($x=\pm1$, $y=\pm1$, $z=\pm1$ göz önüne alındığında) m'nin negatif olmasını gerektirirdi, ki bu varsayıma aykırıdır.
+Böylece, pozitif m tam sayısı için, $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}=m$ denkleminin aralarında asal x, y, z tam sayılarında çözümü sadece m = 3 için vardır, ve bu durumda sadece iki çözüm vardır: $x=y=z=1$ ve $x=y=z=-1$.
+$m\ne3$ pozitif tam sayısı için, denklemimizin 0'dan farklı ve aralarında asal x, y, z tam sayılarında çözümü yoktur.
+
+153. $\frac{x}{y} + \frac{y}{z} = \frac{z}{x} = 1$ denkleminin pozitif tam sayılarla çözümünün bulunmadığını kanıtlayınız.[^153]
+
+[^153]: $\frac{x}{y}\cdot\frac{y}{z}\cdot\frac{z}{x}=1$ elimizde var, dolayısıyla (rasyonel ve pozitif) $x/y$, $y/z$ ve $z/x$ sayılarının hepsi $<1$ olamaz; eğer en az biri $\ge1$ ise, o zaman $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}>1$ olur ve sol taraf pozitif x, y, z tam sayıları için = 1 olamaz.
+**NOT.** Denklemimizin $\ne0$ tam sayılarda çözümü olmadığını kanıtlamak daha zordur, krş. Cassels [3], Sierpiński [2]; Cassels, Sansone [4].
+
+154. $\frac{x}{y} + \frac{y}{z} = \frac{z}{x} = 2$ denkleminin pozitif tam sayılarla çözümünün bulunmadığını kanıtlayınız.[^154]
+
+
+[^154]: LEMMA. Eğer a, b, c pozitif, reel ve hepsi eşit değilse, o zaman $(\frac{a+b+c}{3})^{3}>abc.$ (1)
+*KANIT* a, b, c sayılarının pozitif olduğunu ve hepsinin eşit olmadığını varsayalım. O zaman $a=u^{3}$, $b=v^{3}$ ve $c=w^{3}$ olacak şekilde, hepsi eşit olmayan pozitif u, v ve w sayıları vardır. $u^{3}+v^{3}+w^{3}-3uvw=\frac{1}{2}(u+v+w)[(u-v)^{2}+(v-w)^{2}+(w-u)^{2}]$ özdeşliğine sahibiz. u, v, w sayılarının hepsi eşit olmadığından, son çarpan kesinlikle pozitiftir ve $u^{3}+v^{3}+w^{3}>3uvw$ olur, dolayısıyla $(\frac{u^{3}+v^{3}+w^{3}}{3})^{3}>u^{3}v^{3}w^{3}$ olur, ki bu $u^{3}=a,$ $v^{3}=b$, $w^{3}=c$ göz önüne alındığında (1)'i verir ve lemmanın kanıtını tamamlar.
+Şimdi x, y, z pozitif tam sayılar olsun. Eğer $x/y$, $y/z$ ve $z/x$ sayıları hep eşit olsaydı, o zaman pozitif oldukları ve çarpımları 1'e eşit olduğu için, hepsi 1'e eşit olmak zorunda kalırdı ve $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}=3>2$ olurdu. Böylece, x, y, z sayılarının hepsi eşit değildir ve lemmaya göre $[\frac{1}{3}(\frac{x}{y}+\frac{y}{z}+\frac{z}{x})]^{3}>\frac{x}{y}\cdot\frac{y}{z}\cdot\frac{z}{x}=1$ olur, dolayısıyla $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}>3$ olur.
+Böylece, $x/y+y/z+z/x=2$ denklemi pozitif x, y, z tam sayılarında imkansızdır.
+
+155. $x^2 + y^2 + z = 3$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^155]
+
+[^155]: Pozitif x, y, z tam sayılarının denklemimizi sağladığını varsayalım. Eğer $x/y$, $y/z$ ve $z/x$ sayılarının üçü de eşit değilse, o zaman Problem 154'ün çözümünden $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}>3$ olduğu sonucu çıkar. Bu nedenle, $x/y=y/z=z/x$ olmalıdır ve denklemimiz bu sayıların her birinin 1 olduğunu ima eder. Böylece, $x=y=z$. Bu durumda $\frac{x}{y}+\frac{y}{z}+\frac{z}{x}=1+1+1=3$ olur ve denklemimizin pozitif x, y, z tam sayılarında sonsuz sayıda çözümü vardır; bunların hepsi x için keyfi bir pozitif tam sayı seçip $x=y=z$ alarak elde edilebilir.
+
+156. $m = 1$ ve $m = 2$ için $x^3 + y^3 + z^3 = mxyz$ denkleminin pozitif tam sayılarla çözümünün bulunmadığını kanıtlayınız ve $m = 3$ için tüm pozitif tam sayı çözümlerini bulunuz.[^156]
+
+[^156]: A. Schinzel'in fark ettiği gibi, eğer verilen bir m pozitif tam sayısı için x, y, z pozitif tam sayıları $x^{3}+y^{3}+z^{3}=mxyz$ (1) denklemini sağlıyorsa, o zaman $\frac{x^{2}y}{y^{2}z}+\frac{y^{2}z}{z^{2}x}+\frac{z^{2}x}{x^{2}y}=m$ (2) olur.
+Gerçekten de, $\frac{x^{2}y}{y^{2}z}=\frac{x^{3}}{xyz}$, $\frac{y^{2}z}{z^{2}x}=\frac{y^{3}}{xyz}$, $\frac{z^{2}x}{x^{2}y}=\frac{z^{3}}{xyz}$ olur ve (1) göz önüne alındığında $\frac{x^{3}}{xyz}+\frac{y^{3}}{xyz}+\frac{z^{3}}{xyz}=m$ elde ederiz.
+Problem 153 ve 154'ten $m=1$ ve $m=2$ için (1) denkleminin pozitif x, y, z tam sayılarında çözümü olmadığı sonucu çıkar, Problem 155 ise $m=3$ için (1) denkleminin tek çözümünün $x^{2}y=y^{2}z=z^{2}x=n$ olduğunu ima eder, burada n bir pozitif tam sayıdır. Ancak o zaman, $x^{2}y\cdot y^{2}z\cdot z^{2}x=n^{3}$, veya $(xyz)^{3}=n^{3}$ olur, bu da $xyz=n$ anlamına gelir ve $x^{2}y=n$ göz önüne alındığında $z/x=1$ veya $x=z$ buluruz; öte yandan $y^{2}z=n$ göz önüne alındığında $x/y=1$ veya $x=y$ buluruz. Böylece $x=y=z$ olmalıdır. Ancak, eğer $m=3$ ise, herhangi bir pozitif x tam sayısı için ve $x=y=z$ alarak (1) denkleminin bir çözümünü elde ederiz.
+Böylece, $m=3$ için (1) denkleminin pozitif tam sayılardaki tüm çözümleri, x olarak keyfi bir pozitif tam sayı seçerek ve $y=z=x$ alarak elde edilir.
+
+157. Aşağıdaki $(T_1)$ ve $(T_2)$ teoremlerinin denk olduğunu kanıtlayınız:[^157]
+
+- $(T_1): \frac{x}{y} + \frac{y}{z} = \frac{z}{x}$ denkleminin pozitif tam sayılarla çözümü yoktur.
+- $(T_2): u^3+v^3 = w^3$ denkleminin pozitif tam sayılarla çözümü yoktur.
+
+
+[^157]: $T_{1}$ teoreminin geçerli olduğunu varsayalım. Eğer $T_{2}$ teoremi yanlış olsaydı, $u^{3}+v^{3}=w^{3}$ olacak şekilde pozitif u, v ve w tam sayıları var olurdu ve $x=u^{2}v,$ $y=v^{2}w$, $z=w^{2}u$ koyarak $\frac{x}{y}+\frac{y}{z}=\frac{u^{2}v}{v^{2}w}+\frac{v^{2}w}{w^{2}u}=\frac{u^{2}}{vw}+\frac{v^{2}}{wu}=\frac{u^{3}+v^{3}}{uvw}=\frac{w^{3}}{uvw}=\frac{z}{x}$ olurdu, ki bu $T_{1}$ teoremine aykırıdır. Böylece, $T_{1}$ teoreminin $T_{2}$ teoremini ima ettiğini kanıtladık (bu kanıt A. Schinzel tarafından bulundu).
+Şimdi $T_{1}$ teoreminin yanlış olduğunu varsayalım. O zaman $\frac{x}{y}+\frac{y}{z}=\frac{z}{x}$ olacak şekilde pozitif x, y, z tam sayıları vardır, dolayısıyla $x^{2}z+y^{2}x=z^{2}y$. $x^{2}z=a$, $y^{2}x=b$ olsun; o zaman $z^{2}y=a+b$ ve $ab(a+b)=(xyz)^{3}$ olur. $d=(a,b)$ olsun; böylece $a=da_{1}$, $b=db_{1}$ olur, burada $(a_{1},b_{1})=1$. Buradan $a+b=d(a_{1}+b_{1})$ ve $a_{1}b_{1}(a_{1}+b_{1})d^{3}=(xyz)^{3}$ sonucu çıkar. Bu, $d^{3}\mid (xyz)^{3}$ anlamına gelir, dolayısıyla $d\mid xyz$ ve $xyz=dt$ (t pozitif tam sayı). Bu nedenle, $a_{1}b_{1}(a_{1}+b_{1})=t^{3}$ olur ve $a_{1}$, $b_{1}$ ve $a_{1}+b_{1}$ aralarında asal olduklarından, $a_{1}=u^{3},$ $b_{1}=v^{3}$, $a_{1}+b_{1}=w^{3}$ sonucu çıkar (u, v, w pozitif tam sayılar). Böylece, $u^{3}+v^{3}=w^{3}$ olur, ki bu $T_{2}$ teoremine aykırıdır, bu da $T_{2}$ teoreminin $T_{1}$ teoremini ima ettiğini gösterir.
+Böylece, $T_{1}$ ve $T_{2}$ denktir, ki bu kanıtlanması gerekendi.
+**NOT.** $T_{2}$ teoreminin doğru olduğu temel yöntemlerle kanıtlanabilir (kanıt zor olsa da); böylece, $T_{1}$ teoremi de doğrudur.
+
+158. $\frac{x}{y} + \frac{y}{z} + \frac{z}{t} +\frac{t}{x} = 1$ denkleminin pozitif tam sayılarla çözümünün bulunduğunu, fakat sonsuz sayıda tam sayı çözümünün bulunduğunu kanıtlayınız.[^158]
+
+[^158]: Eğer x, y, z, t sayıları pozitif tam sayılarsa, o zaman $x/y$, $y/z$, $z/t$ ve $t/x$ sayıları rasyonel ve pozitiftir; çarpımları 1'e eşittir, bu da hepsinin $<1$ olamayacağını ima eder. Ama en az biri $\ge1$ ise, o zaman toplamları $>1$ olur ve $\frac{x}{y}+\frac{y}{z}+\frac{z}{t}+\frac{t}{x}=1$ denklemi sağlanamaz. Böylece, bu denklemin pozitif x, y, z, t tam sayılarında çözümü olmadığını kanıtladık.
+Şimdi bu denklemin $\ne0$ tam sayılarda sonsuz sayıda çözümü olduğunu göstereceğiz. n, 1'den büyük keyfi bir tam sayı olmak üzere, $x=-n^{2}$, $y=n^{2}(n^{2}-1)$, $z=(n^{2}-1)^{2},$ $t=-n(n^{2}-1)$ sayılarının bu denklemi sağladığını kontrol etmek yeterlidir.
+
+159. $\frac{x}{y} + \frac{y}{z} + \frac{z}{t} + \frac{t}{x} = m$ denkleminin, $m = 2$ ve $m = 3$ için pozitif tam sayılarla çözümünün bulunmadığını kanıtlayınız ve $m = 4$ için tüm pozitif tam sayı çözümlerini bulunuz.[^159]
+
+[^159]: LEMMA. Eğer a, b, c, d pozitif ve hepsi eşit değilse, o zaman $(\frac{a+b+c+d}{4})^{4}>abcd.$ (1)
+*KANIT* a, b, c ve d'nin pozitif olduğunu ve örneğin $a\ne b$ olduğunu varsayalım. O zaman ya $a+c\ne b+d$ ya da $a+d\ne b+c$ olur, çünkü eğer $a+c=b+d$ ve $a+d=b+c$ olsaydı, o zaman $a-b=d-b=c-d$ olurdu ve dolayısıyla $a-b=0$ olurdu, ki bu $a\ne b$ varsayımına aykırıdır.
+Eğer, örneğin, $a+c\ne b+d$ ise, $u=a+c$, $v=b+d$ olsun; $u\ne v$ olur, dolayısıyla $(u-v)^{2}>0$, bu da $u^{2}+v^{2}>2uv$ verir. Böylece, $(u+v)^{2}=u^{2}+v^{2}+2uv>4uv$. Buradan $(a+b+c+d)^{2}>4(a+c)(b+d)$ sonucu çıkar ve $(a+c)^{2}\ge4ac$, $(b+d)^{2}\ge4bd$ olduğundan, $(a+b+c+d)^{4}>4^{2}(a+c)^{2}(b+d)^{2}>4^{4}abcd$ olur, bu da (1) eşitsizliğini verir ve lemmanın kanıtını tamamlar.
+Şimdi pozitif bir m tam sayısı için $\frac{x}{y}+\frac{y}{z}+\frac{z}{t}+\frac{t}{x}=m$ denkleminin pozitif x, y, z, t tam sayılarında bir çözümü olduğunu varsayalım. Bu terimlerin çarpımı 1'e eşittir. Eğer hepsi 1'e eşit olsaydı, o zaman $m=4$ olurdu. Böylece, eğer m, 4'ten küçük pozitif bir tam sayı ise, o zaman $x/y$, $y/z,$ $z/t$ ve $t/x$ pozitif rasyonel sayılarının dördü de eşit değildir ve lemmaya göre $[\frac{1}{4}(\frac{x}{y}+\frac{y}{z}+\frac{z}{t}+\frac{t}{x})]^{4}>\frac{x}{y}\cdot\frac{y}{z}\cdot\frac{z}{t}\cdot\frac{t}{x}=1$ olur, bu da $\frac{x}{y}+\frac{y}{z}+\frac{z}{t}+\frac{t}{x}>4$ anlamına gelir.
+Böylece, $m<4$ pozitif tam sayıları için denklemimizin pozitif tam sayı x, y, z, t çözümü yoktur ve $m=4$ için sadece $x/y$, $y/z$, $z/t$ ve $t/x$ sayılarının dördünün de eşit olduğu, dolayısıyla 1'e eşit olduğu çözümü vardır, bu da $x=y=z=t$ anlamına gelir.
+Böylece, $m=4$ için, denklemimizin pozitif x, y, z, t tam sayılarında sonsuz sayıda çözümü vardır ve bunların hepsi keyfi pozitif x tam sayısı seçilip $y=z=t=x$ koyarak elde edilir.
+
+160. $\frac{1}{x} + \frac{1}{y} + \frac{1}{z} + \frac{1}{t} = 1$ denkleminin, $x \leq y \leq z \leq t$ olmak üzere tüm pozitif tam çözümlerini bulunuz.[^160]
+
+[^160]: $x\le4$ olmalıdır, çünkü $x\ge5$ için, $x\le y\le z\le t$ göz önüne alındığında, $\frac{1}{x}+\frac{1}{y}+\frac{1}{z}+\frac{1}{t}\le\frac{4}{5}<1$ olurdu. Açıkça, $x\ge2$ de olmalıdır. Böylece, sadece üç durumu, yani $x=2$, 3 ve 4'ü dikkate almak kalır.
+Önce $x=2$ olduğunu varsayalım. Bu durumda $\frac{1}{y}+\frac{1}{z}+\frac{1}{t}=\frac{1}{2}$ (1) denklemine sahibiz.
+$y\le z\le t$ göz önüne alındığında $\frac{3}{y}\ge\frac{1}{2}$ elde ederiz, bu da $y\le6$ verir; öte yandan, (1) ile $\frac{1}{y}>\frac{1}{2}$ olur, dolayısıyla $y\ge3$. Böylece, sadece $y=3,4,5$ veya 6 olabilir.
+Eğer $y=3$ ise, $\frac{1}{6}=\frac{1}{z}+\frac{1}{t}\le\frac{2}{z}$ olur, bu $z\le12$ verir ve $\frac{1}{6}>\frac{1}{z}$ olduğundan, z sayısı sadece 7, 8, 9, 10, 11 veya 12 değerlerini alabilir.
+$z=7$ için $\frac{1}{t}=\frac{1}{42}$ veya $t=42$ olur, bu da denklemimizin $x=2$, $y=3$, $z=7$, $t=42$ çözümünü verir.
+$z=8$ için $\frac{1}{t}=\frac{1}{24}$ veya $t=24$ olur, bu da denklemimizin $x=2$, $y=3$, $z=8$, $t=24$ çözümünü verir.
+$z=9$ için $\frac{1}{t}=\frac{1}{18}$ olur, dolayısıyla $t=18$, bu da denklemimizin $x=2$, $y=3$, $z=9$, $t=18$ çözümünü verir.
+$z=10$ için $\frac{1}{t}=\frac{1}{15}$ veya $t=15$ elde ederiz, bu da denklemimizin $x=2$, $y=3$, $z=10$, $t=15$ çözümünü verir.
+$z=11$ için $\frac{1}{t}=\frac{5}{66}$ olur, bu t'nin tam sayı değerine yol açmaz ve denklemimizin tam sayı çözümü yoktur.
+$z=12$ için $\frac{1}{t}=\frac{1}{12}$ veya $t=12$ olur, bu da denklemimizin $x=2$, $y=3$, $z=12$, $t=12$ çözümünü verir.
+Eğer $y=4$ ise, $\frac{1}{4}=\frac{1}{z}+\frac{1}{t}\le\frac{2}{z}$ olur, dolayısıyla $z\le8$ ve $\frac{1}{4}>\frac{1}{z}$ olduğundan $z>4$, z sayısı sadece 5, 6, 7 veya 8 değerlerini alabilir.
+$z=5$ için $\frac{1}{t}=\frac{1}{20}$ veya $t=20$ olur, bu da denklemimizin $x=2$, $y=4$, $z=5$, $t=20$ çözümünü verir.
+$z=6$ için $\frac{1}{t}=\frac{1}{12}$ veya $t=12$ olur, bu da denklemimizin $x=2$, $y=4$, $z=6$, $t=12$ çözümünü verir.
+$z=7$ için $\frac{1}{t}=\frac{3}{28}$ olur, bu t'nin tam sayı değerine yol açmaz ve denklemimizin tam sayı çözümü yoktur.
+$z=8$ için $\frac{1}{t}=\frac{1}{8}$ veya $t=8$ olur, bu da denklemimizin $x=2$, $y=4$, $z=8$, $t=8$ çözümünü verir.
+Eğer $y=5$ ise, $\frac{3}{10}=\frac{1}{z}+\frac{1}{t}\le\frac{2}{z}$ veya $z\le\frac{20}{3}$, yani $z\le6$ olur, dolayısıyla $z\ge y=5$ olduğundan, z'nin sadece 5 veya 6 değerlerini alabileceğini görürüz.
+$z=5$ için $\frac{1}{t}=\frac{1}{10}$ veya $t=10$ olur, bu da denklemimizin $x=2$, $y=5$, $z=5$, $t=10$ çözümünü verir.
+$z=6$ için $\frac{1}{t}=\frac{2}{15}$ olur, bu t'nin tam sayı değerine yol açmaz ve denklemimizin çözümü yoktur.
+Eğer $y=6$ ise, $\frac{1}{3}=\frac{1}{2}+\frac{1}{t}\le\frac{2}{2}$ olur, bu $z\le6$ verir ve $z\ge y=6$ olduğundan $z=6$ olmalıdır ve sonuç olarak $t=6$, bu da $x=2$, $y=6$, $z=6$, $t=6$ çözümüne yol açar.
+$x=2$ durumunun değerlendirmesini tamamladık, (1) denkleminin $y\le z\le t$ olmak üzere sadece 10 pozitif tam sayı y, z, t çözümü olduğunu gösterdik, yani 3, 7, 42; 3, 8, 24; 3, 9, 18; 3, 10, 15; 3, 12, 12; 4, 5, 20; 4, 6, 12; 4, 8, 8; 5, 5, 10 ve 6, 6, 6.
+Şimdi $x=3$ olduğunu varsayalım. O zaman $\frac{1}{y}+\frac{1}{z}+\frac{1}{t}=\frac{2}{3}$ denklemine sahibiz ve $y\le z\le t$ ile $\frac{3}{y}\ge\frac{2}{3}$ veya $y\le\frac{9}{2}$ elde ederiz, bu da $y\le4$ anlamına gelir. $3=x\le y$ olduğundan, y için olası değerler 3 ve 4'tür.
+Eğer $y=3$ ise, o zaman $\frac{1}{z}+\frac{1}{t}=\frac{1}{3}$, bu da $\frac{2}{z}\ge\frac{1}{3}$ veya $z\le6$ anlamına gelir ve $\frac{1}{z}<\frac{1}{3}$ veya $z>3$ olduğundan, z için olası değerler sadece 4, 5 ve 6'dır.
+$z=4$ için $t=12$ olur, bu da denklemimizin $x=3$, $y=3$, $z=4$, $t=12$ çözümünü verir.
+$z=5$ için $t=15/2$ elde ederiz, bu da x, y, z, t tam sayılarında bir çözüme yol açmaz.
+$z=6$ için $t=6$ elde ederiz, bu da denklemimizin $x=3$, $y=3$, $z=6$, $t=6$ çözümünü verir.
+Eğer $y=4$ ise, $\frac{1}{z}+\frac{1}{t}=\frac{5}{12}\le\frac{2}{z}$ olur, bu $z\le\frac{24}{5}<5$ anlamına gelir ve $z\ge y=4$ olduğundan $z=4$ olmalıdır ve sonuç olarak $t=6$, bu da denklemimizin $x=3$, $y=4$, $z=4$, $t=6$ çözümünü verir.
+Şimdi $x=4$ olduğunu varsayalım. O zaman $\frac{1}{y}+\frac{1}{z}+\frac{1}{t}=\frac{3}{4}$ denklemine sahibiz, bu da $y\le z\le t$ ile $\frac{3}{4}\le\frac{3}{y}$ veya $y\le4$ anlamına gelir ve $y\ge x=4$ olduğundan, sadece $y=4$ olabilir. Bu $\frac{1}{z}+\frac{1}{t}=\frac{1}{2}\le\frac{2}{z}$ veya $z\le4$'e yol açar ve $z\ge y=4$ olduğundan $z=4$ olmalıdır. Bu da $t=4$ anlamına gelir ve $x=4$, $y=4$, $z=4$, $t=4$ çözümünü elde ederiz.
+Böylece tüm olası durumları tükettik, bu da denklemimizin $x\le y\le z\le t$ olmak üzere 14 pozitif tam sayı x, y, z, t çözümü olduğu sonucuna götürür, yani 2, 3, 7, 42; 2, 3, 8, 24; 2, 3, 9, 18; 2, 3, 10, 15; 2, 3, 12, 12; 2, 4, 5, 24; 2, 4, 6, 12; 2, 4, 8, 8; 2, 5, 5, 10; 2, 6, 6, 6; 3, 3, 4, 12; 3, 3, 6, 6; 3, 4, 4, 6; ve 4, 4, 4, 4.
+**NOT.** Ele alınan denklemler düzlemin düzgün çokgenlerle kaplanması problemiyle bağlantılı olarak ortaya çıkar; bkz [25, s. 31 ve devamı].
+
+161. Her $s$ pozitif tam sayısı için $\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_s} = 1$ denkleminin sonlu sayıda pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^161]
+
+[^161]: Her pozitif $s$ tam sayısı için denklemimizin pozitif tam sayılarda en az bir çözümü vardır, yani $x_{1}=x_{2}=...=x_{s}=s$.
+Her pozitif $s$ tam sayısı için denklemimizin sadece sonlu sayıda çözümü olduğunu kanıtlamak için, daha genel bir teoremi kanıtlayacağız; her rasyonel $w$ ve her pozitif $s$ tam sayısı için $\frac{1}{x_{1}}+\frac{1}{x_{2}}+...+\frac{1}{x_{s}}=w$ denkleminin pozitif $x_{1},x_{2},...,x_{s}$ tam sayılarında sonlu sayıda çözümü olduğunu ileri süren teoremi.
+Kanıt, $s$'ye göre tümevarımla ilerleyecektir.
+Teorem $s=1$ için açıktır. Şimdi $s$ herhangi bir pozitif tam sayı olsun ve teoremin $s$ sayısı için doğru olduğunu varsayalım. Pozitif $x_{1},x_{2},...,x_{s}, x_{s+1}$ tam sayılarının $\frac{1}{x_{1}}+\frac{1}{x_{2}}+...+\frac{1}{x_{s}}+\frac{1}{x_{s+1}}=u$ (1) denklemini sağladığını varsayalım, burada $u$ verilmiş bir rasyonel sayıdır, açıkça pozitiftir. $x_{1}\le x_{2}\le...\le x_{s}\le x_{s+1}$ olduğunu varsayabiliriz. (1)'den $(s+1)/x_{1}\ge u$ olduğu sonucu çıkar, bu da $x_{1}\le(s+1)/u$ anlamına gelir; böylece, $x_{1}$ sayısı sadece sonlu sayıda pozitif tam sayı değeri alabilir. Şimdi $x_{1}$ olarak bu değerlerden herhangi birini alalım; o zaman geri kalan $s$ sayı $x_{2},x_{3},...,x_{s},x_{s+1}$, $\frac{1}{x_{2}}+\frac{1}{x_{3}}+...+\frac{1}{x_{s}}+\frac{1}{x_{s+1}}=u-\frac{1}{x_{1}}$ (2) denklemini sağlayacaktır, burada, verilmiş bir $x_{1}$ için, sağ taraf rasyoneldir. Sonuç olarak, teoremimizin $s$ sayısı için doğruluğunun tümevarım varsayımına göre, bu denklemin pozitif $x_{2},x_{3},...,x_{s},x_{s+1}$ tam sayılarında sonlu $\ge0$ sayıda çözümü olduğu sonucu çıkar. $x_{1}$ sadece sonlu sayıda değer alabildiğinden, teorem $s+1$ sayısı için de geçerlidir.
+Bu kanıtı tamamlar.
+
+162. Her $s \geq 2$ tam sayısı için $\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_s} = 1$ denkleminin $x_1 < x_2 < \dots < x_s$ eşitsizliklerini sağlayan bir pozitif tam sayı çözümünün bulunduğunu kanıtlayınız. Bu çözümlerin sayısını $I_n$ ile gösterirsek, $s = 3, 4, \dots$ için $I_{s+1} > I_s$ olduğunu gösteriniz.[^162]
+
+[^162]: $s=3$ için denklemimizin artan pozitif tam sayılarda bir çözümü olduğunu kolayca kontrol ederiz, yani $x_{1}=2$, $x_{2}=3$, $x_{3}=6$. Eğer bir $s\ge3$ tam sayısı için $x_{1}<x_{2}<...<x_{s}$ pozitif tam sayıları denklemimizi sağlıyorsa, o zaman $s\ge3$ göz önüne alındığında $x_{1}>1$ ve $2<2x_{1}<2x_{2}<...<2x_{s}$ olur; böylece $t_{1}=2$, $t_{2}=2x_{1}$, $t_{3}=2x_{2}, ..., t_{s}=2x_{s-1}, t_{s+1}=2x_{s}$  sayıları artan bir pozitif tam sayı dizisi oluşturur ve $\frac{1}{t_{1}}+\frac{1}{t_{2}}+...+\frac{1}{t_{s}}+\frac{1}{t_{s+1}}=1$ (1) denklemini sağlar. 
+Bu şekilde, (1) denkleminin artan pozitif $t_{1},t_{2},...,t_{s},t_{s+1}$ tam sayılarında 1 çözümünü elde ederiz ve sonuç olarak $l_{s+1}\ge l_{s}$. Böylece, her $s\ge3$ tam sayısı için $\frac{1}{x_{1}}+\frac{1}{x_{2}}+...+\frac{1}{x_{s}}=1$ denkleminin artan pozitif $x_{1},x_{2},...,x_{s}$ tam sayılarında en az bir çözümü vardır.
+$s=3$ için, denklemin artan pozitif tam sayılarda sadece bir çözümü vardır, çünkü $x_{1}>1$ olmalıdır, dolayısıyla $x_{1}\ge2$ ve eğer $x_{1}\ge3$ olsaydı, $x_{2}\ge4$, $x_{3}\ge5$ olurdu, ki bu $\frac{1}{x_{1}}+\frac{1}{x_{2}}+\frac{1}{x_{3}}\le\frac{1}{3}+\frac{1}{4}+\frac{1}{5}<1$ olduğundan imkansızdır. Bu nedenle, $x_{1}=2$ olmalıdır, bu da $\frac{1}{x_2} + \frac{1}{x_3} = \frac{1}{2}$ verir. $x_2 > x_1 = 2$ olmalıdır, eğer $x_2=3$ ise $x_3=6$ olur. Eğer $x_2 \ge 4$ ise $x_3 \ge 5$ olur.
+Bu nedenle $x_{1}=2$, $x_{2}=3$, dolayısıyla $x_{3}=6$ ve sonuç olarak $l_{3}=1.$ Öte yandan, $l_{4}>1$ çünkü $\frac{1}{x_{1}}+\frac{1}{x_{2}}+\frac{1}{x_{3}}+\frac{1}{x_{4}}=1$ denkleminin pozitif tam sayılarda 2, 3, 7, 42 ve 2, 3, 8, 24 çözümleri (ve ayrıca başka çözümleri) vardır.
+Bu nedenle $s\ge4$ olduğunu varsayabiliriz. Bu durumda $\frac{1}{x_{1}}+\frac{1}{x_{2}}+...+\frac{1}{x_{s-1}}=1$ denkleminin artan pozitif $x_{1}<x_{2}<...<x_{s-1}$ tam sayılarında en az bir çözümü vardır ve o zaman $t_{1}=2$, $t_{2}=3$, $t_{3}=6x_{1}$, $t_{4}=6x_{2},...,t_{s+1}=6x_{s-1}$ sayıları artan pozitif tam sayılar olacak ve (1) denklemini sağlayacaktır. Bu çözüm, daha önce elde edilen $l_{s}$ çözümün her birinden farklı olacaktır, çünkü orada tüm sayılar çiftti, burada ise 3 sayısı tektir. Böylece, $l_{s+1}\ge l_{s}+1$ olur, dolayısıyla $s\ge3$ için $l_{s+1}>l_{s}$, ki bu kanıtlanması gerekendi.
+
+163. $s$, 2'den farklı pozitif tam sayı ise, $\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_s} = 1$ denkleminin üçgen sayıları ile (yani $t_n = \frac{n(n+1)}{2}$ şeklinde olan sayılar) çözümünün bulunduğunu kanıtlayınız.[^163]
+
+[^163]: $t_{n}=n(n+1)/2$ n'inci üçgensel sayıyı göstersin. Kolayca kontrol ederiz ki $\frac{1}{t_{1}}=1$, $\frac{1}{t_{2}}+\frac{1}{t_{2}}+\frac{1}{t_{2}}=1$, $\frac{1}{t_{2}}+\frac{1}{t_{2}}+\frac{1}{t_{3}}+\frac{1}{t_{3}}=1$.
+Böylece, s'nin $\ge5$ bir tam sayı olduğunu varsaymak yeterlidir. Eğer s tek ise, yani $s=2k-1$ (k bir tam sayı $\ge 3$), o zaman $\frac{1}{t_{2}}+\frac{1}{t_{3}}+...+\frac{1}{t_{k-1}}+\frac{k+1}{t_{k}}=\frac{2}{2\cdot3}+\frac{2}{3\cdot4}+...+\frac{2}{(k-1)k}+\frac{2}{k}$
+$=2[(\frac{1}{2}-\frac{1}{3})+(\frac{1}{3}-\frac{1}{4})+...+(\frac{1}{k-1}-\frac{1}{k})]+\frac{2}{k}=1$ olur ve sol taraf $(k-2)+(k+1)=2k-1=s$ üçgensel sayının terslerinin toplamıdır.
+Eğer s çift ise, yani $s=2k$ (k bir tam sayı $\ge3$), o zaman $k=3$ durumunda $6/t_{3}=1$ olur, $k>3$ durumunda ise $\frac{2}{t_{3}}+\frac{1}{t_{3}}+\frac{1}{t_{4}}+...+\frac{1}{t_{k-1}}+\frac{k+1}{t_{k}}$ 
+$=\frac{1}{3}+\frac{2}{3\cdot4}+\frac{2}{4\cdot5}+...+\frac{2}{(k-1)k}+\frac{2}{k}=1$
+ve sol taraf $(k-1)+(k+1)=2k=s$  üçgensel sayının terslerinin toplamıdır.
+
+164. $\frac{1}{x_1} + \frac{1}{y^2} + \frac{1}{z^2} + \frac{1}{t^2} = 1$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^164]
+
+[^164]: Açıkça, denklemimizi sağlayan pozitif $x, y, z, t$ tam sayılarından hiçbiri 1 olamaz. Hiçbiri $\ge3$ de olamaz, çünkü eğer örneğin $x\ge3$ ise, o zaman $y\ge2$, $z\ge2$, $t\ge2$ ile $\frac{1}{x^{2}}+\frac{1}{y^{2}}+\frac{1}{z^{2}}+\frac{1}{t^{2}}\le\frac{1}{9}+\frac{3}{4}=\frac{31}{36}<1$ olurdu; bu imkansızdır. Böylece, $x=y=z=t=2$ olmalıdır, ki bu denklemimizin pozitif tam sayılardaki tek çözümüdür.
+
+165. $\frac{1}{x_1} + \frac{1}{x_2} + \dots + \frac{1}{x_s} = 1$ denkleminin en az bir pozitif tam sayı çözümünün bulunmasını sağlayan tüm $s$ pozitif tam sayılarını bulunuz.[^165]
+
+[^165]: Bunlar 1, 4 ve tüm $s\ge6$ tam sayılarıdır.
+$s=1$ için, $x_{1}=1$ açık bir çözümümüz var.
+$s=2$ ve $s=3$ için, denklemimizin pozitif tam sayılarda çözümü yoktur, çünkü bu sayılar $>1$, dolayısıyla $\ge2$ olmak zorunda kalırdı, oysa bu tür $x_{1}$, $x_{2}$, $x_{3}$ sayıları için $\frac{1}{x_{1}^{2}}+\frac{1}{x_{2}^{2}}\le\frac{1}{4}+\frac{1}{4}<1$ ve $\frac{1}{x_{1}^{2}}+\frac{1}{x_{2}^{2}}+\frac{1}{x_{3}^{2}}\le\frac{3}{4}<1$ olur.
+$s=4$ için, $x_{1}=x_{2}=x_{3}=x_{4}=2$ çözümümüz var.
+$s=5$ için, denklemimizin pozitif tam sayılarda çözümü yoktur. Aslında, eğer $x_{1}\le x_{2}\le x_{3}\le x_{4}\le x_{5}$ sayıları denklemimizi sağlasaydı, $x_{1}\ge2$ olurdu ve $x_{1}<3$ olurdu, çünkü $x_{1}\ge3$ durumunda $\frac{1}{x_{1}^{2}}+...+\frac{1}{x_{5}^{2}}\le\frac{5}{9}<1$ olur. Bu nedenle $x_{1}=2$ olmalıdır ve sonuç olarak, $\frac{1}{x_{2}^{2}}+\frac{1}{x_{3}^{2}}+\frac{1}{x_{4}^{2}}+\frac{1}{x_{5}^{2}}=\frac{3}{4}$  olur, bu da $4/x_2^2 \ge 3/4$ yani $x_2^2 \le 16/3 < 6$  anlamına gelir. $x_2<3$ olduğundan $x_{2}=2$, bu da $\frac{1}{x_{3}^{2}}+\frac{1}{x_{4}^{2}}+\frac{1}{x_{5}^{2}}=\frac{1}{2}$ verir. Buradan $x_{3}<3$ sonucu çıkar. $x_3<3$ olduğundan $x_{3}=2$, bu da $\frac{1}{x_{4}^{2}}+\frac{1}{x_{5}^{2}}=\frac{1}{4}$ verir. $x_{4}\ge2$ ve $x_{5}\ge2$ olduğundan  $x_4=2, x_5=2$ olmalıdır.
+$s=6$ için, denklemimizin $x_{1}=x_{2}=x_{3}=2$, $x_{4}=x_{5}=3,$ $x_{6}=6$ çözümü vardır.
+$s=7$ için, denklemimizin $x_{1}=x_{2}=x_{3}=2,$ $x_{4}=x_{5}=x_{6}=x_{7}=4$ çözümü vardır.
+$s=8$ için, denklemimizin $x_{1}=x_{2}=x_{3}=2$, $x_{4}=x_{5}=3,$ $x_{6}=7$, $x_{7}=14$, $x_{8}=21$ çözümü vardır. 
+Şimdi, bir pozitif $s$ tam sayısı için $\frac{1}{t_{1}^{2}}+\frac{1}{t_{2}^{2}}+...+\frac{1}{t_{s}^{2}}=1$ denkleminin pozitif $t_{1},...,t_{s}$ tam sayılarında çözümü olduğunu varsayalım. $1/t_{s}^{2}=4/(2t_{s})^{2}$ olduğundan, $\frac{1}{x_{1}^{2}}+\frac{1}{x_{2}^{2}}+...+\frac{1}{x_{s+3}^{2}}=1$ denkleminin pozitif $x_{1}=t_{1}$, $x_{2}=t_{2}, ..., x_{s-1}=t_{s-1}, x_{s}=x_{s+1}=x_{s+2}=x_{s+3}=2t_{s}$ tam sayılarında bir çözümü vardır.
+Böylece, eğer denklemimiz bir pozitif $s$ tam sayısı için pozitif tam sayılarda çözülebilirse, o zaman $s+3$ için de çözülebilirdir ve $s=6, 7$ ve 8 için çözülebilir olduğundan, her $s\ge6$ tam sayısı için (ve ek olarak $s=1$ ve $s=4$ için) çözülebilirdir.
+**NOT.** Bir rasyonel r sayısının, artan bir doğal sayı dizisinin karelerinin terslerinin sonlu bir toplamı olarak temsil edilebilmesinin ancak ve ancak $0<r<\frac{1}{6}\pi^{2}-1$ veya $1\le r<\frac{1}{6}\pi^{2}$ olması gerektiği kanıtlanabilir. Bkz [36, teorem 5].
+
+166. $1^2$ sayısının sonlu sayıda artan pozitif tam sayının karelerinin terslerinin toplamı şeklinde gösteriniz.[^166]
+
+[^166]: $\frac{1}{2}=\frac{1}{2^{2}}+\frac{1}{3^{2}}+\frac{1}{4^{2}}+\frac{1}{6^{2}}+\frac{1}{7^{2}}+\frac{1}{9^{2}}+\frac{1}{12^{2}}+\frac{1}{14^{2}}+\frac{1}{21^{2}}+\frac{1}{36^{2}}+\frac{1}{45^{2}}+\frac{1}{60^{2}}.$
+Bu eşitliği kontrol etmek için $\frac{1}{7^{2}}+\frac{1}{14^{2}}+\frac{1}{21^{2}}=\frac{1}{6}$  ve $\frac{1}{45^{2}}+\frac{1}{60^{2}}=\frac{1}{36^{2}}$ olduğunu not etmek ve sonra tüm kesirleri ortak payda $36^{2}$'ye indirgemek gerekir.
+**NOT.** $1/2$ sayısının pozitif tam sayıların terslerinin karelerinin on ikiden az toplamı olarak temsil edilip edilemeyeceğini bilmiyorum.
+
+167. Her $m$ pozitif tam sayısı ve tüm yeterince büyük $s$ pozitif tam sayıları için $\frac{1}{x_1^m} + \frac{1}{x_2^m} + \dots + \frac{1}{x_s^m} = 1$ denkleminin en az bir pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^167]
+
+[^167]: $m$ verilmiş bir pozitif tam sayı olsun. $s=2^{m}$ için, denklemimizin pozitif $x_{1}=x_{2}=...=x_{s}=2$ tam sayılarında bir çözümü vardır.
+Şimdi $a$ verilmiş bir pozitif tam sayı olsun ve denklemimizin $s$ pozitif tam sayısı için pozitif tam sayılarda çözülebilir olduğunu varsayalım. Böylece, $\frac{1}{t_{1}^{m}}+\frac{1}{t_{2}^{m}}+...+\frac{1}{t_{s}^{m}}=1$ olacak şekilde pozitif $t_{1},t_{2},...,t_{s}$ tam sayıları vardır ve $1/t_{s}^{m}=a^{m}/(at_{s})^{m}$ olduğundan, $x_{1}=t_{1}$, $x_{2}=t_{2},...,x_{s-1}=t_{s-1}$, $x_{s}=x_{s+1}=...=x_{s+a^{m}-1}=at_{s}$ için $\frac{1}{x_{1}^{m}}+\frac{1}{x_{2}^{m}}+...+\frac{1}{x_{s+a^{m}-1}}=1$ olacaktır.
+Böylece, eğer denklemimiz bir pozitif $s$ tam sayısı için pozitif tam sayılarda çözülebilirse, o zaman $s+a^{m}-1$ için ve daha genel olarak $s+(a^{m}-1)k$ için ($k$ keyfi pozitif tam sayı) pozitif tam sayılarda çözülebilirdir. $a=2$ ve $a=2^{m}-1$ alarak  ($s=2^{m}$ için) denklemimizin $s=2^{m}+(2^{m}-1)k+[(2^{m}-1)^{m}-1]l$ (burada $k$ ve $l$ keyfi pozitif tam sayılardır) formundaki her $s$ için pozitif tam sayılarda bir çözümü olduğunu görürüz.
+$2^{m}-1$ ve $(2^{m}-1)^{m}-1$ sayıları açıkça aralarında asaldır. Sierpiński [37, s. 29, Sonuç 2]'de kanıtlanan teoreme göre, her yeterince büyük pozitif tam sayının $(2^{m}-1)k+[(2^{m}-1)^{m}-1]l$ formunda olduğu (burada $k$ ve $l$ pozitif tam sayılardır) sonucu çıkar. Bu, her yeterince büyük pozitif tam sayının $2^{m}+(2^{m}-1)k+[(2^{m}-1)^{m}-1]l$ formunda olduğunu, dolayısıyla bu tür her tam sayı için denklemimizin pozitif tam sayılarda çözülebilir olduğunu ima eder.
+
+168. Her $s$ pozitif tam sayısı için
+$$\frac{1}{x_1^2} + \frac{1}{x_2^2} + \dots + \frac{1}{x_s^2} = \frac{1}{x_{s+1}^2}$$ 
+denkleminin sonsuz sayıda pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^168]
+
+[^168]: Açıkça, denklemimizin her pozitif s tam sayısı için pozitif $x_{1},x_{2},...,x_{s}$ tam sayılarında en az bir çözümü olduğunu göstermek yeterlidir, çünkü böyle her çözüm pozitif bir tam sayı ile çarpıldığında yine bir çözüm olur.
+$s=1$ için, $x_{1}=x_{2}=1$  açık bir çözümümüz var.
+$s=2$ için, $\frac{1}{15^{2}}+\frac{1}{12^{2}}=\frac{1}{20^{2}}$  çözümümüz var.
+Şimdi $s$ keyfi bir pozitif tam sayı olsun ve denklemimizin $\frac{1}{t_{1}^{2}}+\frac{1}{t_{2}^{2}}+...+\frac{1}{t_{s}^{2}}=\frac{1}{t_{s+1}^{2}}$ pozitif tam sayılarda bir çözümü olduğunu varsayalım. $\frac{1}{(12t_{s+1})^{2}}=\frac{1}{(15t_{s+1})^{2}}+\frac{1}{(20t_{s+1})^{2}}$  olduğundan, $x_{i}=12t_{i}$ ($i=1,...,s-1$ için), $x_{s}=15t_{s}$, $x_{s+1}=20t_{s}$, $x_{s+2}=12t_{s+1}$ pozitif tam sayıları $\frac{1}{x_{1}^{2}}+\frac{1}{x_{2}^{2}}+...+\frac{1}{x_{s}^{2}}+\frac{1}{x_{s+1}^{2}}=\frac{1}{x_{s+2}^{2}}$ denklemini sağlar ve kanıt tümevarımla devam eder.
+
+169. Her $s \geq 3$ pozitif tam sayısı için
+$$\frac{1}{x_1^3} + \frac{1}{x_2^3} + \dots + \frac{1}{x_s^3} = \frac{1}{x_{s+1}^3}$$ 
+denkleminin sonsuz sayıda pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^169]
+
+[^169]: Her $s\ge3$ tam sayısı için denklemimizin pozitif $x_{1},x_{2},...,x_{s},x_{s+1}$ tam sayılarında en az bir çözümü olduğunu kanıtlamak yeterlidir.
+$s=3$ için, $\frac{1}{12^{3}}+\frac{1}{15^{3}}+\frac{1}{20^{3}}=\frac{1}{10^{3}}$ çözümü vardır (bu, $3^{3}+4^{3}+5^{3}=6^{3}$ eşitliğinin her iki tarafını $60^{3}$ ile bölerek elde edilebilir), $s=4$ için ise $\frac{1}{(5\cdot7\cdot13)^{3}}+\frac{1}{(5\cdot12\cdot13)^{3}}+\frac{1}{(7\cdot12\cdot13)^{3}}+\frac{1}{(5\cdot7\cdot12\cdot13)^{3}}=\frac{1}{(5\cdot7\cdot12)^{3}}$ çözümünü elde ederiz (bu, $1^{3}+5^{3}+7^{3}+12^{3}=13^{3}$.
+Şimdi $s$, $\ge3$ verilmiş bir tam sayıyı göstersin ve denklemimizin bu $s$ değeri için pozitif tam sayılarda bir çözümü olduğunu varsayalım. Böylece, $\frac{1}{t_{1}^{3}}+\frac{1}{t_{2}^{3}}+...+\frac{1}{t_{s}^{3}}=\frac{1}{t_{s+1}^{3}}$ olacak şekilde pozitif $t_{1},t_{2},...,t_{s},t_{s+1}$ tam sayıları vardır.
+$x_{i}=10t_{i}$ ($i=1,2,...,s-1$ için) ve $x_{s}=12t_{s}$, $x_{s+1}=15t_{s}$, $x_{s+2}=20t_{s}$, $x_{s+3}=10t_{s+1}$ koyarak, $\frac{1}{x_{1}^{3}}+\frac{1}{x_{2}^{3}}+...+\frac{1}{x_{s+2}^{3}}=\frac{1}{x_{s+3}^{3}}$ elde ederiz, dolayısıyla eğer denklemimiz bir $s$ için pozitif tam sayılarda çözülebilirse, $s+2$ için de çözülebilirdir. $s=3$ ve $s=4$ için çözülebilir olduğundan, her $s\ge3$ için çözülebilir olduğu sonucuna varırız, ki bu kanıtlanması gerekendi.
+**NOT.** $s=2$ için denklemimizin pozitif tam sayılarda çözümü olmadığı temel yöntemlerle kanıtlanabilir ancak kanıt zordur.
+
+170. $x + y + z = 3$ ve $x^3 + y^3 + z^3 = 3$ denklemler sisteminin tüm tam sayı çözümlerini bulunuz.[^170]
+
+[^170]: A. Schinzel tarafından bulunan çözüm. $(x+y+z)^{3}-(x^{3}+y^{3}+z^{3})=3(x+y)(x+z)(y+z)$ (1) özdeşliğine sahibiz.
+Böylece, eğer $x$, $y$ ve $z$, $x+y+z=3$ ve $x^{3}+y^{3}+z^{3}=3$ olacak şekilde tam sayılarsa, o zaman (1) ile $24 = 3(x+y)(x+z)(y+z)$  $8=(x+y)(x+z)(y+z)=(3-x)(3-y)(3-z)$ (2) elde ederiz ve $x+y+z=3$ göz önüne alındığında $6=(3-x)+(3-y)+(3-z)$ (3) olur.
+(3) ilişkisi, $3-x$, $3-y$, $3-z$ sayılarının ya üçünün de çift olduğunu ya da sadece birinin çift olduğunu ima eder. İlk durumda, (2) göz önüne alındığında, bu sayıların hepsi mutlak değer olarak 2'ye eşittir; böylece, (3) ile, 2'ye eşittirler ve o zaman $x=y=z=1$. İkinci durumda, (2) göz önüne alındığında, $3-x$, $3-y$, $3-z$ sayılarından biri mutlak değer olarak 8'e eşittir ve geri kalanlar mutlak değer olarak 1'e eşittir; böylece, (3) göz önüne alındığında, biri 8'e eşittir ve geri kalanlar $-1$'e eşittir. Bu $x=-5$, $y=z=4$, veya $x=y=4$, $z=-5$, veya son olarak $x=4$, $y=-5$, $z=4$ verir.
+Böylece, denklem sistemimizin sadece dört tam sayı çözümü vardır, yani $x, y, z = 1, 1, 1; -5, 4, 4; 4, -5, 4; 4, 4, -5$.
+Bkz Problem E 1355, The American Mathematical Monthly, 69 (1962), 1009.
+**NOT.** $x^{3}+y^{3}+z^{3}=3$ denkleminin yukarıda verilen dördü dışında $x, y, z$ tam sayılarında başka çözümleri olup olmadığını bilmiyoruz.
+
+171. Hangi $n$ pozitif tam sayıları için $3x + 5y = n$ denkleminin en az bir tane pozitif tam sayı çözümü bulunduğunu araştırın ve $n$ sonsuzluğa gittiğinde bu çözüm sayısının da sonsuzluğa gittiğini kanıtlayınız.[^171]
+
+[^171]: Açıkça $n\ge8$ olmalıdır. Eğer $n=3k$ (k, $>5$ bir tam sayı) ise, o zaman $x=k-5$, $y=3$ için $3x+5y=n$ olur. Eğer $n=3k+1$ (k, $>3$ bir tam sayı) ise, o zaman $x=k-3$ ve $y=2$ için $3x+5y=n$ olur. Son olarak, eğer $n=3k+2$ (k, $>1$ bir tam sayı) ise, o zaman $x=k-1$, $y=1$ için $3x+5y=n$ olur.
+Buradan, $n>15$ olan her n için denklemimizin en az bir pozitif tam sayı x, y çözümü olduğu sonucu çıkar. Geriye 8, 9, 10, 12 ve 15 sayılarını incelemek kalır. $n=8$ için, $x=1$, $y=1$ çözümümüz var. $n=9, 12$ ve 15 için, denklemimizin çözümü yoktur, çünkü $3\mid 5y$ olurdu, dolayısıyla $3\mid y$ ve $15\mid 5y$, buradan $n=3x+5y>5y\ge15$ olur. $n=10$ için, denklemimizin pozitif tam sayılarda çözümü yoktur, çünkü o zaman $5\mid 3x$, dolayısıyla $5\mid x$ ve $15\mid 3x$, buradan $n=3x+5y>15$ olur. Böylece, denklemimizin 1, 2, 3, 4, 5, 6, 7, 9, 10, 12 ve 15 dışındaki tüm pozitif n tam sayıları için pozitif tam sayılarda x, y çözümü vardır.
+Şimdi m keyfi bir pozitif tam sayı olsun ve n, $40m$'den büyük bir tam sayı olsun. $3x+5y=n$ denkleminin $x_{0}$, $y_{0}$ çözümü vardır ve bu sayılardan en az biri $>5m$ olmalıdır, çünkü $x_{0}\le5m$, $y_{0}\le5m$ durumunda $3x_{0}+5y_{0}\le 8 \cdot 5m = 40m<n$ olurdu. Eğer $x_{0}>5m$ ise, o zaman $k=0,1,2,...,m$ için $x=x_{0}-5k$ ve $y=y_{0}+3k$ sayıları pozitif tam sayılardır ve $3x+5y=3x_{0}+5y_{0}=n$ denklemini sağlarlar. Eğer $y_{0}>5m$ ise, o zaman $k=0,1, 2,...,m$ için $x=x_{0}+5k$ ve $y=y_{0}-3k$ sayıları pozitif tam sayılardır ve $3x+5y=n$ denklemini sağlarlar.
+Böylece, $n>40m$ için bu denklemin pozitif tam sayılarda x, y çözümü m'den fazladır, bu da bu tür çözümlerin sayısının n ile birlikte sonsuza gittiğini gösterir.
+
+
+172. $n^x + n^y = n^z$ denkleminin tüm $n, x, y, z$ pozitif tam sayı çözümlerini bulunuz.[^172]
+
+[^172]: $n=2$, $y=x$, $z=x+1$, burada x keyfi bir pozitif tam sayıdır. Gerçekten, pozitif x tam sayıları için $2^{x}+2^{x}=2^{x+1}$ olur.
+Öte yandan, pozitif n, x, y ve z tam sayıları için $n^{x}+n^{y}=n^{z}$ olduğunu varsayalım. $x\le y\le z$ olduğunu varsayabiliriz. $n=1$ olamaz, dolayısıyla $n\ge2$ olur. $n^{x}=n^{z}-n^{y}=n^{x}(n^{z-x}-n^{y-x})$ olur, bu da $n^{z-x}-n^{y-x}=1$ anlamına gelir. Eğer $y>x$ olsaydı, o zaman $n\mid 1$ olurdu ki bu imkansızdır. Böylece $y=x$ olmalıdır, dolayısıyla $n^{z-x}=2$, bu da $n=2$, $z-x=1$ verir. Bu nedenle $n=2$, $y=x$, $z=x+1$ elde ederiz.
+**NOT.** $n^{x}+n^{y}=n^{z}$ denklemi, Fermat denklemi $x^{n}+y^{n}=z^{n}$'den üsler ve tabanların rollerinin tersine çevrilmesiyle elde edilir. Bkz Mem. Real. Acad. Sci. Art. Barcelona, 34 (1961), 17-25.
+
+173. Her $(m,n)$ pozitif tam sayı ikilisi için tek bir $x = n, x = m$ pozitif tam sayı çözümü olan, $a, b, c$ tam sayılar olmak üzere bir $ax + by = c$ denkleminin bulunduğunu kanıtlayınız.[^173]
+
+[^173]:  m ve n iki verilmiş pozitif tam sayı olsun ve a ve b, $m+n$'den büyük iki farklı asal sayı olsun. $c=am+bn$ koyalım. $x=m$, $y=n$ sistemi açıkça $ax+by=c$ denklemini sağlar. Bu denklemi sağlayan başka bir x, y sistemi olduğunu varsayalım. $x\ge m$, $y>n$ veya $x>m$, $y\ge n$ olamaz, çünkü bu durumda $ax+by>am+bn=c$ olurdu. Böylece, ya $x<m$ ya da $y<n$ olmalıdır. Eğer $x<m$ ise, o zaman $m-x$, m'den küçük pozitif bir tam sayıdır ve $ax+by=am+bn$ göz önüne alındığında $by=a(m-x)+bn$ olur, bu da $b\mid a(m-x)$ anlamına gelir. a ve b farklı asal sayılar olduğundan, $b\mid m-x$ sonucu çıkar, ki bu $m>b$  tanımı gereği imkansızdır. Benzer şekilde $y<n$ olamayacağını kanıtlarız.
+**NOT.** Herhangi iki pozitif tam sayı sistemi için, bu iki sistemi tek pozitif tam sayı çözümü olarak kabul eden tam sayı a, b ve c katsayılı bir $ax+by=c$ lineer denkleminin var olmadığı kolayca fark edilebilir. Öte yandan, tam sayı katsayılı ikinci dereceden böyle bir denklemin her zaman var olduğunu kolayca kanıtlayabiliriz.
+
+174. Her $m$ pozitif tam sayısı için tam $m$ tane pozitif tam sayı çözümü olan, $a, b, c$ tam sayılar olmak üzere bir $ax + by = c$ denkleminin bulunduğunu kanıtlayınız.[^174]
+
+[^174]: Örneğin, $x+y=m+1$ denklemi, pozitif x, y tam sayılarında tam olarak m çözüme sahiptir, yani $x=k$, $y=m-k+1$, burada $k=1,...,m$.
+**NOT.** Tamsayılarda x, y çözümlerinin sonlu ve $>0$ sayıda olduğu bir $ax+by=c$ lineer denklemi olmadığı bilinmektedir.
+
+175. $m$ verilen bir pozitif tam sayı olmak üzere 
+$$x^2 + y^2 + 2xy - mx - my - m - 1 = 0$$ 
+denkleminin tam $m$ tane pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^175]
+
+[^175]: $f(x,y)=x^{2}+y^{2}+2xy-mx-my-m-1$ için, $f(x,y)=(x+y-m-1)(x+y+1)$ özdeşliğine sahibiz. Pozitif x ve y tam sayıları için $x+y+1>0$ olduğundan, $f(x,y)=0$ ancak ve ancak $x+y-m-1=0$ ise olabilir; Problem 174'ün çözümünden bu denklemin pozitif x ve y tam sayılarında tam olarak m çözümü olduğu sonucu çıkar.
+**NOT.** Bu problemde ele alınan iki değişkenli polinom indirgenebilirdir. Her pozitif m tam sayısı için, $F(x,y)=0$ denkleminin pozitif x, y tam sayılarında tam olarak m çözümü olacak şekilde, tam sayı katsayılı ikinci dereceden indirgenemez bir $F(x,y)$ polinomu olup olmadığı sorulabilir. Her pozitif m tam sayısı için $x^{2}+y^{2}=a_{m}$ denkleminin tam olarak m pozitif tam sayı x, y çözümüne sahip olduğu bir $a_{m}$ pozitif tam sayısının var olduğu kanıtlanabilir. Daha kesin olarak, $a_{2k-1}=2\cdot5^{2k-2}$ ve $a_{2k}=5^{2k-1}$ ($k=1,2,...$) için kanıtlanabilir, ancak kanıt kolay değildir.
+Ayrıca A. Schinzel'in, her pozitif m tam sayısı için x, y değişkenlerinde ikinci dereceden bir $f(x,y)$ polinomunun var olduğunu ve $f(x,y)=0$ denkleminin tam olarak m tam sayı çözümüne sahip olduğunu kanıtladığını belirtelim. Bkz [18].
+
+176. $x^3 + (x + 1)^3 + (x + 2)^3 = (x + 3)^3$ denkleminin tüm tam sayı çözümlerini bulunuz.[^176]
+
+
+[^176]: $x=t+3$ koyalım. O zaman denklemimiz $2t(t^{2}+3t+21)=0$. $x=t+3$ koymak denklemi $2t(t^{2}+3t+21)=0$'a indirgiyor. Orijinal denklemi bilmiyoruz ama bu denklemin $t=0$ dışında reel çözümü yok ($t^2+3t+21$'in diskriminantı $9-84 < 0$).) denklemine indirgenir, bu denklemin reel sayılarda sadece bir çözümü vardır, yani $t=0$. Buradan, denklemimizin tam sayılarda sadece bir çözümü olduğu sonucu çıkar, yani $x=3$.
+**NOT.** $x^{3}+(x+r)^{3}+(x+2r)^{3}+...+(x+(n-1)r)^{3}=(x+nr)^{3}$ denkleminin pozitif x, r, n tam sayılarında tek çözümünün $n=3$, $x=3r$ olduğu (r keyfi pozitif tam sayı) kanıtlanabilir.
+
+177. Her $n$ pozitif tam sayısı için
+$$ (x + 1)^3 + (x + 2)^3 + \dots + (x + n)^3 = y^3 $$ 
+denkleminin tam sayı çözümünün bulunduğunu kanıtlayınız.[^177]
+
+[^177]: Eğer $n=2k-1$ ($k$ pozitif tam sayı) ise, o zaman açıkça $x=-k$, $y=0$ denklemimizin bir çözümüdür; eğer $n=2k$ (k pozitif tam sayı) ise, o zaman $x=-k$, $y=k$ denklemimizin bir çözümüdür.
+**NOT.** Başka çözümler de vardır, örneğin $n=8$ için $x=-3$, $y=6$; $n=25$ için $x=-11$, $y=20$; $n=1000$ için $x=1333$, $y=16830$.
+
+178. $(x + 1)^3 + (x + 2)^3 + (x + 3)^3 + (x + 4)^3 = (x + 5)^3$ denkleminin tüm tam sayı çözümlerini bulunuz.[^178]
+
+[^178]: Bu denklemde $x^{3}$, $x^{2}$ ve $x$'in katsayıları 3 ile bölünebilir ve sabit terim $-25$'tir, ki bu 3 ile bölünemez. Buradan, denklemimizin pozitif tam sayılarda $x$ çözümü olmadığı sonucu çıkar.
+
+179. $(x + 1)^3 + (x + 2)^3 + (x + 3)^3 + (x + 4)^3 = (x + 10)^3$ denkleminin tüm tam sayı çözümlerini bulunuz.[^179]
+
+[^179]: $x=t+10$ yerine koyarak denklemimizi $3t(t^{2}+40t+230)=0$ denklemine indirgeriz. $t^{2}+40t-230=0$ denkleminin rasyonel çözümü olmadığından, $t=0$ olmalıdır ve denklemimizin pozitif tamsayılarda tek bir çözümü vardır, o da $x=10$'dur.
+
+180. $y(y + 1) = x(x + 1)(x + 2)$ denkleminin iki tane pozitif tam sayı çözümünü bulunuz.[^180]
+
+[^180]: $x=1$, $y=2$ (çünkü $2\cdot3=1\cdot2\cdot3)$ ve $x=5$, $y=14$ (çünkü $14\cdot15=5\cdot6\cdot7)$.
+**NOT.** L. J. Mordell, denklemimizin pozitif tamsayılarda başka çözümü olmadığını kanıtlamıştır.
+
+181. $1 + x^2 + y^2 = z^2$ denkleminin sonsuz sayıda pozitif tam sayı çözümünün bulunduğunu kanıtlayınız.[^181]
+
+[^181]: Çözüm, $n=1,2,...$ için $1+(2n)^{2}+(2n^{2})^{2}=(2n^{2}+1)^{2}$ özdeşliğinden hemen elde edilir.
+**NOT.** Her pozitif $k$ tamsayısı için $k+x^{2}+y^{2}=z^{2}$ denkleminin $x, y, z$ pozitif tamsayılarında sonsuz sayıda çözümü olduğunu kanıtlamak kolaydır. $k$ tek ise çift, $k$ çift ise tek olmak üzere $x$'i $>|k|+1$ koşulunu sağlayan keyfi bir tamsayı olarak almak ve $y=\frac{k+x^{2}-1}{2}$, $z=\frac{k+x^{2}+1}{2}$ olarak belirlemek yeterlidir.
+
+182. $n, x, y, z, t$ pozitif tam sayılar olmak üzere $nx^2 + ny^2 + nz^2 = nt$ denkleminin tüm çözümlerini bulunuz.[^182]
+
+[^182]: $n$ pozitif tamsayısının ve $x\le y\le z$ koşulunu sağlayan pozitif tamsayıların $n^{x}+n^{y}+n^{z}=n^{t}$ (1) denklemini sağladığını varsayalım. $n=1$ olamaz. $n=2$ ise, (1)'den $1+2^{y-x}+2^{z-x}=2^{t-x}$ elde ederiz ve $y>x$ olamaz. Dolayısıyla $y=x$ olur ve $2+2^{z-x}=2^{t-x}$ olur, bu da $z-x=1$ ve dolayısıyla $t-x=2$ sonucunu verir. O halde, $n=2$ ise, $y=x$, $z=x+1$ ve $t=x+2$ olmalıdır; tüm $x$ pozitif tamsayıları için $2^{x}+2^{x}+2^{x+1}=2^{x+2}$ olduğunu kolayca kontrol edebiliriz.
+Şimdi, $n\ge3$ olduğunu varsayalım. (1) uyarınca $1+n^{y-x}+n^{z-x}=n^{t-x}$ olur ve $n>2$ olduğundan, $y=x$ ve $z=x$ olmalıdır. Böylece $3=n^{t-x}$ olur, bu da $n=3$ ve $t-x=1$ demektir. Dolayısıyla, $n>2$ ise, $n=3$, $x=y=z$, $t=x+1$ olmalıdır. Her $x$ pozitif tamsayısı için $3^{x}+3^{x}+3^{x}=3^{x+1}$ olduğunu kolayca kontrol ederiz.
+Sonuç olarak, (1) denkleminin $x\le y\le z$ koşulunu sağlayan $n, x, y, z, t$ pozitif tamsayılarındaki tüm çözümleri, $x$ keyfi bir pozitif tamsayı olmak üzere, $n=2$, $y=x$, $z=x+1$, $t=x+2$ veya $n=3$, $y=x$, $z=x$, $t=x+1$'dir.
+
+183. $x, y, z, t$ pozitif tam sayılar olmak üzere $4x + 4y + 4z = 4t$ denkleminin tüm çözümlerini bulunuz.[^183]
+
+[^183]: Problem 182'nin çözümünden, $4^{x}+4^{y}+4^{z}=4^{t}$ denkleminin pozitif tamsayılarda çözümü olmadığı sonucu çıkar. Bu denklemin, $x^{4}+y^{4}+z^{4}=t^{4}$ denkleminde tabanlar ve üslerin rollerinin tersine çevrilmesiyle elde edildiğine dikkat edelim. Son denkleme gelince, Euler tarafından varsayıldığı gibi, $x, y, z, t$ pozitif tamsayılarında çözümü olup olmadığı bilinmemektedir.
+
+184. $2^m - 3^n = 1$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^184]
+
+[^184]: Bu denklemin pozitif tamsayılarda tek bir çözümü vardır, o da $m=2$, $n=1$'dir. Gerçekten de, $3^{2}\equiv1$ (mod 8) olduğundan, $k$ pozitif tamsayıları için $3^{2k}+1\equiv2$ (mod 8) ve $3^{2k-1}+1\equiv4$ (mod 8) bağıntısına sahibiz, bu da gösteriyor ki, $n$ pozitif tamsayısı için $3^{n}+1$ sayısı 8'e bölünemez, dolayısıyla $m\ge3$ tamsayıları için $2^{m}$ ile bölünemez. O halde, $m$ ve $n$ pozitif tamsayıları için $2^{m}-3^{n}=1$ ise, $m\le2$ olmalıdır, dolayısıyla ya $2-3^{n}=1$'dir, ki bu imkansızdır, ya da $2^{2}-3^{n}=1$'dir, bu da $m=2$, $n=1$ verir.
+
+185. $3^n - 2^m = 1$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^185]
+
+[^185]: Bu denklemin pozitif tamsayılarda yalnızca iki çözümü vardır, $n=m=1$ ve $n=2$, $m=3$. Gerçekten de, $n$ tek ve $>1$ ise, $k$ pozitif bir tamsayı olmak üzere $n=2k+1$'dir ve $3^{2}\equiv1$ (mod 4) olduğundan $3^{2k+1}\equiv3$ (mod 4) olur, bu da $2^{m}=3^{n}-1=3^{2k+1}-1\equiv2$ (mod 4) sonucunu verir. Bu, $m\le1$ veya $m=1$ demektir ve $3^{n}-2^{m}=1$ olduğundan $n=1$ elde ederiz. $n$ çift ise, $k$ bir pozitif tamsayı olmak üzere $n=2k$'dir, o zaman $2^{m}=3^{2k}-1 =(3^{k}-1)(3^{k}+1)$ olur. İki ardışık çift sayı olan $3^{k}-1$ ve $3^{k}+1$, bu nedenle, 2'nin kuvvetleridir, bu da bu sayıların 2 ve 4 olduğunu gösterir, buradan $k=1$ ve dolayısıyla $n=2$ bulunur. Bu da $n=2$, $m=3$ çözümünü verir.
+
+186. $2x + 1 = y^2$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^186]
+
+[^186]: $x$ ve $y$ pozitif tamsayıları için $2^{x}+1=y^{2}$ ise, o zaman $(y-1)(y+1)=2^{x}$ olur, dolayısıyla $y>1$ ve $y-1=2^{k}$, $y+1=2^{l}$ olur; burada $k$ bir tamsayı $\ge0$ ve $l$, $k$'dan büyük bir tamsayıdır. Ayrıca, $k+l=x$'tir. Buradan $2^{l}-2^{k}=2$ elde edilir, bu da $k>0$ olduğunu ve $k<l$ olduğundan $2^{k}\mid 2$ olduğunu gösterir. Sonuç olarak, $k\le1$ ve $k\ge0$ olduğundan $k=1$ elde ederiz. Böylece, $2^{l}=2^{k}+2=4$ olur, bu da $l=2$ sonucunu verir. Dolayısıyla, $x=k+l=1+2=3$ olur, buradan $y^{2}=2^{3}+1=9$ ve $y=3$ bulunur. Bu nedenle, $2^{x}+1=y^{2}$ denkleminin pozitif tamsayılarda tek bir çözümü vardır, o da $x=y=3$'tür.
+
+187. $2x + 1 = y^2$ denkleminin tüm pozitif tam sayı çözümlerini bulunuz.[^187]
+
+[^187]: Bu denklemin tek bir çözümü vardır, o da $x=y=1$'dir. Çünkü $x>1$ durumunda $2^{x}-1$ sayısı, $k$ pozitif bir tamsayı olmak üzere, $4k-1$ formundadır ve hiçbir tamsayının karesi bu formda değildir, çünkü 4'e bölündüğünde ya 0 ya da 1 kalanını verir.
+
+188. $x^2 + 2y^2 = z^2, 2x^2 + y^2 = t^2$ denklemler sisteminin $x, y, z, t$ pozitif tam sayılar olmak üzere çözümünün bulunmadığını kanıtlayınız.[^188]
+
+[^188]: Sistemimizin $x, y, z, t$ pozitif tamsayılarında çözümü olduğunu varsayalım. $(x,y)=1$ varsayabiliriz, çünkü $(x,y)=d>1$ durumunda denklemlerimizin her iki tarafını $d^{2}$ ile bölebilirdik. Dolayısıyla, $x, y$ sayılarından en az biri tektir. Her ikisinin de tek olması imkansızdır, çünkü bu durumda denklemlerimizin sol tarafları 4'e bölündüğünde 3 kalanını verirdi, ki bu imkansızdır, çünkü sağ taraflar karelerdir. Ancak, örneğin $x$ çift ise, $y$ tek olamaz, çünkü bu durumda ilk denklemin sol tarafı 4'e bölündüğünde 2 kalanını verirdi, ki bu bir kare olduğu için imkansızdır. Dolayısıyla, $x$ ve $y$ sayılarının her ikisi de çifttir, bu da $(x,y)=1$ varsayımıyla çelişir.
+
+189. $[2(3x + 2y + 1) + 1]^2 - 2(4x + 3y + 2)^2 = (2x + 1)^2 - 2y^2$ özdeşliğini kullanarak $x^2 + (x + 1)^2 = y^2$ denkleminin sonsuz sayıda pozitif tam sayı kökünün bulunmadığını kanıtlayınız.[^189]
+
+[^189]: Denklemimiz, $(2x+1)^{2}-2y^{2}=-1$ denklemine denktir; bu denklemin pozitif tamsayılarda bir çözümü vardır, $x=3$, $y=5$. Özdeşliğimiz, $x$ ve $y$ pozitif tamsayıları denklemi sağlıyorsa, daha büyük sayılar olan $x_{1}=3x+2y+1$ ve $y_{1}=4x+3y+2$'nin de bu denklemi sağladığını ima eder. Buradan, bu denklemin $x$ ve $y$ pozitif tamsayılarında sonsuz sayıda çözümü olduğu sonucu çıkar. $x=3$, $y=5$ için bu şekilde $x_{1}=20$, $y_{1}=29$ elde ederiz.
+
+190. $[2(7y + 12x + 6)]^2 - 3[2(4y + 7x + 3) + 1]^2 = (2y)^2 - 3(2x + 1)^2$ özdeşliğini kullanarak $(x + 1)^3 - x^3 = y^2$ denkleminin sonsuz sayıda pozitif tam sayı kökünün bulunmadığını kanıtlayınız.[^190]
+
+[^190]: Denklemimiz $x=7$, $y=13$ için sağlanır. Bu denklem, $3x^{2}+3x+1=y^{2}$ denklemine denktir, bu da $4y^{2}=12x^{2}+12x+4=3(2x+1)^{2}+1$'e, yani $(2y)^{2}-3(2x+1)^{2}=1$ denklemine denktir. Bu, $x$ ve $y$ bu denklemi sağlıyorsa, daha büyük sayılar olan $x_{1}=4y+7x+3$ ve $y_{1}=7y+12x+6$'nın da bu denklemi sağladığını ima eder. Buradan, ele alınan denklemin $x, y$ pozitif tamsayılarında sonsuz sayıda çözümü olduğu sonucu çıkar. Örneğin, $x=7$, $y=13$ için $x_{1}=104$, $y_{1}=181$ elde ederiz.
+
+191. $x^2 + 5y^2 = z^2$ ve $5x^2 + y^2 = t^2$ denklemler sisteminin $x, y, z, t$ pozitif tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.[^191]
+
+[^191]: Kanıt (J. Browkin'e göre). Eğer sistemimizin $x, y, z, t$ pozitif tamsayılarında bir çözümü olsaydı, $(x,y)=1$ olan bir çözümü de olurdu. Denklemlerimizi topladığımızda $6(x^{2}+y^{2})=z^{2}+t^{2}$ elde ederiz, bu da $3\mid z^{2}+t^{2}$ demektir. 3'e bölünmeyen bir tamsayının karesi 3'e bölündüğünde 1 kalanını verdiğinden, $z$ ve $t$ sayılarının her ikisinin de 3'e bölünmemesi imkansızdır. Ancak, $3\mid z^{2}+t^{2}$ olduğundan, $z, t$ sayılarından biri 3'e bölünüyorsa, diğeri de bölünmelidir. Dolayısıyla, $z$ ve $t$'nin her ikisi de 3'e bölünür, bu da $6(x^{2}+y^{2})=z^{2}+t^{2}$ denkleminin sağ tarafının 9'a bölünebildiğini ve $3\mid x^{2}+y^{2}$ olduğunu gösterir; bildiğimiz gibi bu, $x$ ve $y$'nin her ikisinin de 3'e bölündüğünü gösterir, ki bu da $(x,y)=1$ varsayımıyla çelişir.
+
+192. Problem 34'ü kullanarak $x^2 + 6y^2 = z^2$ ve $6x^2 + y^2 = t^2$ denklemler sisteminin $x, y, z, t$ pozitif tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.[^192]
+    
+a. $x^2 + 7y^2 = z^2$ ve $7x^2 + y^2 = t^2$ denklemler sisteminin $x, y, z, t$ pozitif tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.
+
+[^192]: Denklemlerimiz $7(x^{2}+y^{2})=z^{2}+t^{2}$ anlamına gelir. Dolayısıyla, $7\mid z^{2}+t^{2}$ olur, buradan Problem 34'e göre $7\mid z$ ve $7\mid t$ sonucunu elde ederiz. Böylece, $49\mid 7(x^{2}+y^{2})$, bu da $7\mid x^{2}+y^{2}$ demektir, ki bu da $7\mid x$ ve $7\mid y$ anlamına gelir. Dolayısıyla, sistemimizin $(x,y)=1$ olan çözümleri olamaz; bu da, $x, y, z, t$ pozitif tamsayılarında en az bir çözümü varsa, elbette imkansızdır. Gerçekten de, $(x, y) =d>1$ ise, $d\mid z$ ve $d\mid t$ olurdu ve $x, y, z, t$ sayılarının her birini $d$ ile bölmek yeterli olurdu.
+\
+a. Örneğin, $x=3$, $y=1$, $z=4$, $t=8$ çözümü vardır.
+
+193. V.A. Lebesprogue teoremini kullanarak $x^2 - y^3 = 7$ denkleminin $x, y$ tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.[^193]
+
+[^193]: $y$ çift olsaydı, $x^{2}$ $8k+7$ formunda olurdu, ki bu imkansızdır. $y$ tek olsaydı, $x^{2}+1=y^{3}+2^{3}=(y+2)[(y-1)^{2}+3]$ olurdu ve $y=2k+1$ olduğundan, $(2k)^{2}+3|(x^{2}+1)$ olurdu. Sol tarafın $4t+3$ formunda bir asal böleni olduğundan, $x^{2}+1$ sayısının da aynı formda bir asal böleni olurdu, ki bu ($(x,1)=1$ olduğundan) imkansızdır.
+
+194. $c$ pozitif tam sayısı tekse, $x^2 - y^3 = (2c)^3 - 1$ denkleminin $x, y$ tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.[^194]
+
+
+[^194]: $x^{2}+1=(2c)^{3}+y^{3}=(y+2c)(y^{2}-2cy+4c^{2})=(y+2c)((y-c)^{2}+3c^{2})$'ye sahibiz. $c^{2}\equiv1(mod~8)$ olduğundan, $3c^{2}\equiv3(mod~8)$ olur ve $y$ tek ise, $y-c$ çifttir ve $(y-c)^{2}+3c^{2}$ $4k+3$ formundadır; dolayısıyla, bu formda bir asal böleni vardır, ki bu aynı zamanda $x^{2}+1$'in bir bölenidir, bu da imkansızdır. $y$ çift olsaydı, $x^{2} = y^{3}+(2c)^{3}-1 \equiv -1$ (mod 8) olurdu, ki bu imkansızdır. Buradan, $x$ ve $y$ tamsayı olmak üzere $x^{2}-y^{3}$ formunda olmayan sonsuz sayıda pozitif tamsayı olduğu sonucu çıkar.
+
+195. $k$ pozitif tam sayı ise, $x^2 + 2k^2 + 1 = y^3$ denkleminin $x, y$ pozitif tam sayılarıyla çözümünün bulunmadığını kanıtlayınız.[^195]
+
+[^195]: $x$'in tek olduğunu varsayalım. O zaman $y$, $y^{3}\equiv0(mod~8)$ formundadır, dolayısıyla $y^{3}-1\equiv7(mod~8)$ olur ve $x^{2}+(2^{k})^{2}$ $4k+3$ formunda bir asal böleni olurdu, ki bu, aralarında asal iki sayının kareleri toplamı olduğu için imkansızdır. Dolayısıyla, $x$ çifttir. $\alpha$ pozitif bir tamsayı olmak üzere $x=2^{\alpha}z$ olsun. Eğer $\alpha=k$ ise, $2^{2k}(z^{2}+1)=y^{3}-1=(y-1)(y^{2}+y+1)$ olur, dolayısıyla $y$ tek olmalıdır ve $y-1$, $4k+3$ formunda olamaz. Böylece, $y\equiv1(mod~4)$ ve $y^{2}+y+1\equiv3(mod~4)$ olur, ki bu imkansızdır. Eğer $\alpha<k$ ise, $2^{2\alpha}((2^{k-\alpha})^{2}+z^{2})=(y-1)(y^{2}+y+1)$ olur ve $z$'nin tek olması gerçeği göz önüne alındığında, yukarıdaki gibi devam ederiz. Son olarak, eğer $\alpha>k$ ise, $2^{2k}((2^{\alpha-k}z)^{2}+1)=(y-1)(y^{2}+y+1)$ olur ve yukarıdaki gibi devam ederiz. Özellikle, $k=1$ ise, $y^{3}-x^{2}=5$ denkleminin $x, y$ pozitif tamsayılarında çözümü olmadığını görürüz. Bkz: L. Aubry, Dickson'da, [7, s. 538].
+
+196. $x \leq y, x \leq z \leq t$ olmak üzere $x + y = zt$ ve $z + t = xy$ denklemler sisteminin $x, y, z, t$ pozitif tam sayılarıyla tüm çözümlerinin bulunması ile ilgili A. Moessner problemini çözünüz. Sistemin sonsuz sayıda $x, y, z, t$ tam sayı çözümünün bulunduğunu kanıtlayınız.[^196]
+
+[^196]: Önce $x=1$ olduğunu varsayalım. O zaman $1+y=zt$ ve $z+t=y$ denklemlerine sahip oluruz, bu da $zt=z+t+1$ demektir. Buradan $z\ne1$ olmalıdır (çünkü $z=1$ $t=t+2$ sonucunu verirdi, bu imkansızdır). Eğer $z=2$ ise, $t=3$ olur, dolayısıyla $y=z+t$ olduğundan $y=5$ elde ederiz, bu da $x=1$, $y=5$, $z=2$, $t=3$ çözümünü verir. Eğer $z\ge3$ ise, $t\ge z\ge3$ olur ve $z=z_{1}+2$, $t=t_{1}+2$ yazabiliriz, burada $z_{1}\ge1$, $t_{1}\ge1$'dir. Buradan $zt=(z_{1}+2)(t_{1}+2)=z_{1}t_{1}+2z_{1}+2t_{1}+4\ge z_{1}+t_{1}+7=z+t+3$ sonucu çıkar, bu da ($x=1$ olduğundan) $zt=z+t+1$ ile çelişir.
+Şimdi $x=2$ olduğunu varsayalım. O zaman $z\ge x=2$ olur. Eğer $z=2$ ise $2+y=2t$, $2+t=2y$ olur, bu da $y=t=2$ demektir. Dolayısıyla $x=y=z=t=2$ olurdu, ki bu sistemimizin bir çözümüdür.
+Eğer $z>2$ ise, $t\ge z$ olduğundan, $t>2$ olur ve $z=z_{1}+2$, $t=t_{1}+2$ koyabiliriz, bu da $zt=(z_{1}+2)(t_{1}+2)=z_{1}t_{1}+2z_{1}+2t_{1}+4\ge z_{1}+t_{1}+7=z+t+3$ sonucunu verir. Ancak, $x=2$ olduğundan, $2+y=zt$, $z+t=2y$ olur, bu da $zt=\frac{1}{2}(z+t)+2$ verir. Böylece, $\frac{1}{2}(z+t)+2\ge z+t+3$ olur, bu da $z+t+2\le0$ sonucunu verir, ki bu imkansızdır.
+Şimdi $x>2$ olduğunu varsayalım, dolayısıyla $x\ge3$, ve $z\ge x\ge3$, $t\ge z\ge3$ olur. $z=z_{1}+2$, $t=t_{1}+2$ koyabiliriz, burada $z_{1}\ge1$ ve $t_{1}\ge1$'dir. Buradan $zt=(z_{1}+2)(t_{1}+2)=z_{1}t_{1}+2z_{1}+2t_{1}+4\ge z_{1}+t_{1}+9=z+t+5$ sonucu çıkar. Benzer şekilde, $x\ge3$ olduğundan, $y\ge x\ge3$, $xy\ge x+y+5$ olur.
+Ancak, $z+t=xy$'ye sahibiz, bu da $zt\ge z+t+5=xy+5\ge x+y+10=zt+10$ demektir, ki bu imkansızdır.
+Böylece, sistemimizin $x\le y$ ve $x\le z\le t$ koşullarını sağlayan pozitif tamsayılarda yalnızca iki çözümü vardır, $x=1$, $y=5$, $z=2$, $t=3$ ve $x=y=z=t=2$.
+Sistemimizin tamsayılardaki çözümlerine gelince, bu tür sonsuz sayıda çözüm vardır. J. Browkin, $y$ keyfi olmak üzere $x=z=0$, $t=y$'nin bu tür çözümler olduğunu fark etmiştir, A. Mąkowski ise sistemimizin çözümlerinin $x=t=-1$, $y$ keyfi, $z=1-y$ olduğunu fark etmiştir.
+
+197. Her $p$ pozitif tam sayıları için $x_1 + x_2 + \dots + x_n = z_n$ denkleminin $x_1, x_2, \dots, x_n$ pozitif tam sayılarıyla en az bir çözümünün bulunduğunu kanıtlayınız.[^197]
+
+[^197]: $n=1$ için, $x$ keyfi olabilir. $n=2$ için, $x_{1}=x_{2}=2$'ye sahibiz. $n>2$ için, $x_{1}=x_{2}=...=x_{n-2}=1$, $x_{n-1}=1$, $x_{n}=n$ bir çözümdür. Ancak, başka çözümler de vardır, örneğin $n=5$ için $x_{1}=x_{2}=x_{3}=1$, $x_{4}=x_{5}=3$'e sahibiz. Dolayısıyla, her $n$ pozitif tamsayısı için, toplamları çarpımlarına eşit olan $n$ pozitif tamsayı vardır diyebiliriz.
+
+198. Verilen her $a$ ve $n$ pozitif tam sayıları için $x^n - y^n = a$ denkleminin $x, y$ pozitif tam sayı çözümlerinin belirlenmesi için yöntem bulunuz.[^198]
+
+[^198]: Eğer $n$ tek ve $> 1$ ise, $a=x^{n}-y^{n}=(x-y)(x^{n-1}+x^{n-2}y+...+y^{n-1})$ olur. $a>0$ olduğundan, $x-y\ge1$ olmalıdır, dolayısıyla $x^{n-1}+y^{n-1}\le a$ olur. Böylece, $x<\sqrt[n-1]{a}$ ve $y<\sqrt[n-1]{a}$ olur ve sonlu sayıda kontrol yeterli olacaktır.
+Eğer $n=1$ ise, $a=x-y$ denkleminin tüm pozitif tamsayı çözümleri: $y$ keyfi, $x=a+y$'dir.
+Eğer $n=2k$ ise, $k$ pozitif bir tamsayı olmak üzere, $a=x^{n}-y^{n}=x^{2k}-y^{2k}=(x^{k}-y^{k})(x^{k}+y^{k})$ olur. $x^{k}-y^{k}\ge1$ olduğundan, $x^{k}+y^{k}\le a$'dır. Buradan $x<\sqrt[k]{a}$, $y<\sqrt[k]{a}$ sonucu çıkar ve sonlu sayıda kontrol yeterli olacaktır.
+
+199. Elementer yöntemlerle, hem üçgen hem de beşgen (yani $\frac{k(3k-1)}{2}$ şeklinde) olan sonsuz sayıda sayı bulunduğunu kanıtlayınız.[^199]
+
+
+[^199]: Bir $t_{x}=x(x+1)/2$ üçgensel sayısının pentagonal olması için, her $x$ için $y(3y-1)=x(x+1)$ (1) olacak şekilde bir $y$ pozitif tamsayısının var olması gerekli ve yeterlidir. Dolayısıyla, (1) denkleminin sonsuz sayıda $x, y$ pozitif tamsayı çözümüne sahip olduğunu göstermek yeterlidir. $(4x+7y+1)(12x+21y+2)-(7x+12y+1)(7x+12y+2) = y(3y-1)-x(x+1)$ olduğunu kolayca kontrol ederiz. Buradan, $x, y$ pozitif tamsayıları (1)'i sağlarsa, daha büyük tamsayılar olan $x_{1}=7x+12y+1$, $y_{1}=4x+7y+1$ (2) $y_{1}(3y_{1}-1)=x_{1}(x_{1}+1)$ denklemini sağlar. $x=y=1$ sayıları (1)'i sağladığından, bu denklemin sonsuz sayıda $x, y$ pozitif tamsayı çözümü olduğu sonucu çıkar. $x=y=1$ çözümü (2) ile $x_{1}=20$, $y_{1}=12$ çözümünü verir, bu da $x_{2}=285$, $y_{2}=165$'e götürür, ve böyle devam eder.

@@ -1,0 +1,480 @@
+## Tam Sayıların Bölünmesi
+
+
+1. $n^2 + 1$ sayısının $n + 1$'e bölünecek şekilde tüm pozitif tam sayı $n$ değerlerini bulunuz.[^1]
+
+[^1]: Bu koşulu sağlayan yalnızca bir pozitif tam sayı vardır: $n = 1$. Gerçekten de $n^2 + 1 = n(n + 1) - (n - 1)$'dir; bu nedenle, $n + 1 \mid n^2 + 1$ ise, $n + 1 \mid n - 1$ olur. Bu, pozitif tam sayılar için yalnızca $n - 1 = 0$ olduğunda mümkündür, yani $n = 1$ olmalıdır.
+
+
+
+2. $x^3 - 3$ sayısının $x - 3$'e bölünecek şekilde tüm $x \neq 3$ tam sayılarını bulunuz.[^2]
+
+[^2]: $x - 3 = t$ olarak tanımlayalım. Böylece, $t$, $t \neq 0$ olacak şekilde bir tam sayı olur ve $t \mid (t + 3)^3 - 3$, bu da $t \mid 3^3 - 3$ yani $t \mid 24$ koşuluna eşdeğerdir. Bu nedenle, $t$'nin 24'ün bir tam sayı böleni olması gerekli ve yeterlidir. Bu durumda, $t$, $\pm1, \pm2, \pm3, \pm4, \pm6, \pm8, \pm12, \pm24$ sayılarından biri olmalıdır. $x = t + 3$ için şu değerleri elde ederiz: $-21, -9, -5, -3, -1, 0, 1, 2, 4, 5, 6, 7, 9, 11, 15,$ ve $27$.
+
+
+
+
+3. $4n^2 + 1$ sayısının 5’e ve 13’e bölünmesini sağlayan sonsuz sayıda pozitif tam sayı $n$'nin bulunduğunu kanıtlayınız.[^3]
+
+[^3]:Örneğin, $65k + 56$ aritmetik dizisindeki tüm $n$ sayıları (burada $k = 0, 1, 2, \dots$), istenen özelliğe sahiptir. Gerçekten de, $n = 65k + 56$ için, $k \geq 0$ tam sayısı ile $n \equiv 1 \pmod{5}$ ve $n \equiv 4 \pmod{13}$ olur. Bu nedenle, $4n^2 + 1 \equiv 0 \pmod{5}$ ve $4n^2 + 1 \equiv 0 \pmod{13}$ olur. Böylece, $5 \mid 4n^2 + 1$ ve $13 \mid 4n^2 + 1$.
+
+
+
+4. Her pozitif tam sayı $n$ için $3n^3 + 26n - 27$ sayısının $169$’a bölündüğünü kanıtlayınız.[^4]
+
+[^4]: İddiamızı tümevarım yöntemiyle kanıtlayacağız. $169 \mid 3^6 - 26 - 27 = 676 = 4 \cdot 169$ olduğunu biliyoruz. Sonraki adımda, $3^{3(n+1)+3} - 26(n+1) - 27 - (3^{3n+3} - 26n - 27) = 26(3^{3n+3} - 1)$ elde ederiz. Ancak, $13 \mid 3^3 - 1$, bu nedenle $13 \mid 3^{3(n+1)} - 1$ ve $169 \mid 26(3^{3n+3} - 1)$'dir. Tümevarım yöntemiyle kanıt hemen ortaya çıkar.
+
+
+
+
+5. $k = 0, 1, 2, \dots$ için $22^{6k+2} + 3$ sayısının $19$’a bölündüğünü kanıtlayınız.[^5]
+
+[^5]: $2^6 = 64 \equiv 1 \pmod{9}$ olduğuna göre, $k = 0, 1, 2, \dots$ için $2^{6k} \equiv 1 \pmod{9}$ elde ederiz. Bu nedenle $2^{6k+2} \equiv 2^2 \pmod{9}$ olur ve her iki taraf da çift olduğundan, $2^{6k+2} \equiv 2^2 \pmod{18}$ elde ederiz. Buradan $2^{6k+2} = 18t + 2^2$ elde ederiz, burada $t \geq 0$ bir tam sayıdır. Ancak, Fermat'ın küçük teoremine göre, $2^{18} \equiv 1 \pmod{19}$'dur ve $2^{18t} \equiv 1 \pmod{19}$ olur, $t = 0, 1, 2, \dots$ için. Böylece, $2^{6k+2} \equiv 2^{18t+4} \equiv 2^4 \pmod{19}$ olur; buradan da $2^{6k+2} + 3 \equiv 2^4 + 3 \equiv 0 \pmod{19}$ elde edilir ve bu da kanıtlanması gereken şeydir.
+
+
+
+6. $2^{70} + 3^{70}$ sayısının $13$’e bölündüğünü gösteriniz.[^6]
+
+[^6]: Fermat'ın küçük teoremine göre, $2^{12} \equiv 1 \pmod{13}$ olduğundan, $2^{60} \equiv 1 \pmod{13}$ elde ederiz. Ayrıca, $2^5 \equiv 6 \pmod{13}$ olduğu için, $2^{10} \equiv -3 \pmod{13}$ elde ederiz.
+Öte yandan, $3^3 \equiv 1 \pmod{13}$'tür, bu da $3^{69} \equiv 1 \pmod{13}$ ve $3^{70} \equiv 3 \pmod{13}$ anlamına gelir. Bu nedenle, $2^{70} + 3^{70} \equiv 0 \pmod{13}$ olur, yani $13 \mid 2^{70} + 3^{70}$, bu da kanıtlanması gereken şeydir.
+
+
+
+ 
+
+7. $20^{15} - 1$ sayısının $11 \cdot 31 \cdot 61$ çarpanına bölündüğünü kanıtlayınız.[^7]
+
+[^7]:Açıkça görülüyor ki, $20^{15} - 1$ sayısının her bir asal böleni olan $11$, $31$ ve $61$'in $20^{15} - 1$'i böldüğünü göstermek yeterlidir. 
+$2^5 \equiv -1 \pmod{11}$ ve $10 \equiv -1 \pmod{11}$ olduğundan, $10^5 \equiv -1 \pmod{11}$, bu da $20^5 \equiv 1 \pmod{11}$ ve $20^{15} \equiv 1 \pmod{11}$ anlamına gelir. Dolayısıyla $11 \mid 20^{15} - 1$. 
+Sonra, $20 \equiv -11 \pmod{31}$ olduğundan, $20^2 \equiv 121 \equiv -3 \pmod{31}$'dir. Bu nedenle, $20^3 \equiv (-11)(-3) = 33 \equiv 2 \pmod{31}$ ve $20^{15} \equiv 2^5 \equiv 1 \pmod{31}$ olur. Böylece, $31 \mid 20^{15} - 1$.
+Son olarak, $3^4 \equiv 20 \pmod{61}$ ve bu da $20^{15} \equiv 3^{60} \equiv 1 \pmod{61}$ anlamına gelir (Fermat'ın küçük teoremine göre); bu nedenle $61 \mid 20^{15} - 1$.
+
+
+
+
+8. Her pozitif tam sayı $m$ ve $a > 1$ tam sayısı için
+$$
+\left( \frac{a^m - 1}{a - 1}, a - 1 \right) = (a - 1, m)
+$$
+eşitliğinin sağlandığını kanıtlayınız.[^8]
+
+[^8]: $d = \left( \frac{a^m - 1}{a - 1}, a - 1 \right)$ olarak tanımlayalım. Aşağıdaki eşitliği göz önünde bulunduralım:
+$$
+{\small\frac{a^m - 1}{a - 1} = (a^{m-1} - 1) + (a^{m-2} - 1) + \dots + (a - 1) + m \tag{1}}
+$$
+ve $a - 1 \mid a^k - 1$ ifadesinin $k = 0, 1, 2, \dots$ için geçerli olduğunu dikkate alarak, $d \mid m$ elde ederiz. Bu nedenle, $a - 1$ ve $m$ sayılarının $d > \delta$ ortak bir böleni olsaydı, (1) eşitliğine göre $\delta \mid \frac{a^m - 1}{a - 1}$ olurdu ve $a^m - 1$ ile $a - 1$ sayıları $\delta > d$ ortak bir bölenine sahip olurdu ki bu imkânsızdır. Bu nedenle, $d$, $a - 1$ ve $m$ sayılarının en büyük ortak bölenidir ve bu kanıtlanması gereken şeydir.
+
+
+
+
+
+9. Her pozitif $n$ sayısı için $3 \cdot (15^5 + 25^5 + \dots + n^5)$ sayısının $13^3 + 23^3 + \dots + n^3$'e bölündüğünü kanıtlayınız.[^9]
+
+[^9]: Pozitif tam sayı $n$ için, şu eşitliğe sahibiz:
+$$
+1^3 + 2^3 + \dots + n^3 = \frac{n^2(n+1)^2}{4}
+$$
+(bu eşitlik tümevarım ile elde edilir). Yine tümevarım ile şu eşitliği de elde ederiz:
+$$
+1^5 + 2^5 + \dots + n^5 = \frac{1}{12}n^2(n+1)^2(2n^2 + 2n - 1)
+$$
+bu da tüm pozitif tam sayılar $n$ için geçerlidir. Bu formüllerden şu sonucu elde ederiz:
+$$
+3(1^5 + 2^5 + \dots + n^5) / (1^3 + 2^3 + \dots + n^3) = 2n^2 + 2n - 1
+$$
+bu da istenen özelliği kanıtlar.
+
+
+
+
+
+
+
+10. $1^n + 2^n + \dots + (n - 1)^n$ sayısının $n$'e bölünmesini sağlayan tüm $n > 1$ tam sayılarını bulunuz.[^10]
+
+[^10]:Bunlar, $1$'den büyük tüm tek sayılardır. Aslında, $n$ tek ve $n > 1$ ise, $(n - 1)/2$ pozitif bir tam sayıdır ve $k = 1, 2, \dots, (n - 1)/2$ için kolayca şu ifadeyi elde ederiz:
+$$
+n \mid k^n + (n - k)^n \quad \text{(çünkü } (-k)^n = -k^n \text{)}
+$$
+Böylece, $n \mid 1^n + 2^n + \dots + (n - 1)^n$ elde ederiz.
+Diğer yandan, eğer $n$ çift ise, $2^s$, $n$'yi bölen en yüksek $2$ kuvveti olsun (bu nedenle $s$ pozitif bir tam sayıdır). $2^s \geq s$ olduğundan, $k$ çift olduğunda $2^s \mid k^n$ ve $k$ tek olduğunda (bu dizideki $k$ sayılarının sayısı $(n-1)/2$'dir) Euler'in teoremine göre $k^{2^s - 1} \equiv 1 \pmod{2^s}$ ve $k^n \equiv 1 \pmod{2^s}$ elde ederiz (çünkü $2^s \mid n$).
+Böylece şu sonuca ulaşırız:
+$$
+1^n + 3^n + \dots + (n - 3)^n + (n - 1)^n \equiv \frac{n}{2} \pmod{2^s}
+$$
+bu da şu sonucu verir:
+$$
+1^n + 2^n + \dots + (n - 1)^n \equiv \frac{n}{2} \pmod{2^s}
+$$
+$2^n + 4^n + \dots + (n - 2)^n \equiv 0 \pmod{2^s}$ olduğundan, $n \mid 1^n + 2^n + \dots + (n - 1)^n$ elde ederiz. Eğer $2^s \mid n$ ise, $\frac{n}{2} \equiv 0 \pmod{2^s}$ olur ve $2^s \mid n$ ve $2^{s+1} \mid n$ çelişkisini elde ederiz. Böylece, $n$ çift olduğunda $n \nmid 1^n + 2^n + \dots + (n - 1)^n$ elde edilir.\
+**Not**: Fermat teoreminden şu sonucu kolayca çıkarırız: Eğer $n$ bir asal sayıysa, $n \mid 1^n + 1 - 1^n + \dots + (n - 1)^n + 1$. Ancak, bu ilişkiyi sağlayan bileşik bir sayı bilmiyoruz. G. Ginga, böyle bir bileşik sayı olmadığını öne sürdü, ancak bu 1'den küçük bileşik bir sayının var olmadığını henüz kanıtlayamadı.
+
+
+
+
+11. Pozitif tam $n$ sayısı için $a_n = 2^{2n+1} - 2^{n+1} + 1$ ve $b_n = 2^{2n+1} + 2^{n+1} + 1$ sayılarından hangisinin 5'e bölünüp, hangisinin bölünmediğini tespit ediniz.[^11]
+
+[^11]:Dört durumu inceleyelim:\
+(a) $n = 4k$ olsun, burada $k$ pozitif bir tam sayıdır. Bu durumda,
+$$
+a_n = 2^{8k+1} - 2^{4k+1} + 1 \equiv 2 - 2 + 1 \equiv 1 \pmod{5},
+$$
+$$
+b_n = 2^{8k+1} + 2^{4k+1} + 1 \equiv 2 + 2 + 1 \equiv 0 \pmod{5}.
+$$
+($2^4 \equiv 1 \pmod{5}$ olduğundan, $2^{4k} \equiv 1 \pmod{5}$'tir.)
+\
+(b) $n = 4k + 1$ olsun, $k = 0, 1, 2, \dots$. Bu durumda,
+$$
+a_n = 2^{8k+3} - 2^{4k+2} + 1 \equiv 8 - 4 + 1 \equiv 0 \pmod{5},
+$$
+$$
+b_n = 2^{8k+3} + 2^{4k+2} + 1 \equiv 8 + 4 + 1 \equiv 3 \pmod{5}.
+$$
+(c) $n = 4k + 2$ olsun, $k = 0, 1, 2, \dots$. Bu durumda,
+$$
+a_n = 2^{8k+5} - 2^{4k+3} + 1 \equiv 2 - 8 + 1 \equiv 0 \pmod{5},
+$$
+$$
+b_n = 2^{8k+5} + 2^{4k+3} + 1 \equiv 2 + 8 + 1 \equiv 1 \pmod{5}.
+$$
+(d) $n = 4k + 3$ olsun, $k = 0, 1, 2, \dots$. Bu durumda,
+$$
+a_n = 2^{8k+7} - 2^{4k+4} + 1 \equiv 8 - 1 + 1 \equiv 3 \pmod{5},
+$$
+$$
+b_n = 2^{8k+7} + 2^{4k+4} + 1 \equiv 8 + 1 + 1 \equiv 0 \pmod{5}.
+$$
+Sonuç olarak, $a_n$ sayıları yalnızca $n \equiv 1$ veya $2 \pmod{4}$ olduğunda 5'e bölünürken, $b_n$ sayıları yalnızca $n \equiv 0$ veya $3 \pmod{4}$ olduğunda 5'e bölünür. Böylece, yalnızca $a_n$ veya $b_n$ sayılarından biri 5'e bölünür.
+
+
+
+
+
+12. Her $n$ pozitif tam sayısı için
+$$x + 1, x^x + 1, x^{x^x} + 1, \dots$$
+sonsuz dizisinin her bir terimi $n$'ye bölünecek şekilde bir $x$ pozitif tam sayısı bulunduğunu kanıtlayınız.[^12]
+
+[^12]:$x = 2n - 1$ seçmek yeterlidir. Böylece $x, x^x, x^{x^x}, \dots$ sayılarının her biri tek olur ve dolayısıyla $2n = x + 1$, sonsuz dizinin her bir terimi olan $x + 1, x^x + 1, x^{x^x} + 1, \dots$ sayılarının bir bölenidir.
+
+
+
+13. Her $x$ çift pozitif tam sayısı için
+$$x^x + 1, x^{x^x} + 1, x^{x^{x^x}} + 1, \dots$$
+dizisinin terimlerinden hiçbirinin $n$'ye bölünmeyecek şekilde sonsuz sayıda $n$ tek pozitif tam sayısı bulunduğunu kanıtlayınız.[^13]
+
+[^13]:Örneğin, $4k + 3$ biçimindeki tüm asal sayılar $p$. Aslında, $x$ çift olduğunda, dizideki $x, x^x, x^{x^x}, \dots$ terimlerinin her biri çifttir. Eğer dizideki $x^x + 1, x^{x^x} + 1, x^{x^{x^x}} + 1, \dots$ terimlerinden herhangi biri $p$'ye tam bölünseydi, pozitif bir tam sayı $m$ için $p \mid x^m + 1$ ilişkisine sahip olurduk, dolayısıyla $(x^m)^2 \equiv -1 \pmod{p}$. Ancak, $-1$, $4k + 3$ biçimindeki asal bir modül için bir karekök kalanı olamaz.
+
+
+
+
+14. Her $n$ pozitif tam sayısı için $(n + 1)^n - 1$ sayısının $n^2$'ye bölündüğünü kanıtlayınız.[^14]
+
+[^14]: Binom açılımından
+$$
+(1 + n)^n = 1 + \binom{n}{1}n + \binom{n}{2}n^2 + \dots + \binom{n}{n}n^n
+$$
+$n > 1$ için (bu, $1^2 \mid 2^2 - 1$ durumu göz önüne alındığında varsayılabilir), üçüncü terimden itibaren tüm terimler $n$'yi en az $2$ üssünde içerir. İkinci terim $\binom{n}{1}n = n^2$'ye eşittir. Bu nedenle, $n^2 \mid ((1 + n)^n - 1)$ ve bu kanıtlanması gereken şeydir.
+
+ 
+
+15. Her $n$ pozitif tam sayısı için $2^{(2^n - 1)n} - 1$ sayısının $(2^n - 1)^2$'ye bölündüğünü kanıtlayınız.[^15]
+
+[^15]:Problem 14'e göre, pozitif tam sayılar $m$ için
+$$m^2 \mid ((m + 1)^m - 1)$$
+ilişkisini elde ederiz. $m = 2^n - 1$ için, $(m + 1)^m = 2^{(2^n - 1)}$ olduğundan, şu ilişkiyi elde ederiz:
+$$(2^n - 1)^2 \mid (2^{(2^n - 1)n} - 1),$$
+ve bu, kanıtlanması gereken şeydir.
+
+
+
+
+
+16. $2^n + 1$ sayısı $n$'ye bölünecek şekilde sonsuz sayıda pozitif tam $n$ sayısı bulunduğunu kanıtlayınız. Bu koşulu sağlayan tüm asal sayıları bulunuz.[^16]
+
+[^16]: $3\mid 2^3 + 1$ ve pozitif bir tam sayı $m$ için $3^m \mid 2^{3^m} + 1$ olduğunu varsayalım. O zaman $2^{3^m + 1} = (3^m k - 1)^3 = 3^m k^3 - 3^m k^2 + 3^m k - 1 = 3^m t - 1$, burada $t$ pozitif bir tam sayıdır. Böylece $3^{m + 1} \mid 2^{3^m + 1} + 1$ ve tümevarım ile $3^m \mid 2^{3^m} + 1$'i elde ederiz, $m = 1, 2, \dots$. Ancak, $n \mid 2^n + 1$ ilişkisini sağlayan başka pozitif tam sayılar da vardır. Aslında, pozitif bir tam sayı $n$ için $n \mid 2^n + 1$ ise, aynı zamanda $2^n + 1 \mid 2^{2^n + 1} + 1$ olur. Gerçekten de $2^n + 1 = kn$, burada $k$ bir tam sayıdır (açıkça, tektir), o zaman $2^n + 1 \mid 2^{kn} + 1 = 2^{2^n + 1} + 1$ olur. Böylece $9 \mid 2^3 + 1$ ifadesi $513 \mid 2^{513} + 1$ sonucunu verir.\
+$n$'nin asal olduğunu ve $n \mid 2^n + 1$ olduğunu varsayalım. Fermat'ın teoremiyle, $n \mid 2^n - 2$ elde ederiz, bu da $n \mid 3$ sonucunu verir. $n$ asal olduğuna göre, $n = 3$ elde ederiz. Gerçekten, $3 \mid 2^3 + 1$ olur. Böylece, $n \mid 2^n + 1$ ilişkisini sağlayan tek asal sayı $n = 3$ olur.
+
+
+
+
+
+
+17. Her $a > 1$ tam sayısı için $a^n + 1$ sayısının $n$'ye bölünecek şekilde sonsuz sayıda pozitif tam $n$ sayısı bulunduğunu kanıtlayınız.[^17]
+
+
+[^17]:Öncelikle O. Reutter'e ait aşağıdaki teoremi kanıtlayacağız (bkz. [@reutter1963]):\
+*Eğer $a+1$, tam sayı üs ile bir $2$ kuvveti değilse, o zaman $n \mid a^n + 1$ ilişkisi pozitif tam sayılarla sonsuz çözümü vardır.*\
+Eğer $a+1$, tam sayı üs ile bir $2$ kuvveti değilse, o zaman $p > 2$ olan bir asal böleni vardır. Bu durumda, $p \mid a + 1$ olur.
+\
+**Lemma.** Eğer $k \geq 0$ bir tam sayı ve $p \mid a^k + 1$ ise, o zaman $p^{k+1} \mid a^{p^{k+1}} + 1$.
+\
+**Lemmanın İspatı.** $k \geq 0$ olan bir tam sayı için $p^k \mid a^k + 1$ olduğunu varsayalım. $a^k = b$ yazalım, bu durumda $p^k \mid b + 1$ elde ederiz, dolayısıyla $b = -1 \ (\text{mod}\ p^{k+1})$ olur.
+\
+$p$ tek asal olduğundan, $a^{p^{k+1}} + 1 = b^{p+1} = (b+1)(b^{p-1} - b^{p-2} + \dots - b + 1)$ ifadesini elde ederiz.
+\
+Ve (çünkü $b = -1 \ (\text{mod}\ p^{k+1})$ bu da $b^p = 1 \ (\text{mod}\ p^{k+1})$ anlamına gelir) $b^2 = 1 \ (\text{mod}\ p)$ ve $b^{2i} = 1 \ (\text{mod}\ p)$ elde ederiz. Bu nedenle:
+$$b^{p-1} - b^{p-2} + \dots - b + 1 = 0 \ (\text{mod}\ p),$$
+bu da ikinci terimin $p$'ye bölünebilir olduğunu gösterir. Dolayısıyla, $p^{k+1} \mid a^{p^{k+1}} + 1$ elde ederiz ve bu ispatlanması gereken şeydir.\
+Lemma, $p \mid a + 1$ olduğunda, $p^{k+1} \mid a^{p^{k+1}} + 1$ ve $p^{k+1} \mid a^{p^{k+1}} + 1$ için $k = 1, 2, \dots$ ifadesiyle tümevarım sağlar. Bu da $n \mid a^n + 1$ ilişkisini sağlayan sonsuz pozitif tam sayı $n$ olduğunu ve O. Reutter'in teoremini ispatladığımızı gösterir.
+\
+Reutter teoreminin koşullarını sağlayan pozitif tam sayılar için, $a$'nın tek ve $a > 1$ olduğunu varsaymak yeterlidir. Bu durumda, $a^2 + 1$ ve $a^2$ ifadesi $8k + 1$ formundadır. Dolayısıyla, $a^2 + 1 = 8k + 2 = 2(4k + 1)$ tek bir çift sayıdır. Şu lemayı ispatlayacağız:
+\
+**Lemma.** Eğer $a$ tek ise, o zaman $a$ ve $a^2 + 1$ çift tek sayılar olup, $s \mid a + 1$ ise, pozitif bir tam sayı $s_1 > s$ vardır ki $s_1$ ve $a^{s_1} + 1$ de çift tek sayılardır ve $s_1 \mid a^{s_1} + 1$.
+\
+**İspat.** $a^2 + 1$ ve $a^{s_1} + 1$ çift tek sayılar olduğundan, $a + 1 = ms$ elde ederiz, burada $m$ tektir. Böylece $a^s + 1 = a^{s_1} + 1 = a^{s_1} + 1$'dir ve $a^{s_1} + 1$ çift bir çift tek sayıdır.
+\
+$s_1 \mid a + 1$ olduğunda, $s_1 \mid a^{s_1} + 1$ ve $s_1 \mid a^{s_1} + 1$ elde ederiz. Bu durumda, $a > 1$ olduğundan, $s_1 > s$ olur. Böylece lema ispatlanmış olur.
+\
+$a$ tek olduğundan, $s = 2$ diyebiliriz, bu da lemanın koşullarını sağlar. Böylece, $n \mid a^n + 1$ ilişkisini sağlayan sonsuz pozitif tam sayı $n$ olduğunu gösteririz ve bu ispatlanması gereken şeydir (bkz. [@sierpinski1964nombres]).
+
+
+
+
+
+
+
+18. $2^n + 2$ sayısı $n$'ye bölünecek şekilde sonsuz sayıda pozitif tam $n$ sayısı bulunduğunu kanıtlayınız.[^18]
+
+[^18]:$n$ çift ise ve $n \mid 2^n + 2$ ve $n \mid n - 1 \mid 2^{n - 1} + 1$ ise (örneğin $n = 2$ için bu doğrudur), o zaman $n_1 = 2^n + 2$ sayısı için $n_1 \mid 2^{n_1} + 2$ ve $n_1 \mid n_1 - 1 \mid 2^{n_1 - 1} + 1$ elde ederiz. Aslında, $n \mid 2^n + 2$ ve $n$ çift olduğunda, $2^n + 2 = nk$ elde edilir, burada $k$ tektir. Dolayısıyla:
+$$ 2^n + 1 \mid 2^{2^n + 2} + 1 = 2^{2^{2^n + 2}} + 2 $$
+$n_1 = 2^n + 2$ için ise:
+$$ n_1 - 1 = 2^n + 1 \mid 2^{2^n + 1} + 1 $$
+Sonra, $n - 1 \mid 2^{n - 1} + 1$ ifadesini elde ederiz ki bu da $2^n + 1 = 2^{n - 1}m + 1$'i verir, burada $m$ tektir. Dolayısıyla:
+$$ 2^n + 1 \mid 2^{a - 1}m + 1 = 2^{2^n + 1} $$ 
+elde ederiz, bu da:
+$$ 2^n + 2 \mid 2^{2^{2^n + 2} + 2}, \quad ve \quad n_1 \mid 2^{n_1 + 2} $$
+Bu koşulları sağlayan sonsuz sayıda çift tam sayı $n$ vardır.
+\
+$n_1 = 2^n + 2$ olduğundan, koşullarımızı sağlayan sonsuz sayıda çift tam sayı vardır. $n = 2$'den başlayarak, ardışık sayılar 2, 6, 66, $2^{66} + 2$, \dots Ancak, C. Bindschedler bu yöntemin $n \mid 2^n + 2$ ilişkisini sağlayan tüm sayıları vermediğini fark etti; örneğin 946 sayısı $2^{946} + 2$ ilişkisini sağlamaz. Bu problemi tartışan C. Bindschedler tarafından verilen çözümü, *Elemente der Mathematik* dergisinin 18. sayısındaki 430 numaralı problemimde görebilirsiniz (1963), sayfa 90.
+
+
+
+19. $a^{10} + 1$ sayısının $10$'a bölünmesini sağlayan tüm pozitif tam $a$ sayılarını bulunuz.[^19]
+
+[^19]:Eğer $a$ bir pozitif tam sayıysa ve $r$ sayısı $a$ sayısının $10$'a bölünmesinden kalan ise, $a^{10} + 1$ ifadesi ancak ve ancak $r^{10} + 1$ ifadesi $10$'a bölünebiliyorsa $10$'a bölünür. Bu nedenle, sadece $r = 0, 1, 2, \dots, 9$ sayıları dikkate alınmalıdır ve bu sayılar için sadece $3^{10} + 1$ ve $7^{10} + 1$ ifadelerinin $10$'a bölünebildiğini kolayca doğrularız. Dolayısıyla, $a^{10} + 1$ ifadesi $10$'a bölünebilen tüm $a$ sayıları $10k + 3$ ve $10k + 7$ formundadır, burada $k = 0, 1, 2, \dots$.
+
+
+
+
+20. Hiçbir $n > 1$ tam sayısı için $2^n - 1$ sayısının $n$'ye bölünmediğini kanıtlayınız.[^20]
+
+    (a) $2^n + 1$ sayısının $n$'ye bölünmesini sağlayan sonsuz tane $n$ pozitif tam sayısının bulunduğunu gösteriniz.
+
+[^20]:$n > 1$ pozitif tam sayılarının olduğunu ve $n$'in en küçüğü olduğunu varsayalım. Euler teoremine göre $n \mid (2^n - 1)$. Ancak, pozitif tam sayılar $a$ ve $b$ için $2^a - 1$ ve $2^b - 1$ sayıların en büyük ortak böleni $2^d - 1$'dir, burada $d = (a, b)$'dir.
+\
+$a = n$ ve $b = \varphi(n)$ için $d = (n, \varphi(n))$'dir, dolayısıyla $n \mid (2^d - 1)$'dir. Ancak, $n > 1$ olduğundan $2^d - 1 > 1$ elde ederiz, bu da $d > 1$ ve $1 < d \leq \varphi(n) < n$ anlamına gelir ve $d \mid n \mid (2^d - 1)$ ifadesi $n$'in tanımına aykırıdır.
+\
+(a) Örneğin, $n = 3^k$ biçimindeki tüm sayılar için ($k = 1, 2, \ldots$). Bu durumu matematiksel tümevarım yoluyla ispatlayacağız. Elimizde $3 \mid 2^{3^k} + 1$ var. Eğer herhangi bir pozitif tam $k$ için $3 \mid 2^{3^k} + 1$, o zaman, aşağıdaki özdeşlikten hareketle
+$$ 2^{3^{k+1}} + 1 = (2^{3^k} + 1) (2^{3^k} - 2^{3^k} + 1) $$
+ve şu gözlemden yola çıkarak:
+$$ 2^{3^k} - 2^{3^k} + 2 = 2^{3^k} + 2 - (2^{3^k} + 1), \quad \text{ve} \quad 3 \mid 2^{3^k} + 2 $$
+(çünkü $4^3$ bölündüğünde kalan $1$ verir), formülün ikinci terimi $2^{3^{k+1}} + 1$'in $3$ ile bölünebilir olduğunu gösterir, bu da $3\mid {2^{3^{k+1}}} + 1$ anlamına gelir.
+
+ 
+
+21. $3^n + 1$ sayısının $n$'ye bölünmesini sağlayan tüm $n$ tek pozitif tam sayılarını bulunuz.[^21]
+
+[^21]:$n = 1$ olan tek sayıdır. Varsayalım ki, $n > 1$ olan bir tek sayı vardır ve $n\mid 3^n + 1$. Bu durumda, $n\mid 9n - 1$. $n$, $n\mid 9^{\varphi(n)} - 1$ ile pozitif bir tam sayı olsun. $d = (\varphi(n), n)$ olarak tanımlandığında, $n\mid 9^d - 1$ elde edilir. Ancak, $d > 1$ olduğunda, $n\mid 8$ elde edilir ki, $n$ tek olduğu için bu mümkün değildir. Sonuç olarak $1 < d \leq \varphi(n) < n$ ve $d\mid n$, bu nedenle $n > 1$ koşulunu sağlayan tek bir sayı yoktur.
+
+
+
+
+22. $n \cdot 2^n + 1$ sayısının 3’e bölünmesini sağlayan tüm $n$ pozitif tam sayılarını bulunuz.[^22]
+
+[^22]:Açıkça, $n$ sayısı 3'e bölünemez. Bu nedenle, $n$ sayısı aşağıdaki formlardan birinde olmalıdır: $6k+1$, $6k+2$, $6k+4$ veya $6k+5$, burada $k = 0, 1, 2, \dots$.
+\
+Eğer $n = 6k+1$ ise, $2^6 \equiv 1 \pmod{3}$ olduğundan, 
+$$n2^n + 1 = (2^6)2 + 1 \equiv 2 + 1 \equiv 0 \pmod{3}.$$ 
+Bu durumda $3 \mid n2^n + 1$ olur.
+\
+Eğer $n = 6k+2$ ise, 
+$$n2^n + 1 = 2(2^6)2 + 1 \equiv 8 + 1 \equiv 0 \pmod{3},$$ 
+yani yine $3 \mid n2^n + 1$.
+\
+Eğer $n = 6k+4$ ise, 
+$$n2^n + 1 \equiv 4(2^6)2^4 + 1 \equiv 2^5 + 1 \equiv 2 \pmod{3}.$$
+\
+Son olarak, $n = 6k+5$ ise, 
+$$n2^n + 1 = 5(2^6)2^5 + 1 \equiv 2 \pmod{3}.$$ 
+Bu durumda, $n2^n + 1$ ifadesi ancak ve ancak $n$, $6k+1$ veya $6k+2$ formunda olduğunda 3'e bölünebilir. Burada $k = 0, 1, 2, \dots$.
+
+
+
+
+23. Her tek $p$ asal sayısı için $n \cdot 2^n + 1$ sayısının $p$'ye bölünmesini sağlayan sonsuz sayıda $n$ pozitif tam sayısının bulunduğunu kanıtlayınız.[^23]
+
+[^23]:Eğer $p$ tek bir asal sayıysa ve $n = (p-1)(kp+1)$, burada $k = 0, 1, 2, \dots$, o zaman $n \equiv -1 \pmod{p}$ ve $p-1 \mid n$. Fermat'nın küçük teoremi gereğince, $2^n \equiv 1 \pmod{p}$ olur, dolayısıyla $n2^n + 1 \equiv 0 \pmod{p}$.
+\
+**Not**: Bu problemden, $n2^n + 1$ formunda sonsuz sayıda bileşik sayı olduğu sonucu çıkarılabilir, burada $n$ pozitif bir tam sayıdır. Bu formdaki sayılar Cullen sayıları olarak bilinir. $1 < n < 141$ aralığında bu formdaki tüm sayılar bileşik olduğu ispatlanmıştır, ancak $n = 141$ için $n2^n + 1$ asal bir sayıdır. Sonsuz sayıda asal Cullen sayısı olup olmadığı bilinmemektedir.
+
+
+
+
+24. Her pozitif tam $n$ sayısı için, $y^y$ sayısı $x^x$'e bölünecek, fakat $y$ sayısı $x^x$'e bölünmeyecek şekilde $x > n$ ve $y$ pozitif tam sayılarının bulunduğunu kanıtlayınız.[^24]
+
+[^24]:$n$ verilen bir pozitif tam sayı olsun ve $k > 1$ olmak üzere $2^k > n$ olacak şekilde pozitif bir tam sayı olsun. $p$, $2^k - 1$'den büyük bir asal sayı olsun. $k > 1$ olduğu için, $x = 2^k$, $y = 2p$ olarak alalım. Buradan $x \nmid y$ ve $x^x \mid y^y$ olur, çünkü $x = 2^{2^k}$ ve $y^y = (2p)^{2p}$, burada $2p > 2^k k$.
+\
+Örneğin, $4 \nmid 10$, fakat $4^4 \mid 10^{10}$, $8 \nmid 12$, fakat $8^8 \mid 12^{12}$, $9 \nmid 21$, fakat $9^9 \mid 21^{21}$.
+
+
+
+25. Her $n$ tek pozitif tam sayısı için $2^n - 1$ sayısının $n$’ye bölündüğünü kanıtlayınız.[^25]
+
+[^25]:Pozitif tam sayılar için, $\varphi(n) \mid n!$ olduğu açıktır. Aslında, $n = 1$ için bu doğrudur; eğer $n > 1$ ise ve $n = q_1^{a_1}q_2^{a_2} \dots q_k^{a_k}$ asal çarpanlarına ayrılmışsa, burada $q_1 < q_2 < \dots < q_k$ olmak üzere, o zaman 
+$$
+\varphi(n) = q_1^{a_1 - 1} q_2^{a_2 - 1} \dots q_k^{a_k - 1}(q_1 - 1)(q_2 - 1) \dots (q_k - 1)
+$$ 
+ve $q_1^{a_1 - 1} q_2^{a_2 - 1} \dots q_k^{a_k - 1} \mid n$, $q_1 - 1 < q_2 - 1 < \dots < q_k - 1$ olduğu için $q_k - 1 < n$ ve $q_1 - 1 < q_2 - 1 < \dots < q_k - 1$, $n$'den küçük farklı pozitif tam sayılardır. Böylece $(q_1 - 1)(q_2 - 1) \dots (q_k - 1)(n - 1)! \mid n!$ elde edilir ve buradan $\varphi(n)(n - 1)! \mid n!$ olduğu sonucu çıkar.
+\
+Eğer $n$ tek ise, (Euler teoremine göre) $n \mid 2^{\varphi(n)} - 1 \mid 2^{n!} - 1$, dolayısıyla $n \mid 2^{n!} - 1$, bu da kanıtlanması gereken şeydi.
+
+
+
+
+26. $2^n - 3 \ (n = 2, 3, \dots)$ sonsuz dizisinin 5’e bölünen sonsuz sayıda terimi olduğunu; 13’e bölünen sonsuz tane terimin bulunduğunu, fakat 65’e bölünen hiçbir terimin bulunmadığını kanıtlayınız.[^26]
+
+[^26]:Fermat'nın teoremine göre, $2^4 \equiv 1 \pmod{5}$ ve $2^{12} \equiv 1 \pmod{13}$.\
+$2^3 \equiv 3 \pmod{5}$ ve $2^4 \equiv 3 \pmod{13}$ olduğu için, $24k+3 \equiv 3 \pmod{5}$ ve $2^{12k+4} \equiv 3 \pmod{13}$ elde ederiz, burada $k = 0, 1, 2, \dots$. Dolayısıyla, $5 \mid 2^{4k+3} - 3$ ve $13 \mid 2^{12k+4} - 3$, burada $k = 0, 1, 2, \dots$.
+\
+Bir sonraki adımda, $2^6 \equiv 1 \pmod{65}$ olduğunu ve bu nedenle $2^{12} \equiv 1 \pmod{65}$ olduğunu görürüz. Böylece $2^n - 3 \equiv 2^n - 3 \pmod{65}$, bu da $2^n - 3$ dizisinin ($n = 2, 3, \dots$) $12$ periyotlu olduğunu gösterir.
+$2^n - 3$ sayılarının hiçbiri ($n = 2, 3, \dots$) $65$’e bölünmüyorsa, bunu göstermek için $n = 2, 3, \dots, 13$ için $2^n - 3$ sayılarının 65’e bölünüp bölünmediğini kontrol etmek yeterlidir. $65$’e bölündüğünde kalanlar sırasıyla $1, 5, 13, 29, 61, 60, 58, 54, 46, 30, 63, 64$ olup, bunların hiçbiri sıfır değildir.
+
+
+
+ 
+
+
+27. $2^n - 2$ ve $3^n - 3$ sayıları $n$’ye bölünmesini sağlayan iki en küçük bileşik $n$ sayısını bulunuz.[^27]
+
+[^27]: $n \nmid 2^n - 2$ olacak şekildeki en küçük dört bileşik $n$ sayısının 341, 561, 645 ve 1105 olduğu bilinmektedir (örneğin, bakınız Sierpiński, [37, s. 215]). 341 için, $341 \nmid 3^{341}-3$'tür, çünkü Fermat teoremi gereğince $3^{30} \equiv 1 \pmod{31}$, bu da $3^{330} \equiv 1 \pmod{31}$ anlamına gelir, dolayısıyla $3^{341} \equiv 3^{11} \pmod{31}$ olur. $3^3 \equiv -4 \pmod{31}$ olduğundan, $3^9 \equiv -64 \equiv -2 \pmod{31}$ elde ederiz, dolayısıyla $3^{11} \equiv -18 \pmod{31}$ olur. Bu nedenle $3^{341}-3 \equiv 3^{11}-3 \equiv -21 \pmod{31}$'dir ve $31 \nmid 3^{341}-3$, bu da $341 = 11 \cdot 31 \nmid 3^{341}-3$ anlamına gelir. Diğer yandan, $561 = 3 \cdot 11 \cdot 17 \nmid 3^{561}-3$'tür çünkü $11 \mid 3^{10}-1$ olması $11 \mid 3^{390}-1$ ve $11 \mid 3^{561}-3$ olmasını gerektirir, ve ayrıca $17 \mid 3^{16}-1$ olması $17 \mid 3^{16 \cdot 35}-1 = 3^{560}-1$ olmasını gerektirir. Böylece $17 \nmid 3^{561}-3$'tür.
+\
+Böylece, $n \mid 2^n-2$ ve $n \nmid 3^n-3$ olan en küçük bileşik $n$ sayısı $n = 561$ sayısıdır.
+\
+645 sayısı $3^{645}-3$'ün bir böleni değildir çünkü $645 = 3 \cdot 5 \cdot 43$, iken $3^{42} \equiv 1 \pmod{43}$ olması $3^{42 \cdot 15} \equiv 1 \pmod{43}$ olmasını gerektirir. Böylece $3^{630} \equiv 1 \pmod{43}$ ve $3^{645} \equiv 3^{15} \pmod{43}$. $3^4 \equiv -5 \pmod{43}$ olduğundan, $3^6 \equiv -45 \equiv -2 \pmod{43}$, $3^{12} \equiv 4 \pmod{43}$, $3^{15} \equiv 108 \equiv 22 \pmod{43}$ elde ederiz.
+Bu nedenle $3^{645}-3 \equiv 19 \pmod{43}$, bu da $43 \nmid 3^{645}-3$ anlamına gelir.
+\
+Diğer yandan, $1105 \mid 3^{1105}-3$'tür. Gerçekten de, $1105 = 5 \cdot 13 \cdot 17$, $3^4 \equiv 1 \pmod 5$ ve $3^{1104} \equiv 1 \pmod 5$, ve $5 \mid 3^{1105}-3$. Sonra, $3^{12} \equiv 1 \pmod{13}$, $3^{1104} \equiv 1 \pmod{13}$ ve $13 \mid 3^{1105}-3$. Son olarak, $3^{16} \equiv 1 \pmod{17}$, ve $1104 = 16 \cdot 69$ olduğundan, $3^{1104} \equiv 1 \pmod{17}$ elde ederiz, bu da $17 \mid 3^{1105}-3$ anlamına gelir.
+Böylece, $n \mid 2^n-2$ ve $n \mid 3^n-3$ koşulunu sağlayan en küçük iki bileşik sayı 561 ve 1105'tir.
+\
+**Not:** $n \mid 2^n-2$ ve $n \mid 3^n-3$ olacak şekilde sonsuz çoklukta bileşik $n$ sayısı olup olmadığını bilmiyoruz. Bu iddia, A. Schinzel'in asal sayılarla ilgili bir sanısından ([@schinzel1958certaines]) çıkarsanabilirdi. Asal $n$ sayıları için, Fermat teoremi nedeniyle hem $n \mid 2^n-2$ hem de $n \mid 3^n-3$ ilişkileri geçerlidir.
+
+
+
+28. $2^n - 2$ sayısının $n$’ye bölünmesini, $3^n - 3$ sayısının da $n$’ye bölünmesini sağlayan en küçük $n$ pozitif tam sayısını bulunuz.[^28]
+
+[^28]: $n \nmid 3^n-3$ ve Fermat teoremi göz önüne alındığında, $n$ sayısı bileşik olmalıdır ve $n \mid 2^n-2$ ile $n \nmid 3^n-3$ koşulunu sağlayan en küçük bileşik $n$ sayısı $n=341$'dir. Problem 27'nin çözümünde $341 \nmid 3^{341}-3$ olduğunu kanıtlamıştık. Böylece, $n \mid 2^n-2$ ve $n \nmid 3^n-3$ olacak şekildeki en küçük $n$ sayısı $n = 341$'dir.
+\
+**Not:** A. Rotkiewicz, $n \mid 2^n-2$ ve $n \nmid 3^n-3$ olacak şekilde hem çift hem de tek olan sonsuz çoklukta pozitif $n$ tam sayısının var olduğunu kanıtlamıştır.
+
+
+
+29. $2^n - 2$ sayısının $n$’ye bölünmemesini, $3^n - 3$ sayısının da $n$’ye bölünmesini sağlayan en küçük $n$ pozitif tam sayısını bulunuz.[^29]
+
+[^29]: $n=6$ sayısı istenen özelliği sağlar. Aslında, eğer $n \nmid 2^n-2$ ise, $n$ bileşik olmalıdır. En küçük bileşik sayı 4'tür, ancak $4 \nmid 3^4-3 = 78$. Sonraki bileşik sayı 6'dır ve $6 \nmid 2^6-2 = 62$ iken, $6 \mid 3^6-3$'tür çünkü $3^6-3$ bariz bir şekilde çifttir ve 3 ile bölünebilir.
+\
+**Not:** A. Rotkiewicz, $n \mid 3^n-3$ ve $n \nmid 2^n-2$ olacak şekilde hem çift hem de tek olan sonsuz çoklukta bileşik $n$ sayısının var olduğunu kanıtlamıştır.
+
+
+
+
+30. Her $a$ pozitif tam sayısı için $a^n - a$ sayısının $n$'e bölünecek şekilde bir $n$ bileşik sayısı bulunuz.[^30]
+
+[^30]: Eğer $a$ bileşik ise, $n=a$ alabiliriz çünkü $a \mid a^a - a$ olduğu açıktır. Eğer $a = 1$ ise, $n = 4$ alabiliriz çünkü $4 \mid 1^4 - 1$. Eğer $a > 2$ bir asal ise, $n = 2a$ alabiliriz çünkü bu durumda $a$ tektir ve $a^{2a} - a$ sayısı çifttir; böylece, tek bir $a$ sayısı ile ve 2 ile bölünebilen $a^{2a} - a$, $2a$ ile bölünebilir.
+Geriye $a=2$ durumunu ele almak kalıyor. Burada $n = 341 = 11 \cdot 31$ alabiliriz çünkü $341 \mid 2^{341}-2$; bu son özellik şu şekilde kanıtlanabilir: $11 \mid 2^{10}-1 = 1023$ elimizdedir, dolayısıyla $11 \mid 2^{340}-1$, ve $11 \mid 2^{341}-2$. Sonra, $31 = 2^5-1 \mid 2^{340}-1$, dolayısıyla $31 \mid 2^{341}-2$. Böylece $2^{341}-2$ sayısı 11 ve 31 ile bölünebilir, dolayısıyla bunların çarpımı olan 341 ile de bölünebilir.
+\
+**Not:** M. Cipolla, her pozitif $a$ tam sayısı için $n \mid a^n - a$ olacak şekilde sonsuz çoklukta bileşik $n$ sayısının var olduğunu kanıtlamıştır. (Bakınız [@cipolla1904sui]). Ancak, her $a$ tam sayısı için $n \mid a^n - a$ olacak şekilde sonsuz çoklukta bileşik $n$ sayısının olup olmadığını bilmiyoruz. Bu tür sayıların en küçüğü $561 = 3 \cdot 11 \cdot 17$'dir. A. Schinzel'in asal sayılarla ilgili belirli bir sanısından ([@schinzel1958certaines]) bu tür sonsuz çoklukta bileşik sayının var olduğu sonucu çıkar.
+
+
+
+31. $a, b, c$ tam sayılar olmak üzere $a^3 + b^3 + c^3$ sayısı 9’a bölünüyorsa, $a, b, c$ sayılarından en az birinin 3’e bölündüğünü kanıtlayınız.[^31]
+
+[^31]: 3 ile bölünemeyen bir tam sayının küpünün 9'a bölünmesiyle elde edilen kalan 1 veya $-1$'dir. Böylece, eğer $a$, $b$, $c$ sayılarından hiçbiri 3 ile bölünemeseydi, o zaman $a^3+b^3+c^3$ sayısının 9'a bölünmesiyle elde edilen kalan, $+$ ve $-$ işaretlerinin herhangi bir kombinasyonu için 9 ile bölünemeyen $\pm 1 \pm 1 \pm 1$ olurdu. Buradan, eğer $9 \mid a^3+b^3+c^3$ ise, o zaman $3 \mid abc$ olduğu sonucu çıkar, ki bu da kanıtlanması gerekendi.
+
+
+
+
+32. $a_k$, $k = 1, 2, 3, 4, 5$ tam sayılar olmak üzere
+$$a_1^3 + a_2^3 + a_3^3 + a_4^3 + a_5^3$$
+sayısı 9’a bölünüyorsa,
+$$3 \mid (a_1 \cdot a_2 \cdot a_3 \cdot a_4 \cdot a_5)$$
+olduğunu kanıtlayınız.[^32]
+
+[^32]: Kanıt, Problem 31'deki kanıta benzerdir çünkü $\pm 1 \pm 1 \pm 1 \pm 1 \pm 1$ sayısı, $+$ ve $-$ işaretlerinin herhangi bir kombinasyonu için 9 ile bölünemez.
+
+
+
+
+33. $(x, y) = 1$ ve $x^2 + y^2 = z^4$ olmak üzere $x, y, z$ pozitif tam sayılarsa, $7 \mid x \, \text{ya da} \, y$ olduğunu kanıtlayınız. $(x, y) = 1$ koşulunun gerekli olduğunu gösteriniz.[^33]
+
+[^33]: $(x, y) = 1$ koşulu gereklidir çünkü, örneğin, $15^2+20^2 = 5^4$, iken $7 \nmid 15 \cdot 20$. Şimdi, eğer $(x, y) = 1$ ise ve $x, y, z$, $x^2+y^2 = z^4$ olacak şekilde pozitif tam sayılar ise, o zaman Pisagor denklemi teorisinden, örneğin $x = m^2-n^2$, $y = 2mn$, $z^2 = m^2+n^2$ olacak şekilde $m$ ve $n$ tam sayıları vardır. $7 \nmid y$ olduğunu varsayalım; böylece $7 \nmid m$ ve $7 \nmid n$. 7 ile bölünmeyen bir tam sayının karesinin 7'ye bölünmesiyle 1, 2 veya 4 kalanını verdiğini görmek kolaydır. $1+2$, $1+4$ ve $2+4$ bu tür kalanlar olamayacağından ve hiçbiri 7 ile bölünemediğinden, $z^2 = m^2+n^2$ denkleminden $m$ ve $n$ sayılarının 7'ye bölündüğünde aynı kalanları vermesi gerektiği sonucu çıkar. Böylece $7 \mid x = m^2-n^2$.
+
+
+
+34. $a, b$ tam sayıları için $7 \mid a^2 + b^2$ ise $7 \mid a \, \text{veya} \, 7 \mid b$ olduğunu kanıtlayınız.[^34]
+
+[^34]: 7 ile bölünmeyen bir tam sayının karesi 7'ye bölündüğünde 1, 2 veya 4 kalanını verir, dolayısıyla bu tür karelerin toplamı 1, 2, 3, 4, 5 veya 6 kalanını verir. Böylece, eğer $a$ ve $b$, $7 \mid a^2+b^2$ olacak şekilde tam sayılar ise, o zaman bunlardan biri, dolayısıyla diğeri de 7 ile bölünmelidir.
+
+
+
+35. Aşağıdaki koşulları sağlayan sonsuz sayıda $x, y$ pozitif tam sayı çiftinin bulunduğunu kanıtlayınız ve böyle çiftlerden en küçüğünü bulunuz:[^35]
+
+$$
+x(x + 1) \mid y(y + 1), \quad x + y, \quad x + 1 \mid y, \quad x \cdot y + 1, \quad x + 1 \mid y + 1
+$$
+
+[^35]: $x = 36k+14$, $y = (12k+5)(18k+7)$, $k=0, 1, 2, \ldots$, sayıları istenen özelliği sağlar.
+\
+Aslında, $x(x+1) = 2 \cdot 3(12k+5)(18k+7) = 6y$ olduğu açıkça görülürken, $6 \mid y+1$.
+\
+$y$ sayısı $x$ ile bölünemez çünkü $y$ tektir, $x$ ise çifttir.
+$y$ sayısı $x+1$ ile bölünemez çünkü $3 \mid x+1$, iken $3 \nmid y$.
+$y+1$ sayısı $x$ ile bölünemez çünkü $18k+7 \mid x$ ve $18k+7 \mid y$, dolayısıyla $18k+7 \nmid y+1$.
+Son olarak, $y+1$ sayısı $x+1$ ile bölünemez çünkü $12k+5 \mid x+1$ ve $12k+5 \mid y$, dolayısıyla $12k+5 \nmid y+1$.
+\
+$k=0$ için $x=14$, $y=35$ elde ederiz ve istenen özelliğe sahip daha küçük sayılar olmadığını göstermek kolaydır.
+
+
+
+
+36. Her $s \leq 25$ pozitif tam sayısı ve $s = 100$ için basamakları toplamı $s$’ye eşit olan ve $s$’ye bölünen en küçük $n$ pozitif tam sayısını bulunuz.[^36]
+
+[^36]: $s < 10$ için, elbette $n_s = s$'e sahibiz. Sonra, $s$'nin ardışık katlarını inceleyerek, $n_{10} = 190$, $n_{11} = 209$, $n_{12} = 48$, $n_{13} = 247$, $n_{14} = 266$, $n_{15} = 155$, $n_{16} = 448$, $n_{17} = 476$, $n_{18} = 198$, $n_{19} = 874$, $n_{20} = 9920$, $n_{21} = 399$, $n_{22} = 2398$, $n_{23} = 1679$, $n_{24} = 888$, $n_{25} = 4975$ elde ederiz. Son olarak, $n_{100} = 19999999999900$'a sahibiz. Aslında, 100 ile bölünebilen her sayının son iki basamağı sıfır olmalıdır ve 199999999999'dan küçük her sayının rakamları toplamı açıkça 100'den küçüktür. Bakınız [@kaprekar1955multidigital].
+
+
+
+
+37. Her $s$ pozitif tam sayısı için, $s$’ye bölünen ve basamakları toplamı $s$’ye eşit olan bir $n$ pozitif tam sayısı bulunduğunu kanıtlayınız.[^37]
+
+[^37]: $s$ pozitif bir tam sayı olsun, $s = 2^\alpha 5^\beta t$, burada $\alpha$ ve $\beta$, $\ge 0$ tam sayılar, ve $t$, 2 veya 5 ile bölünemeyen pozitif bir tam sayıdır. Euler teoremine göre $10^{\varphi(t)} \equiv 1 \pmod t$'ye sahibiz. $n = 10^{\alpha+\beta}(10^{\varphi(t)}+10^{2\varphi(t)} + \ldots + 10^{s\varphi(t)})$ olsun.
+$10^{\varphi(t)}+10^{2\varphi(t)} + \ldots + 10^{s\varphi(t)} \equiv s \equiv 0 \pmod t$ ($t \mid s$ olduğundan) sahibiz, ve $2^\alpha 5^\beta \mid 10^{\alpha+\beta}$ olduğundan, $n$ sayısı $s$ ile bölünebilir. Diğer yandan, $n$ sayısının ondalık rakamlarının toplamının $s$'ye eşit olduğu açıktır.
+
+
+
+38. Aşağıdakileri kanıtlayınız:[^38]
+
+ (a) Her pozitif tam sayının $4k + 1$ şeklindeki bölenlerinin sayısı $4k + 3$ şeklindeki bölenlerinin sayısından az değildir.
+ (b) $4k + 1$ şeklindeki bölenlerinin sayısı $4k + 3$ şeklindeki bölenlerinin sayısına eşit olan sonsuz tane pozitif tam sayı bulunduğunu kanıtlayınız.
+ (c) $4k + 1$ şeklindeki bölenlerinin sayısı $4k + 3$ şeklindeki bölenlerinin sayısından fazla olan sonsuz sayıda pozitif tam sayı bulunur.
+
+[^38]: (a) Eğer sayının $4k+3$ biçiminde bir asal böleni yoksa, teorem bariz bir şekilde doğrudur. Teoremin, asal çarpanlarına (birinci kuvvetler halinde, dolayısıyla farklı olması gerekmeyen) ayrışımı $s \ge 0$ tane $4k+3$ biçiminde asal içeren tüm sayılar için doğru olduğunu varsayalım. $n$, asal çarpanlarına (birinci kuvvetler halinde, dolayısıyla farklı olması gerekmeyen) ayrışımı $s+1$ tane $4k+3$ biçiminde asal çarpan içeren pozitif bir tam sayı olsun. O zaman $n = mq$ olur; burada $m$'nin asal çarpanlarına (birinci kuvvetler halinde) ayrışımı $s$ tane $4k+3$ biçiminde çarpan içerir ve $q$, $4k+3$ biçiminde bir asaldır. $g$, $m$'nin $4k+1$ biçimindeki tam sayı bölenlerinin sayısını göstersin ve $h$, $m$'nin $4k+3$ biçimindeki tam sayı bölenlerinin sayısını göstersin. Varsayım gereği ($s$ ile ilgili olarak) $g \ge h$'ye sahibiz. Şimdi, $mq$'nun $4k+1$ biçimindeki tam sayı bölenleri, elbette $m$'nin $4k+1$ biçimindeki bölenleri (bu bölenlerin sayısı $g$'ye eşittir) ve ayrıca $m$'nin $4k+3$ biçimindeki tam sayı bölenlerinin $q$ sayısı ile çarpımlarıdır; bu bölenlerin sayısı $h$'dir. Böylece, $mq$ sayısı $g+h$ tane $4k+1$ biçiminde tam sayı bölene sahip olacaktır. Diğer yandan, $mq$'nun $4k+3$ biçimindeki tam sayı bölenleri, $m$'nin $4k+3$ biçimindeki tam sayı bölenleri (bu bölenlerin sayısı $h$'dir) ve $m$'nin $4k+1$ biçimindeki bölenlerinin $q$ ile çarpımları (bu bölenlerin sayısı $g$'dir) olacaktır. Ancak, bu sonuncular arasında $m$'nin $4k+3$ biçimindeki bölenleri olan bölenler olabilir. Böylece $mq$'nun $4k+3$ biçimindeki tam sayı bölenlerinin toplam sayısı $\le h+g$'dir (ve belki de, $< h+g$). Teorem her $mq$ sayısı için doğru olduğundan, tümevarım yoluyla ($s$'ye göre) teoremin pozitif $s$ tam sayısı için doğru olduğunu elde ederiz.
+\
+(b) $3^{2n-1}$ sayısı ($n = 1, 2, \ldots$) $4k+1$ biçiminde (yani, $1, 3^2, 3^4, \ldots, 3^{2n-2}$) tam sayı bölenlerine sahip olduğu kadar $4k+3$ biçiminde (yani $3, 3^3, 3^5, \ldots, 3^{2n-1}$) bölenlere sahiptir.
+\
+ (c) $3^{2n}$ sayısı ($n = 1, 2, \ldots$ olmak üzere) $n+1$ tane $4k+1$ biçiminde (yani $1, 3^2, 3^4, \ldots, 3^{2n}$) bölene ve sadece $n$ tane $4k+3$ biçiminde (yani $3, 3^3, \ldots, 3^{2n-1}$) bölene sahiptir. $5^n$ sayısının tüm $n+1$ böleni $4k+1$ biçimindedir ve $4k+3$ biçiminde hiç böleni yoktur.
+
+
+
+
+39. $a, b, c$ herhangi tam sayılar ve $n$ de 3’ten büyük olan bir tam sayı ise, $k = a, k + b, k + c$ sayıların hiçbirinin $n$’ye bölünmeyecek şekilde bir $k$ tam sayısının bulunduğunu kanıtlayınız.[^39]
+
+[^39]:  $r_1, r_2,$ ve $r_3$, $-a$, $-b$, ve $-c$ tam sayılarının $n$'ye bölünmesiyle elde edilen kalanlar olsun. Böylece, $r_1, r_2,$ ve $r_3$, $0, 1, 2, \ldots, n-1$ dizisinden tam sayılardır, ve $r_1, r_2, r_3$ sayıları arasında en fazla üç farklı sayı olduğundan, $n > 3$ iken, bu dizide $r \ne r_1$, $r \ne r_2$, ve $r \ne r_3$ olacak şekilde bir $r$ sayısı vardır. Eğer $n \mid a+r$ olsaydı, o zaman $-a \equiv r_1 \pmod n$ olduğundan $n \mid r - r_1$ olurdu. Ancak, $r$ ve $r_1$, $\ge 0$ ve $< n$ olan tam sayılardır, ve eğer farkları $n$ ile bölünebiliyorsa, o zaman $r$'nin tanımının aksine $r = r_1$ olmalıdır. Benzer bir şekilde $n \nmid b+r$ ve $n \nmid c+r$ olduğunu gösteririz. Böylece, $k = r$ alabiliriz.
+
+
+
+40. $F_n = 2^{2^n} + 1$ için $F_n \mid 2^{F_n} - 2$ olduğunu kanıtlayınız $(n = 1, 2, 3, \dots)$.[^40]
+
+[^40]: Pozitif $n$ tam sayıları için $2^n \ge n+1$ olduğunu tümevarımla kolayca gösteririz, bu da $2^{n+1} \mid 2^{2^n}$ ve $2^{2^{n+1}}-1 \mid 2^{2^n}-1$ anlamına gelir. Bu nedenle $F_n = 2^{2^n}+1 \mid 2^{2^{n+1}}-1 \mid 2^{2^n}-1 \mid 2^{2^{n+1}}-2 = 2F_n-2$, ve $F_n \mid 2F_n-2$, ki bu da kanıtlanması gerekendi.
+\
+**Not:** T. Banachiewicz, bu ilişkinin P. Fermat'ı tüm $F_n$ ($n = 1, 2, \ldots$) sayılarının asal olduğu sanısına götürdüğünden şüpheleniyordu. Fermat'ın zamanında, sözde Çin teoreminin doğru olduğu düşünülüyordu, yani bir $m > 1$ tam sayısı $m \mid 2^m-2$ ilişkisini sağlıyorsa, o zaman $m$'nin asal olduğunu öne süren teorem (bu, ilk birkaç yüz tam sayı için kontrol edilmişti). Ancak bu, o zamanlar bilinmeyen $m = 341 = 11 \cdot 31$ için çöker.
+

@@ -1,0 +1,173 @@
+## Aritmetik Diziler
+
+52. Pozitif tam sayılardan oluşan ve tüm terimleri ikişer ikişer aralarında asal olan ve terim sayısı yeterince önceden verilen herhangi bir $n$ sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.[^52]
+
+[^52]: $m$ verilmiş bir tam sayı $> 1$ olsun. $k=1, 2, \dots, m$ için $m!k+1$ sayıları, $k < l \le m$ olacak şekilde pozitif $k$ ve $l$ tam sayıları için aralarında asaldır. Eğer $d > 1$, $m!k+1$ ve $m!l+1$'in ortak böleni olsaydı, $d \mid  l(m!k+1) - k(m!l+1) = l-k$'ye sahip olurduk, dolayısıyla $1 < d < m$ ve $d \mid  m!$'dir. Bu, $d \mid  m!k+1$ olması göz önüne alındığında, $d\mid 1$'i verir, ki bu da $d > 1$ varsayımıyla çelişir.
+
+
+
+53. Her $k$ pozitif tam sayısı için, pozitif tam bölenlerinin sayısı $k$'yı bölen tüm $n$ sayıları kümesinin bir sonsuz aritmetik dizi içerdiğini kanıtlayınız.[^53]
+
+[^53]: Gerekli özellik, $2^k t + 2^{k-1}$ ($t = 0, 1, 2, \dots$) aritmetik dizisinin tüm terimleri tarafından sağlanır, çünkü $n = 2^k t + 2^{k-1}$'in asal çarpanlara açılımında 2 sayısı $k-1$ üssü ile girer; pozitif tam sayı bölenlerinin sayısı için iyi bilinen formülden, $n$ sayısının pozitif tam sayı bölenlerinin sayısının $k$ ile bölünebildiği hemen anlaşılır.
+
+
+
+54. $x(x + 1), y(y + 1), z(z + 1)$ sayıları artan aritmetik dizi oluşturacak şekilde sonsuz sayıda $x, y, z$ pozitif tam sayı üçlüsünün bulunduğunu kanıtlayınız.[^54]
+
+[^54]: Gerekli özellik, keyfi bir pozitif $x$ tam sayısı için ve $y = 5x+2$, $z = 7x+3$ için geçerlidir, çünkü bu durumda
+$$x(x+1) = x^2+x, \quad y(y+1) = 25x^2+25x+6, \quad z(z+1) = 49x^2+49x+12$$
+sayıları, $24x^2+24x+6$ farkıyla bir aritmetik dizi oluşturur.
+\
+**NOT.** $x, y, z, t$ gibi artan dört pozitif tam sayının $x(x+1)$, $y(y+1)$, $z(z+1)$ ve $t(t+1)$ sayılarının bir aritmetik dizi oluşturacak şekilde bulunmadığı gösterilebilir, çünkü o zaman bu sayılardan dört kat daha büyük ve bir artırılmış sayılar, yani $(2x+1)^2$, $(2y+1)^2$, $(2z+1)^2$ ve $(2t+1)^2$ de bir aritmetik dizi oluştururdu, bu da Fermat teoremine aykırıdır; Fermat teoremine göre bir aritmetik dizi oluşturan dört farklı tam sayının karesi yoktur (ispat W. Sierpiński'nin kitabında bulunabilir @sierpinski1964elementary, s. 74, teorem 8).
+
+
+
+
+55. Kenarları bir aritmetik dizi oluşturma tam sayılar olan tüm dik üçgenleri bulunuz.[^55]
+
+[^55]: Eğer bir dik üçgenin kenarları bir aritmetik dizi oluşturuyorsa, o zaman bunları $b-r$, $b$ ve $b+r$ olarak gösterebiliriz, burada $b$ ve $r$ pozitif tam sayılardır, ve $(b-r)^2+b^2 = (b+r)^2$'ye sahibiz, dolayısıyla $b = 4r$'dir, bu da
+kenarları $3r$, $4r$ ve $5r$ olan dik üçgeni verir, burada $r$ keyfi bir pozitif tam sayıdır. Böylece, kenarları bir aritmetik dizi oluşturan tam sayılar olan tüm dik üçgenler, kenarları 3, 4, 5 olan üçgenin tam sayı katları alınarak elde edilir.
+
+
+
+
+
+
+56. Pozitif tam sayılardan oluşan, hiçbir üçgen $\left(\frac{n(n+1)}{2}\right)$ sayısını içermeyen ve farkı en küçük olan artan bir aritmetik dizi bulunuz.[^56]
+
+[^56]: $t_n = \frac{1}{2}n(n+1)$ üçgensel sayıları $n = 4u+1$ ($u=0, 1, 2, \dots$) için tek ve $4\mid n$ için çifttir. Dolayısıyla, farkı 2 olan her iki dizi de sonsuz sayıda üçgensel sayı içerir. Öte yandan, $3k+2$ ($k=0, 1, 2, \dots$) dizisi hiçbir üçgensel sayı içermez, çünkü eğer $3\mid n$ ise, o zaman $3\mid t_n$; benzer şekilde, $u=0, 1, 2, \dots$ için $n=3u+2$ ise, o zaman $3\mid t_n$; son olarak, $u=0, 1, 2, \dots$ için $n=3u+1$ ise, o zaman $t_n = 9 \frac{u(u+1)}{2} + 1$'dir, dolayısıyla 3'e bölünmesi 1 kalanını verir.
+
+57. $a$ ve $b$ pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinin sonsuz tane tam kare içermesi için gerek ve yeterli koşulu bulunuz.[^57]
+
+[^57]: $b$'nin $a$ modülüne göre bir kuadratik (ikinci dereceden) kalan olması gerekli ve yeterlidir. Aslında, eğer bazı pozitif $x$ tam sayısı ve bazı $k \ge 0$ tam sayısı için $x^2 = ak+b$'ye sahipsek, o zaman $x^2 \equiv b \pmod{a}$'dır ve $b$, $a$ modülüne göre bir kuadratik kalandır. Tersine, eğer $b$, $a$ modülüne göre bir kuadratik kalan ise, o zaman $x^2 \equiv b \pmod{a}$ olacak şekilde sonsuz sayıda pozitif $x$ tam sayısı vardır, dolayısıyla $x^2 = ak+b$'dir, burada $k$ bir tam sayıdır, ve sonuç olarak yeterince büyük $x$ için pozitiftir.
+
+58. Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının $1$'den büyük dereceden kuvvetine eşit olan ve terim sayısı önceden verilen $n$ sayısından büyük olan bir aritmetik dizi bulunduğunu kanıtlayınız.
+^[A. Schinzel'in ispatını sunacağız. $p_k$, $k$'ıncı ardışık asalı göstersin. $s$ keyfi bir pozitif tam sayı olsun ve $P = p_1 p_2 \dots p_s$ olsun. Çin kalan teoremine göre, her $k \le s$ pozitif tam sayısı için $a_k \equiv 0 \pmod{P/p_k}$ ve $a_k \equiv -1 \pmod{p_k}$ olacak şekilde bir $a_k$ pozitif tam sayısı mevcuttur. $Q = 1^{a_1} 2^{a_2} \dots s^{a_s}$ alalım. $kQ$ sayıları ($k = 1, 2, \dots, s$), $s$ terimli artan bir aritmetik dizi oluşturur. $a_k$ sayılarının tanımına göre ($k=1, 2, \dots, s$), $p_k \mid  a_k+1$'e sahibiz ve $n$, $s$'den büyük pozitif bir tam sayı olmak üzere, eğer $k \ne n$ ise $p_j \mid  a_k$'dir. Sayılar
+$$Q_k = k Q^{(k+1)/P_k} \prod_{n=1 \atop n \ne k}^s n^{a_n / p_k}$$
+doğaldır, ve $k = 1, 2, \dots, s$ için $kQ = Q_k^{p_k}$ olduğunu kolayca görürüz, bu nedenle $kQ$ sayıları ($k=1, 2, \dots, s$), tam sayı üsleri $> 1$ olan tam sayıların kuvvetleridir.]
+
+59. Birbirinden farklı pozitif tam sayılardan oluşan ve her terimi bir pozitif tam sayının $1$'den büyük dereceden kuvvetine eşit olan sonsuz bir aritmetik dizi bulunmadığını kanıtlayınız.
+^[İstenen teorem, açıkça, her sonsuz artan tam sayı aritmetik dizisinde,
+herhangi bir tam sayının $> 1$ tam sayı üslü bir kuvveti olmayan bir terimin var olduğu teoremine denktir. Dolayısıyla, $a$ ve $b$ pozitif tam sayılar olmak üzere, $ak+b$ ($k = 0, 1, 2, \dots$) sonsuz bir aritmetik dizi olsun. $p > a+b$ olan bir $p$ asalı mevcuttur. $(a, p^2) = 1$ olduğundan, $ax - p^2 y = 1$ denkleminin pozitif $x, y$ tam sayılarında bir çözümü vardır. $k = (p-b)x$ olsun; bu pozitif bir tam sayı olacaktır (çünkü $p > b$), ve $ak+b = p^2 y(p-b)+p$'ye sahip olacağız. Böylece, dizimizin $ak+b$ terimi $p^2$'ye bölünemez, ve bu nedenle $> 1$ tam sayı üssü olan pozitif bir tam sayının kuvveti olamaz.]
+
+60. Her biri bir pozitif tam sayının 1’den büyük dereceden kuvvetine eşit olan dört ardışık sayı bulunmadığını kanıtlayınız.
+^[Her dört ardışık pozitif tam sayıdan biri, $k \ge 0$ bir tam sayı olmak üzere, $4k+2$ formunda olmalıdır. 4'e bölünemeyen bir çift sayı olan böyle bir sayı, $> 1$ tam sayı üssü olan pozitif bir tam sayının kuvveti olamaz.
+\
+**NOT.** A. Mąkowski, her biri pozitif bir tam sayının $> 1$ tam sayı üslü bir kuvveti olan üç ardışık pozitif tam sayı olmadığını ispatlamıştır, ancak ispat zordur  [@khatri1962three]. Bununla birlikte, her biri pozitif bir tam sayının $> 1$ tam sayı üslü bir kuvveti olan iki ardışık sayı mevcuttur. Bu tür sayılar, örneğin, $2^3 = 8$, $3^2 = 9$'dur. Bu tür tam sayıların başka çiftlerinin olup olmadığına dair Catalan problemi açıktır. S. Hyyrö [@hyyro1964uber], böyle herhangi bir çiftte her iki tabanın da $> 10^{11}$ olduğunu ispatlamıştır.]
+
+61. Pozitif tam sayılardan oluşan her artan aritmetik dizinin bileşik sayılardan oluşan, önceden verilen $n$’den fazla sayıda ardışık teriminin bulunduğunu kanıtlayınız.
+^[Çözüm doğrudan Problem 58'den gelmektedir, ancak daha basit bir yolla da ispatlanabilir. $m > 1$ bir tam sayı olsun, ve $q_i$ ($i=1, 2, \dots, m$), $a < q_1 < q_2 < \dots < q_m$ olacak şekilde asallar olsun. Çin kalan teoremine göre, $j=1, 2, \dots, m$ için $ax \equiv -b-aj \pmod{q_j^2}$ olacak şekilde pozitif bir $x$ tam sayısı mevcuttur. Böylece $j=1, 2, \dots, m$ için $q_j^2 \mid  a(x+j)+b$'dir. Dolayısıyla, $ak+b$ dizisinin $m$ ardışık terimi, yani $j=1, 2, \dots, m$ için $a(x+j)+b$ terimleri, bileşik sayıdır.]
+
+62. $a$ ve $b$ aralarında asal pozitif tam sayılarsa her $m$ pozitif tam sayısı için $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinin $m$ ile aralarında asal olan sonsuz sayıda terimi bulunduğunu kanıtlayınız.
+^[Elbette, $m$'nin $> 1$ bir tam sayı olduğunu varsayabiliriz. $P$, $m$'nin $a$'nın bölenleri olan tüm asal bölenlerinin çarpımını göstersin, ve eğer böyle bölenler yoksa $P = 1$ olsun. $Q$, $m$'nin $b$'nin bölenleri olan tüm asal bölenlerinin çarpımını göstersin, ve eğer böyle bölenler yoksa $Q = 1$ olsun. $(a, b) = 1$ olduğundan, $(P, Q) = 1$'e sahibiz. Son olarak, $R$, $m$'nin $a$ veya $b$'yi bölmeyen tüm asal bölenlerinin çarpımını göstersin, ve eğer böyle bölenler yoksa, $R = 1$ olsun. Açıkça, $(R, P) = 1$ ve $(R, Q) = 1$'e sahibiz. $(aPR+b, m) = 1$ olduğunu göstereceğiz. Aslında, eğer doğru olmasaydı, $p\mid m$ ve $p\mid aPR+b$ olacak şekilde bir $p$ asalı var olurdu. Eğer $p\mid P$ olsaydı, o zaman $p\mid aPR+b$ ifadesi $p\mid b$'yi gerektirirdi, dolayısıyla $p\mid Q$, bu da $(P, Q)$
+$= 1$ gerçeğiyle çelişir. Eğer $p\mid Q$ olsaydı, o zaman $p\mid b$'ye sahip olurduk, dolayısıyla $p\mid aPR$, ki bu imkansızdır çünkü $(a, b) = 1$, $(b, P) = 1$, $(b, R) = 1$'dir. Son olarak, eğer $p\mid R$ olsaydı, $p\mid b$'ye sahip olurduk, dolayısıyla $p\mid Q$, bu da $(R, Q) = 1$ gerçeğiyle çelişir. Böylece, $(aPR+b, m) = 1$'i ispatladık, ve buradan $k=0, 1, \dots$ için $(a(km+PR)+b, m) = 1$ sonucu çıkar. Bu nedenle, dizimiz $m$ ile aralarında asal olan sonsuz sayıda terim içerir, ki bu da ispatlanması gerekendi.]
+
+
+
+63. Her $s$ pozitif tam sayısı için pozitif tam sayılardan oluşan her artan aritmetik dizide önceden verilen herhangi $s$ tane rakamla başlayan terimlerinin bulunduğunu kanıtlayınız.[^63]
+
+[^63]: Dizimizin ilk terimi $b$ ve farkı $a$ olsun; böylece $a$ ve $b$ sayıları pozitif tam sayılardır. $b$'nin $a$'ya bölünmesinden kalanı ele alalım; bu nedenle, $t \ge 0$ bir tam sayı ve $0 \le r < a$ olacak şekilde $r$ bir tam sayı olmak üzere $b = at+r$'ye sahibiz. $s$ keyfi bir pozitif tam sayı olsun, ve $c_1 \ne 0$ olmak üzere $c_1, c_2, \dots, c_s$ keyfi bir ondalık basamak dizisi olsun. $N$, ardışık basamakları $c_1, c_2, \dots, c_s$ olan $s$ basamaklı tam sayıyı göstersin.
+\
+Açıkça, $10^n > 2a(t+1)$ olacak şekilde pozitif bir $n$ tam sayısı mevcuttur. $N 10^n / a - t$ sayısı $> 1$ olacaktır.
+\
+$k$, $N 10^n / a - t$'den büyük en küçük pozitif tam sayı olsun; böylece, $k-1 \le N 10^n / a - t$'ye sahip olacağız, dolayısıyla
+$$k+1 \le \frac{N 10^n}{a} + 2 - t < \frac{(N+1)10^n}{a} - t$$
+çünkü $10^n > 2a$'dir. Bu nedenle $N 10^n < a(k+t) < ak+at+r = ak+b < a(k+t+1) < (N+1)10^n = N 10^n + 10^n$'ye sahibiz ve buradan $ak+b$ sayısının ilk $s$ basamağının, $N$ sayısının ilk $s$ basamağıyla aynı olduğu, yani $c_1, c_2, \dots, c_s$ basamakları olduğu sonucu çıkar.
+
+64. Fibonacci dizisinin üç teriminden oluşan tüm artan aritmetik dizileri bulunuz ve bu dizinin dört teriminden oluşan hiçbir artan aritmetik dizi bulunmadığını kanıtlayınız.
+^[Eğer Fibonacci dizisinin $u_k, u_l, u_m$ terimleri bir aritmetik dizi oluşturuyorsa, o zaman $u_l > 1$ olmalıdır, ve dolayısıyla $l > 2$'dir ($u_2 = 1$ olduğundan), ve $m > 3$'tür. Dahası, $u_m = u_l + (u_l - u_k)$'dir, ki bu da $u_m < u_l + u_l = u_l + u_{l-1} + u_{l-2} < u_l + u_{l-1} + u_l = u_{l+1} + u_{l-2}$ anlamına gelir ve buradan $u_m < u_{l+1}$ sonucu çıkar. Öte yandan, $u_m > u_l$'dir, dolayısıyla $u_m \ge u_{l+1}$'dir. Ve $u_k < u_l$'ye sahip olmalıyız. Bu nedenle ($l > 2$ olduğundan) $m = l+1$'e sahibiz. Böylece $u_m = 2u_l - u_k = u_{l+1} = u_l + u_{l-1}$'e sahibiz, ki bu da $u_l - u_k = u_{l-1}$ anlamına gelir. Dolayısıyla, eğer Fibonacci dizisinin $u_k, u_l, u_m$ terimleri artan bir aritmetik dizi oluşturuyorsa, $l > 2$, $k = l-2$ ve $m = l+1$ olmalıdır. Öte yandan, herhangi bir $l > 1$ tam sayısı için $u_{l-1}, u_{l+1}$ ve $u_{l+2}$ sayıları $u_l$ farkıyla bir aritmetik dizi oluşturur. Eğer $n$, $> l+1$ bir tam sayı olsaydı, $n \ge l+2$'ye sahip olurduk, dolayısıyla $u_n \ge u_{l+2}$'dir. ve $u_n - u_{l+1} \ge u_{l+2} - u_{l+1} = u_l > u_{l-1}$'dir
+($l > 2$ olduğundan). Buradan, Fibonacci dizisinin bir aritmetik dizi oluşturan dört teriminin olmadığı sonucu çıkar.]
+
+65. Tam sayılardan oluşan, Fibonacci dizisinin hiçbir terimini içermeyen ve farkı en az olan bir artan aritmetik dizi bulunuz.[^65]
+
+[^65]: Biliyoruz ki, eğer $m$ pozitif bir tam sayı ise, o zaman Fibonacci dizisinin ardışık terimlerinin $m$'ye bölünmesinden elde edilen kalanlar, saf periyotlu periyodik bir dizi oluşturur [@sierpinski1958teoria, s. 279, problem 3]. $m = 2, 3, 4, 5, 6, 7$ için, Fibonacci dizisinin terimlerinin $m$'ye bölünmesinden elde edilen kalanlar sırasıyla şöyledir (burada tümünü değil, sadece ilk birkaç kalanı gösteriyoruz):
+\
+$m = 2$ için: 1, 1, 0, \dots,
+\
+$m = 3$ için: 1, 1, 2, 0, \dots,
+\
+$m = 4$ için: 1, 1, 2, 3, 1, 0, \dots,
+\
+$m = 5$ için: 1, 1, 2, 3, 0, 3, 3, 1, 4, \dots,
+\
+$m = 6$ için: 1, 1, 2, 3, 5, 2, 1, 3, 4, 1, 5, 0, \dots,
+\
+$m = 7$ için: 1, 1, 2, 3, 5, 1, 6, 0, 6, 6, 5, 4, \dots,
+\
+$m \le 7$ olan her pozitif tam sayı için $m$ modülüne göre tüm olası kalanlar yukarıdaki dizilerde göründüğünden, farkı $m \le 7$ olan aritmetik dizilerin her birinin Fibonacci dizisinin sonsuz sayıda terimini içerdiğini görüyoruz.
+\
+Şimdi $8k+4$ ($k = 0, 1, 2, \dots$) dizisinin Fibonacci dizisinin hiçbir terimini içermediğini göstereceğiz.
+\
+$u_1 = u_2 = 1$ ve $n = 1, 2, \dots$ için $u_{n+2} = u_n + u_{n+1}$ olduğundan, $u_1, u_2, \dots, u_{14}$ sayılarının 8'e bölünmesinden aşağıdaki kalanları verdiğini kolayca görürüz:
+\
+$$1, 1, 2, 3, 5, 0, 5, 5, 2, 7, 1, 0, 1, 1.$$
+Buradan $8\mid u_{13}-u_1$ ve $8\mid u_{14}-u_2$ sonucu çıkar. Böylece, $n = 1$ için $8\mid u_{n+12}-u_n$ ve $8\mid u_{n+13}-u_{n+1}$'e sahibiz. Şimdi bu iki formülün bazı pozitif $n$ tam sayıları için geçerli olduğunu varsayalım. O zaman $8\mid u_{n+12}+u_{n+13}-(u_n+u_{n+1})$ veya $8\mid u_{n+14}-u_{n+2}$'ye sahibiz ($8\mid u_{n+13}-u_{n+1}$ olduğundan). Tümevarım yoluyla $n = 1, 2, \dots$ için $8\mid u_{n+12}-u_n$ sonucu çıkar, ki bu da Fibonacci dizisinin 8 modülüne göre ardışık kalanlar dizisinin periyodik olduğunu ve on iki terimlik saf bir periyoda sahip olduğunu gösterir.
+\
+8 modülüne göre ilk on dört kalandan, bu kalanların sadece 0, 1, 2, 3, 5 ve 7 olabileceğini görüyoruz. Dolayısıyla 4 veya 6 kalanı yoktur, bu da $8k+4$ ve $8k+6$ dizilerinin Fibonacci dizisinin hiçbir terimini içermediğini gösterir. Bunlar, istenen özelliğe sahip ve mümkün olan en küçük farka sahip tam sayı terimli dizilerdir.
+
+66. $a$ ve $b$ aralarında asal pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ şeklinde olan ve Fibonacci dizisinin hiçbir terimini içermeyen bir aritmetik dizi bulunuz.[^66]
+
+[^66]: $11k+4$ ($k=0, 1, 2, \dots$) dizisi istenen özelliğe sahiptir. Problem 65'in çözümünde olduğu gibi, kolay bir tümevarımla $n=1, 2, \dots$ için $11 | u_{n+10} - u_n$ olduğunu kanıtlarız. Buradan, Fibonacci dizisinin 11 modülüne göre kalanlar dizisinin periyodik olduğu ve periyodunun 10 olduğu sonucu çıkar; bu diziyi kolayca $1, 1, 2, 3, 5, 8, 2, 10, 1, 0, \dots$ olarak buluruz. 4 sayısı (ve ayrıca 6, 7 ve 9) bu dizide görünmez.
+
+
+67. $a$ ve $b$ aralarında asal pozitif tam sayılar olmak üzere $ak + b$ $(k = 0, 1, 2, \dots)$ şeklinde olan her aritmetik dizinin ikişer ikişer aralarında asal olan sonsuz sayıda teriminin bulunduğunu kanıtlayınız.[^67]
+
+[^67]: Dizimizin $n$ terimine sahip olduğumuzu varsayalım
+$$ak_1+b, ak_2+b, \dots, ak_n+b,$$
+bunlar ikişerli olarak aralarında asaldır ($n=1$ için $k_1=1$ alabiliriz). $m = (ak_1+b)(ak_2+b) \dots (ak_n+b)$ olsun. Problem 62'den, $(ak_{n+1}+b, m) = 1$ olacak şekilde pozitif bir $k_{n+1}$ tam sayısının var olduğu sonucu çıkar, dolayısıyla $i=1, 2, \dots, n$ için $(ak_{n+1}+b, ak_i+b) = 1$'dir. Sayıları
+$$ak_1+b, ak_2+b, \dots, ak_n+b, ak_{n+1}+b$$
+bu nedenle ikişerli olarak aralarında asaldır. Böylece tümevarımla, $ak_i+b$ ($i=1, 2, \dots$) dizisinin orijinal aritmetik dizinin sadece aralarında asal terimlerini içermesini sağlayan sonsuz $k_1, k_2, \dots$ dizisini tanımlamış olduk.
+
+
+68. $a$ ve $b$ pozitif tam sayılar olmak üzere her $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisinde asal çarpanları aynı olan sonsuz tane terim bulunduğunu kanıtlayınız.[^68]
+
+[^68]: $d = (a, a+b)$ olsun. Böylece $a = da_1$, $a+b = dc$ olur, burada $(a_1, c) = 1$ ve $c > 1$'dir ($d \le a$ iken $dc = a+b > a$ olduğundan). $(a_1, c) = 1$ ve Euler teoremi göz önüne alındığında, $c^{\phi(a_1)} \equiv 1 \pmod{a_1}$ elde ederiz, dolayısıyla $n$ tam sayısı için $c^{n\phi(a_1)} \equiv 1 \pmod{a_1}$ olur. Bu nedenle, $c^{n\phi(a_1)} - 1 = t_n a_1$ olacak şekilde bir $t_n$ pozitif tam sayısı vardır, ki bu ($c > 1$ ve $n$ keyfi olarak büyük olduğundan) keyfi olarak büyük yapılabilir. Dahası, elimizde şu var:
+$$a(ct_n+1)+b = da_1ct_n + dc = dc^{n\phi(a_1)+1}.$$
+Dizimizin (keyfi olarak büyütülebilen) $a(ct_n+1)+b$ terimi, bu nedenle, $dc > 1$ sayısının asal bölenleri olan ve sadece o asal bölenlere sahiptir. Böylece, dizimizde aynı asal bölen kümesine sahip sonsuz çoklukta terim mevcuttur, ki bu da kanıtlanması gerekendi (bkz.  @polya1918functions).
+
+69. $a$ ve $b$ pozitif tam sayılar olmak üzere her $ak + b$ $(k = 0, 1, 2, \dots)$ aritmetik dizisi ve her $s$ pozitif tam sayısı için, $s$ tane birbirinden farklı asal sayının çarpanına eşit olan sonsuz tane terim bulunduğunu kanıtlayınız.[^69]
+
+[^69]: Lejeune-Dirichlet teoreminden, $s=1$ için teoremin doğru olduğu hemen anlaşılır. Şimdi teoremin bir $s$ pozitif tam sayısı için doğru olduğunu varsayalım. Bu durumda, $q_1 < q_2 < \dots < q_s$ asal olmak üzere $ak_0+b = q_1q_2 \dots q_s$ olacak şekilde bir $k_0$ sayısı mevcuttur.
+asallar. Lejeune-Dirichlet teoremine göre, $ak+1 = q$'nun $q > q_s$ olacak şekilde bir asal sayı olmasını sağlayan sonsuz sayıda $k$ tam sayısı vardır. $t = q_1q_2 \dots q_s k + k_0$ için şunu elde ederiz:
+$$at+b = q_1q_2 \dots q_s ak + ak_0 + b = q_1q_2 \dots q_s (ak+1) = q_1q_2 \dots q_s q.$$
+Dolayısıyla teorem $s+1$ için de doğrudur. Tümevarım yoluyla, teoremin her pozitif $s$ tam sayısı için doğru olduğu sonucu çıkar, ki bu da kanıtlanması gerekendi.
+
+
+70. Farkı 10 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.[^70]
+
+[^70]:Eğer $p$ bir asalsa, o zaman $p, p+10$ ve $p+20$ sayılarından biri 3'e bölünmelidir (çünkü $p+10 \equiv p+1 \pmod 3$ ve $p+20 \equiv p+2 \pmod 3$'tür ve her üç ardışık tam sayıdan biri 3'e bölünmelidir). Dolayısıyla, eğer bu üç sayımızın tümü asalsa, o zaman bunlardan biri, yani en küçüğü, 3'e eşit olmalıdır ve $p = 3, p+10 = 13, p+20 = 23$ elde ederiz. Bu nedenle, farkı 10 olan ve üç asaldan oluşan yalnızca bir aritmetik dizi vardır, yani 3, 13, 23. Farkı 10 olan ve dört (veya daha fazla) asaldan oluşan hiçbir aritmetik dizinin olmadığını kolayca gösterebiliriz, çünkü eğer $p, p+10, p+20$ ve $p+30$ asal olsaydı, o zaman gösterdiğimiz gibi, $p=3$ olurdu, ancak $p+30 = 33 = 3 \cdot 11$ bir asal değildir.
+\
+**NOT.** A. Schinzel'in asallara ilişkin belirli bir sanısından [@schinzel1958certaines], $p+10$'un da asal olmasını sağlayan sonsuz sayıda $p$ asalının var olduğu sonucu çıkar; örneğin 7 ve 17, 13 ve 23, 19 ve 29, 31 ve 41, 37 ve 47, 61 ve 71, 73 ve 83, 79 ve 89.
+
+
+
+71. Farkı 100 olan ve sadece asal sayılardan oluşan en az 3 terimli tüm aritmetik dizileri bulunuz.[^71]
+
+[^71]: $p, p+100$ ve $p+200$ sayılarından birinin 3'e bölünmesi gerektiğinden ve eğer bu sayılar asalsa, $p = 3$ olması gerektiğinden, bu tür diziler yoktur. Ancak bu durumda $p+200 = 203 = 7 \cdot 29$ bileşik sayıdır.
+\
+**NOT.** Benzer bir şekilde, $1003 = 17 \cdot 53$ bileşik olduğundan, üç veya daha fazla asaldan oluşan ve farkı 1000 olan hiçbir dizinin bulunmadığını gösteririz. Öte yandan, A. Schinzel'in bir sanısından [@schinzel1958certaines] $p+1000$'in de asal olmasını sağlayan sonsuz sayıda $p$ asalının var olduğu sonucu çıkar; örneğin 13 ve 1013, 19 ve 1019, 31 ve 1031, 61 ve 1061, 97 ve 1097, 103 ve 1103, 1039 ve 2039.
+
+72. Sadece asal sayılardan oluşan, 10 terimli ve son terimi en küçük olan artan bir aritmetik dizi bulunuz.[^72]
+
+[^72]:  Eğer dizimizin farkı tek olsaydı, o zaman dizimizin her ikinci terimi çift olurdu; bu ise dizimizin on asaldan oluşması isteniyorsa imkansızdır. Dolayısıyla, fark çift olmalıdır. Eğer ilk terim 2'ye eşit olsaydı, o zaman bir sonraki terim çift olurdu ve dolayısıyla bileşik olurdu. Bu nedenle, dizimizin ilk terimi tek bir asaldır ve buradan tüm terimlerin tek asal olması gerektiği sonucu çıkar. Esasen M. Cantor'a ait olan şu teoremi kullanacağız: Eğer bir aritmetik dizinin $n$ terimi tek
+asalsa, o zaman dizinin farkı $n$'den küçük her asal sayıya bölünür (bkz, örneğin, @sierpinski1964elementary, s. 121, teorem 5). $n=10$ için, dizimizin farkının 2, 3, 5 ve 7'ye, dolayısıyla 210'a bölünmesi gerektiği sonucu çıkar. Önce, 10 asaldan oluşan ve farkı 210 olan bir aritmetik dizi bulmaya çalışacağız.
+\
+210 sayısı (dizimizin farkı) 2, 3, 5 ve 7'ye bölündüğünden, ilk terim bu asallardan hiçbirine eşit olamaz. 11'e de eşit olamaz, çünkü bu durumda ikinci terim $221 = 13 \cdot 17$ olurdu. Dolayısıyla dizinin ilk terimi $> 11$'dir ve terimlerin hiçbiri 11'e bölünmez. 210'un 11'e bölümünden kalan 1'dir. Eğer ilk terim 11'e bölündüğünde $> 1$ kalanını verseydi, o zaman her sonraki terimde bu kalan 1 artardı ve dizinin terimlerinden biri 11'e bölünürdü ki bu imkansızdır. Bu nedenle, dizinin ilk terimi 11'e bölündüğünde 1 kalanını vermelidir ve tek olduğundan, $k$ pozitif bir tam sayı olmak üzere $22k+1$ formunda olmalıdır. Bu formdaki ardışık asallar $23, 67, 89, 199, \dots$ şeklindedir.
+\ 
+İlk terim 23 olamaz, çünkü o zaman altıncı terim $1073 = 29 \cdot 37$ olurdu. Eğer ilk terim 67 olsaydı, o zaman dördüncü terim $697 = 17 \cdot 41$ olurdu. Eğer ilk terim 87 olsaydı, o zaman ikinci terim $229 = 13 \cdot 23$ olurdu. Ancak, ilk terim 199 ise, on ardışık asaldan oluşan bir dizi elde ederiz
+$$199, 409, 619, 829, 1039, 1249, 1459, 1669, 1879, 2089.$$
+Böylece farkı 210 olan ve on asaldan oluşan bir dizi bulmuş olduk. Şimdi, farkı 210'dan farklı bir $r$ olan ve on asaldan oluşan artan bir aritmetik dizimiz olduğunu varsayalım. O zaman $r$ (Cantor teoremine göre) 210'a bölünmelidir ve 210'dan farklı olduğundan, $r \ge 420$ olmalıdır. Ancak bu durumda, dizimizin ikinci terimi 420'yi aşacaktır, dolayısıyla bizim bulduğumuz dizinin ikinci terimi olan 409'u aşacaktır ve açıkçası sonraki terimler de bulduğumuz dizinin terimlerini aşacaktır. Dolayısıyla, ilk terimi 199 ve farkı 210 olan dizi, mümkün olan en küçük son terime sahip olan, on asaldan oluşan artan dizidir.
+\
+**NOT.** Bugüne kadar bilinen en uzun artan aritmetik asal dizisi, ilk terimi 4943 ve farkı 60060 olan on üç terimli dizidir ve Moskova'dan W. N. Seredinsky tarafından bulunmuştur. A. Schinzel'in asallara ilişkin bir sanısından,
+farkı 30030 olan ve on üç asaldan oluşan sonsuz sayıda dizinin var olduğu sonucu çıkar (bkz. @schinzel1958certaines, s. 191, C$_{1,4}$). Ancak, şu ana kadar böyle bir dizi bulunamamıştır.
+
+73. Pozitif tam sayılardan oluşan ve hiçbir terimi iki asal sayının ne toplamı, ne de farkı şeklinde gösterilemeyen artan bir sonsuz aritmetik dizi bulunuz.[^73]
+
+[^73]: Örneğin, $30k+7$ ($k=1, 2, 3, \dots$) dizisi istenen özelliğe sahiptir. Gerçekten de, eğer $30k+7 = p+q$ olsaydı, $30k+7$'nin tek olduğu gerçeği göz önüne alındığında, $p$ ve $q$ sayılarından biri çift olurdu ve bir asal olarak 2'ye eşit olurdu. $q=2$ olduğunu varsayalım; o zaman $p = 30k+5 = 5(6k+1)$ olur ki bu, $p$'nin bir asal olması durumunda imkansızdır. Eğer $p$ ve $q$ asal olmak üzere $30k+7 = p-q$ ise, o zaman $q=2$ ve $p = 30k+9 = 3(10k+3)$ olurdu ki bu da imkansızdır.
+\
+**NOT.**
+İki asalın hem toplamı hem de farkı olarak temsil edilebilen sonsuz sayıda çift sayının var olduğu kanıtlanabilir (ancak kanıtı zordur). A. Schinzel'in asallara ilişkin belirli bir sanısından, hem iki asalın toplamı hem de farkı olan sonsuz sayıda tek sayının var olduğu sonucu çıkar. Bkz. @sierpinski1963nombres.
+
+
+
+

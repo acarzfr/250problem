@@ -1,0 +1,277 @@
+## Karışık Problemler
+
+200. Tam sayı katsayılı bir $f(x)$ polinomu için $f(x) = 0$ denkleminin bir tam sayı çözümü varsa, her $p$ asal sayısı için $x \equiv 0 \pmod{p}$ denkleminin de çözümü vardır. Birinci dereceden $ax + b = 0$ denklemini kullanarak bunun tersinin doğru olmadığını kanıtlayınız.[^200]
+
+[^200]: $4x+2=0$ denkleminin tamsayı kökleri olmadığı açıktır. Öte yandan, $4x+2\equiv0(mod~p)$ denkliği her $p$ asal modülü için çözülebilirdir. Modül 2 için, elbette, özdeş olarak çözülebilirdir. $p$ tek bir asal ise, $k$ pozitif bir tamsayı olmak üzere $p=2k+1$, $x=k$ çözümüne sahiptir.
+
+201. $a$ ve $b$ tam sayıları olmak üzere $ax + b \equiv 0 \pmod{m}$ denkleminin her $m$ pozitif tam sayısı için çözümü varsa, $ax + b = 0$ denkleminin de tam sayı çözümünün bulunduğunu kanıtlayınız.[^201]
+
+[^201]: $m=a$ koyalım. Eğer $ax+b\equiv0(mod~m)$ denkliğinin bir çözümü varsa, o zaman $a\mid b$, dolayısıyla $k$ bir tamsayı olmak üzere $b=ak$'dir. $ax+b=0$ denklemi $x=-k$ tamsayı köküne sahiptir.
+
+202. $6x^2 + 5x + 1 \equiv 0 \pmod{m}$ denkleminin her $m$ pozitif tam sayısı için çözümü bulunduğunu, fakat $6x^2 + 5x + 1 = 0$ denkleminin tam sayı çözümünün bulunmadığını kanıtlayınız.[^202]
+
+[^202]: $6x^{2}+5x+1=(3x+1)(2x+1)$ olduğunu özdeş olarak biliyoruz, bu da $6x^{2}+5x+1=0$ denkleminin tamsayı çözümü olmadığını gösterir. $m$ keyfi bir pozitif tamsayı olsun. O zaman $\alpha$ $\ge0$ bir tamsayı ve $m_{1}$ tek olmak üzere $m=2^{\alpha}m_{1}$ olur. $(2^{\alpha},m_{1})=1$ olduğundan, $3x\equiv-1(mod~2^{\alpha})$ ve $2x\equiv-1(mod~m_{1})$ olacak şekilde bir $x$ pozitif tamsayısı vardır. Bu, $m=2^{\alpha}m_{1}\mid (3x+1)(2x+1)$ ve sonuç olarak $6x^{2}+5x+1\equiv0(mod~m)$ sonucunu verir.
+
+203. Her $k$ tek ve $n$ pozitif tam sayısı için $2n^2 + 2 \mid k^{2n} - 1$ olduğunu kanıtlayınız.[^203]
+
+[^203]: Bu, $n=1$ için doğrudur, çünkü tek bir sayının karesi 8'e bölündüğünde 1 kalanını verir. İddianın bir $n$ pozitif tamsayısı için geçerli olduğunu varsayalım. O zaman tek $k$ için: $t$ bir tamsayı olmak üzere $k^{2^{n}}=2^{n+2}t+1$'dir. Buradan $k^{2^{n+1}}=(2^{n+2}t+1)^{2}=2^{2n+4}t^{2}+2^{n+3}t+1=2^{n+3}(2^{n+1}t^{2}+t)+1$ elde edilir, bu da $2^{n+3}\mid k^{2^{n+1}}-1$ demektir. Kanıt tümevarımla tamamlanır.
+
+204. $k$ tam sayısı, $x$ ve $y$ tam sayılar olmak üzere $k = x^2 - 2y^2$ şeklinde gösterilebiliyorsa, bu sayının sonsuz sayıda değişik yolla bu şekilde gösterilebileceğini kanıtlayınız.[^204]
+
+[^204]: Kanıt, $(3x+4y)^{2}-(2x+3y)^{2}=x^{2}-2y^{2}$ özdeşliğinden ve $x, y$ pozitif tamsayıları için $3x+4y>x$ ve $2x+3y>y$ olmasından hemen elde edilir.
+
+205. $k$ tam sayı olmak üzere $8k + 3$ ve $8k + 5$ şeklinde olan hiçbir sayının, $x$ ve $y$ tam sayı olmak üzere $x^2 - 2y^2$ şeklinde gösterilemeyeceğini kanıtlayınız.[^205]
+
+[^205]: Eğer $x$ ve $y$ tamsayıları için $x^{2}-2y^{2}$ sayısı tek ise, $x$ tek olmalıdır, dolayısıyla $x^{2}\equiv1$ (mod 8)'dir. $y$'nin çift olduğu durumda, $2y^{2}\equiv0$ (mod 8), tek olduğu durumda ise $2y^{2}\equiv2$ (mod 8) olur. Dolayısıyla, $x^{2}-2y^{2}$'nin tek olması durumunda, $x^{2}-2y^{2}\equiv\pm1$ (mod 8) olur, bu da $x$ ve $y$ tamsayıları için $x^{2}-2y^{2}$ sayısının $k$ bir tamsayı olmak üzere $8k+3$ veya $8k+5$ formunda olamayacağını gösterir.
+
+206. $k$ tam sayı olmak üzere $8k + 1$ şeklinde olan sayılardan sonsuz sayıda, $x$ ve $y$ tam sayı olmak üzere $x^2 - 2y^2$ şeklinde gösterilebilenlerin ve sonsuz bu şekilde gösterilemeyenlerin bulunduğunu kanıtlayınız. Gösterilemeyenlerin en küçüğünü bulunuz.[^206]
+
+[^206]: Her $n$ pozitif tamsayısı için $(2n+1)^{2}-2\cdot2^{2}$ sayısının, $k\ge0$ bir tamsayı olmak üzere $8k+1$ formunda olduğu kolayca görülebilir. Devamında, $1=3^{2}-2\cdot2^{2}$, $9=9^{2}-2\cdot6^{2}$, $17=5^{2}-2\cdot2^{2}$, $25=15^{2}-2\cdot10^{2}$ olurken, 33 sayısı $x$ ve $y$ pozitif tamsayılar olmak üzere $x^{2}-2y^{2}$ formunda temsil edilemez.
+Daha genel olarak, $t=0,1,2,...$ olmak üzere $72t+33$ formundaki hiçbir sayının $x$ ve $y$ tamsayılarıyla $x^{2}-2y^{2}$ formunda temsil edilemeyeceğini kanıtlayacağız. Gerçekten de, $t$ tamsayısı, $x$ ve $y$ tamsayıları için $72t+33=x^{2}-2y^{2}$ olduğunu varsayalım. Sol taraf 3 ile bölünebilir, ancak 9 ile bölünemez. Buradan, $x, y$ sayılarının hiçbirinin 3 ile bölünemeyeceği sonucu çıkar, çünkü $3\mid x$ olsaydı, $3\mid y$ olurdu ve sağ taraf 9 ile bölünürdü, ki bu imkansızdır. Dolayısıyla, $x$ ve $y$ sayıları 3 ile bölünemez, bu nedenle $x^{2}$ ve $y^{2}$ 3'e bölündüğünde 1 kalanını verir; böylece, $x^{2}-2y^{2}$ sayısı 3'e bölündüğünde $1 - 2(1) = -1 \equiv 2$ (mod 3) kalanını verir, ki bu imkansızdır çünkü sol taraf 3 ile bölünür.
+Böylece, $k=1,2,...$ olmak üzere $8k+1$ formunda olan ve $x, y$ tamsayıları için $x^{2}-2y^{2}$ formunda olmayan sonsuz sayıda pozitif tamsayı vardır ve bu tür en küçük sayı $33=8\cdot4+1$'dir.
+
+207. Her mükemmel sayının son rakamının 6 veya 8 olduğunu kanıtlayınız.[^207]
+
+[^207]: Çift mükemmel sayılar, iyi bilindiği gibi, $p$ ve $2^{p}-1$ asal olmak üzere $2^{p-1}(2^{p}-1)$ formundadır (bkz. örneğin, Sierpiński [37, s. 172, sonuç]). $p=2$ için 6 sayısını elde ederiz. $p>2$ ise, $p$ $4k+1$ veya $4k+3$ formunda bir asaldır. $p=4k+1$ ise, $2^{p-1}=2^{4k}=16^{k}$ olur ve $2^{p-1}$'in son basamağı açıktır ki 6'dır, $2^{p}-1=2^{4k+1}-1=2\cdot16^{k}-1$ iken son basamak açıktır ki 1'dir. Böylece, $2^{p-1}(2^{p}-1)$ çarpımının son basamağı 6'dır. $p=4k+3$ ise, $2^{p-1}=2^{4k+2}=4\cdot16^{k}$ sayısının son basamağı 4'tür, $2^{p}$'nin son basamağı 8 iken, $2^{p}-1$ sayısının son basamağı 7'dir. Sonuç olarak, $2^{p-1}(2^{p}-1)$ sayısı (biri son basamağı 4, diğeri son basamağı 7 olan iki sayının çarpımı olarak) son basamağı 8 olan bir sayıya sahiptir. Bu, kanıtı tamamlar.
+**NOT.** Bir mükemmel sayının son basamağı 8 ise, sondan bir önceki basamağın 2 olduğu kanıtlanabilir (ancak kanıtı daha zordur).
+
+208. N. Anning'in şu teoremini kanıtlayınız: rakamları herhangi bir $g > 1$ tabanında yazılmış olan 
+$$\frac{101010101}{1100110011}$$ 
+sayısının payında ve paydasında tam ortadaki 1 rakamının yerine herhangi tek sayıda 1 yazılırsa, kesrin değerinin değişmeyeceğini kanıtlayınız[^208] (örneğin, 
+$$\frac{1010110101}{1100110011} = \frac{1010111011}{110011110011} = \frac{1010111110101}{1100111110011} = \dots$$).
+
+[^208]: Kesirimizin $g$ tabanındaki değeri $\frac{1+g^{2}+g^{4}+g^{6}+g^{8}}{1+g+g^{4}+g^{7}+g^{8}}$'dir ve her $k$ pozitif tamsayısı için bu kesrin $\frac{1+g^{2}+g^{4}+g^{5}+...+g^{2k+2}+g^{2k+4}+g^{2k+6}}{1+g+g^{4}+g^{5}+...+g^{2k+2}+g^{2k+5}+g^{2k+6}}$ (1) kesrine eşit olduğunu kanıtlamalıyız. Bu iddia, bu kesirlerin her birinin payının diğerinin paydasıyla çarpımlarının aynı olduğu kontrol edilerek gösterilebilir. Bkz. P. Anning [1].
+**NOT.** J. Browkin, $k$ pozitif tamsayısı için $1+g^{2}+g^{4}+g^{5}+...+g^{2k+2}+g^{2k+4}+g^{2k+6} = (1-g+g^{2}-g^{3}+g^{4})(1+g+g^{2}+...+g^{2k+2})$ ve $1+g+g^{4}+g^{5}+...+g^{2k+2}+g^{2k+5}+g^{2k+6} = (1-g^{2}+g^{4})(1+g+g^{2}+...+g^{2k+2})$ özdeşliklerini fark etti. Bu, (1) kesrinin $k=1,2,...$ için $\frac{1-g+g^{2}-g^{3}+g^{4}}{1-g^{2}+g^{4}}$ kesrine eşit olduğunu, dolayısıyla değerinin $k$'dan bağımsız olduğunu gösterir.
+
+209. $2^n$ sayısının ondalık yayılımındaki rakamları toplamının $n$'nin artması ile sonsuz arttığını kanıtlayınız.[^209]
+
+[^209]: A. Schinzel, $g$ pozitif bir tamsayı, çift ve 10'a bölünemiyorsa, $g^{n}$'in ondalık basamaklarının toplamının $n$ ile birlikte sonsuza gittiğini iddia eden daha genel bir teorem kanıtladı. Onun kanıtını sunacağız.
+$a_{i}$ $(i=0,1,2,...)$ tamsayılarının sonsuz bir dizisini şöyle tanımlayalım: $a_{0}=0$ koyalım ve $k=0,1,2,...$ için $a_{k+1}$, $2^{a_{k+1}}>10^{a_{k}}$ koşulunu sağlayan en küçük pozitif tamsayıyı göstersin (böylece $a_{1}=1$, $a_{2}=4$, $a_{3}=14$ vb. olur). Açıktır ki, $a_{1}<a_{2}<a_{3}<...$.
+Bir $k$ pozitif tamsayısı için $n\ge a_{k}$ ise, $g^{n}$'in basamakları toplamının $\ge k$ olduğunu kanıtlayacağız. $g^{n}$'in ondalık açılımında $10^{j}$'de duran basamağı $c_{j}$ ile gösterelim. $g$ çift olduğundan, $2^{n}\mid g^{n}$ ve $n\ge a_{k}$ olduğundan, $i=1,2,..., k-1$ için $2^{a_{i}}\mid g^{n}$ bağıntısına sahibiz. Dahası, $2^{a_{i}}\mid 10^{a_{i}}$ (kaynakta $a_t$ yazıyor) olduğundan, $2^{a_{i}}\mid c_{a_{i}-1}10^{a_{i}-1}+...+c_{0}$ olur.
+Eğer $a_{i-1}\le j<a_{i}$ için tüm $c_{j}$ basamakları sıfıra eşit olsaydı, $2^{a_{i}}\mid c_{a_{i-1}-1}10^{a_{i-1}-1}+...+c_{0}$ olurdu ve ($g$ 10'a bölünemediği için $c_0 \ne 0$ olmalıdır), $2^{a_{i}}\le c_{a_{i-1}-1}10^{a_{i-1}-1}+...+c_{0}<10^{a_{i}-1}$ (kaynakta $a_{i-1-1}$ yazıyor) olurdu. Bu, $2^{a_{i}}<10^{a_{i-1}}$ anlamına gelir, ki bu $a_{i}$'nin tanımıyla çelişir. Dolayısıyla, $a_{i-1}\le j<a_{i}$ olmak üzere $c_{j}$ basamaklarından en az biri sıfırdan farklıdır.
+Bu, $i=1,2,...,k$ için doğru olduğundan, $g^{n}$'in en az $k$ basamağı sıfırdan farklıdır. Yeterince büyük $n$ için ($n\ge a_{k}$ için), $g^{n}$'in ondalık basamaklarının toplamı, keyfi olarak verilen bir $k$ sayısından daha küçük değildir. Bu, $g^{n}$'in ondalık basamakları toplamının $n$ ile birlikte sonsuza gittiğini gösterir, ki bu kanıtlanması gerekendi.
+A. Schinzel, benzer bir şekilde, $g$ 5'e bölünebilen tek bir pozitif tamsayı ise, $g^{n}$'in ondalık basamakları toplamının $n$ ile birlikte sonsuza gittiğinin kanıtlanabileceğini belirtti.
+Özellikle, yukarıda kanıtlanan teoremden ($g=2$ için) $2^{n}$'in ondalık basamakları toplamının $n$ ile birlikte sonsuza gittiği sonucu çıkar. Ancak bu, artışın monoton olduğu anlamına gelmez: örneğin, $2^{3}$'ün basamakları toplamı 8 iken, $2^{4}$'ün basamakları toplamı 7 ve $2^{5}$'in basamakları toplamı 5'tir. Devamında, $2^{9}$'un basamakları toplamı 8 iken, $2^{10}$'unki 7'dir. Benzer şekilde, $2^{16}$'nın basamakları toplamı 25 iken, $2^{17}$'ninki 14'tür.
+
+210. $k > 1$ bir tam sayı ve $c$ de bir rakam ise $2^n$'nin sağdan $k$. rakamı $c$ olacak şekilde bir $n$ pozitif tam sayısının bulunduğunu kanıtlayınız.[^210]
+
+[^210]: Kanıt A. Schinzel'e aittir. $k$ birden büyük bir tamsayı ve $c$ ondalık sistemin keyfi bir basamağı olsun. $k>1$ olduğundan, $10^{k-1}>2\cdot2^{k}$ olduğunu kolayca kanıtlarız (örneğin, tümevarımla). $t$, $t\ge c\cdot10^{k-1}/2^{k}$ koşulunu sağlayan en küçük tamsayıyı göstersin; dolayısıyla $t<c\frac{10^{k-1}}{2^{k}}+1$ ve $t+1<c\frac{10^{k-1}}{2^{k}}+2$ olur. $t$ ve $t+1$ tamsayılarından en az biri 5 ile bölünemez; bu sayıyı $u$ ile gösterelim. $c\frac{10^{k-1}}{2^{k}}\le u<c\frac{10^{k-1}}{2^{k}}+2$ olur ve $2\cdot2^{k}<10^{k-1}$ olduğundan, $l=2^{k}u$ için $c\cdot10^{k-1}\le l<(c+1)10^{k-1}$ (1) ilişkisine sahip oluruz. Bu, $l=2^{k}u$ sayısının $k$ basamağı olduğunu, ilk basamağının (dolayısıyla sondan $k$'ıncı) $c$ olduğunu gösterir (bu basamak sıfır olabilir). $l=2^{k}u$ olduğundan $2^{k}\mid l$ ve $u$'nun tanımı gereği $5\nmid u$, dolayısıyla $(l,5)=1$'dir.
+Bildiğimiz gibi, 2 sayısı $5^{k}$ modülü için bir ilkel köktür (bkz. örneğin, W. Sierpiński [24, s. 246, lemma]). $(l,5)=1$ olduğundan, $2^{n}\equiv l(mod~5^{k})$ olacak şekilde bir $n\ge k$ tamsayısı vardır. $2^{k}\mid l$ ve $2^{k}\mid 2^{n}$ olduğundan (çünkü $n \ge k$), $2^{n}\equiv l(mod~2^{k})$ olur ve sonuç olarak $2^{n}\equiv l(mod~10^{k})$ olur. Bu, $l$ sayısının son $k$ basamağının $2^{n}$'in karşılık gelen basamaklarıyla aynı olduğunu gösterir. Buradan, $2^{n}$ sayısının sondan $k$'ıncı basamağının $c$ olduğu sonucu çıkar, ki bu kanıtlanması gerekendi.
+**NOT.** $2^{n}$'in son dört basamağı $c=2, 4, 6$ veya $8$ için $111c$ formunda olamaz, çünkü 1112, 1114, 1116 ve 1118 sayılarından hiçbiri 16'ya bölünemez. Yukarıda alıntılanan makalede (s. 249), $2^{n}$'in (burada $n=3,4,...$) sondan üçüncü ve ikinci basamaklarının keyfi olabileceğini kanıtladım. Ayrıca, $m$ keyfi bir pozitif tamsayı ve $k$ onun basamak sayısı ise, $2^{n}$ sayısının ilk $k$ basamağının $m$'nin basamaklarıyla aynı olacak şekilde bir $n$ pozitif tamsayısının var olduğunu da kanıtladım.
+
+211. $5^n \ (n = 1, 2, 3, \dots)$ sayılarının son 4 rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.[^211]
+
+[^211]: $n\ge4$ tamsayısı için $5^{n+4}-5^{n}=5^{n}(5^{4}-1)=5^{n}\cdot16\cdot39$ (kaynakta 624 yerine 16*39 yazıyor) olur, dolayısıyla $5^{n+4}\equiv5^{n}$ (mod 10000) ve $5^{n}$ $(n=4,5,...)$ dizisinin son dört basamağının dört terimli bir periyot oluşturduğu sonucu çıkar. Periyot 0625, 3125, 5625, 8125'tir. Bu periyot saf (pure) değildir, çünkü 5, $5^{2}=25$, $5^{3}=125$ sayıları ona ait değildir.
+
+212. Her $s$ için pozitif tam sayının ondalık yazılımının ilk $s$ rakamının herhangi bir şekilde (?) olabileceğini kanıtlayınız.[^212]
+
+[^212]: $s$ verilen bir pozitif tamsayı olsun ve $c_{1},c_{2},...,c_{s}$ keyfi bir $s$ ondalık basamak dizisi olsun. $m=(c_{1}c_{2}...c_{s})_{10}$ $s$ basamağı sırasıyla $c_{1},c_{2},...,c_{s}$'ye eşit olan bir sayı olsun. $2\sqrt{m}<10^{k-1}$ olacak şekilde bir $k$ pozitif tamsayısı seçelim ve $n=[10^{k}\sqrt{m}]+1$ olsun, burada $[x]$, $x$'i aşmayan en büyük tamsayıyı gösterir. $10^{k}\sqrt{m}<n\le10^{k}\sqrt{m}+1$ olur, bu da $10^{2k}m<n^{2}\le10^{2k}m+2\cdot10^{k}\sqrt{m}+1<10^{2k}m+10^{2k-1}+1<10^{2k}m+10^{2k}$ (kaynakta $10^{2k-1}$ yerine $2\cdot10^{k}\sqrt{m}$'den $10^{2k-1}$'e geçiş var) ve sonuç olarak $10^{2k}m<n^{2}<10^{2k}m+(10^{2k}-1)$ olur. Buradan $(c_{1}c_{2}...c_{s}00...0)_{10}<n^{2}<(c_{1}c_{2}...c_{s}999...9)_{10}$ sonucu çıkar; burada sıfırların sayısı ve dokuzların sayısı $2k$'dır. Buradan $n^{2}$'nin ilk $s$ basamağının $c_{1},c_{2},...,c_{s}$ olduğu sonucu çıkar.
+
+213. $n^n \ (n = 1, 2, 3, \dots)$ sayılarının son rakamlarının periyodik dizi oluşturduğunu kanıtlayınız. Periyodu bulunuz ve saf periyot olup olmadığını tespit ediniz.[^213]
+
+[^213]: $n$ pozitif bir tamsayı ise, $n^{n+20}-n^{n}=n^{n}(n^{20}-1)$ 4'e bölünür. Gerçekten de, $n$ çift ise, $4\mid n^{n}$, $n$ tek ise, $n^{10}$ tektir, dolayısıyla karesi $n^{20}$, 8'e bölündüğünde 1 kalanını verir. Böylece, $8\mid n^{20}-1$. $n$ pozitif tamsayısı için $n^{n+20}-n^{n}$ sayısı, dolayısıyla $(n+20)^{n+20}-n^{n}$ sayısı da her zaman 4'e bölünür. Öte yandan, $a$ ve $b$, $a>b$ ve $4\mid a-b$ koşullarını sağlayan pozitif tamsayılar ise, $n$ pozitif tamsayısı için $5\mid n^{a}-n^{b}$ olur. Gerçekten de, $k$ pozitif bir tamsayı olmak üzere $a=b+4k$'ya sahibiz, dolayısıyla $n^{a}-n^{b}=n^{b}(n^{4k}-1)$. $5\mid n$ ise, sağdaki ilk çarpan 5'e bölünür; $5\nmid n$ ise, Fermat teoremine göre $n^{4}\equiv1$ (mod 5) olur, bu da $n^{4k}\equiv1$ (mod 5) demektir ve eşitliğimizin sağ tarafındaki ikinci çarpan 5'e bölünür. Dolayısıyla, $a$ ve $b$ pozitif tamsayılar, $a>b$ ve $4\mid a-b$ ise, $n$ pozitif tamsayıları için $5\mid n^{a}-n^{b}$ olduğunu ve elbette, $5\mid (n+20)^{a}-n^{b}$ olması gerektiğini de kanıtladık. Özellikle, $a=(n+20)^{n+20}$ ve $b=n^{n}$ için, yukarıda gösterildiği gibi, $4\mid a-b$ olur, dolayısıyla $5\mid (n+20)^{(n+20)^{n+20}}-n^{n^{n}}$. Sağ taraf her zaman çift olduğundan (çünkü $n$ ve $n+20$ ya her ikisi de çift ya da her ikisi de tektir), $n$ pozitif tamsayıları için $10\mid (n+20)^{(n+20)^{n+20}}-n^{n^{n}}$ ilişkisine sahibiz. Bu, $(n+20)^{(n+20)^{n+20}}$ ve $n^{n^{n}}$ sayılarının son basamaklarının aynı olduğunu gösterir. $n^{n^{n}}$ $(n=1,2,...)$ sayılarının son basamakları dizisi bu nedenle periyodiktir; periyot saftır (pure) ve en fazla 20 terimden oluşur. Periyodun tam olarak 20 terimden oluştuğunu ve 1, 6, 7, 6, 5, 6, 3, 4, 9, 0, 1, 6, 3, 6, 5, 6, 3, 4, 9, 0'a eşit olduğunu görmek kolaydır.
+
+214. Her sonsuz ondalık kesirde, her $n$ sayısı için uzunluğu $n$ olan ve dizide sonsuz sayıda rastlanan bir rakamlar dizisi bulunduğunu kanıtlayınız.[^214]
+
+[^214]: $m$ keyfi bir pozitif tamsayı olsun. Verilen sonsuz ondalık kesrin basamaklarını her biri $m$ basamaktan oluşan bloklara ayıralım; bu tür sonsuz sayıda bloğa sahip olacağız. Öte yandan, $m$ basamaktan oluşan $10^{m}$ farklı dizi vardır; bu sayı sonlu olduğundan, en az birinin sonsuz sayıda tekrarlanması gerektiği sonucuna varırız.
+**NOT.** $\sqrt{2}$, $\pi$ veya $e$ irrasyonel sayıları için, ondalık açılımda hangi basamağın sonsuz sayıda tekrarlanacağını bile bilmiyoruz; bu sayılardan her biri için en az iki böyle basamağın var olduğunu göstermek kolaydır.
+
+215. Her $k$ pozitif tam sayısı için $32^k$ sayısını ardışık sayılardan oluşan $3^k$ tane sayının toplamı şeklinde gösteriniz.[^215]
+
+[^215]: $3^{2k}=(n+1)+(n+2)+...+(n+3^{k})$ ise, $3^{2k}=3^{k}n+\frac{1}{2}3^{k}(3^{k}+1)$ olur, bu da $n=\frac{1}{2}(3^{k}-1)$ verir. Dolayısıyla, $3^{2k}$ sayısı, en küçüğü $n+1=\frac{1}{2}(3^{k}+1)$ olan, ardışık pozitif tamsayılara eşit $3^{k}$ terimin toplamıdır. Örneğin, $k=1,2$ ve 3 için sahibiz: $3^{2}=2+3+4$, $3^{4}=5+6+...+13$, $3^{6}=14+15+...+40$. Bkz. Khatri [12].
+
+216. Bir $s > 1$ tam sayısı verilmişse, her $n \geq m_s$ için $n$ ile $2n$ arasında bir pozitif tam sayının $s$. dereceden kuvveti bulunacak şekilde bir $m_s$ pozitif tam sayısının bulunduğunu kanıtlayınız. $s = 2$ ve $s = 3$ için en küçük $m_s$ sayılarını bulunuz.[^216]
+
+[^216]: Bildiğimiz gibi, $a$ ve $b$, $b-a>1$ olacak şekilde reel sayılarsa, $a$ ve $b$ arasında en az bir tamsayı vardır; aslında, $[x]$ $x$'i aşmayan en büyük tamsayıyı göstermek üzere, böyle bir tamsayı örneğin $[a]+1$'e eşittir. Gerçekten de, $a<[a]+1\le a+1<b$ olur ($b-a>1$ olduğundan). $s>1$ bir tamsayı olsun ve $\mu_{s}=\frac{1}{(\sqrt[s]{2}-1)^{s}}$ olsun; bu sayı reel ve pozitif olacaktır. Dolayısıyla, $n>\mu_{s}$ tamsayısı için $n>\frac{1}{(\sqrt[s]{2}-1)^{s}}$ olur, buradan $\sqrt[s]{n}>\frac{1}{\sqrt[s]{2}-1}$ ve $\sqrt[s]{n}(\sqrt[s]{2}-1)>1$ elde edilir bu da $\sqrt[s]{2n}-\sqrt[s]{n}=\sqrt[s]{n}(\sqrt[s]{2}-1)>1$ demektir. Dolayısıyla, $\sqrt[s]{n}<k<\sqrt[s]{2n}$ olacak şekilde bir $k$ pozitif tamsayısı vardır, bu da $n<k^{s}<2n$ sonucunu verir. $m_{s}$ olarak $[\mu_{s}]+1$ sayısını alabiliriz. $s=2$ için $[\mu_{2}]=5$'tir ve 5 ile 10 arasında zaten bir kare sayı, $3^{2}$, yer alır; 4 ile 8 arasında ise bir kare sayı yoktur. Dolayısıyla, en küçük $m_{2}$, 5'tir. Benzer şekilde, en küçük $m_{3}$ sayısının 33 olduğunu kolayca hesaplarız.
+
+217. Her $n$ için, hiçbir bir pozitif tam sayının 1’den büyük dereceden kuvveti olmayan $n$ ardışık pozitif tam sayının bulunduğunu kanıtlayınız.[^217]
+
+[^217]: $m$ keyfi bir pozitif tamsayı olsun. Çin kalan teoremine göre, $i=1,2,...,m$ için $x\equiv p_{i}-i+1(mod~p_{i}^{2})$ (1) olacak şekilde bir $x$ pozitif tamsayısı vardır; burada $p_{i}$, $i$'nci asalı gösterir. $m$ ardışık tamsayıdan oluşan $x, x+1,...,x+m-1$ dizisi istenen özelliğe sahiptir, çünkü (1) ile $i=1,2,...,m$ için $x+i-1=p_{i}^{2}k_{i}+p_{i}$ olur; burada $k_{i}$ bir tamsayıdır. Bu sayı $p_{i}$ ile bölünebilir ancak $p_{i}^{2}$ ile bölünemez, dolayısıyla $x+i-1$ herhangi bir pozitif tamsayının 1'den büyük üslü bir kuvveti olamaz.
+
+218. $u_1 = 1, u_2 = 3$ ve $n = 1, 2, \dots$ için $u_{n+2} = 4u_{n+1} - 3u_n$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.[^218]
+
+[^218]: $n=1,2,...$ için $u_{n}=3^{n-1}$. Tümevarımla kolay kanıt.
+
+
+219. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = 2u_{n+1} - u_n$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.[^219]
+
+[^219]: $n=1,2,...$ için $u_{n}=(2-n)a+(n-1)b$. Tümevarımla kolay kanıt.
+
+220. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = -(u_n + 2u_{n+1})$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz. $a = 1, b = -1$ ve $a = 1, b = -2$ özel durumlarını inceleyiniz.[^220]
+
+[^220]: $n=1,2,...$ için $u_{n}=(-1)^{n}[(n-2)a+(n-1)b]$. Formülün $n=1$ ve $n=2$ için geçerli olduğunu kolayca kontrol ederiz. Bir $n$ için formülün $u_{n}$ ve $u_{n+1}$ için geçerli olduğunu varsayarak, $u_{n+2}=-(u_{n}+2u_{n+1})$ gerçeğini kullanarak, formülün $u_{n+2}$ için de geçerli olduğunu kolayca kontrol ederiz. Böylece, kanıt tümevarımla tamamlanır.
+
+221. $u_1 = a, u_2 = b$ ve $n = 1, 2, \dots$ için $u_{n+2} = 2u_n + u_{n+1}$ olarak tanımlanan $(u_n)$ dizisinin $n$. terimi için $n$'ye bağlı formül bulunuz.[^221]
+
+[^221]: $n=1,2,...$ için $u_{n}=\frac{3}{4}[3^{n-2}+(-1)^{n-1}]a+\frac{1}{4}[3^{n-1}+(-1)^{n}]b$. Tümevarımla kanıt.
+
+222. $n = 1, 2, \dots$ için $a^{a^n} = a$ eşitliğini sağlayan tüm $a \neq 0$ tam sayılarını bulunuz.[^222]
+
+[^222]: Sadece iki tamsayı vardır, $a=1$ ve $a=-1$. Bu sayıların her ikisinin de istenen koşulu sağladığını kolayca kontrol ederiz. $n=1$ için bu koşuldan $a^{a}=a$ olduğu sonucu çıkar. Dolayısıyla, $a\ge2$ bir tamsayı olsaydı, $a^{a}\ge a^{2}>a$ olurdu, ki bu imkansızdır. Eğer $a\le-2$ olsaydı, $\mid a^{a}\mid =1/\mid a\mid ^{\mid a\mid }<1$ olurdu, bu da $a^{a}=a$ ve $a\le-2$ olması $\mid a^{a}\mid =\mid a\mid >2$ anlamına geldiğinden yine imkansızdır.
+
+223. Hem toplamı hem de çarpımı tam kare olan tüm pozitif tam sayı ikililerini bulmak için bir yöntem veriniz.[^223]
+
+[^223]: $a$ ve $b$ keyfi pozitif tamsayılar olsun ve $c^{2}$, $a^{2}+b^{2}$'nin en büyük kare bölenini göstersin, yani $a^{2}+b^{2}=kc^{2}$. $x=a^{2}k$, $y=b^{2}k$ olsun; $x+y=a^{2}k+b^{2}k=(a^{2}+b^{2})k=(kc)^{2}$ olurken $xy=(abk)^{2}$ olur. Toplamı ve çarpımı kare olan tüm pozitif tamsayı çiftlerinin, uygun seçilmiş $a$ ve $b$ için bu şekilde elde edilebileceğini göstereceğiz. $z$ ve $t$ pozitif tamsayılar olmak üzere $x+y=z^{2}$, $xy=t^{2}$ olduğunu varsayalım. $d=(x,y)$ olsun ve $c_{1}$, $d$'nin en büyük kare bölenini göstersin; dolayısıyla, $k$ 1'den büyük bir tamsayının karesiyle bölünemeyen pozitif bir tamsayı olmak üzere, $d=kc_{1}^{2}$ olur. $(x_{1},y_{1})=1$ olmak üzere $x=dx_{1}$, $y=dy_{1}$ olur ve $x+y=z^{2}$'den $(x_{1}+y_{1})d=z^{2}$ sonucu çıkar. Dolayısıyla, $d=kc_{1}^{2}\mid z^{2}$ ve $k$, 1'den büyük bir tamsayının karesiyle bölünemediğinden, $kc_{1}\mid z$ buluruz; bu da $z_{1}$ pozitif bir tamsayı olmak üzere $z=kc_{1}z_{1}$ demektir. Buradan $(x_{1}+y_{1})d=x+y=z^{2}=k^{2}c_{1}^{2}z_{1}^{2}=kdz_{1}^{2}$ olur, bu da $x_{1}+y_{1}=kz_{1}^{2}$ ve $x_{1}y_{1}=t^{2}/d^{2}$ demektir. $(x_{1},y_{1})=1$ olduğundan, $x_{1}$ ve $y_{1}$ sayılarının kare olduğu, yani $x_{1}=a_{1}^{2}$, $y_{1}=b_{1}^{2}$ olduğu sonucu çıkar. $x=dx_{1}=k(c_{1}a_{1})^{2}$, $y=dy_{1}=k(c_{1}b_{1})^{2}$ olduğundan, $a=c_{1}a_{1}$, $b=c_{1}b_{1}$ koyarak $x=ka^{2}$, $y=kb^{2}$ elde ederiz ve $a^{2}+b^{2}=(c_{1}a_{1})^{2}+(c_{1}b_{1})^{2}=c_{1}^{2}(x_{1}+y_{1})=k(c_{1}z_{1})^{2}$; $c_{1}z_{1}=c$ koyarak $a^{2}+b^{2}=kc^{2}$ elde ederiz; $k$ sayısı 1'den büyük bir $r$ tamsayısının karesiyle bölünemediğinden, $c^{2}$ sayısı $a^{2}+b^{2}$'nin en büyük kare bölenidir. $\le100$ olan ve hem toplamı hem de çarpımı kare olan tüm pozitif tamsayı çiftleri 2, 2; 5, 20; 8, 8; 10, 90; 18, 18; 20, 80; 9, 16; 32, 32; 50, 50; 72, 72; 2, 98; 98, 98; 36, 64'tür.
+
+224. İki ardışık pozitif tam sayının kareleri toplamına eşit olan tüm üçgen sayıları bulunuz.[^224]
+
+[^224]: Böyle sadece bir sayı vardır, 10. Gerçekten de, $(2x-1)^{2}+(2x+1)^{2}=\frac{1}{2}y(y+1)$ ise, o zaman $(2x+1)^{2}-(8x)^{2}=17$ (kaynakta $(2y+1)^2 - (8x)^2 = 17$ olmalı) ve 17 sayısının iki tamsayı karesinin farkı olarak tek bir gösterimi vardır, $17=9^{2}-8^{2}$. Bu, $2y+1=9$ verir, dolayısıyla $y=4$ ve $t_{y}=\frac{1}{2}y(y+1)=10$ olur.
+
+225. V.E.Hogatt’ın, her pozitif tam sayının Fibonacci dizisinin birbirinden farklı terimlerinin toplamı şeklinde gösterilebileceğini söyleyen teoremini kanıtlayınız.[^225]
+
+[^225]: Hogatt teoreminin $\le u_{n}$ olan her pozitif tamsayı için geçerli olduğunu $n$'ye göre tümevarımla kanıtlayacağız. $n=1$ için $u_{1}=1$ olduğundan ve $n=2$ için $u_{2}=1$ olduğundan doğrudur. Şimdi $n>2$ bir tamsayı olsun ve $\le u_{n}$ olan her pozitif tamsayının Fibonacci dizisinin farklı terimlerinin toplamı olduğunu varsayalım. $k$, $u_{n}<k\le u_{n+1}$ olacak şekilde bir tamsayıyı göstersin. Eğer $k-u_{n}>u_{n-1}$ olsaydı, $u_{n+1}\ge k>u_{n-1}+u_{n}=u_{n+1}$ olurdu, ki bu imkansızdır. Dolayısıyla, $0<k-u_{n}\le u_{n-1}$ olur. $k-u_{n}$ pozitif tamsayısı, tümevarımla, Fibonacci dizisinin farklı terimlerinin toplamına eşittir ve $k-u_{n}\le u_{n-1}<u_{n}$ olduğundan, $u_{n}$ sayısı bu gösterimde yer almaz. Buradan, $k=(k-u_{n})+u_{n}$'in Fibonacci dizisinin farklı terimlerinin toplamı olduğu sonucu çıkar, bu da Hogatt teoreminin kanıtını tamamlar. $1=u_{1}$, $2=u_{3}$, $3=u_{4}=u_{1}+u_{3}$, $4=u_{1}+u_{4}$, $5=u_{5}=u_{3}+u_{4},$ $6=u_{1}+u_{5}$, $7=u_{3}+u_{5}$, $8=u_{6}=u_{4}+u_{5}$, $9=u_{1}+u_{6}$, $10=u_{3}+u_{6}$ olur.
+
+226. Fibonacci dizisinin $u_n$ terimlerinin $n = 1, 2, 3, \dots$ için
+$$ u_n^2 = u_{n-1} u_{n+1} + (-1)^{n-1} $$
+eşitliğini sağladığını kanıtlayınız.[^226]
+
+[^226]: Tümevarımla ilerleyeceğiz. Formülümüz $n=2$ için $1^{2}=1\cdot2+(-1)$ olduğundan geçerlidir. Formülümüzün $n\ge2$ tamsayısı için geçerli olduğunu varsayalım. Dolayısıyla, $u_{n}^{2}=u_{n-1}u_{n+1}+(-1)^{n-1}$ olur. Buradan $u_{n+1}^{2}-u_{n}u_{n+2}=u_{n+1}^{2}-u_{n}(u_{n}+u_{n+1}) = u_{n+1}(u_{n+1}-u_{n})-u_{n}^{2}=u_{n+1}u_{n-1}-u_{n}^{2}=(-1)^{n}$ elde edilir, bu da formülü $n+1$ için kanıtlar.
+
+
+
+227. Her tam sayının sonsuz değişik sayıda beş tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.[^227]
+
+[^227]: Önce $6t=(t+1)^{3}+(t-1)^{3}+(-t)^{3}+(-t)^{3}$ özdeşliğinden, 6 ile bölünebilen her tamsayının, tamsayıların dört küpünün toplamı olduğunu fark edelim. Her $k$ tamsayısı ve $n$ pozitif tamsayısı için, $r = 0, 1, 2, 3, 4, 5$ olmak üzere $6k+r-(6n+r)^{3}$ sayılarının her biri 6 ile bölünebilir (çünkü $r$ tamsayısı için $6\mid r^{3}-r$ olduğundan), her tamsayının sonsuz sayıda yolla tamsayıların beş küpünün toplamı olarak temsil edilebileceği sonucu çıkar.
+**NOT.** Her tamsayının tamsayıların dört küpünün toplamı olarak sonsuz sayıda yolla temsil edilebileceği varsayılmaktadır (ve bu varsayım < 1000 olan tüm pozitif tamsayılar için kontrol edilmiştir); bkz. Schinzel, Sierpiński [21] ve Demjanenko [6].
+
+228. 3 sayısının sonsuz değişik sayıda 0 ve 1’den farklı dört tam sayının küpleri toplamı şeklinde gösterilebileceğini kanıtlayınız.[^228]
+
+[^228]: Çözüm, $n=1,2,3,...$ için $3=(4+24n^{3})^{3}+(4-24n^{3})^{3}+(-24n^{3})^{3}+(-5)^{3}$ özdeşliğinden hemen elde edilir.
+
+229. Elementer yöntemlerle, birbirinden farklı dört pozitif tam sayının kareleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu ve birbirinden farklı dört pozitif tam sayının küpleri toplamı şeklinde en az iki değişik şekilde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^229]
+
+[^229]: Kanıt, $t>8$ tamsayısı için geçerli olan aşağıdaki iki özdeşlikten hemen elde edilir:
+$(t-8)^{2}+(t-1)^{2}+(t+1)^{2}+(t+8)^{2}=(t-7)^{2}+(t-4)^{2}+(t+4)^{2}+(t+7)^{2}$
+ve
+$(t-8)^{3}+(t-1)^{3}+(t+1)^{3}+(t+8)^{3}=(t-7)^{3}+(t-4)^{3}+(t+4)^{3}+(t+7)^{3}$
+
+230. Her $m$ pozitif tam sayısı için $4m^4 \cdot 7$ sayısının negatif olmayan dört tam sayının kareleri toplamı şeklinde herhangi gösteriminde, bu sayılardan hiçbirinin $2^{m-1}$'den küçük olmadığını kanıtlayınız.[^230]
+
+[^230]: Bazı pozitif $m$ tamsayıları için $4^{m}\cdot7=a^{2}+b^{2}+c^{2}+d^{2}$ olduğunu varsayalım; burada $a, b, c, d$ sayılarından en az biri, diyelim ki $a$, $\ge0$ ve $<2^{m-1}$'dir. $a=0$ olamaz, çünkü bu durumda $4^{m}\cdot7$ tamsayıların üç karesinin toplamı olurdu, ki bu imkansızdır (bkz. örneğin, W. Sierpiński, [37, s. 363, Teorem 3]). Dolayısıyla $m>1$ olmalıdır ve $a=2^{k}(2t-1)$ olur; burada $k$, $\le m-2$ olan negatif olmayan bir tamsayı ve $t$ pozitif bir tamsayıdır. Buradan $4^{m}\cdot7-[2^{k}(2t-1)]^{2}=4^{k}[4^{m-k}\cdot7-(8u+1)]=4^{k}(8v+7)$ elde edilir; burada $u$ ve $v$ tamsayıdır ($k\le m-2$ olduğundan $m-k\ge2$ demektir) ve $4^{k}(8v+7)=b^{2}+c^{2}+d^{2}$ olur, ki bu imkansızdır.
+**NOT.** $m$ pozitif bir tamsayı olmak üzere $4^{m}\cdot7$ sayısının, tamsayıların dört karesinin toplamı olarak en az bir gösterimi olduğunu kanıtlamak kolaydır, çünkü $4^{m}\cdot7=(2^{m})^{2}+(2^{m})^{2}+(2^{m})^{2}+(2^{m+1})^{2}$'dir.
+
+231. İki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen 2'den büyük en küçük tam sayıyı bulunuz ve aralarında asal iki pozitif tam sayının kareleri toplamı ve iki pozitif tam sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^231]
+
+[^231]: $>2$ olan ve pozitif tamsayıların iki küpünün toplamı olan ilk altı tamsayının $1^{3}+2^{3}=9$, $2^{3}+2^{3}=16$, $1^{3}+3^{3}=28$, $2^{3}+3^{3}=35$, $3^{3}+3^{3}=54$, $1^{3}+4^{3}=65$ olduğunu kolayca kontrol ederiz. 9, 16, 28, 35 ve 54 sayılarından hiçbiri tamsayıların iki karesinin toplamı değildir, $65=1^{2}+8^{2}$ iken. Dolayısıyla, $>2$ olan, tamsayıların iki karesinin toplamı ve pozitif tamsayıların iki küpünün toplamı olan en küçük tamsayı 65'tir.
+Aralarında asal iki pozitif tamsayının iki karesinin toplamı ve iki küpünün toplamı olan sonsuz sayıda pozitif tamsayı olduğunu göstermek için, $k$ pozitif tamsayısı için $1+2^{6k}=1^{2}+(2^{3k})^{2}=1^{3}+(2^{2k})^{3}$ olduğunu belirtmek yeterlidir.
+
+232. $s$ pozitif tam sayısı için verilmişse, her $k = 1, 2, \dots, n$ için $n$ sayısı iki tane pozitif tam sayının $k$. dereceden kuvvetleri toplamı olacak şekilde bir $n > 2$ tam sayısının bulunduğunu kanıtlayınız.[^232]
+
+[^232]: Örneğin, $1+2^{s}!$ sayısı bu özelliğe sahiptir, çünkü $k=1,...,s$ için $k\mid s!$'dir. Elbette, $s!$ yerine $[1,2,...,s]$ sayısını alabilirdik.
+
+233. İki tam sayının küpleri toplamı şeklinde gösterilemeyen, fakat iki rasyonel sayının küpleri toplamı şeklinde gösterilebilen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^233]
+
+[^233]: Örneğin, $6\cdot8^{n}$ $(n=0,1,2,...)$ formundaki tüm sayılar istenen özelliğe sahiptir. Gerçekten de, $n$'nin çift olması durumunda bu sayı 9'a bölündüğünde 6 kalanını verdiğinden, $n$'nin tek olması durumunda ise ($8\equiv-1(mod~9)$ olduğundan) 3 kalanını verdiğinden, böyle bir sayı pozitif tamsayıların iki küpünün toplamı değildir. Öte yandan, bir tamsayının her küpü 9'a bölündüğünde 0, 1 veya -1 kalanını verir, dolayısıyla iki küpün toplamı yalnızca 0, 1, -1, 2 veya -2 kalanını verebilir ve 3 veya 6 kalanını (ne de 4 veya 5) veremez. Öte yandan, $6=(17/21)^{3}+(37/21)^{3}$ olduğunu kolayca kontrol ederiz, bu da $6\cdot8^{n}=(\frac{17\cdot2^{n}}{21})^{3}+(\frac{37\cdot2^{n}}{21})^{3}$ verir. Böylece, $6\cdot8^{n}$ $(n=0,1,...)$ sayıları iki pozitif rasyonel sayının küpüdür.
+
+234. İki pozitif tam sayının küpleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının küpleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^234]
+
+[^234]: Kanıt A. Schinzel'e aittir.
+Örneğin, $7\cdot8^{n}$ $(n=0,1,2,...)$ formundaki tüm sayılar istenen özelliğe sahiptir. Gerçekten de, bir yandan $n=0,1,2,...$ için $7\cdot8^{n}=(2^{n+1})^{3}-(2^{n})^{3}$'e sahibiz; öte yandan $7\cdot8^{n}$ $(n=0,1,2,...)$ sayılarından hiçbirinin pozitif tamsayıların iki küpünün toplamı olmadığını kanıtlayacağız. İddianın $n=0$ ve $n=1$ için doğru olduğunu kolayca kontrol ederiz. Şimdi, $7\cdot8^{n}$'in pozitif tamsayıların iki küpünün toplamı olduğu bir $n$ pozitif tamsayısının var olduğunu varsayalım ve $n$ bu tür sayıların en küçüğü olsun; dolayısıyla, $n\ge2$ olur ve $x, y$ pozitif tamsayılar olmak üzere $7\cdot8^{n}=x^{3}+y^{3}=(x+y)(x^{2}-xy+y^{2})$ olur. Sol taraf çift olduğundan, $x$ ve $y$ ya her ikisi de çift ya da her ikisi de tektir. Eğer her ikisi de tek ise, $x^{2}-xy+y^{2}$ tektir ve sol tarafın sadece 1 ve 7 gibi tek bölenleri olduğundan, $x^{2}-xy+y^{2}=1$ veya $x^{2}-xy+y^{2}=7$ olmalıdır. İlk durumda $x^{3}+y^{3}=x+y$ olurdu ve $x, y$ pozitif tamsayılar olduğundan, bu $x=y=1$ demektir, dolayısıyla $7\cdot8^{n}=2$ olur, ki bu imkansızdır. Eğer $x^{2}-xy+y^{2}=7$ ise, $(2x-y)^{2}+3y^{2}=(2y-x)^{2}+3x^{2}=28$ olur, bu da $3x^{2}\le28$ ve $3y^{2}\le28$ verir, dolayısıyla $x\le3$, $y\le3$. Böylece, $x^{3}+y^{3}\le54$ olur, ki bu $x^{3}+y^{3}=7\cdot8^{n}\ge7\cdot8^{2}$ olduğundan imkansızdır.
+Dolayısıyla, $x$ ve $y$'nin her ikisi de çifttir, $x=2x_{1}, y=2y_{1}$; burada $x_{1}$ ve $y_{1}$ pozitif tamsayılardır ve $7\cdot8^{n}=x^{3}+y^{3}$ olduğundan $7\cdot8^{n-1}=x_{1}^{3}+y_{1}^{3}$ olur, bu da $n$ sayısının tanımıyla çelişir.
+Bu nedenle, $7\cdot8^{n}$ $(n=0,1,2,...)$ sayılarının istenen özelliğe sahip olduğunu kanıtladık.
+**NOT.** 1'den büyük bir tamsayının herhangi bir küpüyle bölünemeyen ve rasyonel sayıların iki küpünün toplamı olarak temsil edilemeyen sonsuz sayıda $n$ pozitif tamsayısı olduğu kanıtlanmıştır, ancak kanıtı zordur. $\le50$ olan bu tür sayılar 3, 4, 5, 10, 11, 14, 18, 21, 23, 25, 29, 36, 38, 39, 41, 44, 45, 46, 47'dir. 22 sayısı, rasyonel sayıların iki küpünün toplamıdır, ancak büyük paydalara sahiptir: $22=(\frac{17299}{9954})^{3}+(\frac{25469}{9954})^{3}$. Bkz. [23, s. 301 ve s. 354 ve 357'deki tablolar].
+
+235. Her $k > 1$, $k \neq 3$ tam sayısı için iki pozitif tam sayının $k$. dereceden kuvvetleri farkı şeklinde gösterilebilen, fakat iki pozitif tam sayının $k$. dereceden kuvvetleri toplamı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^235]
+
+[^235]: Kanıt A. Schinzel'e aittir.
+$n=0,1,2,...$ için $(2^{k}-1)\cdot2^{nk}$ formundaki sayılar istenen özelliğe sahiptir. Açıkça $(2^{k}-1)2^{nk}=(2^{n+1})^{k}-2^{nk}$'ya sahibiz ve $(2^{k}-1)2^{nk}=u^{k}+v^{k}$ (1) denkleminin $u$ ve $v$ pozitif tamsayılarında çözümü olmadığını göstermek kalıyor. Bu, $n=0$ için doğrudur çünkü $1^{k}+1^{k}<2^{k}-1<2^{k}+1^{k}$'dır.
+(1) denkleminin $u$ ve $v$ pozitif tamsayılarında çözümü olan $n$ pozitif tamsayılarının var olduğunu varsayalım ve $n$ bu tür sayıların en küçüğü olsun. $u$ ve $v$'nin her ikisi de çift olsaydı, $u=2u_{1}$, $v=2v_{1}$, (1) gereğince $(2^{k}-1)2^{(n-1)k}=u_{1}^{k}+v_{1}^{k}$ olurdu, bu da $n$ sayısının tanımıyla çelişir. (1)'in sol tarafı çift olduğundan, $u$ ve $v$ sayılarının her ikisi de tek olmalıdır.
+$k$'nın tek ve $>3$ olduğunu varsayalım. $\frac{u^{k}+v^{k}}{u+v}=u^{k-1}-u^{k-2}v+u^{k-3}v^{2}-...+v^{k-1}$ formülünden, sağ taraf $k$ terim içerdiğinden ve hepsi tek olduğundan, sol tarafın tek olduğu sonucu çıkar; bu sayı $(2^{k}-1)2^{nk}$'nın bir böleni olduğundan, $\frac{u^{k}+v^{k}}{u+v}\le2^{k}-1$ olmalıdır. $u\ge v$ varsayabiliriz, bu da $\frac{u^{k}+v^{k}}{u+v}\ge v^{k-1}$ anlamına gelir, ve sonuç olarak $v^{k-1}<2^{k}$; böylece $v<2^{k/(k-1)}<3$ (çünkü $k>3$). $k$ tek olduğundan, $v=1$ olur ve $\frac{u^{k}+v^{k}}{u+v}=\frac{u^{k}+1}{u+1}\ge u^{k-2}(u-1)>(u-1)^{k-1}$ olur. Buradan $(u-1)^{k-1}<2^{k}$ sonucu çıkar, bu da $u-1<3$ verir, dolayısıyla $u$ tek olduğundan, $u=1$ veya $u=3$ olur. $u=1$ ilişkisi imkansızdır, çünkü o zaman $u^{k}+v^{k}=2$ olurdu, ki bu (1) ile çelişir. $u=3$ ilişkisi de imkansızdır, çünkü $\frac{u^{k}+v^{k}}{u+v}=\frac{3^{k}+1}{4}$ sonucunu verirdi, ki bu ($k>3$ için) $>2^{k}-1$'dir.
+Şimdi $k$'nın çift bir pozitif tamsayı olduğunu varsayalım. $u$ ve $v$ tek olduğundan, $u^{k}+v^{k}$ sayısı 4'e bölündüğünde 2 kalanını verir, bu imkansızdır çünkü (1)'in sol tarafı 4 ile bölünebilir. Bu, kanıtı tamamlar.
+
+236. Her $n > 1$ tam sayısı için iki pozitif tam sayının $n$. dereceden kuvvetleri toplamı şeklinde gösterilebilen, fakat iki pozitif tam sayının $k$. dereceden kuvvetleri farkı şeklinde gösterilemeyen sonsuz sayıda pozitif tam sayı bulunduğunu kanıtlayınız.[^236]
+
+[^236]: Kanıt A. Rotkiewicz'e aittir.
+Eğer $2\mid n$ ise, $k$ ve $l$ pozitif tamsayıları için $(2k+1)^{n}+(2l+1)^{n}$ sayısı, pozitif tamsayıların iki $n$'inci kuvvetinin toplamıdır; $4t+2$ formunda bir sayı olarak, iki karenin farkı değildir; $2\mid n$ olduğundan, pozitif tamsayıların iki $n$'inci kuvvetinin farkı da değildir. Öte yandan, $2\nmid n$ ise, $(2^{n}+1)2^{nk}=(2^{k+1})^{n}+(2^{k})^{n}$ sayıları ($k=0,1,2,...$ için) pozitif tamsayıların iki $n$'inci kuvvetinin farkı değildir. Gerçekten de, $x>y$ olan $x$ ve $y$ pozitif tamsayıları için $(2^{n}+1)2^{nk}=x^{n}-y^{n}$ olsaydı, $x_{1}=x/(x,y)$ ve $y_{1}=y/(x,y)$ sayıları pozitif tamsayılar olurdu ve aralarında asal olduklarından her ikisi de çift olamazdı. $2\nmid(x_{1}^{n}-y_{1}^{n})/(x_{1}-y_{1})$ olduğu kolayca sonucu çıkar ve $(2^{n}+1)2^{nk}=(x,y)^{n}(x_{1}-y_{1})\frac{x_{1}^{n}-y_{1}^{n}}{x_{1}-y_{1}}$ olduğundan, $\frac{x_{1}^{n}-y_{1}^{n}}{x_{1}-y_{1}}\mid 2^{n}+1$ olmalıdır; bu da $\frac{x_{1}^{n}-y_{1}^{n}}{x_{1}-y_{1}}\le2^{n}+1$ anlamına gelir. Ancak, $\frac{x_{1}^{n}-y_{1}^{n}}{x_{1}-y_{1}}>x_{1}^{n-1}\ge3^{n-1}$ olur ($x_{1}=2$ olamaz, çünkü o zaman $y_{1}=1$ olurdu ve $2^{n}-1\mid 2^{n}+1$ olurdu, ki bu imkansızdır). Dolayısıyla $3^{n-1}<2^{n}+1$ olurdu, ki bu $n\ge3$ için imkansızdır.
+
+237. $1$'den $n$'ye kadar olan pozitif tam sayıların kareleri toplamı tam kare olmasını sağlayan en küçük $n > 1$ tam sayısını bulunuz.[^237]
+
+[^237]: $1^{2}+2^{2}+...+n^{2}=\frac{n(n+1)(2n+1)}{6}$ formülünü kullanacağız. $m$ pozitif bir tamsayı olmak üzere $n(n+1)(2n+1)=6m^{2}$ olacak şekilde $n>1$ olan en küçük tamsayıyı bulmalıyız. Altı durumu ayırt edeceğiz:
+\
+1\. $k$ pozitif bir tamsayı olmak üzere $n=6k$. Denklemimiz $k(6k+1)(12k+1)=m^{2}$ halini alır. Sol taraftaki çarpanlar aralarında asal olduğundan, hepsi kare olmalıdır. $k=1$ ise, $6k+1$ bir kare değildir. 1'den sonraki bir sonraki kare 4'tür. $k=4$ ise, $6k+1=5^{2}$, $12k+1=7^{2}$ olur ve sonuç olarak $n=6k=24$ için $1^{2}+2^{2}+...+24^{2}$ toplamı pozitif bir tamsayının, 70'in, karesidir.
+\
+2\. $k$ pozitif bir tamsayı olmak üzere $n=6k+1$. Bu durumda $(6k+1)(3k+1)(2k+1)=m^{2}$ olur ve (aralarında asal olan) $2k+1$, $3k+1$ ve $6k+1$ sayılarının her biri bir kare olmalıdır. $2k+1$'in kare olduğu en küçük $k$ $k=4$'tür; ancak bu durumda $n=6k+1>24$ olur.
+\
+3\. $k$ $\ge0$ bir tamsayı olmak üzere $n=6k+2$. Bu durumda $(3k+1)(2k+1)(12k+5)=m^{2}$ olur ve (aralarında asal olan) $3k+1$, $2k+1$ ve $12k+5$ sayılarının kare olması gerekir. $k=0$ olsaydı, $12k+5$ sayısı bir kare olmazdı. Öte yandan, $k$ pozitif tamsayısı için, daha önce olduğu gibi, $k\ge4$ olur, dolayısıyla $n=6k+2>24$ olur.
+\
+4\. $k$ $\ge0$ bir tamsayı olmak üzere $n=6k+3$. Bu durumda $(2k+1)(3k+2)(12k+7)=m^{2}$ olur; $2k+1$, $3k+2$ ve $12k+7$ sayılarının aralarında asal olduklarını kolayca görürüz, dolayısıyla kare olmaları gerekir. $k=0,1,2$ veya 3 olamaz, çünkü bu durumda $3k+2$ sayısı bir kare olmazdı. Dolayısıyla, $k\ge4$ olur, bu da $n=6k+3>24$ demektir.
+\
+5\. $k$ $\ge0$ bir tamsayı olmak üzere $n=6k+4$. Bu durumda $(3k+2)(6k+5)(4k+3)=m^{2}$ olur; burada $3k+2$, $6k+5$ ve $4k+3$ sayıları aralarında asaldır, dolayısıyla kare olmaları gerekir. $k=0,1,2,3$ olamaz, çünkü o zaman $3k+2$ sayısı bir kare olmazdı. Dolayısıyla, $k\ge4$ olur ve sonuç olarak $n=6k+4>24$ olur.
+\
+6\. $k$ $\ge0$ bir tamsayı olmak üzere $n=6k+5$. Bu durumda $(6k+5)(k+1)(12k+11)=m^{2}$ olur ve $6k+5$, $k+1$ ve $12k+11$ sayıları aralarında asaldır, dolayısıyla hepsi kare olmalıdır. $k=0,1,2,3$ olamaz, çünkü bu durumda $6k+5$ sayısı bir kare olmazdı. Dolayısıyla, $k\ge4$ ve $n=6k+5>24$ olur.
+Böylece, $1^{2}+2^{2}+...+n^{2}$'nin bir kare olduğu $n>1$ olan en küçük tamsayının $n=24$ olduğunu kanıtladık.
+\
+**NOT.** $1^{2}+2^{2}+...+n^{2}$'nin bir kare olduğu tek pozitif tamsayının $n=24$ olduğunu göstermek oldukça zordur. Öte yandan, $1^{3}+2^{3}+...+n^{3}$ toplamı her $n$ pozitif tamsayısı için bir karedir, ancak herhangi bir $n$ için pozitif bir tamsayının küpü olmadığı kanıtlanabilir.
+
+238. $a$ ve $b$ $1$'den büyük tam sayılarsa $a^b$ şeklinde olan sayıya **öz kuvvet** diyelim. Sonlu sayıda öz kuvvetin toplamı şeklinde yazılabilen tüm pozitif tam sayıları bulunuz.[^238]
+
+b.  $6$'dan farklı her $n \leq 10$ pozitif tam sayısının iki öz kuvvetin farkı şeklinde gösterilebileceğini kanıtlayınız.
+
+[^238]: 1, 2, 3, 5, 6, 7, 10, 11, 13, 14, 15, 19, 23 dışındaki tüm pozitif tamsayılar.
+Yukarıdaki on üç sayının hiçbirinin, sonlu sayıda öz kuvvetin (bunlar sırasıyla $2^{2}$, $2^{3}$, $3^{2}$, $2^{4}=4^{2}$, $5^{2}$, $3^{3}$, $2^{5}$, $6^{2}$, ...'ye eşittir) toplamı olmadığını göstermek kolaydır.
+Şimdi $n$, yukarıdaki on üç sayıdan herhangi birinden farklı bir pozitif tamsayı olsun. $k$ pozitif bir tamsayı olmak üzere $n=4k$ ise, $n$ sayısı $k$ tane $2^{2}$ sayısının toplamıdır. $n=4k+1$ ise, $n\ne1$ ve $n\ne5$ olduğundan, $k\ge2$ varsayabiliriz; o zaman $n=4k+1=3^{2}+4(k-2)$ olur, burada $k-2$ bir tamsayı $\ge0$'dır. $k=2$ ise, $n=3^{2}$ olur, $k>2$ ise, $n=3^{2}+2^{2}+...+2^{2}$ olur, burada $2^{2}$'ye eşit terimlerin sayısı $k-2$'dir. $n=4k+2$ ise, $n$ sayısı 6, 10 ve 14 sayılarından farklı olduğundan, $k\ge4$ olur ve $n=4k+2=3^{2}+3^{2}+4(k-4)$ olur. Yine $n$ sayısının istenen özelliğe sahip olduğu sonucu çıkar. Son olarak, $n=4k+3$ ise, $n\ne3,7,11,15,19$ ve 23 olduğundan, $k\ge6$ olur ve $n=3^{2}+3^{2}+3^{2}+4(k-6)$ olur, bu da $n$'nin istenen özelliğe sahip olduğunu gösterir.
+\
+b. $1=3^{2}-2^{3}$, $2=3^{3}-5^{2}$, $3=2^{7}-5^{3}$, $4=5^{3}-11^{2}=2^{3}-2^{2}$, $5=3^{2}-2^{2}$, $7=2^{7}-11^{2}$, $8=2^{4}-2^{3}$, $9=5^{2}-4^{2}$, $10=13^{3}-3^{7}$.
+\
+**NOT.** 6 sayısının iki öz kuvvetin farkı olup olmadığını bilmiyoruz. Her pozitif tamsayının sonlu $\ge0$ sayıda, iki öz kuvvetin farkı olarak gösterimi olduğu varsayılmıştır.
+
+239. Kenar uzunlukları tam sayı olan her dik üçgen ve her $n$ pozitif tam sayısı için bu üçgene benzer ve her kenar uzunluğu bir pozitif tam sayının $n$'den büyük dereceden kuvveti olan bir üçgen bulunduğunu kanıtlayınız.[^239]
+
+[^239]: $a, b, c$ pozitif tamsayılar olmak üzere $a^{2}+b^{2}=c^{2}$ ise, bu eşitliğin her iki tarafını $a^{2(4n^{2}-1)}b^{4n(2n+1)(n-1)}c^{4n^{2}(2n-1)}$ sayısı ile çarparak $[(a^{2n}b^{(2n+1)(n-1)}c^{n(2n-1)})^{2n}]^{2}+[(a^{2n+1}b^{2n^{2}-1}c^{2n^{2}})^{2n-1}]^{2} =[(a^{2n-1}b^{2n(n-1)}c^{2n^{2}-2n+1})^{2n+1}]^{2}$ elde ederiz.
+
+240. $(n - 1)! + 1 = n^2$ eşitliğini sağlayan tüm $n > 1$ tam sayılarını bulunuz.[^240]
+
+[^240]: Böyle tek bir pozitif tamsayı vardır, $n=5$. Bu sayının $(n-1)!+1=n^{2}$ denklemini sağladığını kolayca kontrol ederiz ve $n=2,3$ ve 4 sayılarının bu denklemi sağlamadığını da kontrol ederiz. $n=6$ için $n^{2}>6n-4$ elde ederiz ve aynı eşitsizliğin $n\ge6$ olan her tamsayı için geçerli olduğunu tümevarımla gösteririz. $n\ge6$ bir tamsayı ise, $n^{2}>6n-4$ olduğundan $(n-1)!+1>2(n-1)(n-2)=2(n^{2}-3n+2)>n^{2}$ olur. Dolayısıyla, $n\ge6$ tamsayısı için $(n-1)!+1=n^{2}$ olamaz.
+**NOT.** $n^{2}\mid (n-1)!+1$ olan $n>5$ olan sadece iki pozitif tamsayı biliyoruz, 13 ve 563 sayıları, ve bu tür daha fazla sayı olup olmadığını ya da sonlu sayıda olup olmadığını bilmiyoruz. Böyle her sayının asal olması gerektiğini biliyoruz. $n=5,6$ ve 8 için $(n-1)!+1$ sayılarının (sırasıyla 5, 11 ve 71 sayılarının) kare olduğunu da belirtelim ve bu tür başka sayıların olup olmadığını bilmiyoruz.
+
+241. İki ardışık üçgen sayısının çarpımının hiçbir zaman tam kare olmayacağını, fakat her $t_n = \frac{n(n+1)}{2}$ sayısı için $t_n t_m$ çarpımının tam kare olacak şekilde $t_n$'den büyük olan sonsuz sayıda $t_m$ üçgen sayısının bulunduğunu kanıtlayınız.[^241]
+
+[^241]: $n>1$ bir tamsayı için $t_{n-1}t_{n}=m^{2}$ olsaydı, $m$ pozitif bir tamsayı olmak üzere, $(n^{2}-1)n^{2}=(2m)^{2}$ olurdu ve $n^{2}-1$ ile $n^{2}$ aralarında asal olduğundan, her birinin bir kare olması gerekirdi, ki bu imkansızdır çünkü farkları bire eşit olan iki tamsayı karesi yoktur.
+Şimdi $n$ verilen bir pozitif tamsayı olsun. $x^{2}-n(n+1)y^{2}=1$ denkleminin $x$ ve $y$ pozitif tamsayılarında sonsuz sayıda çözümü vardır. Gerçekten de, bu çözümlerden biri $x=2n+1$ ve $y=2$'dir; $x$ ve $y$ pozitif tamsayıları için $x^{2}-n(n+1)y^{2}=1$ ise, o zaman $[(2n+1)x+2n(n+1)y]^{2}-n(n+1)[2x+(2n+1)y]^{2}=1$ olur. $x$ ve $y$, $x^{2}-n(n+1)y^{2}=1$ olacak şekilde pozitif tamsayılar ise, $t_{n}t_{2t_{n}y^{2}}=t_{n}t_{n}y^{2}(2t_{n}y^{2}+1)=t_{n}^{2}y^{2}x^{2}=(t_{n}yx)^{2}$ olur. Örneğin, $n=2$ için $t_{2}t_{24}=30^{2}$, $t_{2}t_{2400}=(2\cdot20\cdot49)^{2}$ (kaynakta $t_3$ ve $3\cdot$ yazıyor, $n=2$ için $t_n=t_2=3$'tür) vb. elde ederiz.
+
+242. Logaritma tablosu kullanmadan $F_{1945} = 2^{2^{1945}} + 1$ sayısının basamak sayısının $10^{582}$'den büyük olduğunu kanıtlayınız ve ($F_{1945}$ sayısının en küçük asal böleni olan) $5 \cdot 2^{1947} + 1$ sayısının basamak sayısını bulunuz.[^242]
+
+[^242]: $2^{10}=1024>10^{3}$'e sahibiz. Buradan $2^{1945}=2^{5}(2^{10})^{194}>10\cdot10^{3\cdot194}=10^{583}$ (kaynakta $2^5$ yerine 10 yazıyor) sonucu çıkar. Böylece, $2^{2^{1945}}>2^{10^{583}}=(2^{10})^{10^{582}}>10^{3\cdot10^{582}}$; ve son sayının basamak sayısı $10^{582}$'den büyüktür. $5\cdot2^{1947}+1$ sayısı, $5\cdot2^{1947}=10\cdot2^{1946}$ sayısı ile aynı basamak sayısına sahiptir ve 2'nin ondalık logaritması $log_{10}2=0,30103...$ olduğundan, $2^{1946}=10^{1946log_{10}2}=10^{585,8...}$ olur ve buradan sayımızın 586 basamağı olduğu sonucu çıkar.
+**NOT.** $F_{1945}$ bilinen en büyük bileşik Fermat sayısıdır.
+
+243. $2^{11213} - 1$ (bilinen en büyük asal sayı) sayısının basamak sayısını bulunuz.[^243]
+
+[^243]: $2^{11213}-1$ sayısı (ondalık sistemde) $2^{11213}$ ile aynı basamak sayısına sahiptir, çünkü ondan sadece bir eksiktir. Dolayısıyla, $2^{11213}$'ün ondalık basamak sayısını hesaplamak yeterlidir. $n$ pozitif bir tamsayısı $x$ reel olmak üzere $n=10^{x}$ formunda ise (tabii ki $x\ge0$), $[x]$ $x$'i aşmayan en büyük tamsayıyı göstermek üzere, $10^{[x]}\le n<10^{[x]+1}$ olur (kaynakta $10^x \le n$ yazıyor) ve buradan $n$ sayısının $[x]+1$ ondalık basamağı olduğu sonucu çıkar. $2^{11213}=10^{11213~log_{10}2}$ olur ve $log_{10}2=0,30103...$ olduğundan, $3375<11213~log_{10}2<3376$ olur. Dolayısıyla, $2^{11213}$ sayısının (dolayısıyla $2^{11213}-1$'in de) 3376 ondalık basamağı vardır.
+
+244. $2^{12112}(2^{12112} - 1)$ (bilinen en büyük mükemmel sayı) sayısının basamak sayısını bulunuz.[^244]
+
+[^244]: $2^{11212}(2^{11213}-1)=2^{22425}-2^{11212}$. Önce $2^{22425}$ sayısının basamak sayısını hesaplarız. $22425~log_{10}2=22425\cdot0,30103... =6750,597...$ olduğundan, (Problem 243'ün çözümüne bakınız) $2^{22425}$ sayısının 6751 basamağı olduğu sonucunu elde ederiz ve $2^{22425}=10^{6750,597...}=10^{6750}\cdot10^{0,597...}$ olur. $10^{0,597...}>10^{1/2}>3$ olduğundan, $10^{6751}>2^{22425}>3\cdot10^{6750}$ elde ederiz, bu da $2^{22425}$'in ilk basamağının $\ge3$ olduğunu gösterir. Dolayısıyla, $2^{22425}$ sayısından daha az basamak sayısına sahip olan $2^{11212}$ sayısını (kaynakta $2^{11213}$ yazıyor) çıkarırsak, ilkinin basamak sayısını değiştirmemiş oluruz. Sonuç olarak, $2^{11212}(2^{11213}-1)$ sayısı 6751 basamağa sahiptir.
+
+245. $3!!!$ sayısının basamak sayısının 1000'den fazla olduğunu kanıtlayınız ve bu sayının sonundaki 0 sayısını bulunuz.[^245]
+
+[^245]: $3!=6$, $3!!=6!=720$, $3!!!=720!>99!100^{621}>10^{1242}$ olur. Dolayısıyla, 3!!! sayısı binden fazla basamağa sahiptir. İyi bilinen teoreme göre (bkz. örneğin, Sierpiński [37, s. 131, Teorem 6]), $m$ pozitif bir tamsayı ve $p$ bir asal ise, $m!$'i bölen $p$'nin en büyük kuvveti $[\frac{m}{p}]+[\frac{m}{p^{2}}]+[\frac{m}{p^{3}}]+...$'dir; burada $[x]$, $x$'i aşmayan en büyük tamsayıyı gösterir. Buradan, $3!!!=720!$'i bölen 5'in en büyük kuvvetinin $[\frac{720}{5}]+[\frac{720}{25}]+[\frac{720}{125}]+[\frac{720}{625}]=144+28+5+1=178$ olduğu sonucu çıkar; $720!$'i bölen 2'nin en büyük kuvveti ise daha büyüktür (çünkü $[\frac{720}{2}]=360$'tır). Buradan, 3!!! sayısının ondalık açılımının sonunda 178 sıfır olduğu sonucu çıkar.
+
+246. Aşağıdaki özelliğe sahip olan $m > 1$ tam sayısı bulunuz: bir $x$ tam sayı sayısı için $f(x)$ değeri $m$'ye bölünecek, başka bir $x$ değeri için $f(x)$ değeri $m$'ye bölündüğünde 1 kalanı verecek ve tüm $x$ tam sayı değerleri için $f(x)$ değerleri $m$'ye bölündüğünde 0 veya 1 kalanı verecek şekilde tam sayı katsayılı bir $f(x)$ polinomu bulunur.[^246]
+
+[^246]: Çözüm A. Schinzel'e aittir.
+Sadece asal sayıların kuvvetleri (pozitif tamsayı üsleriyle) olan $m$ pozitif tamsayıları için. Gerçekten de, $p$ bir asal ve $k$ pozitif bir tamsayı olmak üzere $m=p^{k}$ ise, $f(x)=x^{\phi(p^{k})}$ için $p\nmid x$ durumunda, Euler teoremine göre $f(x)\equiv1(mod~p^{k})$ olur. $p\mid x$ durumunda ise $\phi(p^{k})\ge p^{k-1}\ge k$ (kolayca tümevarımla gösterilebilir) olduğundan, $p^{k}\mid x^{k}$ ve sonuç olarak $p^{k}\mid x^{\phi(p^{k})}$ olur. Dolayısıyla, $f(x)\equiv0(mod~p^{k})$ olur.
+$m>1$ bir tamsayı ise ve $m$ bir asal sayının kuvveti değilse, $m$'nin en az iki farklı asal böleni vardır, $p$ ve $q\ne p$. $f(x)$ tamsayı katsayılı bir polinom olsun ve $f(x_{1})\equiv0(mod~m)$ ve $f(x_{2})\equiv1(mod~m)$ olacak şekilde $x_{1}$ ve $x_{2}$ tamsayıları bulunsun. Dolayısıyla, ($p\mid m$ ve $q\mid m$ olduğundan) $f(x_{1})\equiv0(mod~p)$ ve $f(x_{2})\equiv1(mod~q)$ (kaynakta $f(x_1) \equiv 1$ yazıyor) ilişkilerine de sahip oluruz. $p$ ve $q$ farklı asallar olduğundan, Çin kalan teoremine göre $x_{0}\equiv x_{1}(mod~p)$ ve $x_{0}\equiv x_{2}(mod~q)$ olacak şekilde bir $x_{0}$ tamsayısı vardır. Buradan $f(x_{0})\equiv f(x_{1})\equiv0(mod~p)$ ve $f(x_{0})\equiv f(x_{2})\equiv1(mod~q)$ sonucu çıkar. Bu denkliklerden ilki $f(x_{0})\equiv1(mod~m)$ olamayacağımızı ima eder. Benzer şekilde, ikinci denklik $f(x_{0})\equiv0(mod~m)$ olamayacağımızı ima eder. Sonuç olarak, $f(x_{0})$, $m$'ye bölündüğünde ne 0 kalanını ne de 1 kalanını verir. Dolayısıyla, $m$ bir asalın kuvveti değilse, istenen koşulları sağlayan tamsayı katsayılı bir $f(x)$ polinomu yoktur.
+
+247. $m$ ve $n$ pozitif tam sayılar ve $D = [(4m^2 + 1)n + m]^2 + 4mn + 1$ olmak üzere $\sqrt{D}$ sayısının sürekli kesir şeklinde gösteriniz.[^247]
+
+[^247]: $D<[(4m^{2}+1)n+m+1]^{2}$ olduğunu kolayca görürüz, dolayısıyla $\sqrt{D}$ sayısının tam kısmı $a_{0}=(4m^{2}+1)n+m$'ye eşittir, bu da $D-a_{0}^{2}=4mn+1$ ve $x_{1}=\frac{1}{\sqrt{D}-a_{0}}=\frac{\sqrt{D}+a_{0}}{D-a_{0}^{2}}$ demektir. $a_{0}$, $\sqrt{D}$ sayısının tam kısmı olduğundan, $a_{0}<\sqrt{D}<a_{0}+1$ olur, bu da $2a_{0}<\sqrt{D}+a_{0}<2a_{0}+1$ sonucunu verir ve $a_{0}=(4mn+1)m+n$ (kaynakta $a_0 = (4m^2+1)n+m$) olduğundan, $2m+\frac{2n}{4mn+1}<\frac{\sqrt{D}+a_{0}}{D-a_{0}^{2}}<2m+\frac{2n+1}{4mn+1}$ buluruz. $(2n+1)/(4mn+1)\le1$ olduğundan, $x_{1}=(\sqrt{D}+a_{0})/(D-a_{0}^{2})$ sayısının tam kısmının $a_{1}=2m$'ye eşit olduğunu görürüz. Dolayısıyla, $x_{1}=a_{1}+1/x_{2}$ ve $x_{2}=1/(x_{1}-a_{1})$ olur. Öte yandan, $x_{1}-a_{1}=\frac{\sqrt{D}+a_{0}}{4mn+1}-2m=\frac{\sqrt{D}-[(4mn+1)m-n]}{4mn+1}$ (kaynakta $a_0 = (4m^2+1)n+m$ iken $a_0 - 2m(4mn+1)$ hesaplanmalı) ve sonuç olarak, $x_{2}=\frac{(4mn+1)[\sqrt{D}+(4mn+1)m-n]}{D-[(4mn+1)m-n]^{2}}$ olur. $D=[(4mn+1)m-n]^{2}+(4mn+1)^{2}$ (kaynakta $D-[(4mn+1)m-n]^2 = (4mn+1)$ olmalı, $4mn+1$ değil) olduğunu kolayca kontrol ederiz, bu da $x_{2}=\frac{\sqrt{D}+(4mn+1)m-n}{4mn+1}$ (kaynakta $x_2$) sonucunu verir ve $a_{0}<\sqrt{D}<a_{0}+1$ veya $(4mn+1)m+n<\sqrt{D}<(4mn+1)m+n+1$ (kaynakta $a_0 = (4m^2+1)n+m$) olduğundan, $2m<x_{2}<2m+\frac{1}{4mn+1}$ elde ederiz. Sonuç olarak, $x_{2}$'nin tam kısmı $a_{2}=2m$'ye eşittir. Dolayısıyla, $x_{2}=a_{2}+1/x_{3}$ olur, bu da $x_{3}=1/(x_{2}-a_{2})$ verir. Ancak, $x_{2}-a_{2}=\frac{\sqrt{D}+(4mn+1)m-n}{4mn+1}-2m=\frac{\sqrt{D}-[(4mn+1)m+n]}{4mn+1}$ (kaynakta $-(4mn+1)m-n$ değil, $-(4mn+1)m+n$ olmalı). Sonuç olarak, $x_{3}=\frac{(4mn+1)[\sqrt{D}+(4mn+1)m+n]}{D-[(4mn+1)m+n]^{2}}=\sqrt{D}+(4mn+1)m+n=\sqrt{D}+a_{0}$ (kaynakta $a_0=(4m^2+1)n+m$) olur, bu da $x_{3}$'ün tam kısmının $2a_{0}$ olduğunu ve $\sqrt{D}$ sayısının $2m, 2m$ ve $2a_{0}$ sayılarından oluşan üç terimli periyoda sahip aritmetik sürekli kesre açılımı olduğunu ima eder.
+**NOT.** $\sqrt{D}$'nin aritmetik sürekli kesre açılımının üç terimli bir periyoda sahip olduğu tüm pozitif $D$ tamsayılarının, tam da yukarıda ele alınan $D$ sayıları olduğu gösterilebilir. Bkz. Sierpiński [32].
+
+248. $\varphi(n)$ Euler fonksiyonu, $d(n)$ de $n$ sayısının pozitif tam bölenlerinin sayısını göstermek üzere $\varphi(n) = d(n)$ eşitliğini sağlayan tüm $n \leq 30$ pozitif tam sayısını bulunuz.[^248]
+
+[^248]: $n\le30$ için $\phi(n)$ ve $d(n)$ fonksiyonlarının değerlerini, bu fonksiyonlar için iyi bilinen formüllerden, yani $n=q_{1}^{\alpha_{1}}q_{2}^{\alpha_{2}}...q_{s}^{\alpha_{s}}$ ise $\phi(n)=q_{1}^{\alpha_{1}-1}(q_{1}-1)...q_{s}^{\alpha_{s}-1}(q_{s}-1)$, $d(n)=(\alpha_{1}+1)...(\alpha_{s}+1)$'den hesaplayarak, $\phi(n)=d(n)$ olan $n\le30$ değerlerinin sadece $n=1,3,8,10,18,24$ ve 30 olduğunu kolayca görürüz. Burada $\phi(1)=d(1)=1$, $\phi(3)=d(3)=2,$ $\phi(8)=d(8)=4,$ $\phi(10)=d(10)=4,$ $\phi(18)=d(18)=6,$ $\phi(24)=d(24)=8$, $\phi(30)=d(30)=8$'e sahibiz.
+**NOT.** $n$ pozitif tamsayıları için $\phi(n)=d(n)$ denkleminin başka çözümü olmadığı kanıtlanmıştır. $n>30$ için $\phi(n)>d(n)$ olduğu gösterilebilir; bkz. Pólya ve Szegö [15, Bölüm VIII, problem 45].
+
+249. Her $g$ pozitif tam sayısı için, her $w > 1$ rasyonel sayısının, $k > g$ ve $s \geq 0$ tam sayılar olmak üzere
+$$ w = (1 + \frac{1}{k})(1 + \frac{1}{k+1}) \dots (1 + \frac{1}{k+s}) $$
+şeklinde gösterilebileceğini kanıtlayınız.[^249]
+
+[^249]: $k$ pozitif tamsayısı ve $s\ge0$ tamsayısı için $(1+\frac{1}{k})(1+\frac{1}{k+1})...(1+\frac{1}{k+s})=1+\frac{s+1}{k}$ (1) olduğunu kolayca kontrol ederiz. Pozitif bir $w$ rasyonel sayısı için $w-1$, $m$ ve $n$ pozitif tamsayılar (aralarında asal olmaları gerekmez) ve $n>g$ (kaynakta g=?) olmak üzere $w-1=m/n$ formunda her zaman temsil edilebilir. $k=n$ ve $s=m-1$ almak yeterlidir; o zaman (1)'in sağ tarafı $w$'ye eşit olacaktır. Bu şekilde $w$ sayısı için istenen ayrışımı elde ederiz.
+
+250. P. Erdős ve M. Surányi’nin şu teoremini kanıtlayınız: her $k$ tam sayısı sonsuz değişik yolla, $m$ pozitif tam sayı olmak üzere ve $+$ veya $-$ işaretleri belirli bir şekilde seçilerek 
+$$ k = \pm 1^2 \pm 2^2 \pm \dots \pm m^2 $$ 
+şeklinde gösterilebileceğini kanıtlayınız.[^250]
+
+[^250]: Önce her $k\ge0$ tamsayısının, $m$ pozitif bir tamsayı olmak üzere $k=\pm1^{2}\pm2^{2}\pm\cdot\cdot\cdot\pm m^{2}$ (1) formunda en az bir yolla temsil edilebileceğini kanıtlayacağız. İddia 0 sayısı için geçerlidir, çünkü $0=1^{2}+2^{2}-3^{2}+4^{2}-5^{2}-6^{2}+7^{2}$. 1, 2 ve 3 sayıları için de geçerlidir, çünkü $1=1^{2}$, $2=-1^{2}-2^{2}-3^{2}+4^{2},$ $3=-1^{2}+2^{2}$ (kaynakta $22,4$ yazıyor, $3 = -1^2+2^2$ olmalı), $4=-1^{2}-2^{2}+3^{2}$.
+Şimdi, teoremimizin her pozitif $k$ tamsayısı için doğru olduğunu kanıtlamak yeterlidir ve 0, 1, 2 ve 3 sayıları için doğru olduğundan, teoremin $k\ge0$ bir tamsayı için doğruysa, $k+4$ sayısı için de doğru olduğunu kanıtlamak yeterlidir. Öyleyse, teoremin $k$ sayısı için doğru olduğunu varsayalım; dolayısıyla, $m$ pozitif bir tamsayısı vardır öyle ki + ve - işaretlerinin uygun seçimiyle (1) ilişkisine sahibiz. $(m+1)^{2}-(m+2)^{2}-(m+3)^{2}+(m+4)^{2}=4$ (2) olduğundan, (1)'den $k+4=\pm1^{2}\pm2^{2}\pm...\pm m^{2}+(m+1)^{2}-(m+2)^{2}-(m+3)^{2}+(m+4)^{2}$ (kaynakta (2) etiketi yanlış yerde) olduğu sonucu çıkar, yani teoremimiz $k+4$ sayısı için geçerlidir. Dolayısıyla, her tamsayı için doğrudur.
+(2)'den (kaynaktaki (2) değil, $4=\dots$ formülü olmalı) her $m$ pozitif tamsayısı için $(m+1)^{2}-(m+2)^{2}-(m+3)^{2}+(m+4)^{2}-(m+5)^{2}+(m+6)^{2}+(m+7)^{2}-(m+8)^{2}=0$ olduğu sonucu çıkar. Dolayısıyla, (1)'de $m$ sayısını $m+8$ ile, dolayısıyla $m+16$ ile vb. değiştirebiliriz. Bu, her $k$ tamsayısının (1) formunda sonsuz sayıda yolla temsil edilebileceğini gösterir, ki bu kanıtlanması gerekendi.

@@ -1,0 +1,27 @@
+# Sunuş {.unnumbered}
+
+Bu kitap, matematik dünyasına değerli katkılar sunmuş olan Wacław Sierpiński'nin klasik eseri *250 Problems in Elementary Number Theory*'nin Türkçe çevirisidir. Amacımız, bu kıymetli eseri matematikseverlere ve öğrencilere ücretsiz olarak ulaştırarak, sayılar teorisinin temel problemlerine olan ilgiyi artırmaktır.
+
+Eserin ilk baskısının üzerinden elli yılı aşkın bir süre geçmiş olması ve bu çevirinin ticari bir amaç gütmemesi sebebiyle, çalışmamızı ücretsiz olarak erişime açmanın yerinde olacağına inanıyoruz. Yine de eserin telif hakları devam ediyorsa, hak sahiplerinin [acarzfr@gmail.com](mailto:acarzfr@gmail.com) adresinden bizimle iletişime geçmesi durumunda gerekli düzenlemeleri yapmaya hazır olduğumuzu belirtmek isteriz.
+
+  
+  
+Bu kitabın Türkçe matematik literatürüne katkı sağlayacağına inanıyor ve matematik meraklılarının bu eseri aynı coşkuyla okuyacağını umuyoruz.  
+
+Wacław Sierpiński'yi saygı ve minnetle anarak, çevirinin faydalı olmasını dileriz.  
+
+:::{.epigraph data-latex=""}
+Çeviri Ekibi
+:::
+
+## Teknik Detaylar {.unnumbered .unlisted}
+Bu kitap, açık kaynaklı bir yazım sistemi olan [Quarto](https://quarto.org/) ile hazırlanmıştır. Kitap, HTML ve PDF olmak üzere iki farklı formatta sunulmaktadır:
+
+- [HTML](https://acarzfr.github.io/250problem/)
+- [PDF](https://acarzfr.github.io/250problem/250-Temel-Say%C4%B1lar-Teorisi-Problemi.pdf)
+
+Soruların çözümleri dipnotlarda verilmiştir. Her iki formatta da soru numarasından çözüme kolayca ulaşabilirsiniz.
+
+Ayrıca, [Hypothesis](https://web.hypothes.is/) aracını kullanarak kitap üzerine notlar alabilir ve bu notları herkese açık veya özel olarak paylaşabilirsiniz. Bunun için HTML formatında, sayfanın sağındaki panelden ücretsiz bir hesap oluşturmanız yeterlidir.
+
+

@@ -1,0 +1,544 @@
+## Asal ve Bileşik Sayılar
+
+74. Her çift $n > 6$ tam sayısı için $(n - p, n - q) = 1$ olacak şekilde $p$ ve $q$ asal sayılarının bulunduğunu kanıtlayınız.[^74]
+
+[^74]: $p=3, q=5$ almak yeterlidir. Eğer $n$ çift ve $>6$ ise, o zaman $n-1 \ge 6$ ve $p < q < n-1$ olur. Ardışık tek sayılar olan $n-p = n-3$ ve $n-q = n-5$ sayıları aralarında asaldır.
+
+75. Hem iki asal sayının toplamı hem de farkı şeklinde yazılabilen tüm asal sayıları bulunuz.[^75]
+
+[^75]: Bu tür yalnızca bir asal vardır, yani 5. Gerçekten de, $r$ asalının hem iki asalın toplamı hem de farkı olarak temsil edilebildiğini varsayalım. Açıkçası $r > 2$ olmalıdır, dolayısıyla $r$ tek bir asaldır. Hem iki asalın toplamı hem de farkı olduğundan, bu asallardan biri çift olmalı, yani 2'ye eşit olmalıdır. Dolayısıyla, $p$ ve $q$ asal olmak üzere $r = p+2 = q-2$ olmalıdır. Ancak bu durumda $p, r = p+2$ ve $q = r+2$ ardışık üç tek asal olurdu ve bu tür yalnızca bir üçlü vardır: 3, 5 ve 7 (çünkü her üç ardışık tek sayıdan biri 3'e bölünmelidir). Bu nedenle $r = 5 = 3+2 = 7-2$ elde ederiz.
+
+76. $n$ ile $n + 10$ arasında hiçbir asal sayı olmayacak şekilde üç en küçük $n$ pozitif tam sayısını bulunuz. $10m$ ile $10(m + 1)$ arasında hiçbir asal sayı olmayacak şekilde üç en küçük $m$ pozitif tam sayısını bulunuz.^[$n = 113, 139, 181; m = 20, 51, 62.$]
+
+77. $4k + 1$ şeklinde olan her asal sayının, kenar uzunlukları tam sayılar olan bir dik üçgenin hipotenüzünün uzunluğuna eşit olduğunu kanıtlayınız.[^77]
+
+[^77]: İyi bilinen Fermat teoremine göre, $4k+1$ formundaki her asal, iki pozitif tam sayının karelerinin toplamıdır (bkz, örneğin, [@sierpinski1964elementary, s. 205, Teorem 9]). Dolayısıyla, eğer $p$ $4k+1$ formunda bir asalsa, $p = a^2+b^2$ olur; burada $a$ ve $b$ pozitif tam sayılardır ($p$ tek olduğundan dolayı elbette farklıdırlar). Örneğin, $a > b$ olduğunu varsayalım. O zaman $p^2 = (a^2-b^2)^2+(2ab)^2$'dir, dolayısıyla $p$ diğer iki kenarı $a^2-b^2$ ve $2ab$ olan bir dik üçgenin hipotenüsüdür.
+Örneğin, $5^2 = 3^2+4^2$, $13^2 = 5^2+12^2$, $17^2 = 15^2+8^2$, $29^2 = 21^2+20^2$.
+
+
+78. $p, q, r$ asal sayılar olmak üzere, $p^2 + 1 = q^2 + r^2$ denkleminin tüm çözümünü bulunuz.[^78]
+
+[^78]: $13^2+1 = 7^2+11^2$, $17^2+1 = 11^2+13^2$, $23^2+1 = 13^2+19^2$, $31^2+1 = 11^2+29^2$.
+\
+**NOT.** $(5x+13)^2+1 = (3x+7)^2+(4x+11)^2$ özdeşliği, eğer $p=5x+13$, $q=3x+7$ ve $r=4x+11$ asalsa, $p^2+1 = q^2+r^2$ olduğunu gösterir. A. Schinzel'in asallara ilişkin belirli bir sanısından [@schinzel1958certaines] bu tür sistemlerin sonsuz sayıda olduğu sonucu çıkar.
+
+79. $p, q, r, s, t$ asal sayılar olmak üzere $p^2 + q^2 = r^2 + s^2 + t^2$ denkleminin çözümünün bulunmadığını kanıtlayınız.[^79]
+
+[^79]: İlk olarak, eğer $p, q, r, s$ ve $t$ asalsa ve $p^2+q^2 = r^2+s^2+t^2$ ise, o zaman $p$ ve $q$ sayılarının her biri $r, s$ ve $t$ sayılarının her birinden farklı olmalıdır. Gerçekten de, eğer örneğin $p=r$ olsaydı, o zaman $q^2 = s^2+t^2$ olurdu ki bu imkansızdır, çünkü $q, s, t$ asalken bu denklemin çözümü olamaz. Aslında, $s$ ve $t$ sayıları hem tek olamazdı hem de her ikisi çift olamazdı (çünkü bu durumda $q=2$ olurdu, ki bu sağ tarafın $> 4$ olması gerçeğiyle çelişir). Eğer $s=2$ olsaydı, o zaman 4 sayısı pozitif tam sayıların iki karesinin farkı olurdu ki bu imkansızdır.
+\
+Eğer $p^2+q^2 = r^2+s^2+t^2$ ise, $p, q, r, s, t$ sayılarının hepsinin tek olması mümkün değildir. Eğer $p$ çiftse, o zaman $p=2$'dir ve $q, r, s, t$ sayıları tektir. Tek bir sayının karesinin 8'e bölümünden kalan 1 olduğundan, sol taraf 8'e bölündüğünde 5 kalanını verir, sağ taraf ise 3 kalanını verir, ki bu imkansızdır. Eğer hem $p$ hem de $q$ tekse, o zaman sol taraf 8'e bölündüğünde 2 kalanını verir, sağ tarafta ise sayılardan biri (ve sadece biri) çift olmalıdır, örneğin $r=2$. Ancak o zaman, sağ taraf 8'e bölündüğünde 6 kalanını verirdi, ki bu imkansızdır.
+
+80. $(p + 1) + q(q + 1) = r(r + 1)$ denkleminin tüm $p, q, r$ asal çözümlerini bulunuz.[^80]
+
+[^80]: A. Schinzel tarafından bulunan çözümü sunuyoruz. Yalnızca bir çözüm vardır, yani $p=q=2$, $r=3$. Bunu görmek için, $p$ ve $q$ asal ve $r$  pozitif bir tam sayı olmak üzere $p(p+1)+q(q+1) = r(r+1)$ denkleminin tüm çözümlerini bulacağız. Denklemimiz şunu verir
+$$p(p+1) = r(r+1)-q(q+1) = (r-q)(r+q+1),$$
+ve $r > q$ olmalıdır. $p$ bir asal olduğundan, ya $p\mid r-q$ ya da $p\mid r+q+1$ olmalıdır. Eğer $p\mid r-q$ ise, o zaman $p \le r-q$ olur, bu da $p(p+1) \le (r-q)(r-q+1)$ anlamına gelir ve dolayısıyla $r+q+1 \le r-q+1$ olur ki bu imkansızdır. Dolayısıyla $p\mid r+q+1$ olmalıdır, bu da bir $k$ pozitif tam sayısı için
+$$r+q+1 = kp, \text{ anlamına gelir, bu da } p+1 = k(r-q) \text{ demektir. (1)}$$
+Eğer $k=1$ olsaydı, o zaman $r+q+1 = p$ ve $p+1 = r-q$ olurdu, bu da $p-q = r+1$ ve $p+q = r+1$ verir, ki bu imkansızdır. Dolayısıyla, $k > 1$. (1)'den kolayca şunu elde ederiz
+$$2q = (r+q)-(r-q) = kp-1-(r-q)$$
+$$= k[k(r-q)-1]-1-(r-q) = (k+1)[(k-1)(r-q)-1].$$
+$k \ge 2$ olduğundan, $k+1 \ge 3$ olur. Sol tarafı sadece $1, 2, q$ ve $2q$ pozitif tam sayı bölenlerine sahip olan son eşitlik, ya $k+1 = q$ ya da $k+1 = 2q$ olmasını gerektirir. Eğer $k+1 = q$ ise, o zaman $(k-1)(r-q) = 3$, dolayısıyla $(q-2)(r-q) = 3$. Bu, ya $q-2 = 1, r-q = 3$, yani $q=3, r=6$, $k=q-1=2$ ve (1) uyarınca $p=5$'e, ya da $q-2 = 3, r-q = 1$, bu da $q=5, r=6$, $k=4$ ve (1) uyarınca $p=3$'e götürür.
+Öte yandan, eğer $k+1 = 2q$ ise, o zaman $(k-1)(r-q) = 2$, dolayısıyla $2(q-1)(r-q) = 2$. Bu, $q-1=1$ ve $r-q=1$'e, yani $q=2, r=3$'e ve (1) uyarınca $p=2$'ye götürür. Dolayısıyla, pozitif $r$ tam sayıları için, $p$ ve $q$ asallarında şu çözümlere sahibiz: 1) $p=q=2, r=3$; 2) $p=5, q=3, r=6$, ve 3) $p=3, q=5, r=6$. Sadece ilk çözümde üç sayı da asaldır.
+\
+**NOT.** Eğer $n$'inci üçgensel sayıyı $t_n = \frac{1}{2}n(n+1)$ ile gösterirsek, o zaman yukarıdaki teoremi şu şekilde ifade edebiliriz: $t_p+t_q = t_r$ denkleminin asal sayılarda yalnızca bir çözümü vardır, yani $p=q=2, r=3$.
+
+81. $p(p + 1), q(q + 1), r(r + 1)$ sayılarının bir artan aritmetik dizi oluşturmasını sağlayan tüm $p, q, r$ asal sayılarını bulunuz.[^81]
+
+[^81]: Bu tür sayılar, örneğin, $p = 127, q = 3697, r = 5527$'dir. Bu sayıların asal olduğunu ve $p(p+1)$, $q(q+1)$ ve $r(r+1)$ sayılarının bir aritmetik dizi oluşturduğunu (örneğin, asal sayılar tablolarından) kontrol etmek kolaydır. Bu tür sayıları bulmak için bir yöntem sunacağız.
+\ 
+Şu özdeşlikten:
+$$n(n+1) + (41n+20)(41n+21) = 2(29n+14)(29n+15)$$
+pozitif bir $n$ tamsayısı için $n(n+1)$, $(29n+14)(29n+15)$ ve $(41n+20)(41n+21)$ sayılarının bir aritmetik dizi oluşturduğu sonucu çıkar. Eğer bazı pozitif $n$ tamsayıları için $n$, $29n+14$ ve $41n+20$ sayılarının hepsi asal olsaydı, bir çözüm bulmuş olurduk. Bu nedenle, $n$ için ardışık tek asalları almalı ve $29n+14$ ile $41n+20$ sayılarının asal olup olmadığını kontrol etmeliyiz.
+\ 
+Bu tür en küçük sayı, yukarıdaki çözüme götüren $n = 127$'dir. Ancak, bu şekilde gerekli özelliklere sahip tüm asal üçlülerini elde ettiğimizi iddia edemeyiz.
+\
+**NOT.** A. Schinzel'in asallara ilişkin [@schinzel1958certaines] belirli bir sanısından (konjektüründen), $29n+14$ ve $41n+20$ sayılarının da asal olmasını sağlayan sonsuz çoklukta $n$ asalı bulunduğu sonucu çıkar.
+\
+Yukarıdaki problem şöyle ifade edilebilir: asal indisli ve artan bir aritmetik dizi oluşturan üç üçgensel sayı bulunuz.
+
+82. $n + 1, n + 3, n + 7, n + 9, n + 13$ ve $n + 15$ sayılarının her birinin asal olmasını sağlayan tüm $n$ pozitif tam sayılarını bulunuz.[^82]
+
+[^82]: Bu şekilde tek bir pozitif tamsayı vardır, o da $n=4$'tür. Aslında, $n=1$ için $n+3=4$ sayısı bileşiktir; $n=2$ için $n+7=9$ sayısı bileşiktir; $n=3$ için $n+1=4$ sayısı bileşiktir; ve $n>4$ için sayılarımızın tamamı 5'i aşar ve en az biri 5 ile bölünebilir. Bu son özellik, 1, 3, 7, 9, 13 ve 15 sayılarının 5'e bölündüğünde 1, 3, 2, 4, 3 ve 0 kalanlarını vermesinden, yani tüm olası kalanları vermesinden kaynaklanır. Dolayısıyla, $n+1$, $n+3$, $n+7$, $n+9$, $n+13$ ve $n+15$ sayıları da 5'e bölündüğünde tüm olası kalanları verir; bu nedenle içlerinden en az biri 5 ile bölünebilir ve 5'ten büyük olduğu için bileşiktir. Öte yandan, $n=4$ için 5, 7, 11, 13, 17 ve 19 asal sayılarını elde ederiz.
+\
+**NOT**. A. Schinzel'in asal sayılarla ilgili bir konjektüründen [@schinzel1958certaines] $n+1$, $n+3$, $n+7$, $n+9$ ve $n+13$ sayılarının her birinin asal olacağı şekilde sonsuz sayıda $n$ pozitif tamsayısının var olduğu sonucu çıkar. Örneğin, $n=4, 10, 100$ durumları böyledir. Ayrıca bkz. [@sierpinski1962consequences, s. 319, P$_2$].
+
+
+
+83. İki tam sayının dördüncü dereceden kuvvetinin toplamına eşit olan beş asal sayıyı bulunuz.[^83]
+
+[^83]: $2 = 1^4+1^4, 17 = 1^4+2^4, 97 = 2^4+3^4, 257 = 1^4+4^4, 641 = 2^4+5^4$.
+\
+**NOT**. A. Schinzel'in asallarla ilgili bir konjektüründen [@schinzel1958certaines], pozitif tamsayılar üzerinde iki dördüncü kuvvetin toplamı olarak temsil edilebilen sonsuz sayıda asal sayının var olduğu sonucu çıkar ve genel olarak, her $n$ pozitif tamsayısı için $a$ ve $b$ pozitif tamsayılar olmak üzere $a^n+b^n$ formunda sonsuz sayıda asal sayının var olduğu sonucu çıkar.
+
+84. İkiz asal sayılar olmayan sonsuz sayıda ardışık asal sayılar çiftinin bulunduğunu kanıtlayınız.[^84]
+
+[^84]: $p_k$, $k$'ıncı asal sayıyı göstersin ve $n$ pozitif tamsayısı için $p_{k_n}$, $\le 6n+1$ olan en büyük asal sayı olsun. $6n+2 = 2(3n+1)$, $6n+3 = 3(2n+1)$ ve $6n+4 = 2(3n+2)$ sayıları bileşik olduğundan, $p_{k_n+1} \ge 6n+5$ olur ve $p_{k_n+1} - p_{k_n} \ge (6n+5)-(6n+1) = 4$'tür, dolayısıyla $p_{k_n}$ ve $p_{k_n+1}$ asal sayıları ikiz asal değildir. $p_{k_n} \ge 6n+5$ olduğundan ve $n$ keyfi olabileceğinden, bu tür sonsuz çoklukta $p_{k_n}$ ve $p_{k_n+1}$ sayısı vardır. Ancak, $p_{k_n}, p_{k_n+1}$ çiftinde $p_{k_n}$ sayısının bir ikiz asal çiftinin büyüğü olabileceğini ve $p_{k_n+1}$'in başka bir ikiz asal çiftinin küçüğü olabileceğini unutmayın. Böylece, $n=1$ için, ikiz asal olan 5, 7 çiftinin büyüğü olan $p_{k_n} = 7$'yi ve 11, 13 çiftinin küçüğü olan $p_{k_n+1} = 11$'i elde ederiz. $n=2$ için, 11, 13 çiftinin büyüğü olan $p_{k_n} = 13$'ü elde ederiz, $p_{k_n+1} = 17$ ise 17, 19 çiftinin küçüğüdür. $n=17$ için, 101, 103 çiftinin büyüğü olan $p_{k_n} = 103 = 6 \cdot 17 + 1$'i elde ederiz, $p_{k_n+1} = 107$ ise 107, 109 çiftinin küçüğüdür.
+
+85. Hiçbir ikiz asal sayıda bulunmayan sonsuz tane asal sayı bulunduğunu kanıtlayınız.[^85]
+
+[^85]: Lejeune-Dirichlet'nin aritmetik diziler üzerine teoremine göre, $15k+7$ ($k = 1, 2, \dots$) dizisinde sonsuz çoklukta asal sayı vardır. Bu sayıların hiçbiri bir ikiz asal çiftine ait olamaz çünkü $(15k+7)+2 = 3(5k+3)$ ve $(15k+7)-2 = 5(3k+1)$ sayıları ($k > 0$ için) bileşiktir.
+
+
+
+86. $n^2 - 1$ sayısının birbirinden farklı üç asal sayının çarpımına eşit olmasını sağlayan en küçük beş $n$ pozitif sayısını bulunuz.[^86]
+
+[^86]: Eğer $n$ pozitif bir tamsayı için $n^2-1$ sayısı üç farklı asal sayının çarpımı ise, ($2^2-1 = 3$ göz önüne alındığında) $n>2$ olmalıdır. $n^2-1 = (n-1)(n+1)$ özdeşliği dikkate alındığında, $n$ sayısı çift olmalıdır, aksi takdirde sağ taraftaki çarpanlar çift olurdu ve $2^2\mid n^2-1$ olurdu. Dahası, $n-1$ ve $n+1$ sayıları (aralarındaki fark 2 olduğundan) ($n>2$ olduğu için $1$'den büyüktürler) her ikisi de bileşik olamaz, çünkü bu durumda $n^2-1$ üç farklı asal sayının çarpımı olamazdı. Dolayısıyla, $n-1$ ve $n+1$ sayılarından biri asal olmalı, diğeri ise iki asal sayının çarpımı olmalıdır. $n=4$ için $n-1 = 3$, $n+1 = 5$ elde ederiz ve bu koşul sağlanmaz. Benzer şekilde, $n=6$ için $n-1 = 5$, $n+1 = 7$; $n=8$ için $n-1 = 7$, $n+1 = 9 = 3^2$. $n=10$ için $n-1 = 3^2$, ve $n=12$ için $n-1 = 11$, $n+1 = 13$ elde ederiz. $n=14$ için $n-1 = 13$, $n+1 = 15 = 3 \cdot 5$ elde ederiz. Bu durumda, $n^2-1$'in üç farklı asal sayının çarpımı olduğu en küçük pozitif tamsayı $n=14$'tür, çünkü $n^2-1 = 13 \cdot 3 \cdot 5$. $16^2-1 = 3 \cdot 5 \cdot 17$ olduğundan, gereken özelliği sağlayan bir sonraki $n$ sayısının $n=16$ olduğunu görürüz. Şimdi, $18^2-1 = 17 \cdot 19$, $20^2-1 = 19 \cdot 21 = 3 \cdot 7 \cdot 19$, ve üçüncü böyle sayı $n=20$'dir. Sonra, $22^2-1 = 3 \cdot 7 \cdot 23$, ve dördüncü aranan sayı $n=22$'dir. Bu şekilde devam ederek, $32^2-1 = 3 \cdot 11 \cdot 31$ olduğundan, beşinci böyle sayının $n=32$ olduğunu kolayca buluruz. Dolayısıyla, $n^2-1$'in üç farklı asal sayının çarpımı olduğu ilk beş tamsayı 14, 16, 20, 22 ve 32'dir.
+\
+**NOT**. A. Schinzel'in asallarla ilgili bir konjektüründen [@schinzel1958certaines], bu tür sonsuz çoklukta $n$ sayısının var olduğu sonucu çıkar. Daha genel olarak, her $s>1$ için, $n^2-1$'in $s$ farklı asal sayının çarpımı olduğu sonsuz çoklukta $n$ pozitif tamsayısı vardır.
+
+87. $n^2 + 1$ sayısının birbirinden farklı üç asal sayının çarpımına eşit olmasını sağlayan en küçük beş $n$ pozitif sayısını bulunuz. $n^2 + 1$ sayısının birbirinden farklı üç tek sayının çarpımına eşit olmasını sağlayan bir $n$ pozitif sayısı bulunuz.[^87]
+
+[^87]: $n^2+1$'in üç farklı asal sayının çarpımı olduğu en küçük beş pozitif $n$ tamsayısı $n=13, 17, 21, 23$ ve $27$'dir. Elimizde $13^2+1 = 2 \cdot 5 \cdot 17$, $17^2+1 = 2 \cdot 5 \cdot 29$, $21^2+1 = 2 \cdot 13 \cdot 17$, $23^2+1 = 2 \cdot 5 \cdot 53$ vardır. $n=112$ için $112^2+1 = 5 \cdot 13 \cdot 193$ elde ederiz.
+\
+**NOT**. A. Schinzel'in asallarla ilgili bir konjektüründen [@schinzel1958certaines], her $s$ için $n^2+1$'in $s$ farklı asal sayının çarpımı olduğu sonsuz çoklukta $n$ pozitif tamsayısının var olduğu sonucu çıkar.
+
+
+
+88. 7’den büyük olan her ardışık üç sayının en az birinin en az iki birbirinden farklı asal böleninin bulunduğunu kanıtlayınız.[^88]
+
+[^88]: $n > 7$ olmak üzere $n$, $n+1$ ve $n+2$ sayılarının her birinin sadece bir asal böleni olduğunu varsayalım. Bu sayılardan hiçbiri 6 ile bölünemez, bu da $n$'in $6k+1$, $6k+2$ veya $6k+3$ formunda olması gerektiği anlamına gelir, burada $k$ pozitif bir tamsayıdır.
+\
+Eğer $n=6k+1$ ise, çift olan ve sadece bir asal böleni olan $6k+2$ sayısı $2^m$ formunda olmalıdır; şimdi, $n > 7$ olması $6k+2 = n+1 > 8$'i gerektirdiğinden, $m$ sayısı $> 3$ olmalıdır. $n+2 = 6k+3$ sayısı 3 ile bölünebilir ve eğer sadece bir asal böleni varsa, $3^s$ formunda olmalıdır. $6k+3 = n+2 > 9$ olduğundan, $s$ sayısı $> 2$ olmalıdır. Dahası, $3^s - 2^m = 1$ elde ederiz; ancak bu denklemin sadece iki tamsayı çözümü vardır, bunlar $s=1$ ve $s=2, m=3$'tür (bkz. Problem 185).
+\ 
+Eğer $n=6k+2$ ise, $n=2^m$ ve $n+1 = 6k+3 = 3^s$ olur, burada $m > 2$'dir ($n > 6$ olduğundan). $3^s - 2^m = 1$ elde ederiz, bu da $m > 3$ için imkansızdır.
+\
+Son olarak, eğer $n=6k+3$ ise, $n=3^s$, $n+1=2^m$ olur ve $n > 7$ göz önüne alındığında $s \ge 2, m > 3$ elde ederiz, halbuki $2^m - 3^s = 1$ denkleminin tek bir tamsayı çözümü vardır, o da $m=2, s=1$'dir (bkz. Problem 184).
+\ 
+Dolayısıyla, $n > 7$ tamsayısı için $n, n+1$ ve $n+2$ sayılarından hiçbirinin birden fazla asal böleni olmadığı varsayımı bir çelişkiye yol açtı. Öte yandan, $n=7$ için $n+1=2^3$, $n+2=3^2$ olur ve $n, n+1$ ve $n+2$ sayılarının her birinin sadece bir asal böleni vardır.
+
+89. $n, n + 1, n + 2$ sayılarından her biri birbirinden farklı iki asal sayının çarpımına eşit olacak şekilde beş en küçük pozitif tam sayıyı bulunuz. Bu özellikle sahip olan dört ardışık sayı dizisini bulunmadığını kanıtlayınız. Her birinin tam iki asal böleni bulunan dört ardışık pozitif tam sayıyı bulunuz.[^89]
+
+[^89]: $n = 33$ ($n = 3 \cdot 11, n+1 = 2 \cdot 17, n+2 = 5 \cdot 7$),
+$n = 85$ ($n = 5 \cdot 17, n+1 = 2 \cdot 43, n+2 = 3 \cdot 29$),
+$n = 93$ ($n = 3 \cdot 31, n+1 = 2 \cdot 47, n+2 = 5 \cdot 19$),
+$n = 141$ ($n = 3 \cdot 47, n+1 = 2 \cdot 71, n+2 = 11 \cdot 13$),
+$n = 201$ ($n = 3 \cdot 67, n+1 = 2 \cdot 101, n+2 = 7 \cdot 29$).
+Her biri iki farklı asal sayının çarpımı olan dört ardışık pozitif tamsayı yoktur, çünkü her dört ardışık sayıdan biri 4 ile bölünmek zorundadır. Her biri tam olarak iki farklı asal bölene sahip olan dört ardışık pozitif tamsayıya bir örnek $33 = 3 \cdot 11, 34 = 2 \cdot 17, 35 = 5 \cdot 7, 36 = 2^2 \cdot 3^2$ sayılarıdır.
+\
+**NOT**. $n$, $n+1$ ve $n+2$ sayılarının her birinin iki farklı asal sayının çarpımı olduğu sonsuz çoklukta $n$ pozitif tamsayısının var olduğunu kanıtlayamıyoruz; bu, A. Schinzel'in asallarla ilgili belirli bir konjektüründen çıkmaktadır. Bkz. [@schinzel1958certaines, s. 197, sonuç $C_7$].
+
+90. Aşağıdaki teoremlerin birbirine denk olduğunu gösteriniz:[^90]
+
+   (a) $n$ ve $n + 1$ sayılarının her birinin sadece bir asal böleni olmasını sağlayan $n$ pozitif tam sayıları sonlu sayıdadır.
+
+   (b) Sadece sonlu sayıda Mersenne asal sayıları ve sonlu sayıda Fermat asal sayıları vardır.
+
+[^90]: Hem $n$ hem de $n+1$'in sadece bir asal böleni olduğu sonsuz çoklukta $n$ pozitif tamsayısının var olduğunu varsayalım. $n > 1$ olduğunu varsayabiliriz ve $n$ ile $n+1$ sayılarından biri çift, diğeri tek olduğundan, $k$ ve $m$ pozitif tamsayılar olmak üzere, $p^k - 2^m = \pm 1$ gibi bir tek $p$ asalı için $n$ ve $n+1$ sayıları $p^k$ ve $2^m$ (ya da tam tersi) olmalıdır. Dolayısıyla $p^k = 2^m \pm 1$ elde ederiz. Bir Mersenne sayısı $> 1$ herhangi bir asal sayının 1'den büyük üslü bir kuvvetine eşit olamayacağından (bkz. [@sierpinski1964elementary, s. 335, teorem 2]), $p^k = 2^m - 1$ durumunda $k=1$ olmalıdır ve $2^m - 1 = p$ bir Mersenne asalıdır.
+\ 
+Öte yandan, eğer $p^k = 2^m + 1$ ise, ya $k=1$'dir, bu durumda $p = 2^m + 1$ ya 3'tür (eğer $m > 1$ ise) ya da bir Fermat asalıdır, ya da $k > 1$'dir, bu durumda $2^m = p^k - 1 = (p-1)(p^{k-1} + p^{k-2} + \dots + 1)$ elde ederiz. Sol taraf çift olduğundan, $k$ sayısı çift olmalıdır; dolayısıyla $k = 2l$, burada $l$ pozitif bir tamsayıdır, ve $2^m = (p^l - 1)(p^l + 1)$ yazabiliriz. Bu nedenle $p^l - 1$ ve $p^l + 1$ sayıları, aralarındaki fark 2 olan $2$'nin kuvvetleridir, bu da $p^l - 1 = 2$, $p^l + 1 = 4$'ü gerektirir, buradan $p^l = 3$ ve $p=3$, $l=1$ bulunur, $m = 3$ olur, bu da $3^2 = 2^3 + 1$ sonucunu verir.
+\
+Böylece, $n > 8$ için $n$ ve $n+1$ sayılarının her birinin bir asal böleni varsa, $n$'in bir Mersenne asalı veya $n+1$'in bir Fermat asalı olduğunu kanıtladık.
+\
+Tersine, eğer $M_m = 2^m - 1$ bir Mersenne asalı ise, $M_m$ ve $M_m + 1 = 2^m$ sayılarının her birinin bir asal böleni vardır. Eğer $F_k = 2^{2^k} + 1$ bir Fermat asalı ise, $F_k - 1 = 2^{2^k}$ ve $F_k$ sayılarının her birinin bir asal böleni vardır, bu da teoremimizin kanıtını tamamlar. Bkz. [@sierpinski1958question, s. 209].
+\
+**NOT**. Bugüne kadar, $n$ ve $n+1$'in her birinin bir asal böleni olduğu sadece 29 tane $n$ pozitif tamsayısı bilinmektedir. En küçük beşi 2, 3, 4, 7, 8 olup en büyüğü $n = 2^{11213}-1$'dir.
+
+91. $n$ pozitif tam sayı olmak üzere milyonlarca büyük olmayan ve iki asal sayının çarpımına eşit olan tüm $2^n - 1$ şeklinde olan sayıları bulunuz. Eğer $n$ çift ise ya da $n > 4$'ten büyükse, $2^n - 1$ sayısının 1’den büyük en az üç asal sayının çarpımı şeklinde gösterilebileceğini kanıtlayınız.[^91]
+
+[^91]: $2^{2}-1=3$, $2^{4}-1=3\cdot5$ ve $2^{2k}-1=(2^{k}-1)(2^{k}+1)$ eşitliklerine sahibiz. Eğer $n=2k>4$ için $2^{2k}-1$ sayısı iki asalın çarpımına eşit olsaydı, o zaman $2^{k}-1$ ve $2^{k}+1$ sayılarının da asal olması gerekirdi.
+ Bunlar 
+ ardışık tek sayılar olduğundan, $2^{k}-1\le5$ olmalıdır, bu da $k\le2$ demektir.
+ $k>1$ olduğundan, $k=2$ olmalıdır, bu da $k>2$ varsayımıyla çelişir. Bu nedenle, $n$ çift ve $>4$ için $2^{n}-1$ sayıları, en az üç doğal sayının çarpımına eşittir.
+ Tek $n$ için, $2^{3}-1=7$, $2^{5}-1=31$, $2^{7}-1=127$, $2^{9}-1=7\cdot73$, $2^{11}-1=23\cdot89$, $2^{13}-1=8191$ (ki bu bir asaldır), $2^{15}-1=7\cdot31\cdot151$, $2^{17}-1$ ve $2^{19}-1$ sayıları asaldır ve $2^{21}-1=7\cdot127\cdot337$, $2^{23}-1$ ise zaten $>10^{6}$'dır.
+ Böylece, $2^{n}-1$ formunda olup $<10^{6}$ olan ve iki asalın çarpımına eşit olan tüm pozitif tam sayılar $2^{4}-1=3\cdot5$, $2^{9}-1=7\cdot73$ ve $2^{11}-1=23\cdot89$'dur.
+ \
+ **NOT.** Milyonu aşan ve iki farklı asalın çarpımı olduğu bilinen Mersenne sayıları, $n = 23, 37, 49, 67$ ve $101$ için $M_{n}=2^{n}-1$ sayılarıdır. Bu tür sayıların sonsuz sayıda olup olmadığını bilmiyoruz.
+
+92.  Problem 47'yi kullanarak, $p_n$, $n$. asal sayıyı göstermek üzere,her $n \geq 3$ için $p_{n+1} + p_{n+2} \leq p_1 \cdot p_2 \cdot \cdots \cdot p_n$ eşitsizliğinin doğru olduğunu kanıtlayınız.[^92]
+
+[^92]: $k\ge3$ olduğundan, $p_{1}p_{2}...p_{k}\ge p_{1}p_{2}p_{3}=2\cdot3\cdot5>6$ olur ve Problem 47 uyarınca, $a$ ve $b$ sayıları $> 1$ ve aralarında asal olmak üzere $p_{1}p_{2}\dots p_{k}=a+b$'dir, dolayısıyla $p_{1}p_{2}\dots p_{k}$ çarpımıyla da aralarında asaldır.
+\
+$a$ ve $b >1$ olduğundan, farklı asal bölenleri vardır; $p\mid a$ ve $q\mid b$ olsun, $p<q$ olduğunu varsayalım.
+$(p,p_{1}p_{2}...p_{k})=1$ olduğundan, $p\ge p_{k+1}$ olur ve $q>p$ nedeniyle $q\ge p_{k+2}$ olur.
+Bu nedenle $p+q\le a+b$'dir ve kanıtlanması istendiği gibi $p_{k+1}+p_{k+2}\le p_{1}p_{2}...p_{k}$ eşitsizliğine sahibiz.
+
+93. $n$ pozitif tam sayısı için $q_n$ ile, $n$'nin böleni olmayan en küçük asal sayıyı gösterelim. 92. problemi kullanarak $\lim_{n \to \infty} \frac{q_n}{n} = 0$ olduğunu kanıtlayınız.[^93]
+
+[^93]: $m$, $>3$ olan keyfi bir tam sayıyı göstersin ve $n$, $n>p_{1}p_{2}...p_{m}$ koşulunu sağlayan bir tam sayı olsun.
+ O zaman $k\ge m\ge4$ olacak şekilde bir $k$ tam sayısı vardır, öyle ki
+ $$p_{1}p_{2}...p_{k}\le n<p_{1}p_{2}...p_{k}p_{k+1}. \qquad \qquad (1)$$
+ Eğer $q_{n}\ge p_{k+1}+1>p_{k+1}$ olsaydı, o zaman $q_{n}$ sayısının tanımı gereği $p_{1},p_{2},...,p_{k+1}$ sayılarının her biri $n$'in bir böleni olurdu, dolayısıyla (1) ile çelişecek şekilde  $n \ge p_{1}p_{2}...p_{k+1}$ olurdu.
+ Bu nedenle $q_{n}<p_{k+1}+1<p_{k}+p_{k+1}$ eşitsizliğine sahibiz ve $k\ge4$ ile Problem 92 uyarınca $q_{n}\le p_{1}p_{2}...p_{k-1}$ elde ederiz, bu da (1) kullanılarak şu ilişkiyi verir:
+ $$\frac{q_{n}}{n}<\frac{1}{p_{k}}\le\frac{1}{k}\le\frac{1}{m}$$
+ Keyfi bir $m>3$ için $n>p_{1}p_{2}...p_{m}$ olduğunda $q_{n}/n<1/m$ olduğunu kanıtladık, bu da $n$ sonsuza giderken $q_{n}/n$ oranının sıfıra yaklaştığını gösterir, ki bu da kanıtlanması istenen şeydi.
+
+94. Her $n > 4$ tam sayısı için $n$ ile $2n$ arasında birbirinden farklı iki asal sayının çarpımına eşit olan en az bir tam sayının bulunduğunu ve her $n > 15$ tam sayısı için $n$ ile $2n$ arasında, birbirinden farklı üç asal sayının çarpımına eşit olan en az bir sayı bulunduğunu kanıtlayınız.[^94]
+
+[^94]: $n$, $>4$ olan bir tam sayı olsun. Ya $n=2k$ (burada $k>2$)
+ ya da $n=2k+1$ (burada $k>1$) olur. Eğer $n=2k$ (burada $k>2$) ise, Chebyshev teoremine göre $k<p<2k$ olacak şekilde bir $p$ asalı vardır ve $p>k>2$ olduğundan $p>2$ olur. Böylece $n=2k<2p<4k=2n$ olur ve $p>2$ olduğundan $2p$ sayısı iki farklı asalın çarpımıdır ve $n<2p<2n$ eşitsizliği sağlanır. Eğer  $n=2k+1$ (burada $k\ge2$) ise, Chebyshev teoremine göre $k<p<2k$ olacak şekilde bir $p$ asalı vardır, dolayısıyla $3\le k+1\le p<2k$ ve $n=2k+1<2k+2\le2p<4k<4k+2=2n$ olur, ve yine $n<2p<2n$ eşitsizliğini elde ederiz, $2p$ ise iki farklı asalın çarpımıdır.
+ Şimdi $n>15$  bir tam sayı olsun. Eğer $n=16,17,...,29$ ise,  $30=2\cdot3\cdot5$ sayısı $n$ ile $2n$ arasında yer alır.
+ Bu nedenle $n\ge30$ olduğunu varsayabiliriz. O halde $n=6k+r$'dir, burada $k$, $\ge5$ olan bir tam sayıdır ve $r$, $n$'in 6'ya bölünmesinden elde edilen kalandır, yani $r$, $0\le r\le5$ eşitsizliğini sağlar. Chebyshev teoremine göre, $k<p<2k$ olacak şekilde bir $p$ asalı vardır, dolayısıyla $p>5$ ve $k+1\le p<2k$ olur.
+ Buradan $n=6k+r<6(k+1)\le2\cdot3\cdot p <12k\le2n$ sonucu çıkar, dolayısıyla $n<2\cdot3\cdot p<2n$ olur ve $2\cdot 3\cdot p$ üç farklı asalın çarpımıdır.
+
+95. Her $s$ pozitif tam sayısı için, yeterince büyük $n$'ler için $n$ ile $2n$ arasında $s$ tane birbirinden farklı asal sayının çarpımına eşit olan en az bir sayı bulunduğunu kanıtlayınız.[^95]
+
+[^95]: $p_{k}$, k-ıncı ardışık asalı göstersin ve $s$, $>1$ olan keyfi bir tam sayı olsun. $n>p_{1}p_{2}...p_{s}$ olsun.
+ $n$ ile $2n$ arasında $s$ farklı asalın çarpımı olan en az bir pozitif tam sayı bulunduğunu göstereceğiz.
+ $n=kp_{1}p_{2}...p_{s-1}+r$ olsun; burada $r$, $n$'in $p_{1}p_{2}...p_{s-1}$ ile bölünmesinden elde edilen kalandır, dolayısıyla $n>p_{1}p_{2}...p_{s}$ olduğundan, $k>p_{s}$ ve $0\le r <p_{1}p_{2}...p_{s-1}$ olur.
+ Chebyshev teoremine göre, $k<p<2k$ olacak şekilde bir $p$ asalı vardır, dolayısıyla $p>p_{s}$ ve $k+1\le p<2k$ olur.
+ Buradan $n= p_{1}p_{2}...p_{s-1}k+r<p_{1}p_{2}...p_{s-1}(k+1)\le p_{1}p_{2}...p_{s-1}p<2p_{1}p_{2}...p_{s-1}k\le2n$ sonucu çıkar, dolayısıyla $n<p_{1}p_{2}...p_{s-1}p<2n$ olur. $p_{1}p_{2}...p_{s-1}p$ sayısı, $p>p_{s}$ olduğundan, $s$ farklı asalın çarpımına eşittir.
+ \
+ **NOT.** Chebyshev teoreminin elementer bir kanıtı Sierpiński [37, s. 137, teorem 8]'de verilmiştir.
+
+96. $1, 31, 331, 3331, \dots$ sonsuz dizisinde sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız ve bunlardan en küçüğünü bulunuz.[^96]
+
+[^96]: Dizimizin $n$-inci teriminin $\frac{1}{3}(10^{n}-7)$'ye eşit olduğunu kolayca kontrol edebiliriz. $10^{2}\equiv15\equiv-2\pmod{17}$ olur, dolayısıyla $10^{8}\equiv16\equiv-1$  olur.
+Böylece $10^{9}\equiv-10\equiv7\pmod{17}$ ve $10^{16}\equiv1 \pmod{17}$  olduğundan, $k=0,1,2,...$ için $10^{16k+9} \equiv7 \pmod{17}$  elde ederiz. Dolayısıyla $17\mid \frac{1}{3}(10^{16k+9}-7)$ olur ve $k=0,1,2,...$ için $\frac{1}{3}(10^{16k+9}-7)$ sayıları $\ge\frac{1}{3}(10^{9}-7)>17$ olduğundan, hepsi bileşik sayıdır.
+A. Mąkowski tarafından asal sayı tablolarında kontrol edildiği üzere, $\frac{1}{3}(10^{n}-7)$ sayıları $n=1,2,3,4,5,6,7$ ve $8$ için asaldır. Bu formdaki en küçük bileşik sayı bu nedenle $\frac{1}{3}(10^{9}-7)=33333331$'dir.
+Bulduklarımız dışında, ele alınan formda başka bileşik sayılar olup olmadığı sorusu ortaya çıkmaktadır.
+$10^{2}\equiv5(mod~19)$ olur, dolayısıyla $10^{4}\equiv25\equiv6 \pmod{19}$  ve $10^{12}\equiv6^{3}\equiv7\pmod{19}$  olur ve $10^{18k} \equiv1\pmod{19}$  olduğundan, $k=0,1,2,...$ için $19\mid \frac{1}{3}(10^{18k+12}-7)$ elde ederiz. Örneğin, $\frac{1}{3}(10^{12}-7)$ sayısı bileşiktir.
+Ancak, yukarıda verilenler dışında bu formda başka asal olup olmadığını ve eğer varsa, sonsuz sayıda olup olmadıklarını bilmiyoruz.
+
+97. $n^4 + (n + 1)^4$ sayısının bileşik olmasını sağlayan en küçük $n$ pozitif tam sayısını bulunuz.[^97]
+
+[^97]: Sayı $n=5$'tir, çünkü $1^4+2^4=17$, $2^4+3^4=97$, $3^4+4^4=337$ ve $4^4+5^4=881$ asal iken, $5^4+6^4=1921=17 \cdot 113$'tür.
+
+
+98. $10^n + 3$ $(n = 1, 2, 3, \dots)$ şeklinde olan sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız.[^98]
+
+[^98]: $k=0, 1, 2, \dots$ olmak üzere $10^{6k+4}+3$ biçimindeki tüm sayılar 7 ile bölünebildikleri için bileşiktir. Gerçekten de, $10^4 \equiv 4 \pmod{7}$'dir ve Fermat teoremine göre $10^6 \equiv 1 \pmod{7}$'dir. Böylece, $k$ tamsayısı için $10^{6k+4}+3 \equiv 10^{6k} \cdot 10^4 + 3 \equiv 1^k \cdot 4 + 3 \equiv 4+3 \equiv 0 \pmod{7}$ olur.
+\
+**NOT.** $n=1, 2, \dots$ için $10^n+3$ biçimindeki sayılar arasında sonsuz çoklukta asal sayı olup olmadığını bilmiyoruz. Bu tür sayılar $n=1$ ve $n=2$ için asaldır, ancak $n=3$ ve $n=4$ için bileşiktir (çünkü $1003=17 \cdot 59$ ve $7\mid 10^4+3$).
+
+99. $n > 1$ tam sayıları için $\dfrac{2^{4n+2} + 1}{5}$ sayısının bileşik olduğunu kanıtlayınız.[^99]
+
+[^99]: $n$ tamsayısı için
+$$2^{4n+2}+1 = (2^{2n+1}-2^{n+1}+1)(2^{2n+1}+2^{n+1}+1). \quad (1)$$
+özdeşliğine sahibiz. $5\mid 2^2+1$ olduğundan ve $n>1$ tamsayısı için $2^{2n+1}-2^{n+1}+1 = 2^{n+1}(2^n-1)+1 \ge 2^3 \cdot (2^2-1)+1 = 25$ olduğundan, sağ taraftaki çarpanlardan en az birinin 5 ile bölünebildiği ve ($n>1$ için) 5'e bölündüğünde birden büyük bir bölüm verdiği sonucu çıkar. Bu nedenle $\frac{1}{5}(2^{4n+2}+1)$, $n=1, 2, \dots$ için, 1'den büyük iki tamsayının çarpımına eşittir, dolayısıyla bileşiktir.
+
+100. Her $m$ pozitif tam sayısı için $2^n - 1$ $(n = 1, 2, 3, \dots)$ sonsuz dizisinin, bileşik sayılardan oluşan $m$ ardışık teriminin bulunduğunu kanıtlayınız.[^100]
+
+[^100]: $m > 1$ keyfi bir tamsayı olsun ve $k=2, 3, \dots, m$ olmak üzere $n=m!+k$ olsun. $k < m!+k$ ve $k\mid m!+k$'dir, buradan $2^k-1 < 2^{m!+k}-1$ ve $2^k-1 \mid  2^{m!+k}-1$ elde edilir. Böylece $2^{m!+k}-1$ sayıları $k=2, 3, \dots, m$ için, dolayısıyla $2^n-1$ dizisinin ardışık $m-1$ terimi için bileşiktir.
+
+
+
+101. Bir basamağı değiştirilerek bir asal sayı elde edilemeyen bir pozitif tam sayı bulunduğunu gösteriniz.[^101]
+
+[^101]: 200 sayısından bir asal sayı elde etmek için, son basamağını tek bir sayı ile değiştirmek gerekir. Ancak, $3\mid 201$, $7\mid 203$, $5\mid 205$, $3\mid 207$ ve $11\mid 209$'dur. Böylece, sadece bir basamağı değiştirerek 200 sayısından bir asal sayı elde edilemez.
+\
+**NOT.** İki basamağı değiştirerek her sayıdan bir asal sayı elde edilip edilemeyeceğini bilmiyoruz. Öte yandan, (ondalık) basamaklarından hiçbirinin değiştirilmesinin bir asal sayı ile sonuçlanmayacağı sonsuz çoklukta pozitif $n$ tamsayısının var olduğunu kanıtlamak kolaydır. Örneğin, $n = 2310k-210$ ($k=1, 2, \dots$) için, son basamağını (yani 0'ı), (açıkça 1, 3, 7 veya 9 sayılarından birine) değiştirmemiz gerekirdi; ancak $11\mid n+1$, $3\mid n+3$, $7\mid n+7$ ve $3\mid n+9$ olduğunu görmek kolaydır.
+
+102. Aşağıdaki teoremlerin birbirine denk olduğunu kanıtlayınız:[^102]
+
+(a) **T.** Her $n > 1$ tam sayısı için $n$ ile $2n$ arasında en az bir asal sayı bulunur.
+
+(b) **T1.** Her $n > 1$ tam sayısı için $n!$ sayısının asal çarpanlarına ayrılışında üstü bir olan en az bir asal sayı bulunur.
+
+[^102]: T teoreminin doğru olduğunu varsayalım. T1 teoremi $n=2$ ve $n=3$ için açıkça doğrudur. $n > 3$ bir tamsayı olduğunu varsayalım. Eğer $n$ çift ise, yani $n=2k$, o zaman $n>3$ olduğundan, $k>1$'dir ve T teoremine göre $k < p < 2k$ olacak şekilde bir $p$ asalı vardır, buradan $p < 2k = n < 2p$ olur ve $p$, $n! = 1 \dots n$ çarpımındaki sadece bir çarpanı böler. Eğer $n=2k+1$ ise ($n>1$ olduğundan) $k > 1$ bir tamsayıdır, o zaman T teoremine göre $k < p < 2k < n$ olacak şekilde bir $p$ asalı vardır, buradan $k+1 \le p$ olur ki bu da $2k+1 < 2p$ ve $p < n < 2p$ anlamına gelir. Önceki gibi, $p$, $n!$'in asal açılımına 1 üssü ile girer. Dolayısıyla, T'nin T1'i gerektirdiğini gösterdik.
+\
+Şimdi T1'in geçerli olduğunu varsayalım ve $n > 1$ bir tamsayıyı göstersin. T1 teoremine göre, $(2n)!$'in asal açılımına 1 üssü ile giren bir $p$ asalı vardır. Dolayısıyla, $p \le 2n < 2p$'ye sahibiz (çünkü eğer $2p \le 2n$ olsaydı, o zaman $(2n)! = 1 \cdot 2 \dots (2n-1)2n$ çarpımında $p$ ve $2p$ çarpanlarına sahip olurduk ve $p$, T1 teoreminin aksine $\ge 2$ üssü ile girerdi). Dolayısıyla, $n < p < 2n$'ye sahibiz ($n>1$ olduğundan, $p=2n$ denklemi asal $p$ için imkansızdır). Böylece, T teoremi T1 teoreminden çıkar, bu da T ve T1'in denk olduğunu gösterir.
+
+
+
+103. Her $n$ pozitif tam sayısı için $n!$ sayısının asal çarpanlarına ayrımında kuvveti 1 olan en az iki asal sayı bulunur.[^103]
+
+[^103]: $11!$'in asal açılımında, 7 ve 11 asalları açıkça 1 üsleriyle yer alır. Bu nedenle, $n > 11$ olduğunu varsayabiliriz; bu da $n=2k$ durumunda olduğu gibi $n=2k+1$ durumunda da $k > 5$ olmasını gerektirir. Kullanacağımız teoreme göre, $k < p < q < 2k$ olacak şekilde iki $p$ ve $q>p$ asalı vardır. Dolayısıyla en azından $p < q < n$ ve $p \ge k+1$ elde ederiz, bu da $2q > 2p \ge 2k+2 > n$ anlamına gelir. Böylece, hem $p$ hem de $q$ asalları $n!$'in açılımına 1 üssü ile girer.
+\
+$10!$ sayısına gelince, sadece 7 asalı açılımına 1 üssü ile girer.
+
+104. Her $n$ pozitif tam sayısı için, $p - 1$ ve $p + 1$ sayılarının her birinin en az $n$ tane pozitif tam böleni olacak şekilde bir $p$ asal sayısı bulunduğunu kanıtlayınız.[^104]
+
+[^104]: $n$ verilmiş bir pozitif tamsayı olsun. Lejeune-Dirichlet'nin aritmetik diziler üzerine teoremine göre, $k$ pozitif bir tamsayı olmak üzere $p = 6^{k}k!+2 \cdot 3^{2^{k-1}}-1$ biçiminde bir asal sayı vardır. (Pozitif $n$ tamsayısı için $2^{k-1} \ge n$ olduğu göz önüne alındığında) buradan $3^n\mid p+1$ olduğu ve $p+1$ sayısının $n$'den fazla farklı pozitif tamsayı bölenine (örneğin, $1, 3, 3^2, \dots, 3^n$) sahip olduğu sonucu çıkar. Öte yandan, Euler teoremine göre $3^{\phi(2^n)} \equiv 1 \pmod{2^n}$'dir, buradan $2^n\mid 3^{2^{n-1}}-1$ gelir, bu da $2^n\mid p-1$ olduğunu ve $p-1$ sayısının $n$'den fazla farklı pozitif tamsayı bölenine (örneğin, $1, 2, 2^2, \dots, 2^n$) sahip olduğunu gösterir.
+
+
+105. $p - 1$ ve $p + 1$ sayılarından her birinin en az 3 farklı asal böleni bulunacak şekilde en küçük $p$ asal sayısını bulunuz.[^105]
+
+[^105]: $p=131$. Burada $p-1 = 2 \cdot 5 \cdot 13$ ve $p+1 = 2^2 \cdot 3 \cdot 11$'e sahibiz.
+
+106. Her $n$ pozitif tam sayısı için, $p - 1$, $p + 1$ ve $p + 1$ sayılarının her birinin en az $n$ tane farklı asal böleni olacak şekilde sonsuz sayıda $p$ asal sayısının bulunduğunu kanıtlayınız.[^106]
+
+[^106]: $n$ verilmiş bir pozitif tamsayı olsun ve $p_i$, $i$. asalı göstersin. Çin kalan teoremine göre, $b \equiv 1 \pmod{p_1p_2\dots p_n}$, $b \equiv -1 \pmod{p_{n+1}p_{n+2}\dots p_{2n}})$ ve $b \equiv -2 \pmod{p_{2n+1}p_{2n+2}\dots p_{3n}})$ olacak şekilde pozitif bir $b$ tamsayısı vardır.
+$(b, p_1p_2\dots p_{3n}) = 1$'dir ve Dirichlet teoremine göre, $p = p_1p_2\dots p_{3n}k+b$ sayısının bir asal olmasını sağlayan pozitif bir $k$ tamsayısı vardır. Bu durumda
+$$p_1p_2\dots p_n \mid  p-1, \quad p_{n+1}p_{n+2}\dots p_{2n} \mid  p+1, \quad \text{ve} \quad p_{2n+1}p_{2n+2}\dots p_{3n} \mid  p+2$$
+olur, dolayısıyla $p-1$, $p+1$ ve $p+2$ sayılarının her biri en az $n$ farklı asal bölene sahiptir.
+
+107. Her $n$ ve $s$ pozitif tam sayıları için, her biri terimlerinin en az $n$ farklı asal böleni olacak ve bu asal sayılardan her birinin kuvveti en az $s$ olacak şekilde istenilen uzunlukta ardışık sayılar dizisinin bulunduğunu kanıtlayınız.[^107]
+
+[^107]: $p_k$, $k$. asalı göstersin. Pozitif $n, s$ ve $m$ tamsayıları için, $j=1, 2, \dots, m$ olmak üzere
+$$a_j = p_{j(s-1)n+1}p_{j(s-1)n+2}\dots p_{jsn}$$
+yazalım. $1 \le i < j \le m$ için $(a_i, a_j) = 1$'dir ve Çin kalan teoremine göre, $j=1, 2, \dots, m$ için
+$$x \equiv -j \pmod{a_j}$$
+olacak şekilde pozitif bir $x$ tamsayısı vardır.
+Böylece $j=1, 2, \dots, m$ için $a_j\mid x+j$'ye sahibiz, bu da $x+j$ sayılarının ($j=1, 2, \dots, m$) her birinin en az $n$ farklı asal böleni olduğunu ve bu bölenlerin her birinin en az $s$. kuvvette göründüğünü gösterir. Bu nedenle $x+1, x+2, \dots, x+m$ dizisi gerekli koşulları sağlar.
+
+108. $n > 1$ tek sayısı için $n$ ve $n + 2$ sayılarının sayılarının asal olması için, $(n - 1)!$ sayısının $n$ ve $n + 2$ sayılarıyla bölünmemesinin gerek ve yeterli olduğunu kanıtlayınız.[^108]
+
+[^108]:  Eğer pozitif bir $m$ tamsayısı için $m!$ sayısı bir $p$ asalı ile bölünüyorsa, o zaman $p$, $m! = 1 \cdot 2 \cdot \dots \cdot m$ çarpımındaki çarpanlardan en az birini bölmelidir, dolayısıyla $p \le m$ olmalıdır. Böylece, eğer $m!$ sayısı $n > m$ olan bir $n$ tamsayısı ile bölünüyorsa, $n$ bileşik olmalıdır. Buradan şu sonuç çıkar ki, eğer bir $n > 1$ tamsayısı için $(n-1)!$ sayısı $n$ veya $n+2$ ile bölünebilseydi, o zaman $n$ veya $n+2$ bileşik olurdu. Böylece, koşul gereklidir.
+\
+Şimdi tek bir $n > 1$ için $(n-1)!$ sayısının $n$ veya $n+2$ ile bölünmediğini varsayalım. $n$ ve $n+2$ sayılarının asal olduğunu göstereceğiz. $n=3$ ve $n=5$ için $n$ ve $n+2$ sayıları asal olduğundan $n \ge 7$ olduğunu varsaymak yeterlidir. Eğer $n$ bileşik olsaydı, $n=ab$ olurdu; burada $a$ ve $b$, $n$'den küçük pozitif tamsayılardır, dolayısıyla $a \le n-1$ ve $b \le n-1$'dir. Böylece $a$ ve $b$, $(n-1)! = 1 \cdot 2 \cdot \dots \cdot (n-1)$ çarpımında çarpan olarak görünürdü. $a \ne b$ durumunda, varsayımın aksine $n=ab\mid (n-1)!$ olurdu. $a=b$ durumunda, $n=a^2$ olurdu ve $n$ tek ve $> 1$ olduğundan, $a \ge 3$ olurdu, bu da $n = a^2 \ge 3a > 2a$ anlamına gelir, dolayısıyla $2a \le n-1$'dir. Böylece $a$ ve $2a$, $(n-1)! = 1 \cdot 2 \cdot \dots \cdot (n-1)$ çarpımında farklı çarpanlardır, dolayısıyla varsayımın aksine $n=a^2\mid (n-1)!$ olur. Böylece, $n$ bir asaldır.
+\
+Eğer $n+2$ sayısı bileşik olsaydı, $n+2 = ab$ olurdu; burada $a$ ve $b$, $1$'den büyük tamsayılardır. $n$ tek olduğundan, $a$ ve $b$ sayıları tektir ve bu nedenle $\ge 3$'tür. Ardından, $n \ge 7$ olduğundan, $a \le \frac{1}{3}(n+2) \le \frac{1}{2}(n-1)$'e sahibiz ve $2a \le n-1$'e sahibiz. Benzer şekilde $2b \le n-1$ olduğunu gösteririz. Eğer $a$ ve $b$ farklıysa, o zaman $1 \cdot 2 \cdot \dots \cdot (n-1) = (n-1)!$ çarpımında farklı çarpanlar olarak görünürler, bu da varsayımın aksine $n+2 = ab\mid (n-1)!$ anlamına gelir. Eğer $a=b$ ise, o zaman $a$ ve $2b$ $(n-1)!$ çarpımında farklı çarpanlardır, dolayısıyla $n+2\mid 2ab\mid (n-1)!$, yine varsayımın aksinedir.
+\
+Bu nedenle teoremin koşulu yeterlidir.
+
+109. Her $m$ pozitif tam sayısı için basamakları toplamı 10’dan büyük olan bir asal sayı bulunduğunu kanıtlayınız.[^109]
+
+[^109]: $m$ pozitif bir tam sayı olsun. $(10^m, 10^m−1) = 1$ olduğunu biliyoruz ve aritmetik dizi teoremine göre, $p = 10^m k + 10^m − 1$ asal olacak şekilde bir $k$ pozitif tam sayısı vardır. Açıkça, bu sayının son $m−1$ basamağı 9'a eşittir, bu da bu sayının tüm rakamlarının toplamının $m$ olduğunu gösterir.
+\
+**NOT.** A. Mąkowski, teoremin $g > 1$ olan keyfi bir gösterim tabanı için de geçerli kaldığını fark etmiştir; ispat için, yukarıdaki ispatta 10 sayısını $g$ ile değiştirmek yeterlidir.
+Bkz. Sierpiński [31] ve Erdős [8].
+Asal sayı artarken, bir asalın rakamları toplamının sonsuza gidip gitmediğini bilmiyoruz.
+
+
+
+
+110. Her $n$ pozitif tam sayısı için en az $m$ basamağı 0 olan asal sayılar bulunduğunu kanıtlayınız.[^110]
+
+[^110]: $m$ pozitif bir tam sayı olsun. $(10^{m+1}, 1) = 1$ olduğundan, aritmetik dizi teoremine göre, $p = 10^{m+1}k + 1$ asal olacak şekilde bir $k$ pozitif tam sayısı vardır. $p$ sayısının son $m$ basamağı, açıkça, $m$ adet sıfır ve birdir. Böylece, ondalık sistemdeki $p$ asalı en az $m$ adet sıfıra sahiptir, ki bu da kanıtlanması gereken şeydi.
+\
+**NOT.** Her $m$ pozitif tam sayısı için, ondalık sistemde tam olarak $m$ adet sıfıra sahip bir asal sayının var olup olmadığını bilmiyoruz. $m = 1$ için, bu tür en küçük asal 101'dir; $m = 2$ için ise 1009'dur.
+
+111. $p^4$ sayısının tüm pozitif tam bölenlerinin toplamı tam kare olacak şekilde olan tüm asal sayıları bulunuz.[^111]
+
+[^111]: Eğer $p$ bir asal sayı ise, $p^4$'ün tüm pozitif tamsayı bölenlerinin toplamı $1+p+p^2+p^3+p^4$'e eşittir. Eğer $n$ pozitif bir tamsayı olmak üzere $1+p+p^2+p^3+p^4 = n^2$ ise, o zaman açıkça $(2p^2+p)^2 < (2n)^2 < (2p^2+p+2)^2$'ye sahibiz ve buradan $(2n)^2 = (2p^2+p+1)^2$ olması gerektiği sonucu çıkar. Böylece, $4n^2 = 4p^4+4p^3+5p^2+2p+1$'dir ve $4n^2 = 4(p^4+p^3+p^2+p+1)$ olduğundan, $p^2-2p-3=0$ elde ederiz, bu da $p\mid 3$ anlamına gelir, dolayısıyla $p=3$'tür. Gerçekten de, $p=3$ için $1+3+3^2+3^3+3^4 = 11^2$ elde ederiz. Dolayısıyla, problemin koşullarını sağlayan sadece bir $p$ asalı vardır, o da $p=3$'tür.
+
+
+
+112. $2 \leq s \leq 10$ olmak üzere her $s$ için pozitif tam bölenlerinin toplamı bir tam sayının $s$. dereceden kuvvetine eşit olan asal sayıları bulunuz.[^112]
+
+[^112]: Bir $p$ asal sayısının sadece iki pozitif tamsayı böleni vardır, yani 1 ve $p$. Böylece, bir $p$ asalının tüm pozitif tamsayı bölenlerinin toplamı, bir $n$ pozitif tamsayısının $s$. kuvvetine eşitse, o zaman $1+p = n^s$'dir, bu da
+$$p = n^s-1 = (n-1)(n^{s-1}+n^{s-2}+\dots+1)$$
+anlamına gelir.
+$n>1$'e sahibiz ve $s \ge 2$ için sağdaki çarpımın ilk çarpanı ikincisinden daha küçüktür. Bu nedenle, bir $p$ asalının, ilki ikincisinden daha küçük olan iki pozitif tamsayı çarpanının çarpımı şeklinde bir gösterimini elde ederiz. Buradan ilk çarpanın 1'e eşit olması gerektiği sonucu çıkar, dolayısıyla $n-1=1$, veya $n=2$, ve $p=2^s-1$'dir. Böylece, her $s \ge 2$ tamsayısı için problemin koşullarını sağlayan en fazla bir asal sayı vardır ve böyle bir asal sayı ancak ve ancak $2^s-1$ sayısı asalsa vardır. $s=2$ için 3 sayısını; $s=3$ için 7 sayısını; $s=5$ için 31 sayısını; ve $s=7$ için 127 sayısını elde ederiz. $s=4, 6, 8$ ve 10 için, $2^4-1 = 3 \cdot 5$, $2^6-1 = 3^2 \cdot 7$, $2^8-1 = 3 \cdot 5 \cdot 17$ ve $2^{10}-1 = 3 \cdot 11 \cdot 31$ sayıları bileşik olduğundan, bu tür asal sayılar yoktur.
+
+
+113. $(p - 1)! + 1 = p^m$ denkleminin, $p > 5$ bir asal sayı ve $m$ bir pozitif tam sayı olacak şekilde hiçbir çözümünün bulunmadığını kanıtlayınız.[^113]
+
+[^113]: $p > 5$ asalları için,
+$$2 < \frac{p-1}{2} < p-1$$
+'e sahibiz, bu da
+$$(p-1)!^2 = 2 \frac{p-1}{2} (p-1)!$$
+anlamına gelir.
+Eğer $p > 5$ asalı ve bir $m$ pozitif tamsayısı için
+$$(p-1)!+1 = p^m \quad (1)$$
+olsaydı, o zaman
+$$(p-1)! \equiv p^m-1$$
+olurdu ve her iki tarafı $p-1$ ile bölersek
+$$p-1 \mid  p^{m-1} + p^{m-2} + \dots + p + 1 \quad (2)$$
+elde ederdik.
+\
+Ancak, $p-1 \mid  p^k-1$, dolayısıyla $k=0, 1, 2, \dots$ için $p^k \equiv 1 \pmod{p-1}$'dir, bu da $p^{m-1} + p^{m-2} + \dots + p + 1 \equiv m \pmod{p-1}$ anlamına gelir ve (2) göz önüne alındığında, $p-1 \mid  m$ buluruz, dolayısıyla $m \ge p-1$'dir. Bu nedenle,
+$$p^m \ge p^{p-1} > (p-1)^{p-1} > (p-1)!$$
+elde ederiz, dolayısıyla $p^m > (p-1)!+1$ olur, bu da (1) ile çelişir.
+
+
+
+114. Bir $n < q$ pozitif tam sayısı için $q_n$, $(n - 1)!$ sayısını bölecek şekilde sonsuz sayıda $q$ asal sayısının bulunduğunu kanıtlayınız.[^114]
+
+[^114]: Liouville teoremine göre (bkz. Problem 113), $p > 5$ bir asal sayı ise, $m$ pozitif tamsayısı için $(p-1)!+1 = p^m$ olamaz. $(p-1)!+1 > 1$ tek sayısının bu nedenle $q \ne p$ olan bir $q$ tek asal böleni vardır ve $q\mid (p-1)!+1$'den $q > p-1$ olduğu sonucu çıkar, dolayısıyla ($q \ne p$ olduğundan) $q > p$'dir. $p$ keyfi olarak büyük olabildiğinden, $p < q$ olacak şekilde $q\mid (p-1)!+1$ koşulunu sağlayan sonsuz çoklukta $q$ asalı vardır; bu da kanıtlanması istenen şeydi.
+
+
+
+115. Her $k \neq 1$ için, $2^n + k$ sayısı bileşik olacak şekilde sonsuz sayıda $n$ pozitif tam sayı bulunduğunu kanıtlayınız.[^115]
+
+[^115]: A. Schinzel'in ispatını vereceğiz. $a$ keyfi bir pozitif tamsayıyı göstersin ve $k \ne 1$ bir tamsayı olsun. Ayrıca, $k-1 = 2^s h$ diyelim; burada $2^s$, $k-1$'i bölen 2'nin en yüksek kuvvetidir ve $h$ pozitif veya negatif bir tek sayıdır. $2^m > a-k$ olacak şekilde bir $m$ pozitif tamsayısı seçelim ve $l \ge s$ ve $l \ge m$ olacak şekilde bir $l$ tamsayısı belirtelim. Eğer $2^{2^l}+k > 2^{2^m}+k > a$ sayısı bileşik olsaydı, istenen biçimde ve $> a$ olan bileşik bir sayıya sahip olurduk. O halde $p = 2^{2^l}+k$ sayısının asal olduğunu varsayalım. $l \ge s$ ve $k-1 = 2^s h$ olduğundan, $p-1 = 2^{2^l}+k-1 = 2^{2^l}+2^s h = 2^s h_1$ elde ederiz; burada $h_1$ tektir ve $> 0$'dır. Euler teoremine göre $2^{\phi(h_1)} \equiv 1 \pmod{h_1}$'dir, dolayısıyla ($p-1 = 2^s h_1$ olduğundan) $2^{s+\phi(h_1)} \equiv 2^s \pmod{p-1}$'dir. $l \ge s$ olduğundan, $2^l+\phi(h_1) \equiv 2^l \pmod{p-1}$ elde ederiz. Fermat teoreminden
+$$2^{2^{l+\phi(h_1)}} + k \equiv 2^{2^l} + k \equiv 0 \pmod p,$$
+elde ederiz ve $2^l+\phi(h_1) > 2^l$ olduğundan
+$$2^{2^{l+\phi(h_1)}} + k > 2^{2^l}+k = p.$$
+elde ederiz. Böylece, $2^{2^{l+\phi(h_1)}} + k$ sayısı bileşiktir ve $p = 2^{2^l}+k \ge 2^{2^m}+k > a$ olduğundan $> a$'dır, bu da ispatı tamamlar. Bu ispat, $k=1$ için başarısız olur çünkü sonsuz çoklukta bileşik Fermat sayısı olup olmadığını bilmiyoruz.
+\
+Şunu belirtelim ki, teoremin daha zayıf bir versiyonu, yani her $k$ tamsayısı için $2^{2^n}+k$'nin bileşik olmasını sağlayan en az bir $n$ tamsayısının var olduğunu ileri süren versiyon, 1943'te J. Reiner tarafından oldukça karmaşık bir teoremin özel bir durumu olarak elde edilmiştir; bkz [16]. Teoremimizden bu daha zayıf versiyonu elde etmek için ($k=1$ için) $2^{2^5}+1$ sayısının bileşik olduğunu, yani 641 ile bölünebildiğini belirtmek yeterlidir.
+
+116. Tüm $2^n + k$ $(n = 1, 2, 3, \dots)$ sayıları bileşik olacak şekilde sonsuz sayıda $k > 0$ tam sayısının bulunduğunu kanıtlayınız.[^116]
+
+[^116]: Örneğin, $s=1, 2, \dots$ olmak üzere $k=6s-1$ biçimindeki tüm sayılar bu formdadır, çünkü her $n$ pozitif tamsayısı için $2^{2^n}$ sayısı 3'e bölündüğünde 1 kalanını verir, dolayısıyla $2^{2^n}+k = 2^{2^n}-1+6s$ sayısı 3 ile bölünebilir ve $> 3$'tür, yani bileşiktir.
+ 
+
+117. Her $n = 1, 2, \dots$ sayısı için $2^{2n+1} + 3, 2^{2n+1} + 7, 2^{2n+2} + 13, 2^{2n+1} + 19$ ve $2^{2n+2} + 21$ sayılarının her birinin bileşik olduğunu kanıtlayınız.[^117]
+
+[^117]: (a) $n$ pozitif tamsayısı için $2^{n+1}-1$ sayısı 3 ile bölünebilir, dolayısıyla $2^{n+1}-2 = 2(2^n-1)$ sayısı 6 ile bölünebilir ve $k$ pozitif bir tamsayı olmak üzere $2^{n+1} = 6k+2$'ye sahibiz. Buradan
+$$2^{2^{n+1}}+3 = (2^6)^k \cdot 2^2+3 \equiv 2^2+3 \equiv 0 \pmod 7$$
+olduğu
+$$2^{2^{n+1}}+3 = (2^6)^k \cdot 2^3+3 \equiv 2^3+3 \equiv 0 \pmod 7,$$
+ve $n=1, 2, \dots$ için $7\mid 2^{2n+1}+3$'tür. $2^{2^{n+1}}+3 > 2^{2^2}+3 > 7$ olduğundan, $2^{2^{n+1}}+3$ biçimindeki sayılar $n=1, 2, \dots$ için bileşiktir.
+\
+(b) $n$ pozitif tamsayısı için $2^{4n}-1 \equiv 16^n-1 \equiv 0 \pmod 5$'e sahibiz, bu da $10\mid 2^{4n+1}-2$ anlamına gelir. Bu nedenle $k$ pozitif bir tamsayı olmak üzere $2^{4n+1} = 10k+2$'dir ve $2^{2^{4n+1}}+7 = (2^{10})^k \cdot 2^2+7 \equiv 2^2+7 \equiv 0 \pmod{11}$'dir. Böylece $11\mid 2^{2^{4n+1}}+7$'ye sahibiz ve $2^{2^{4n+1}}+7 > 2^{2^5}+7 > 11$ olduğundan, $2^{2^{4n+1}}+7$ biçimindeki sayıların tümü $n=1, 2, \dots$ için bileşiktir.
+\
+(c) $n$ pozitif tamsayısı için $2^{8n} \equiv (2^4)^{2n} \equiv 1 \pmod{15}$'e sahibiz, bu da $7\mid 2^{8n}-1$ ve $28\mid 2^{8n+2}-4$ anlamına gelir. Böylece, $k$ pozitif bir tamsayı olmak üzere $2^{8n+2} = 28k+4$'tür. Buradan $2^{2^{8n+2}}+13 = (2^{28})^k \cdot 2^4+13 \equiv 16+13=29 \equiv 0 \pmod{29}$  olduğu, yani $29\mid 2^{2^{8n+2}}+13$ olduğu sonucu çıkar ve $2^{2^{8n+2}}+13 > 2^{2^{10}}+13 > 29$ olduğundan, $2^{2^{8n+2}}+13$ biçimindeki sayılar $n=1, 2, \dots$ için bileşiktir.
+\
+(d) $n$ pozitif tamsayısı için $2^{10n} \equiv (2^5)^{2n} \equiv 1 \pmod{11}$'e sahibiz, bu da $22\mid 2^{10n+1}-2$ ve $k$ pozitif bir tamsayı olmak üzere $2^{10n+1} = 22k+2$ anlamına gelir. Buradan $2^{2^{10n+1}}+19 = (2^{22})^k \cdot 2^2+19 \equiv 4+19 \equiv 0 \pmod{23}$ olduğu ve $23\mid 2^{2^{10n+1}}+19$ olduğu sonucu çıkar. $n=1, 2, \dots$ için $2^{2^{10n+1}}+19 > 23$ olduğundan, $2^{2^{10n+1}}+19$ sayılarının tümü bileşiktir.
+\
+(e) $n$ pozitif tamsayısı için $2^{6n} \equiv (2^3)^{2n} \equiv (-1)^{2n} \equiv 1 \pmod 9$'a sahibiz, dolayısıyla $9\mid 2^{6n}-1$'dir ve $36\mid 2^{6n+2}-4$'tür, bu da $k$ pozitif bir tamsayı olmak üzere $2^{6n+2} = 36k+4$ anlamına gelir. Buradan $2^{2^{6n+2}}+21 = (2^{36})^k \cdot 2^4+21 \equiv 16+21 \equiv 0 \pmod{37}$ olduğu, dolayısıyla $37\mid 2^{2^{6n+2}}+21$ olduğu sonucu çıkar ve $n=1, 2, \dots$ için $2^{2^{6n+2}}+21 > 37$ olduğundan, $2^{2^{6n+2}}+21$ sayıları $n=1, 2, \dots$ için bileşiktir.
+\
+**NOT.** $2^{2^n}+k$ ($n=1, 2, \dots$) sayıları arasında sonsuz çoklukta asal sayı bulunduğunu kanıtlayabileceğimiz bir $k$ tamsayısı bilmiyoruz.
+
+118. Tüm $k \cdot 2^n + 1$ $(n = 1, 2, \dots)$ sayıları bileşik olacak şekilde sonsuz sayıda $k$ pozitif tam sayısı bulunduğunu kanıtlayınız.[^118]
+
+[^118]: Bildiğimiz gibi, $F_n = 2^{2^n}+1$ sayıları $n=0, 1, 2, 3, 4$ için asalken, $F_5 = 641p$ sayısı, $p > 2^{16}+1 = F_4$ olan bir asaldır. Ayrıca $(p, 2^{32}-1) = 1$'e sahibiz, çünkü $p\mid F_5$ olması $(p, F_5-2) = 1$'i gerektirir. Çin kalan teoremine göre,
+$$k \equiv 1 \pmod{(2^{32}-1)641} \quad \text{ve} \quad k \equiv -1 \pmod p. \quad (1)$$
+denkliklerini sağlayan sonsuz çoklukta pozitif $k$ tamsayısı vardır.
+\
+Eğer $k$, (1) denkliklerini sağlayan $p$'den büyük bir tamsayı ise, $k \cdot 2^n+1$ ($n=1, 2, \dots$) sayılarının tümünün bileşik olduğunu göstereceğiz.
+\
+$n$ sayısı, $m$ ve $t$ tamsayıları $\ge 0$ olmak üzere, $n = 2^m(2t+1)$ biçiminde temsil edilebilir. Önce $m$'nin $0, 1, 2, 3$ veya $4$ sayılarından biri olduğunu varsayalım. (1) göz önüne alındığında,
+$$k \cdot 2^n+1 \equiv 2^{2^m(2t+1)}+1 \pmod{2^{32}-1}, \quad (2)$$
+olur ve $m=0, 1, 2, 3, 4$ için $F_m \mid  2^{32}-1$ ve $F_m \mid  2^{2^m(2t+1)}+1$ olduğundan, (2)'ye göre $F_m \mid  k \cdot 2^n+1$ olduğunu elde ederiz. $k \cdot 2^n+1 > p > F_4$ olduğundan ($k > p$ olduğu için), $k \cdot 2^n+1$ sayısı bileşiktir.
+\
+Eğer $m=5$ ise, (1)'den $k \cdot 2^n+1 \equiv 2^{2^5(2t+1)}+1 \pmod{641}$ elde ederiz ve $641 \mid  F_5 \mid  2^{2^5(2t+1)}+1$ olduğundan, $641 \mid  k \cdot 2^n+1$ elde ederiz ve $k \cdot 2^n+1 > p > 641$ sayısı bileşiktir.
+\
+$m \ge 6$ durumunu ele almak kalıyor. Bu durumda $2^6 \mid  n$'dir, dolayısıyla $h$ pozitif bir tamsayı olmak üzere $n = 2^6 h$'dir ve (1) göz önüne alındığında $k \cdot 2^n+1 \equiv -2^{2^6 h}+1 \pmod p$; $p \mid  2^{32}+1 \mid  2^{2^6}-1 \mid  2^{2^6 h}-1$ olduğundan, $p \mid  k \cdot 2^n+1$ elde ederiz. $k \cdot 2^n+1 > k > p$ gerçeği göz önüne alındığında, $k \cdot 2^n+1$ sayısı bileşiktir.
+\
+Böylece, $k \cdot 2^n+1$ sayıları $n=1, 2, 3, \dots$ için bileşiktir, ki bu da kanıtlanması istenen şeydi. (Bkz. [30].)
+\
+**NOT.** Tüm $k \cdot 2^n+1$ ($n=1, 2, \dots$) sayılarının bileşik olduğu en küçük $k$ sayısını bilmiyoruz.
+
+119. Her $2^n + k$ $(n = 1, 2, \dots)$ sayısı bileşik olacak şekilde sonsuz sayıda $k$ tek sayısının bulunduğunu kanıtlayınız.[^119]
+
+[^119]: Öncelikle Problem 118'deki teoremin ispatında (1) denkliklerine $k \equiv 1 \pmod 2$ denkliğini ekleyebileceğimizi ve bunun aşağıdaki T teoremine yol açacağını belirtelim: $k > p$ olan sonsuz çoklukta $k$ tek sayısı vardır, öyle ki $k \cdot 2^l+1$ ($l=1, 2, \dots$) sayılarının her biri altı asal sayıdan en az biri ile bölünebilir
+$$F_0, F_1, F_2, F_3, F_4, \text{ ve } p \quad (3)$$
+($p > F_4$ olmak üzere). (3)'teki altı sayının çarpımını $Q$ ile gösterelim. Bu sayılar tek olduğundan, $2^{\phi(Q)} \equiv 1 \pmod Q$ ve sonuç olarak, $q$, (3)'teki sayılardan herhangi birini göstermek üzere $2^{\phi(Q)} \equiv 1 \pmod q$ olur. $n$ keyfi bir pozitif tamsayı olsun. T teoremine göre ($l=n(\phi(Q)-1)$ için), $k \cdot 2^{n(\phi(Q)-1)}+1$ sayısı (3)'teki sayılardan en az biriyle, diyelim ki $q$ ile, bölünebilir. Dolayısıyla $k \cdot 2^{n(\phi(Q)-1)}+1 \equiv 0 \pmod q$ olur; buradan $2^n$ ile çarparak $k \cdot 2^{n\phi(Q)}+2^n \equiv 0 \pmod q$ elde ederiz ve $2^{\phi(Q)} \equiv 1 \pmod q$ ve sonuç olarak $2^{n\phi(Q)} \equiv 1 \pmod q$ olduğundan, $k+2^n \equiv 0 \pmod q$ elde ederiz; $k > p$ olduğundan, $k > q$ ve $k+2^n > q$ olur; böylece $k+2^n$ sayısı bileşiktir ve $2^n+k$, $n=1, 2, \dots$ sayılarının tümünün bileşik olduğu sonsuz çoklukta $k$ tek sayısının var olduğunu gösterdik.
+
+
+120. $k$ sayısı $2$’nin bir kuvveti ise, yeterince büyük $n$ sayıları için tüm $k \cdot 2^n + 1$ sayılarının bileşik olduğunu kanıtlayınız.[^120]
+
+[^120]: $m$ pozitif bir tamsayı olmak üzere $k=2^m$ olsun ve $s \ge 0$ bir tamsayı ve $h$ tek olmak üzere $m=2^s h$ olsun. $k \cdot 2^{s+1}+1 = 2^{s+1}(2^{h \cdot 2^s}+1)$'e sahibiz, ve $n > s$ için $2^n+k$ sayısı tek bir pozitif tamsayıdır. Böylece $2^{s+1}+1 \mid  k \cdot 2^n+1$ elde ederiz ve $n > s$ olduğundan, $k \cdot 2^n+1 > 2^{s+1}+1$'e sahibiz ve $k \cdot 2^n+1$ sayıları $n > s$ için bileşiktir (çünkü $2^{s+1}+1$ ile bölünebilirler).
+Özellikle, eğer $k$, 2'nin tek bir üsse sahip bir kuvveti ise, o zaman $n=1, 2, \dots$ için tüm $k \cdot 2^n+1$ sayıları 3 ile bölünebilir.
+
+121. Her $k \leq 10$ pozitif tam sayısı için $2^n + k$ sayısının bileşik olmasını sağlayan en küçük $n$ pozitif tam sayısını bulunuz.[^121]
+
+[^121]: $k=1$ için, $n=5$'tir, çünkü $n=1, 2, 3, 4$ için $2^{2^n}+1$ sayıları asal iken, $641\mid 2^{2^5}+1$ ve $2^{2^5}+1$ bileşiktir.
+$k=2$ için, $n=1$'dir, çünkü $3\mid 2 \cdot 2^1+1$.
+$k=3$ için, $n=2$'dir, çünkü $3 \cdot 2^2+1$ sayısı asal iken, $7\mid 3 \cdot 2^3+1 = 49$.
+$k=4$ için, $n=2$'dir, çünkü $4 \cdot 2^2+1 = 17$ bir asal iken, $5\mid 4 \cdot 2^3+1$.
+$k=5$ için, $n=1$'dir, çünkü $3\mid 5 \cdot 2^1+1$.
+$k=6$ için, $n=1$'dir, çünkü $5\mid 6 \cdot 2^1+1$.
+$k=7$ için, $n=3$'tür, çünkü $7 \cdot 2^1+1 = 29$ ve $7 \cdot 2^2+1 = 113$ asal iken, $11\mid 7 \cdot 2^3+1$.
+$k=8$ için, $n=1$'dir, çünkü $3\mid 8 \cdot 2^1+1$.
+$k=9$ için, $n=2$'dir, çünkü $9 \cdot 2^1+1 = 37$ asal iken, $5\mid 9 \cdot 2^2+1$.
+$k=10$ için, $n=2$'dir, çünkü $10 \cdot 2^1+1 = 41$ asal iken, $7\mid 10 \cdot 2^2+1$.
+
+ 
+122. Her $k \cdot 2^n + 1$ $(n = 1, 2, \dots)$ sayısının bileşik olmasını sağlayan tüm $k \leq 10$ pozitif tam sayılarını bulunuz.[^122]
+
+[^122]: Problem 121'in çözümünden, $k=1, 3, 4, 7, 9$ ve $10$ sayılarının gereksinimleri sağlamadığı sonucu çıkar. 6 sayısı da $6 \cdot 2^1+1 = 97$ bir asal olduğundan gereksinimi sağlamaz.
+\
+Öte yandan, $2 \cdot 2^{2^n}+1$, $5 \cdot 2^{2^n}+1$ ve $8 \cdot 2^{2^n}+1$ sayıları, $n=1, 2, \dots$ için 3 ile bölünebildikleri ve 3'ü aştıkları için tümü bileşiktir.
+\
+**NOT.** Eğer $t=0, 1, 2, \dots$ olmak üzere $k=3t+2$ ise, o zaman $k \cdot 2^{2^n}+1$ ($n=1, 2, \dots$) sayılarının tümü 3 ile bölünebilir ve bileşiktir.
+
+
+123. Her $n > 1$ tam sayısı için $\dfrac{2^{2n+1} + 2^n + 1}{3}$ sayısının bileşik olduğunu kanıtlayınız.[^123]
+
+[^123]: $\frac{1}{3}(2^{2^{n+1}}+2^{2^n}+1)$ sayıları $n=1, 2, \dots$ için pozitif tamsayılardır.
+Eğer $n$ çift ise, $2^n \equiv 1 \pmod 3$'tür, dolayısıyla $k$ pozitif bir tamsayı olmak üzere $2^n = 3k+1$'dir ve $2^{2^n} = (2^3)^k \cdot 2 \equiv 8^k \cdot 2 \equiv 2 \pmod 7$'dir, bu da $2^{2^{n+1}} = (2^{2^n})^2 \equiv 4 \pmod 7$ anlamına gelir. Buradan $2^{2^{n+1}}+2^{2^n}+1 \equiv 4+2+1 \equiv 0 \pmod 7$ olduğu sonucu çıkar. Eğer $n$ tek ise, $2^n \equiv 2 \pmod 3$'tür, dolayısıyla $k \ge 0$ bir tamsayı olmak üzere $2^n = 3k+2$'dir. Buradan $2^{2^n} = 2^{3k+2} = 8^k \cdot 4 \equiv 4 \pmod 7$ olduğu, $2^{2^{n+1}} = (2^{2^n})^2 \equiv 4^2 \equiv 2 \pmod 7$ olduğu sonucu çıkar. Böylece, $2^{2^{n+1}}+2^{2^n}+1 \equiv 2+4+1 \equiv 0 \pmod 7$. Sonuç olarak, $\frac{1}{3}(2^{2^{n+1}}+2^{2^n}+1)$ sayıları $n$ pozitif tamsayısı için 7 ile bölünebilir ve $n > 1$ için $\ge \frac{1}{3}(2^{2^3}+2^{2^2}+1) = 91 > 7$ olduklarından, $n=2, 3, \dots$ için bileşiktirler.
+\
+XVII. yüzyıldan Michael Stiffel'in teoremi ile karşılaştırın; bkz. *Elemente der Mathematik*, 18 (1963), s. 18.
+
+ 
+
+124. $(2^n + 1)^2 + 2^n$ şeklinde olan sonsuz sayıda bileşik sayı bulunduğunu kanıtlayınız.[^124]
+
+[^124]: Örneğin, $n$'nin $28k+1$ ($k=1, 2, 3, \dots$) biçiminde olduğu dizimizin tüm sayıları istenen özelliğe sahiptir.
+Gerçekten de, Fermat teoremine göre $2^{28} \equiv 1 \pmod{29}$'a sahibiz, bu da $k=1, 2, \dots$ için $2^{2 \cdot 28k} \equiv 1 \pmod{29}$ anlamına gelir. Böylece, $n=28k+1$ ($k=1, 2, \dots$) için $(2^{2^n}+1)^2+2^2 \equiv 25+4 \equiv 0 \pmod{29}$'a sahibiz, bu da $29\mid (2^{2^n}+1)^2+2^2$ anlamına gelir. $k=1, 2, \dots$ için, açıkça $n=28k+1 \ge 29$'a sahibiz, bu da $(2^{2^n}+1)^2+2^2 > 29$ anlamına gelir. Böylece, $n=28k+1, k=1, 2, \dots$ için $(2^{2^n}+1)^2+2^2$ biçimindeki tüm sayılar bileşiktir.
+
+125. $1 < a \leq 100$ olmak üzere her $a$ tam sayısı için $a^{2^n} + 1$ sayısının bileşik olacak şekilde en az bir $n \leq 6$ pozitif tam sayısının bulunduğunu kanıtlayınız.[^125]
+
+[^125]: Eğer $a$ tek ve $> 1$ ise, $a^{2^n}+1$ sayıları (çift ve $> 1$ olduklarından) ($n=1, 2, \dots$ için) bileşiktir; bu nedenle $a$'nın çift olduğunu varsayabiliriz. $641\mid 2^{2^5}+1$'e sahibiz, dolayısıyla $641\mid 4^{2^4}+1$ ve $641\mid 16^{2^3}+1$ de geçerlidir. Ardından, $17\mid 2^{2^3}+1$, $17\mid 4^{2^2}+1$, $17\mid 6^{2^3}+1$, $17\mid 8^{2^2}+1$, $17\mid 10^{2^3}+1$, $17\mid 12^{2^3}+1$, $17\mid 14^{2^2}+1$, $17\mid 20^{2^3}+1$, $\dots$, $17\mid 22^{2^3}+1$, $17\mid 24^{2^3}+1$, $17\mid 26^{2^2}+1$, $17\mid 28^{2^3}+1$, $17\mid 30^{2^3}+1$, $17\mid 32^{2^2}+1$ olduğunu kolayca kontrol ederiz.
+\
+Örneğin, $17\mid 28^{2^3}+1$ olduğunu kontrol etmek için $28 \equiv 11 \pmod{17}$ denkliğinden başlarız; bu, $28^2 \equiv 121 \equiv 2 \pmod{17}$ anlamına gelir, bu da $28^8 \equiv 2^{2^3} \equiv -1 \pmod{17}$ sonucunu verir ve sonuç olarak $17\mid 28^{2^3}+1$'dir.
+\
+Bu formüller göz önüne alındığında, $k=0, 1, 2, \dots$ için hemen şunu elde ederiz
+$$17\mid (34k+2)^{2^3}+1, \quad 17\mid (34k+4)^{2^2}+1, \quad 17\mid (34k+6)^{2^3}+1,$$
+$$17\mid (34k+8)^{2^2}+1, \quad 17\mid (34k+10)^{2^3}+1, \quad 17\mid (34k+12)^{2^3}+1,$$
+$$17\mid (34k+14)^{2^2}+1, \quad 17\mid (34k+20)^{2^3}+1, \quad 17\mid (34k+22)^{2^3}+1,$$
+$$17\mid (34k+24)^{2^3}+1, \quad 17\mid (34k+26)^{2^2}+1, \quad 17\mid (34k+28)^{2^3}+1,$$
+$$17\mid (34k+30)^{2^3}+1, \quad 17\mid (34k+32)^{2^2}+1.$$
+\
+$5\mid 18^2+1$ ve $13\mid 34^2+1$ gerçeğini kullanarak, 50, 52, 68, 84 ve 86 sayıları dışında, $a \le 100$ olan her pozitif tamsayı için $a^{2^n}+1$'in bileşik olacağı şekilde $n \le 5$ olan bir pozitif tamsayının var olduğu sonucunu çıkarırız. Öte yandan, $50^2+1 = 2501 = 41 \cdot 61$, $5\mid 52^2+1$, $5\mid 68^2+1$, $257\mid 84^2+1$ ve $13\mid 86^2+1$'dir. Böylece, $a \le 100$ olan her pozitif tamsayı için $a^{2^n}+1$'in bileşik olacağı şekilde $n \le 6$ olan bir pozitif tamsayı vardır.
+\
+**NOT.** A. Schinzel, $1 < a < 2^{2^k}$ olacak şekilde her $a$ pozitif tamsayısı için $a^{2^n}+1$'in bileşik olacağı şekilde bir $n$ pozitif tamsayısının var olduğunu kanıtlamıştır; bkz [20].
+\
+$a > 1$ olan her tamsayı için $a^{2^n}+1$'in bileşik olacağı şekilde bir $n$ pozitif tamsayısının var olup olmadığını bilmiyoruz; örneğin, $a=2^{2^{33}}$ sayısı için bunu kanıtlayamıyoruz. Öte yandan, $n=2^{2^{33}}$ için $a^{2^n}+1$ sayısının bileşik olduğunu kanıtlayabiliriz ve hatta en küçük asal bölenini, yani $3 \cdot 2^{2^{33}+1}+1$'i biliyoruz; bkz. Sierpiński [37, s. 349, Bölüm 6].
+
+
+
+126. Üç tane asal sayının toplamı şeklinde gösterilebilen fakat üçten az sayıda asal sayının toplamı şeklinde gösterilemeyen sonsuz sayıda tek sayı bulunduğunu kanıtlayınız.[^126]
+
+[^126]: 5'ten büyük her asal sayı açıkça $k \ge 0$ bir tam sayı olmak üzere $30k+r$ formundadır ve $r$, 1, 7, 11, 13, 17, 19, 23 veya 29 sayılarından biridir. Sonsuz sayıda asal olduğundan, bu sekiz $r$ değerinden en az biri için $k$ pozitif tam sayı olmak üzere $30k+r$ formunda sonsuz sayıda asal vardır. Bu nedenle, aşağıdaki sekiz durumu dikkate almak yeterlidir:
+\
+(1) $30k+1$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=7+19+p$ olsun; bu, $n=7+19+30k+1=3(10k+9)$ olduğundan tek bir bileşik sayı olacaktır. Böylece, n sayısı üç farklı asalın toplamıdır ($p=30k+1$, 7 ve 19'dan farklı olduğu için) ve n iki asalın toplamı değildir, çünkü o zaman bunlardan biri çift, yani 2'ye eşit olmak zorunda kalırdı ve $n=30k+27=q+2$, yani $q=5(6k+5)$ olurdu ki bu imkansızdır.
+\
+(2) $30k+7$ formunda sonsuz sayıda asal vardır. $p>7$ bu asallardan biri olsun ve $n=7+13+p$ olsun; $n=30k+27=3(10k+9)$ olduğundan n tek ve bileşiktir ve $p\ge37$ olduğundan, n üç farklı asalın toplamına eşit olacaktır. $n-2=30k+25=5(6k+5)$ olduğundan, n'nin gerekli koşulları sağladığını görürüz.
+\
+(3) $30k+11$ formunda sonsuz sayıda asal vardır. $p>11$ bunlardan biri olsun ve $n=11+13+p$ olsun; böylece n tek ve üç farklı asalın toplamına eşit olacaktır. $n=30k+35=5(6k+7)$ ve $n-2=3(30k+11)$ olduğundan, n sayısı gerekli koşulları sağlar.
+\
+(4) $30k+13$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=3+11+p$ olsun; böylece n tek ve üç farklı asalın toplamına eşit olacaktır. $n=3(10k+9)$ ve $n-2=5(6k+5)$ olduğundan, n sayısı gerekli koşulları sağlar.
+\
+(5) $p=30k+17$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=3+7+p$ alalım. $n=3(10k+9)$ ve $n-2=5(6k+5)$ olduğundan, n sayısı gerekli koşulları sağlar.
+\
+(6) $30k+19$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=3+5+p$ olsun. Daha önce olduğu gibi, n'nin gerekli koşulları sağladığını çıkarırız.
+\
+(7) $30k+23$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=5+7+p$ olsun. $n=5(6k+7)$ ve $n-2=3(10k+11)$ olduğundan, n sayısı gerekli koşulları sağlar.
+\
+(8) $30k+29$ formunda sonsuz sayıda asal vardır. p bunlardan biri olsun ve $n=5+31+p$ olsun. $n=5(6k+13)$ ve $n-2=3(10k+21)$ olduğundan, n sayısı gerekli koşulları sağlar.
+Kanıt tamamlanmıştır. Bkz [28].
+
+127. $f(1) = 2, f(2) = 3, f(3) = 5$ eşitliklerini sağlayan ve katsayıları tam sayılar olan hiçbir $f(x)$ polinomunun bulunmadığını ve her $m > 1$ tam sayısı için, $p_n = n$ asal sayılar dizisi türese $(f(k) = p_n (n = 1, 2, \dots))$ olacak şekilde katsayıları rasyonel sayılar olan bir $f(x)$ polinomunun bulunduğunu kanıtlayınız.[^127]
+
+[^127]: Eğer $f(x)$, $f(1)=2$, $f(2)=3$, $f(3)=5$ olacak şekilde tam sayı katsayılı bir polinom olsaydı, o zaman $g(x)=f(x)-2$ $g(1)=0$ olacak şekilde tam sayı katsayılı bir polinom olurdu ve $g(x)=(x-1)h(x)$ olurdu, burada $h(x)$ tam sayı katsayılı bir polinomdur. $f(3)=5$ olduğundan $g(3)=f(3)-2=3$ olur, bu da $2h(3)=3$ verir; ancak, $h(3)$ bir tam sayı olduğu için bu imkansızdır.
+Şimdi m, $1$'den büyük bir tam sayı olsun ve $k=1,2,...,m$ için $g_{k}(x)=\frac{(x-1)(x-2)...(x-m)}{x-k}$ olsun. Açıkça, $g_{k}(x)$ $m-1$ dereceli tam sayı katsayılı bir polinomdur ve k'den farklı her $x\le m$ pozitif tam sayısı için $g_{k}(x)=0$ iken, $g_{k}(k)$ $\ne0$ olan bir tam sayı olacaktır. $f_{k}(x)=g_{k}(x)/g_{k}(k)$ olsun; açıkça $f_{k}(x)$, k'den farklı her $x\le m$ pozitif tam sayısı için $f_{k}(x)=0$ iken $f_{k}(k)=1$ olacak şekilde $m-1$ mertebesinden rasyonel katsayılı bir polinom olacaktır.
+$f(x)=p_{1}f_{1}(x)+p_{2}f_{2}(x)+...+p_{m}f_{m}(x)$ koyalım; açıkça bu polinom gerekli koşulları sağlayacaktır: $f(x)$ rasyonel katsayılara sahiptir ve $k=1,2,...,m$ için $f(k)=p_{k}$ olur.
+
+128. Her $n$ pozitif tam sayısı için $f(1) < f(2) < \dots < f(n)$ sayıları asal olacak şekilde katsayıları tam sayılar olan bir $f(x)$ polinomu bulunduğunu kanıtlayınız.[^128]
+
+[^128]: J. Browkin'in kanıtı. n verilmiş bir pozitif tam sayı olsun. $k\le n$ pozitif tam sayısı için, $t_{k}$ pozitif tam sayılarını tümevarımla şöyle tanımlayalım: $t_{0}=1$ olsun. Bir $k\le n$ pozitif tam sayısı için $t_{k-1}$ sayısını zaten tanımladığımızı varsayalım. Lejeune-Dirichlet teoreminin özel durumuna göre, $q_{k}=(k-1)!(n-k)!t_{k}+1$ sayısının asal olacağı ve $k>1$ durumunda $(k-2)!(n-k+1)!t_{k-1}+1$ sayısından büyük olacağı şekilde bir $t_{k}$ pozitif tam sayısı vardır ($0!=1$ koyarız). Böylece, $q_{1},q_{2},...,q_{n}$ sayıları asal olacaktır ve $q_{1}<q_{2}<...<q_{n}$ olur.
+$f(x)=1+\sum_{j=1}^{n}(-1)_{i}^{n-j}\frac{(x-1)(x-2)...(x-n)}{x-j}t_{j}$ olsun.
+Açıkça, $f(x)$ tam sayı katsayılı $\le n-1$ mertebesinden bir polinom olacaktır ve $f(k)=1+(k-1)!(n-k)!t_{k}=q_{k}$ olduğunu kolayca kontrol ederiz.
+
+129. $x$ değişkeninin $m$ farklı değerinde $m$ farklı asal sayı veren ve katsayıları tam sayılar olan bir indirgenmez $f(x)$ polinomu bulunuz.[^129]
+
+[^129]: Örnek olarak, $p_{k}$'nin k'ninci asalı gösterdiği $f(x)=[(x-p_{1})(x-p_{2})...(x-p_{m})+1]x$ polinomunu alabiliriz. Burada $k=1,2,...,m$ için $f(p_{k})=p_{k}$ olacaktır.
+
+130. $f(x)$, derecesi 0’dan büyük olan tam sayı katsayılı bir polinomsal, sonsuz sayıda $p$ asal sayısı için $f(x) = 0 \pmod{p}$ denkleminin çözümünün bulunduğunu kanıtlayınız.[^130]
+
+[^130]: Eğer tam sayı katsayılı $f(x)$ polinomunun sabit terimi 0'a eşit olsaydı, o zaman $f(0)=0$ olurdu ve $f(x)\equiv0(mod~p)$ denkliği her p modülü için çözülebilir olurdu. Bu nedenle, $f(x)$ polinomunun sabit teriminin $a_{0}$'a eşit olduğunu ve sıfır olmadığını varsayalım. $f(a_{0}x)=a_{0}f_{1}(x)$ olduğundan, burada $f_{1}(x)$ sabit terimi 1'e eşit olan tam sayı katsayılı bir polinomdur, teoremimizi sadece bu tür polinomlar için kanıtlamak yeterlidir.
+n verilmiş bir pozitif tam sayı olsun. Açıkça $n!\mid f_{1}(n!)-1$ olur, dolayısıyla $f(n!)=n!k+1$, burada k bir tam sayıdır. ($>0$ mertebesinden olan) $f_{1}(x)$ polinomunun mutlak değeri x ile birlikte tüm sınırların üzerine çıkar; bu nedenle yeterince büyük n için $\mid f(n!)\mid =\mid n!k+1\mid >1$ olacaktır ve $n!k+1$ sayısının bir p asal böleni vardır. $p\mid n!k+1$ olduğundan $p>n$ olmalıdır ve $p\mid f_{1}(n!)$ olduğundan, $f_{1}(x)\equiv0(mod~p)$ denkliği $p>n$ olan bir asal modül için çözülebilirdir. n keyfi olduğundan, $f_{1}(x)\equiv0(mod~p)$ denkliğinin ve dolayısıyla $f(x)\equiv0(mod~p)$ denkliğinin sonsuz sayıda p asalı için çözülebilir olduğunu çıkarırız.
+
+131. $k + 1, k + 2, \dots, k + 10$ dizisi maksimum sayıda asal sayı içerecek şekilde tüm $k \geq 0$ tam sayılarını bulunuz.[^131]
+
+[^131]: Böyle sadece bir sayı vardır, yani $k=1$. O zaman
+$k+1,k+2,...,k+10$ (1)
+dizisi beş asal içerir: 2, 3, 5, 7 ve 11. $k=0$ ve $k=2$ için, (1) dizisi dört asal içerir.
+Eğer $k\ge3$ ise, (1) dizisi 3 sayısını içermez; bildiğimiz gibi, her üç ardışık tek sayıdan biri 3 ile bölünebilir olmalıdır. Buradan (1) dizisinin en az bir tek bileşik sayı içerdiği sonucu çıkar. Bunun dışında, (1) dizisi beş çift sayı içerir, dolayısıyla ($k\ge2$ için) bu sayılar bileşiktir. Böylece, $k\ge3$ için, (1) dizisi en az 6 bileşik sayı içerir ve asal sayıların sayısı 4'ü geçemez.
+**NOT.** (1) dizisi $k = 0, 2, 10, 100, 190, 820$ için dört asal içerir. Bu tür sonsuz sayıda k sayısı olup olmadığını bilmiyoruz. A. Schinzel'in asallarla ilgili bir varsayımından ([22]) cevabın olumlu olduğu sonucu çıkar.
+
+132. $k + 1, k + 2, \dots, k + 100$ dizisi maksimum sayıda asal sayı içerecek şekilde tüm $k \geq 0$ tam sayılarını bulunuz.[^132]
+
+[^132]: Böyle sadece bir sayı vardır, yani $k=1$. Bu değer için
+$k+1$, $k+2,...,k+100$ (1)
+dizisi 26 asal içerir. $k=0, 2, 3$ veya 4 için, (1) dizisi 25 asal içerir.
+Bu nedenle, $k\ge5$ olduğunu varsayabiliriz. (1) dizisi 50 çift sayı içerir, ki $k>1$ için bunların hepsi bileşiktir. Ardından, 50 ardışık tek sayı da içerir ve her üç ardışık tek sayı 3 ile bölünebilen bir sayı içerdiğinden, (1) dizisi 3 ile bölünebilen en az 16 sayı içerir, ki $k>2$ için bunların hepsi bileşiktir.
+Şimdi (1) dizisinin 5 ile bölünebilen ve 3 veya 2 ile bölünmeyen terimlerinin sayısını hesaplayalım. Tüm bu sayılar $30t+r$ formunda olacaktır, burada t bir tam sayı $\ge0$ ve r, 5 veya 25 sayılarından biridir. Bu sayıları sonsuz artan dizide düzenleyelim
+$5, 25, 35, 55, 65, 85, 95, 115, 125, 145, 155, 175, 185, ...$ (2)
+ve $u_{n}$ bu dizinin n'inci terimini göstersin. $n=1,2,....$ için $u_{n+6}-u_{n}<100$ olduğunu kolayca kontrol ederiz. $u_{n}$ bu dizinin k'yi aşmayan son terimini göstersin. $u_{n}\le k<u_{n+1}<u_{n+6}<u_{n}+100 \le k+100$ olacaktır, bu da (1) dizisinin (2) dizisinden en az 6 terim içerdiğini gösterir ve sonuç olarak, $k\ge5$ için 5 ile bölünebilen ancak 2 veya 3 ile bölünmeyen, dolayısıyla bileşik olan en az 6 terim içerir.
+Son olarak, (1) dizisinin 7 ile bölünebilen, ancak 2, 3 veya 5 ile bölünmeyen terimlerinin sayısını hesaplayalım. Bunlar $210t+r$ formundaki terimler olacaktır, burada $t$ bir tam sayı $\ge0$ ve r, 7, 49, 77, 91, 119, 133, 161, 203 sayılarından biridir. Bu sayıları sonsuz artan dizide düzenleyelim
+$7, 49, 77, 91, 119, 133, 161, 203, 217, 259, 287, ...$ (3)
+ve $v_{n}$ bu dizinin n'inci terimini göstersin. $n=1,2,....$ için $v_{n+3}-v_{n}<100$ olduğunu kolayca kontrol ederiz. $v_{n}$, $v_{1}$, $v_{2}$, ... dizisinin k'yi aşmayan son terimini göstersin. $v_{n}\le k<v_{n+1}<v_{n+3} <v_{n}+100\le k+100$ olacaktır, bu da (1) dizisinin (3) dizisinden en az 3 terim içerdiğini, yani 7 ile bölünebilen ancak 2, 3 veya 5 ile bölünmeyen en az üç sayı içerdiğini gösterir. $k\ge7$ için, tüm bu sayılar bileşik olacaktır.
+Buradan $k\ge7$ için, (1) dizisinin en az $50+16+6+3=75$ bileşik sayı içerdiği, dolayısıyla en fazla 25 asal içerdiği sonucu çıkar. $k=5$ ve $k=6$ için, (1) dizisi $v_{2}$, $v_{3}$ ve $v_{4}$ bileşik sayılarını içerir. (Dizgi hatası: $v_{2}$, $d_{3}$ ve $v_{4}$ yerine $v_{2}$, $v_{3}$ ve $v_{4}$ olmalı). Böylece, $k>1$ için, (1) dizisi en fazla 25 asal içerir.
+
+133. 25 tane asal sayı içeren tüm 100 ardışık sayıdan oluşan dizileri bulunuz.[^133]
+
+[^133]: Sadece 6 tane böyle dizi vardır, bunlar 1, 3, 4, 5, 10 ve 11 ile başlayanlardır. Kanıt aşağıdaki lemmadan gelir:
+$k>11$ için, k, $k+1,...,k+99$ sayıları arasında 2, 3, 5, 7 veya 11'den birine bölünebilen en az 76 sayı vardır.
+Lemmanın kanıtı, 2, 3, 5, 7 veya 11 ile bölünebilen tüm sayıları artan bir sonsuz dizi şeklinde yazarak elde edilebilir. Bu dizi, eğer bir r sayısı dizide yer alıyorsa, $r+2310$ sayısının da yer alması özelliğine sahiptir ve tersi de geçerlidir (çünkü $2310=2\cdot3\cdot5\cdot7\cdot11$). Böylece, eğer $r_{1},r_{2},...,r_{s}$ sayıları 2, 3, 5, 7 veya 11 ile bölünebilen $\le2310$ olan tüm pozitif tam sayıları gösteriyorsa, o zaman bu tür tüm sayılar s aritmetik dizisinde yer alır: $2310t+r_{i}$, burada $i=1,...,s$ ve $t=0,1,2,...$. Bu nedenle, 2, 3, 5, 7 veya 11 ile bölünebilen $\le2310+100$ olan tüm pozitif tam sayıları yazmak ve $1\le k\le2310$ için k, $k+1,...,k+99$ sayılarının her yüzlüsünde bu diziden en az 76 sayı olduğunu kontrol etmek yeterlidir.
+(1) dizisinin 24 asal içerdiği bu tür k pozitif tam sayılarından sadece sonlu sayıda olduğunu kanıtlamak daha zor olurdu. Öte yandan, A. Schinzel'e ait asallarla ilgili belirli bir varsayım ([22]), (1) dizisinin 23 asal içerdiği sonsuz sayıda k sayısı olduğunu ima eder.
+
+134. 8 tane asal sayı içeren tüm 21 ardışık sayıdan oluşan dizileri bulunuz.[^134]
+
+[^134]: LEMMA. Her 21 ardışık pozitif tam sayıdan en az 14 tanesi 2, 3 veya 5 sayılarından biri ile bölünebilir.
+**KANIT** Her ardışık 21 pozitif tam sayıda, 2 ile bölünebilen en az 10 tane ve en az 10 ardışık tek sayı vardır ki bunlardan da en az 3 tanesi 3 ile bölünebilir. Bu nedenle, her 21 ardışık pozitif tam sayı dizisinde 5 ile bölünebilen ancak 2 veya 3 ile bölünmeyen en az bir sayı olduğunu göstermek yeterlidir . x'in 30'a bölünmesinden kalanı r göstersin; o zaman $x=30t+r$ olur, burada t bir tam sayı $\ge0$ ve $0\le r<30$. Eğer $r\le5$ ise, o zaman $x\le30t+5\le x+20$ ve $30t+5$ sayısı x, $x+1,...,x+20$ dizisinin 5 ile bölünebilen ancak 2 veya 3 ile bölünmeyen bir terimidir. Eğer $5<r\le25$ ise, o zaman $x\le30t+25<x+20$ ve $30t+25$ sayısı x, $x+1,...,x+20$ dizisinin 5 ile bölünebilen ancak 2 veya 3 ile bölünmeyen bir terimidir. Son olarak, eğer $25\le r<30$ ise, o zaman $x<30t+35<x+20$ ve $30t+35$ sayısı x, $x+1,...,x+20$ dizisinin 5 ile bölünebilen ancak 2 veya 3 ile bölünmeyen bir terimidir. Bu, lemmanın kanıtını tamamlar.
+Lemmamız, 5'i aşan her 21 ardışık pozitif tam sayıdan en az 14'ünün bileşik sayı olduğunu, dolayısıyla en fazla 7 asal olduğunu hemen ima eder.
+$x=1,2$ ve 3 için, x, $x+1,...,x+20$ dizisi her biri 8 asal içerirken, $x=4$ ve $x=5$ için bu dizi 7 asal içerir. Böylece, x, $x+1,...,x+20$ dizisi $x=1,2$ ve 3 için 8 asal içerir.
+
+135. $p, p + 2, p + 6, p + 8, p + 12, p + 14$ sayılarının her biri asal olacak şekilde tüm $p$ asal sayılarını bulunuz.[^135]
+
+[^135]: Böyle sadece bir sayı vardır, yani $p=5$. $p<5$ için gerekli özelliğin sağlanmadığını kolayca buluruz. $p=5$ için, 5, 7, 11, 13, 17 ve 19 asallarını elde ederiz. Eğer $p>5$ ve $p=5k$ (k pozitif tam sayı) ise, o zaman p bileşiktir. Eğer $p=5k+1$ ise, o zaman $p+14$, 5 ile bölünebilir, dolayısıyla bileşiktir. Eğer $p=5k+2$ ise, o zaman $p+8$, 5 ile bölünebilir, dolayısıyla bileşiktir. Eğer $p=5k+3$ ise, o zaman $5\mid p+12$ ve $p+12$ bileşiktir. Son olarak, eğer $p=5k+4$ ise, o zaman $5\mid p+6$ ve $p+6$ bileşiktir.
+
+136. Aşağıdaki koşulları sağlayan sonsuz sayıda bir birinden farklı $m$ ve $n$ pozitif tam sayı ikilisinin bulunduğunu kanıtlayınız:[^136]
+
+(a) $m$ ve $n$ sayılarının asal bölenleri aynıdır;
+
+(b) $m + 1$ ve $n + 1$ sayılarının asal bölenleri aynıdır.
+
+[^136]: $k>1$ tam sayısı için bu tür çiftlerin $m=2^{k}-2$ ve $n=2^{k}(2^{k}-2)$ olduğunu kolayca buluruz, bunlar için $m+1=2^{k}-1$ ve $n+1=(2^{k}-1)^{2}$ olur.
+**NOT.** P. Erdös bu tür başka çiftlerin varlığı hakkında bir problem ortaya atmıştır; bkz [9, s. 126, problem 60]. A. Mąkowski bir çift bulmuştur: $m=75=3\cdot5^{2},$ $n=1215=5\cdot3^{5}$, bunlar için $m+1=2^{2}\cdot19,$ $n+1=2^{6}\cdot19$.
