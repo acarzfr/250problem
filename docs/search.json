@@ -10,11 +10,31 @@
     ]
   },
   {
+    "objectID": "index.html#teşekkür",
+    "href": "index.html#teşekkür",
+    "title": "250 Temel Sayılar Teorisi Problemi",
+    "section": "Teşekkür",
+    "text": "Teşekkür\nBu çevirinin hazırlanması sürecinde beni teşvik eden ve değerli yardımlarını esirgemeyen saygıdeğer hocam Prof. Dr. Refail Alizade’ye en içten teşekkürlerimi sunarım.",
+    "crumbs": [
+      "Sunuş"
+    ]
+  },
+  {
     "objectID": "index.html#teknik-detaylar",
     "href": "index.html#teknik-detaylar",
     "title": "250 Temel Sayılar Teorisi Problemi",
     "section": "Teknik Detaylar",
     "text": "Teknik Detaylar\nBu kitap, açık kaynaklı bir yazım sistemi olan Quarto ile hazırlanmıştır. Kitap, HTML ve PDF olmak üzere iki farklı formatta sunulmaktadır:\n\nHTML\nPDF\n\nSoruların çözümleri dipnotlarda verilmiştir. Her iki formatta da soru numarasından çözüme kolayca ulaşabilirsiniz.\nAyrıca, Hypothesis aracını kullanarak kitap üzerine notlar alabilir ve bu notları herkese açık veya özel olarak paylaşabilirsiniz. Bunun için HTML formatında, sayfanın sağındaki panelden ücretsiz bir hesap oluşturmanız yeterlidir.\n\n\n\n\nAnning, P. 1956. Scripta Mathematica 22: 227.\n\n\nBaker, C. L., ve F. J. Gruenberger. 1959. The first six millions prime numbers. The RAND Corp., Santa Monica, publ. by the Microcard Foundation, Madison, Wisc.\n\n\nCassels, J. W. S. 1960/61. “On a diophantine equation”. Acta Arithmetica 6 (1960/61): 47-52.\n\n\nCassels, J. W. S., ve G. Sansone. 1960/61. “Sur le problème de M. Werner Mnich”. Acta Arithmetica 7 (1960/61): 187-90.\n\n\nCipolla, M. 1904. “Sui numeri compositi P che verificiano la congruenza di Fermat a^{P-1} \\equiv 1 \\pmod{P}”. Annali di Matematica Pura ed Applicata 9: 139-60.\n\n\nDemjanenko, V. A. 1966. “On sums of four cubes, (Russian)”. Izv. Vyssich Ucebnykh Zavedenii, Matematika, 63-69.\n\n\nDickson, L. E. 1920. History of the Theory of Numbers, vol. II. Carnegie Institution.\n\n\nErdős, P. 1962. “On a problem of Sierpiński”. Atti Accad. Nazionale dei Lincei 33: 122-24.\n\n\n———. 1963. Quelques problèmes de la Théorie des Nombres. Monographies de l’Enseignement Math. 6. Genève.\n\n\nHyyro, S. 1964. “Uber das Catalansche Problem”. Annales Universitatis Turkuensis, Series AI, sy 79.\n\n\nKaprekar, D. R. 1955. “Multidigital numbers”. Scripta Mathematica 21: 27.\n\n\nKhatri, M. N. 1954. “An interesting geometrical progression”. Scripta Mathematica 20: 57.\n\n\n———. 1962. “Three consecutive integers cannot be powers”. Colloquium Mathematicum 9: 297.\n\n\nPólya, G. 1918. “Functions not formulas for primes”. Mathematische Zeitschrift 1: 144.\n\n\nPólya, G., ve G. Szegő. 1925. Aufgaben und Lehrsatze aus der Analysis, II. Berlin.\n\n\nReiner, J. 1943. “Zur arithmetischen Untersuchung der Polynome”. American Mathematical Monthly 50: 619.\n\n\nReutter, O. 1963. Elemente der Mathematik 18: 89.\n\n\nSchinzel, A. 1958. “Sur l’existence d’un cercle passant par un nombre donne de points aux coordonnees entieres”. L’Enseignement Mathématique 4: 71-72.\n\n\n———. 1959. “Démonstration d’une conséquence de l’hypothèse de Goldbach”. Compositio Mathematica 14: 74-76.\n\n\n———. 1963. “Remarque au travail de W. Sierpiński sur les nombres a^x+1”. Colloquium Mathematicum 10: 137-38.\n\n\nSchinzel, A., ve W. Sierpiński. 1958a. “Sur certaines hypothèses concernant les nombres premiers”. Acta Arithmetica 4: 185-208.\n\n\n———. 1958b. “Sur les sommes de quatre cubes”. Acta Arithmetica 4: 20-30.\n\n\nSelmer, F. S. 1951. “The diophantine equation ax^3+by^3+cz^3=0”. Acta Mathematica 85: 203-362.\n\n\nSierpiński, W. 1950. “Sur les puissances du nombre 2”. Annales de la Société Polonaise de Mathématique 33: 246-51.\n\n\n———. 1957. On representations of rational numbers as sums of unit fractions, (in Polish). Warszawa.\n\n\n———. 1958a. “Sur une question concernant le nombre de diviseurs premiers d’un nombre naturel”. Colloquium Mathematicum 6: 209-10.\n\n\n———. 1958b. Teoria liczb, (Number Theory; in Polish) Cz. II. Monografie Matematyczne 38. Warszawa.\n\n\n———. 1961a. “Démonstration élémentaire d’un théorème sur les sommes de trois nombres premiers distincts”. Glasnik Mat.-Fiz. Astronom. Drustvo Mat. Fiz. Hrvatske, ser. II 16: 87-88.\n\n\n———. 1961b. “Remarques sur le travail de M. J. W. S. Cassels \"On a diophantine equation\"”. Acta Arithmetica 6: 469-71.\n\n\n———. 1961c. “Sur les sommes des chiffres de nombres premiers”. Rendiconti del Circolo Matematico di Palermo, Ser. II 10: 229-32.\n\n\n———. 1961d. “Sur un problème concernant les nombres k \\cdot 2^n+1”. Elemente der Mathematik 15: 73-74.\n\n\n———. 1962a. “O liczbach naturalnych D, dla których okres rozwinieçia \\sqrt{D} na ułamek łańcuchowy arytmetyczny ma trzy wyrazy, (On positive integers D for which the period of expansion of \\sqrt{D} into an arithmetic continued fraction has three terms; in Polish)”. Roczniki Polskiego Towarzystwa Matematycznego, Seria II: Wiadomości Matematyczne 5: 53-55.\n\n\n———. 1962b. “Sur quelques conséquences d’une hypothèse de M. A. Schinzel”. Bulletin de la Société Royale des Sciences de Liège 31: 317-20.\n\n\n———. 1963. “Sur les nombres qui sont sommes et différences de deux nombres premiers”. Publ. Electr. Facultet, Sér. Math. Phys., Beograd, sy 84: 1-2.\n\n\n———. 1964a. Elementary Theory of Numbers. Monografie Matematyczne 42. Warszawa.\n\n\n———. 1964b. “Remarques sur un problème de M. P. Erdős”. Publications de l’Institut Mathématique de Beograd 4 (18): 125-34.\n\n\n———. 1964c. “Sur les nombres a^x+1”. Elemente der Mathematik 19: 106.",
+    "crumbs": [
+      "Sunuş"
+    ]
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "250 Temel Sayılar Teorisi Problemi",
+    "section": "",
+    "text": "Çözümlerin çeviri sürecinde yapay zeka destekli araçlar kullanılmıştır.↩︎",
     "crumbs": [
       "Sunuş"
     ]
